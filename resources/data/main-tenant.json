@@ -92,6 +92,170 @@
       "button": "<a href=\"#\" class=\"second-link\">REQUEST MAINTENANCE</a>"
     }
   ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/main-tenant/shape.png",
+          "title": "24/7 Repair Request Form Availability",
+          "text": "Report pressing issues effortlessly and monitor request status real time right in your dashboard"
+        }
+      ],
+      "img-one": "images/main-tenant/tenant-right.png",
+      "text-center": [
+        {
+          "oval": "images/main-tenant/shape2.png",
+          "title": "Set Priority and Urgency",
+          "text": "Say the urgency of your request and sit back to watch how the issues are attended."
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/main-tenant/shape3.png",
+          "title": "Seamlessly Communicate with \nyour Landlord",
+          "text": "Lodging maintenance request has never been this easy."
+        }
+      ],
+      "img-two": "images/main-tenant/tenant-left.png"
+    }
+  ],
+  "paragraf-two": [
+    {
+      "title": "Data Protection for All Our Tenants",
+      "text": [
+        {
+          "desc": "Lease terms, tenancy agreements, and all legal documents are easy to understand and completely transparent. You won’t risk a thing using our services, and you’ll enjoy 24/7 support whenever you need it."
+        }
+      ],
+      "button": "<a href=\"#\" class=\"second-link\">Find a place</a>"
+    }
+  ],
+  "feature": [
+    {
+      "item": [
+        {
+          "size": "4",
+          "oval": "images/main-tenant/prot1.png",
+          "title": "Transparent and Clear",
+          "text": "Your tenancy agreement should be transparent and easy to understand, which is why all the legal documents you will need to sign through our service are clear, making your experience smooth and hassle-free."
+        },
+        {
+          "size": "4",
+          "oval": "images/main-tenant/prot2.png",
+          "title": "Safe Data Storage for All Your Documents",
+          "text": "Never worry about losing your important documents again. We store your electronic agreements and legal documents safely and confidentially so that you can access them at any time."
+        },
+        {
+          "size": "4",
+          "oval": "images/main-tenant/prot3.png",
+          "title": "eSign Tenancy Agreements",
+          "text": "Sign your lease remotely wherever you are! Perfect for those who have busy schedules or those who are looking to rent a place but are currently out of town."
+        }
+      ]
+    }
+  ],
+  "paragraf-three": [
+    {
+      "title": "Explore South Africa \nwith us!",
+      "text": [
+        {
+          "desc": "We've got Houses and Apartments Property for Rent in Popular Cities.\n"
+        }
+      ]
+    }
+  ],
+  "explore-link": [
+    {
+      "link-desc": "Cape Town Properties"
+    },
+    {
+      "link-desc": "Strand Properties"
+    },
+    {
+      "link-desc": "Swellendam Properties"
+    },
+    {
+      "link-desc": "Johannesburg Properties "
+    },
+    {
+      "link-desc": "Paarl Properties"
+    },
+    {
+      "link-desc": "Durban Properties"
+    },
+    {
+      "link-desc": "Bellville Properties"
+    },
+    {
+      "link-desc": "Oudtshoorn Properties"
+    },
+    {
+      "link-desc": "Pretoria Properties "
+    },
+    {
+      "link-desc": "Hout Bay Properties"
+    },
+    {
+      "link-desc": "Hopefield Propertiess"
+    },
+    {
+      "link-desc": "Port Elizabeth Properties "
+    },
+    {
+      "link-desc": "Strand Properties"
+    },
+    {
+      "link-desc": "George Properties "
+    },
+    {
+      "link-desc": "Bloemfontein Properties "
+    },
+    {
+      "link-desc": "Somerset West Properties"
+    },
+    {
+      "link-desc": "Constantia Properties"
+    },
+    {
+      "link-desc": "Nelspruit Properties "
+    },
+    {
+      "link-desc": "Stellenbosch Properties "
+    },
+    {
+      "link-desc": "Port Nolloth Properties"
+    },
+    {
+      "link-desc": "Kimberley Properties "
+    },
+    {
+      "link-desc": "Hout Bay Properties"
+    },
+    {
+      "link-desc": "Kuruman Properties"
+    },
+    {
+      "link-desc": "Polokwane Properties "
+    },
+    {
+      "link-desc": "Montana Properties"
+    },
+    {
+      "link-desc": "Rustenburg Properties"
+    },
+    {
+      "link-desc": "Pietermaritzburg Properties "
+    },
+    {
+      "link-desc": "Worcester Properties"
+    },
+    {
+      "link-desc": "Potchefstroom Properties"
+    },
+    {
+      "link-desc": "Kimberley Properties "
+    }
+  ],
   "ready": [
     {
       "title": "Privacy Protection and Security \nAre Our Priority",

@@ -35,6 +35,33 @@
 {{#each paragraf}}
     {{> ../partials/paragraf }}
 {{/each}}
+{{#each skill}}
+    {{> ../common/skill-box }}
+{{/each}}
+<div class="d-protection">
+    {{#each paragraf-two}}
+        {{> ../partials/paragraf }}
+    {{/each}}
+    {{#each feature}}
+        {{> ../partials/features }}
+    {{/each}}
+</div>
+<div class="explore">
+    {{#each paragraf-three}}
+        {{> ../partials/paragraf }}
+    {{/each}}
+    <div class="explore__list">
+        <div class="container explore__link-position">
+                <ul>
+                    {{#each explore-link}}
+                    <li>
+                        <a class="explore__link" href="#">{{link-desc}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+        </div>
+    </div>
+</div>
 {{#each ready}}
     {{> ../common/ready}}
 {{/each}}

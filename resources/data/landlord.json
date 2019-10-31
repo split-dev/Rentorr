@@ -124,16 +124,19 @@
     {
       "item": [
         {
+          "size": "4",
           "oval": "images/land-one/people.svg",
           "title": "Create Beutifull Listings",
           "text": "With our property management system, you will be able to create beautiful listings that attract the best tenants to your property. Create stunning photo galleries, add floorplans, and so much more to make your listing a top choice for renters."
         },
         {
+          "size": "4",
           "oval": "images/land-one/web.svg",
           "title": "Online Rental Applications",
           "text": "Let potential tenants apply to your listing directly and then compare them within our property management portal."
         },
         {
+          "size": "4",
           "oval": "images/land-one/mess.svg",
           "title": "Easy and Seamless Communication",
           "text": "Manage all your properties in one place and connect with Tenants real-time irrespective of where you are. Get alerts of maintenance requests and emergencies anywhere you are"
@@ -158,16 +161,19 @@
     {
       "item": [
         {
+          "size": "4",
           "oval": "images/land-one/search.svg",
           "title": "List every available property",
           "text": "Every detail about your property — from features and amenities, to photos and price — are saved in your account"
         },
         {
+          "size": "4",
           "oval": "images/land-one/time.svg",
           "title": "Save time – do more",
           "text": "Use your analytics for running a successful business. Receive notifications and respond to messages on time"
         },
         {
+          "size": "4",
           "oval": "images/land-one/wind.svg",
           "title": "Get rapid insights from \nyour dashboards.",
           "text": "Use real-time dashboards to get a quick overview of important metrics. Track tenant complaint status, vacant properties, rent received and much more"
@@ -191,34 +197,34 @@
       ],
       "item-1": [
         {
-          "box-img": "images/land-one/how-1.png",
+          "box-img": "images/land-one/how-1.svg",
           "how-work-p": "01. List your place",
           "how-work-span": "Provide your property details filling one page applicataion to let perfect tenant to find you"
         },
         {
-          "box-img": "images/land-one/how-2.png",
+          "box-img": "images/land-one/how-2.svg",
           "how-work-p": "02. Boost your listings",
           "how-work-span": "Promote your listings  to left your competitors behind — always find the best tenants first"
         },
         {
-          "box-img": "images/land-one/how-3.png",
+          "box-img": "images/land-one/how-3.svg",
           "how-work-p": "03. Screening Tenant",
           "how-work-span": "Check credit story, employment verification and validate financial statement to minimize financial risk"
         }
       ],
       "item-2": [
         {
-          "box-img": "images/land-one/how-4.png",
+          "box-img": "images/land-one/how-4.svg",
           "how-work-p": "04. Optimal Match",
           "how-work-span": "Best tennants will match with your perfect property to connect and cooperate for mutual benefit"
         },
         {
-          "box-img": "images/land-one/how-5.png",
+          "box-img": "images/land-one/how-5.svg",
           "how-work-p": "05. Sign documents",
           "how-work-span": "Do not mess with paper documents — resign contracts in just a couple of clicks"
         },
         {
-          "box-img": "images/land-one/how-6.png",
+          "box-img": "images/land-one/how-6.svg",
           "how-work-p": "06. Maintenance",
           "how-work-span": "It’s a life, situations happens, but Rentorr will help you communicate through those in flying colors"
         }

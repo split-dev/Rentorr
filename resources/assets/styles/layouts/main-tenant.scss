@@ -104,6 +104,7 @@
 .main-tenant {
   .paragraf {
     margin-top: 260px;
+    margin-bottom: 75px;
     position: relative;
     .container {
       position: relative;
@@ -161,6 +162,169 @@
         margin: auto;
         height: 8px;
       }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #1a5dc6;
+        bottom: -2px;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, 0);
+        transition: 0.3s;
+        opacity: 0;
+      }
+      &:hover {
+        color: #1a5dc6;
+        text-decoration: none !important;
+        &:before {
+          transform: translate(-50%, -3px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .skill-box {
+    .start {
+      margin-bottom: 0;
+      .col-lg-4 {
+        align-items: flex-start !important;
+        padding-top: 30px;
+      }
+      .col-lg-6 {
+        &:before {
+          content: none;
+        }
+        &:after {
+          content: none;
+        }
+        img {
+          margin-left: 0;
+          margin-top: 0;
+        }
+      }
+    }
+    .end {
+      margin-top: -55px;
+      .col-lg-4 {
+        align-items: center !important;
+        padding-top: -50px;
+        position: relative;
+        &:before {
+          content: url("images/main-tenant/path3.svg");
+          position: absolute;
+          bottom: auto;
+          top: 70px;
+          left: auto;
+          right: -140px;
+          z-index: -1;
+        }
+      }
+      .col-lg-5 {
+        img {
+          margin-left: -90px;
+        }
+      }
+    }
+  }
+  .d-protection {
+    margin-top: 225px;
+    margin-bottom: 255px;
+    background-color: #f3f3f3;
+    position: relative;
+    &:before {
+      position: absolute;
+      width: 120%;
+      top: -105px;
+      left: -200px;
+      right: 0;
+      z-index: -1;
+      content: "";
+      background-color: #f3f3f3;
+      height: 211px;
+      transform: rotate(-5deg);
+    }
+    &:after {
+      position: absolute;
+      width: 120%;
+      bottom: -105px;
+      left: -200px;
+      right: 0;
+      z-index: -1;
+      content: "";
+      background-color: #f3f3f3;
+      height: 211px;
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+    }
+    .paragraf {
+      &:before {
+        content: none;
+      }
+      .container {
+        position: relative;
+        &:after {
+          position: absolute;
+          content: url("images/main-tenant/dots1.svg");
+          z-index: 0;
+          top: -70px;
+          right: 90px;
+        }
+      }
+    }
+    .feature {
+      &:before {
+        content: url("images/main-tenant/path4.svg");
+        position: absolute;
+        bottom: auto;
+        top: 70px;
+        left: 0;
+        right: auto;
+        z-index: 0;
+      }
+    }
+    div.image-info {
+      margin-bottom: 15px;
+    }
+  }
+  .explore {
+    .paragraf {
+      &__box {
+        p {
+          margin-top: 15px;
+        }
+      }
+      &:before {
+        content: none;
+      }
+      .container {
+        &:after {
+          content: none;
+        }
+      }
+    }
+    &__link-position {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          width: 33.3%;
+          margin-bottom: 35px;
+        }
+      }
+    }
+    &__link {
+      color: #222634;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      transition: 0.3s;
+      position: relative;
       &:before {
         content: "";
         position: absolute;
