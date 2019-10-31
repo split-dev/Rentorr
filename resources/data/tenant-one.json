@@ -1,0 +1,80 @@
+{
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "flex-row-reverse",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/tenant-one/top.png",
+      "title": "Take the work out \nof making a maintenance request",
+      "desc": "Stay updated about the status of your work orders and get access to your history of resolved maintenance requests to make sure you get your deposit back.",
+      "link": "#",
+      "link-name": "TRY IT FOR FREE"
+    }
+  ],
+  "images": [
+    {
+      "title": "Transparents communication solves issues faster",
+      "desc": "No more telephone tag. Get notified about the status of your maintenance request so you can follow the progress and talk to your landlord about any issues.",
+      "img": "images/tenant-one/images-r.svg"
+    }
+  ],
+  "title-one": [
+    {
+      "title": "What makes Rentorr maintenance requests different?"
+    }
+  ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/tenant-one/play.svg",
+          "title": "Photos and videos",
+          "text": "Attach photos and videos to your maintenance requests to make it easier for your landlord to identify the issue and get it fixed the first time."
+        }
+      ],
+      "img-one": "images/tenant-one/work.png",
+      "text-center": [
+        {
+          "oval": "images/tenant-one/doc.svg",
+          "title": "Documents",
+          "text": "Get access to an archived history of maintenance requests and repairs for your own record."
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/tenant-one/mus.svg",
+          "title": "Notification",
+          "text": "Stay informed about the progress of your maintenance request and get notified when it’s finished."
+        }
+      ],
+      "img-two": "images/tenant-one/work-2.png"
+    }
+  ],
+  "ready": [
+    {
+      "title": "Ready to start using Rentorr",
+      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ]
+}

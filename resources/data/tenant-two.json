@@ -1,0 +1,111 @@
+{
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "active": "active",
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "d-flex flex-row-reverse",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/tenant-two/top-tenant2.jpg",
+      "title": "Pay rent, \nget rewarded",
+      "desc": "Start paying rent online. Quick. Easy. How? \nConnect your bank account, or use a credit or debit card \nto pay - and your landlord gets notified instantly.",
+      "link": "#",
+      "link-name": "TRY IT FOR FREE"
+    }
+  ],
+  "title-one": [
+    {
+      "title": "What it takes to set up payments"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "4",
+          "oval": "images/land-two/card.svg",
+          "title": "Monthly Payments",
+          "text": "Set up your monthly rental payments and let your tenant choose to pay manually or set up automatic payments. They get notified before the due date each month, and we let you know when it’s on the way."
+        },
+        {
+          "size": "4",
+          "oval": "images/land-two/secure.svg",
+          "title": "Security Deposit",
+          "text": "When you set up your payment series, add the security deposit and let your tenants pay it with their first month’s rent."
+        },
+        {
+          "size": "4",
+          "oval": "images/land-two/r.svg",
+          "title": "One-time Fees",
+          "text": "Have other one-time fees you need to assess? Not a problem. Add them to the payment series, and collect it with their rent."
+        }
+      ]
+    }
+  ],
+  "title-two": [
+    {
+      "title": "Why choose Rentorr for payment processing?"
+    }
+  ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/land-two/arr.svg",
+          "title": "Improve your credit score",
+          "text": "Pay rent with your credit card or bank account automatically each month. Improve your credit score and earn more points with your on-time rental payments."
+        }
+      ],
+      "img-one": "images/tenant-two/right.svg",
+      "text-center": [
+        {
+          "oval": "images/land-two/list.svg",
+          "title": "Autopay Options",
+          "text": "Set up monthly rent payments and avoid late fees. You'll get an email each month to remind you before the money is pulled out, just in case."
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/land-two/check.svg",
+          "title": "Detailed Records",
+          "text": "Keep track of all your completed payments, including deposits and special fees, for future reference."
+        }
+      ],
+      "img-two": "images/tenant-two/payment-left.svg"
+    }
+  ],
+  "ready": [
+    {
+      "title": "Ready to start using Rentorr",
+      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ],
+  "img-desc": [
+    {
+      "img-full": "images/land-two/thought.png",
+      "title": "Focus on your properties, let us worry about the hard stuff",
+      "text": "We’ve partnered with Flutterwave to ensure our bank connections are secure and that your payment information is kept safe. Plus we never keep your information (even for recurring payments). Just one extra step to make sure your data is secure.",
+      "img": "images/land-two/wave.png"
+    }
+  ]
+}

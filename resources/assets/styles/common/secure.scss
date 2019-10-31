@@ -35,6 +35,16 @@
     }
     .images {
       position: relative;
+      &:before {
+        position: absolute;
+        content: url("images/home/dots-map.svg");
+        z-index: -1;
+        right: -20px;
+        top: -30px;
+      }
+      img {
+        margin-left: -120px;
+      }
     }
   }
   .row {
@@ -86,9 +96,6 @@
       height: 36px;
       &:first-child {
         margin-right: 16px;
-      }
-      &:last-child {
-        border: 2px solid rgba(183, 184, 199, 0.25);
       }
     }
   }

@@ -8,12 +8,13 @@
           "name": "Landlord"
         },
         {
-          "link": "#",
+          "link": "main-tenant.html",
           "name": "Tenant"
         },
         {
-          "link": "#",
-          "name": "Browse"
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
         }
       ]
     }
@@ -77,7 +78,7 @@
   ],
   "question": [
     {
-      "img": "images/home/3-descktop.png",
+      "img": "images/home/3-descktop.svg",
       "title": "So, you’re a landlord?",
       "desc": "Rentorr makes managing your rental property easier than ever. And it’s free*!",
       "text": "List on Rentorr.com, accept applications and request screenings for all potential tenants. You can also add your bank account and let tenants pay rent online, directly depositing into your account within 2 business days."
@@ -128,12 +129,12 @@
       "title": "But I’m a tenant!",
       "desc": "No problem. We’ve got you covered.",
       "text": "Live where you want. Never worry about missing another opportunity again because your rental application wasn’t first.",
-      "img": "images/home/tenat-bg.png"
+      "img": "images/home/tenat-bg.svg"
     }
   ],
   "secure": [
     {
-      "img": "images/home/price.png",
+      "img": "images/main-tenant/map.svg",
       "title": "Secure the property you want for a price that’s right for you",
       "list-box": [
         {
@@ -211,7 +212,8 @@
   "ready": [
     {
       "title": "Ready to start using Rentorr",
-      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience."
+      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience.",
+      "link": "SIGN UP FOR FREE"
     }
   ]
 }

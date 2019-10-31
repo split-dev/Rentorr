@@ -1,4 +1,4 @@
-.nav__button--white {
+.button--white--border {
   width: 100px;
   height: 32px;
   border: 2px solid rgba(183, 184, 199, 0.25);
@@ -7,21 +7,14 @@
   letter-spacing: 0.4px;
   text-transform: uppercase;
   background-color: transparent;
+  transition: 0.3s;
   @include over-extra;
   @include flex-center;
+  &:hover {
+    border-color: #b7b8c9;
+  }
 }
-.nav__button--blue {
-  width: 100px;
-  height: 32px;
-  color: $white !important;
-  font-size: 12px;
-  letter-spacing: 0.4px;
-  background-color: #1a5dc6;
-  text-transform: uppercase;
-  @include over-extra;
-  @include flex-center;
-}
-.buttons--white {
+.button--white {
   background-color: #fff;
   width: 100%;
   max-width: 224px;
@@ -30,7 +23,71 @@
   font-size: 12px;
   letter-spacing: 0.4px;
   line-height: 16px;
+  transition: 0.3s;
   text-transform: uppercase;
   @include flex-center;
   @include over-extra;
+  &:hover {
+    background-color: #e8e8e8;
+    color: #1b5ec6;
+  }
 }
+.button--blue {
+  width: 100px;
+  height: 32px;
+  color: $white !important;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  background-color: #1a5dc6;
+  text-transform: uppercase;
+  transition: 0.3s;
+  @include over-extra;
+  @include flex-center;
+  &:hover {
+    background-color: #317fd8 !important;
+  }
+}
+.second-link {
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-right: 27px;
+  width: 109px;
+  text-decoration: none !important;
+  color: #1a5dc6;
+  @include over-extra;
+  &:after {
+    position: absolute;
+    content: url("images/main-tenant/arrow-right-blue.png");
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    margin: auto;
+    height: 8px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #1a5dc6;
+    bottom: -2px;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+  &:hover {
+    color: #1a5dc6;
+    text-decoration: none !important;
+    &:before {
+      transform: translate(-50%, -3px);
+      opacity: 1;
+    }
+  }
+}
+

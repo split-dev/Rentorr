@@ -1,0 +1,80 @@
+.tenant-two {
+  .top-pages {
+    margin-top: 65px;
+  }
+  .what {
+    padding: 125px 0 105px;
+    background-color: #f3f3f3;
+  }
+  &__dots-position {
+    position: relative;
+    &:after {
+      content: url("images/land-four/dots-double.svg");
+      position: absolute;
+      right: 75px;
+      top: -20px;
+    }
+  }
+  &__payment {
+    padding: 10px 0 197px 0;
+    .skill-box {
+      .start {
+        margin-top: 80px;
+        margin-bottom: 0;
+        &__img {
+          margin-left: 0;
+        }
+        .skill-box__item {
+          margin-top: -150px;
+        }
+        .col-lg-6 {
+          position: relative;
+          &:before {
+            left: auto;
+            top: 40px;
+            right: 0;
+          }
+          &:after {
+            position: absolute;
+            bottom: -190px;
+            z-index: -1;
+          }
+        }
+      }
+      .center {
+        margin-top: 0;
+        position: relative;
+        &:after {
+          content: url("images/tenant-two/path-3.svg");
+          position: absolute;
+          right: auto;
+          bottom: auto;
+          top: -285px;
+          left: -125px;
+          z-index: -1;
+        }
+      }
+      .end {
+        margin-top: 0;
+        .align-items-end {
+          align-items: center !important;
+        }
+      }
+    }
+  }
+  .ready {
+    margin-top: 266px;
+  }
+  .img-desc {
+    &__images {
+      position: relative;
+      &:after {
+        content: url("images/land-three/dots.svg");
+        position: absolute;
+        right: auto;
+        left: 0;
+        top: -55px;
+      }
+    }
+  }
+}

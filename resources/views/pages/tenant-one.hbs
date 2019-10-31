@@ -2,8 +2,30 @@
 <head>
   {{> ../common/head }}
 </head>
-<body>
+<body class="tenant-one">
 {{> ../common/nav }}
+
+{{#each top-page}}
+  {{> ../common/top-page }}
+{{/each}}
+
+<div class="info">
+  {{#each images}}
+    {{> ../partials/title-img }}
+  {{/each}}
+</div>
+
+{{#each title-one}}
+  {{> ../partials/title-section }}
+{{/each}}
+
+{{#each skill}}
+  {{> ../common/skill-box }}
+{{/each}}
+
+{{#each ready}}
+  {{> ../common/ready }}
+{{/each}}
 
 {{> ../common/footer }}
 </body>

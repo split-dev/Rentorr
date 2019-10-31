@@ -1,0 +1,137 @@
+.how-work {
+  background-color: #1c5fc6;
+  position: relative;
+  padding: 0 0 80px;
+  &:before {
+    content: "";
+    background-color: #1c5fc6;
+    width: 104%;
+    position: absolute;
+    top: -91px;
+    left: -20px;
+    z-index: -1;
+    height: 180px;
+    transform: rotate(4deg);
+  }
+  &:after {
+    content: "";
+    background-color: #1c5fc6;
+    width: 104%;
+    position: absolute;
+    bottom: -91px;
+    left: -20px;
+    z-index: -1;
+    height: 180px;
+    transform: rotate(5deg);
+  }
+  &__img {
+    min-width: 64px;
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 0 12px rgba(16, 49, 80, 0.54);
+    border-radius: 14px;
+    background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+    @include flex-center;
+  }
+  &__line {
+    max-width: 250px;
+    width: 100%;
+    height: 1px;
+    border-top: dashed 3px #fff;
+    margin-left: 30px;
+  }
+  &__item {
+    p {
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: -0.21px;
+      line-height: 48px;
+      @include over-extra;
+    }
+    span {
+      opacity: 0.8;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      font-family: $roboto;
+    }
+    &--line {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__item-position {
+    display: flex;
+    &:last-child {
+      .how-work__line {
+        border: none;
+      }
+    }
+  }
+  .first-row {
+    margin-bottom: 202px;
+    position: relative;
+    .how-work__item-position-one {
+      &:first-child {
+        position: relative;
+        .how-work__line {
+          &:after {
+            position: absolute;
+            content: url("images/land-one/dot.png");
+            width: 9px;
+            height: 9px;
+            top: 28px;
+          }
+        }
+      }
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      border-bottom: dashed 3px #fff;
+      height: 2px;
+      bottom: -55px;
+      left: 50px;
+      right: 314px;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      border-left: dashed 3px #fff;
+      width: 2px;
+      height: 45px;
+      bottom: -55px;
+      right: 314px;
+    }
+  }
+  .second-row {
+    .how-work__item-position-two {
+      &:first-child {
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "";
+          border-left: dashed 3px #fff;
+          width: 2px;
+          height: 138px;
+          top: -150px;
+          left: 50px;
+        }
+      }
+      &:nth-child(2) {
+        position: relative;
+        .how-work__line {
+          &:after {
+            position: absolute;
+            content: url("images/land-one/triangle.png");
+            width: 9px;
+            height: 9px;
+            top: 27px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

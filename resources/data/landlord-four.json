@@ -4,17 +4,17 @@
       "logo": "images/global/logo.svg",
       "active": [
         {
-          "active": "active",
           "link": "landlord.html",
           "name": "Landlord"
         },
         {
-          "link": "#",
+          "link": "main-tenant.html",
           "name": "Tenant"
         },
         {
-          "link": "#",
-          "name": "Browse"
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
         }
       ]
     }
@@ -61,7 +61,8 @@
   "rent": [
     {
       "title": "Ready to start using Rentorr",
-      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience."
+      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience.",
+      "link": "SIGN UP FOR FREE"
     }
   ]
 }

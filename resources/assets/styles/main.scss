@@ -34,6 +34,7 @@
 @import "common/possibility";
 @import "common/property";
 @import "common/question";
+@import "common/apply";
 @import "common/tenat";
 @import "common/secure";
 @import "common/city";
@@ -41,12 +42,14 @@
 @import "common/ready";
 @import "common/footer";
 @import "common/top-page";
+@import "common/top-page-search";
 @import "common/img-desc";
 @import "partials/image-info";
 @import "partials/features";
 @import "partials/paragraf";
 @import "partials/title-section";
 @import "partials/title-img";
+@import "partials/how-work.scss";
 @import "common/skill-box";
 
 /**
@@ -61,5 +64,8 @@
 @import "layouts/landlord";
 @import "layouts/landlord-two";
 @import "layouts/landlord-three";
-@import "layouts/tenat-one";
+@import "layouts/tenant-one";
 @import "layouts/landlor-four";
+@import "layouts/tenant-three";
+@import "layouts/tenant-two";
+@import "layouts/main-tenant";

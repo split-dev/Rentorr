@@ -2,9 +2,36 @@
 <head>
   {{> ../common/head }}
 </head>
-<body>
+<body class="tenant-three">
 {{> ../common/nav }}
 
+{{#each top-page}}
+  {{> ../common/top-page }}
+{{/each}}
+
+{{#each paragraf-one}}
+  {{> ../partials/paragraf }}
+{{/each}}
+
+{{#each skill}}
+  {{> ../common/skill-box }}
+{{/each}}
+
+{{#each title-one}}
+  {{> ../partials/title-section }}
+{{/each}}
+
+{{#each feature-one}}
+  {{> ../partials/features }}
+{{/each}}
+
+{{#each img-desc}}
+  {{> ../common/img-desc }}
+{{/each}}
+
+{{#each ready}}
+  {{> ../common/ready }}
+{{/each}}
 {{> ../common/footer }}
 </body>
 </html>

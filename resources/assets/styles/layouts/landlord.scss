@@ -6,6 +6,11 @@
       max-width: 510px;
     }
   }
+  .title-section {
+    h3 {
+      color: #fff;
+    }
+  }
   .report {
     padding: 110px 0;
     background-color: #f3f3f3;
@@ -23,6 +28,12 @@
         }
       }
     }
+  }
+  .feature {
+    margin-bottom: 245px;
+  }
+  .ready {
+    padding-top: 300px;
   }
 }
 .rent {

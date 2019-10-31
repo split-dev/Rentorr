@@ -8,23 +8,11 @@
   &:before {
     position: absolute;
     content: "";
-    width: 150%;
-    left: -200px;
+    width: 200%;
+    left: -430px;
     bottom: 0;
     height: 1px;
     background-color: #eeeef2;
-  }
-  .arrow {
-    position: relative;
-    &::before {
-      content: url("images/global/arr-nav.svg");
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: -24px;
-      height: max-content;
-      margin: auto;
-    }
   }
   &__logo {
     display: flex;
@@ -44,6 +32,54 @@
       margin: 0;
       li {
         margin: 0 20px;
+        position: relative;
+        a {
+          text-decoration: none !important;
+          transition: 0.3s;
+          .arr {
+            &:after {
+              position: absolute;
+              content: url(images/global/arr-nav.svg);
+              top: 0;
+              bottom: 0;
+              right: 0;
+              width: 12px;
+              margin: auto;
+              height: 8px;
+              transition: 0.3s;
+              opacity: 1;
+            }
+            &:before {
+              position: absolute;
+              content: url(images/global/arr-nav-black.svg);
+              top: 0;
+              bottom: 0;
+              right: 0;
+              width: 12px;
+              margin: auto;
+              height: 8px;
+              transition: 0.3s;
+              opacity: 0;
+            }
+          }
+          &:hover {
+            color: #222634;
+            text-decoration: none !important;
+            .arr {
+              &:after {
+                opacity: 0;
+              }
+              &:before {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        &:last-child {
+          a {
+            padding-right: 27px;
+          }
+        }
       }
     }
   }

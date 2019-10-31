@@ -1,0 +1,93 @@
+.tenant-three {
+  .top-pages {
+    margin-top: 65px;
+    margin-bottom: 212px;
+  }
+  .paragraf {
+    margin-bottom: 10px;
+  }
+  .skill-box {
+    margin-bottom: 120px;
+    .start {
+      .col-lg-6 {
+        &:before {
+          content: none;
+        }
+        &:after {
+          content: url("images/tenant-three/Path3.svg");
+          right: -255px;
+          bottom: -306px;
+          overflow: hidden;
+          height: 851px;
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+    }
+    .center {
+      margin-top: -75px;
+    }
+    .end {
+      margin-top: -72px;
+      .img {
+        img {
+          margin-left: -95px;
+        }
+      }
+      .align-items-end {
+        align-items: center !important;
+      }
+    }
+  }
+  .feature {
+    margin-bottom: 289px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: url("images/tenant-three/Path4.svg");
+      left: 0;
+      top: -205px;
+      z-index: -1;
+    }
+    &:after {
+      position: absolute;
+      content: url("images/tenant-three/Path5.svg");
+      right: -50px;
+      top: 188px;
+      z-index: -1;
+    }
+  }
+  .img-desc {
+    padding-bottom: 138px;
+    &:before {
+      content: "";
+      background-color: #1c5fc6;
+      width: 104%;
+      position: absolute;
+      top: -91px;
+      left: -20px;
+      z-index: -1;
+      height: 180px;
+      transform: rotate(4deg);
+    }
+    &:after {
+      content: none;
+    }
+    &__logo {
+      max-width: 375px;
+      margin-top: 17px;
+    }
+    &__images {
+      position: relative;
+      &:before {
+        content: url("images/land-three/dots.svg");
+        position: absolute;
+        left: -12px;
+        top: -55px;
+      }
+    }
+  }
+  .ready {
+    padding-top: 183px;
+  }
+}

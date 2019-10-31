@@ -4,17 +4,18 @@
       "logo": "images/global/logo.svg",
       "active": [
         {
-          "active": "active",
           "link": "landlord.html",
           "name": "Landlord"
         },
         {
-          "link": "#",
+          "link": "main-tenant.html",
           "name": "Tenant"
         },
         {
-          "link": "#",
-          "name": "Browse"
+          "active": "active",
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
         }
       ]
     }
@@ -74,7 +75,7 @@
           "text": "Enjoy the hassle-free payment processing. Get funds transfer to your bank account within one business day. Get real-time payments and updates from your tenants to know the status of rent for each individual tenant."
         }
       ],
-      "img-one": "images/land-one/Image_Payments.png",
+      "img-one": "images/land-one/Image_Payments.svg",
       "text-center": [
         {
           "oval": "images/land-two/list.svg",
@@ -89,7 +90,7 @@
           "text": "Help your tenants build their credit history when they pay rent online. Once they opt-in, we’ll automatically report on-tine rent payments to the credit bureau, which helps build their credit history."
         }
       ],
-      "img-two": "images/land-one/Pictures2.png"
+      "img-two": "images/land-one/Pictures2.svg"
     }
   ],
   "tenat": [
@@ -98,13 +99,14 @@
       "title": "Focus on your properties, let us worry about the hard stuff",
       "desc": "",
       "text": "Live where you want. Never worry about missing another opportunity again because your rental application wasn’t first.",
-      "img": "images/home/tenat-bg.png"
+      "img": "images/home/tenat-bg.svg"
     }
   ],
   "ready": [
     {
       "title": "Ready to start using Rentorr",
-      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience."
+      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience.",
+      "link": "SIGN UP FOR FREE"
     }
   ],
   "img-desc": [
