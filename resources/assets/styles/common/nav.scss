@@ -1,0 +1,82 @@
+.nav {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: -200px;
+    bottom: 0;
+    height: 1px;
+    background-color: #eeeef2;
+  }
+  .arrow {
+    position: relative;
+    &::before {
+      content: url("images/global/arr-nav.svg");
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -24px;
+      height: max-content;
+      margin: auto;
+    }
+  }
+  &__logo {
+    display: flex;
+    margin-right: 45px;
+  }
+  &__logo-nav {
+    width: 100%;
+    display: flex;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+  &__link {
+    color: #9ba0b5;
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.9px;
+    line-height: 18px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    &.active {
+      &:before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 26px;
+        left: -12px;
+        z-index: -1;
+        background-color: #dfebff;
+        top: 0;
+        margin: auto;
+        bottom: 0;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    &--white {
+      margin-right: 24px;
+    }
+  }
+}

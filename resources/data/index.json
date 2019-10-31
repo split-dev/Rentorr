@@ -1,0 +1,217 @@
+{
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "#",
+          "name": "Tenant"
+        },
+        {
+          "link": "#",
+          "name": "Browse"
+        }
+      ]
+    }
+  ],
+  "search": [
+    {
+      "close": "",
+      "bg-one": "./images/home/one-bg.jpg",
+      "bg-two": "./images/home/two-bg.jpg"
+    }
+  ],
+  "what": [
+    {
+      "title": "What is Rentorr?",
+      "desc": "We’re creating tools that improve the landlord-tenant relationship. List and find properties, apply, screen, pay rent, and manage maintenance all within our simple to use application."
+    }
+  ],
+  "possibility": [
+    {
+      "title": "With Rentorr you can…",
+      "dots":"images/home/dots-center.svg",
+      "item": [
+        {
+          "size": "4",
+          "img": "images/global/one-r.svg",
+          "title-item" : "Adverise your property",
+          "desc": "Find quality tenants quickly - list your property once & we'll automatically syndicate your listing to our partner network (Property 24, Private property, gumtree, OXL, etc)"
+        },
+        {
+          "size": "4",
+          "img": "images/global/two-r.svg",
+          "title-item": "Screen tenants",
+          "desc": "Run applicant Credit, Background and Eviction Reports at the push of a button to help you select the most qualified tenant \nfor your property"
+        },
+        {
+          "size": "4",
+          "img": "images/global/three-r.svg",
+          "title-item": "Collect rent online",
+          "desc": "Collect rent payments online quickly and securely directly to your bank account as soon as the next business day"
+        },
+        {
+          "size": "4",
+          "img": "images/global/four-r.svg",
+          "title-item": "Schedule showings",
+          "desc": "Quickly schedule showings in your Lead Dashboard which displays everyone interested in renting your property"
+        },
+        {
+          "size": "4",
+          "img": "images/global/five-r.svg",
+          "title-item": "Accept online applications",
+          "desc": "Easily accept and review online renter applications"
+        },
+        {
+          "size": "4",
+          "img": "images/global/six-r.svg",
+          "title-item": "Maintenance",
+          "desc": "Maintenance requests are always tough to deal with, whether you have one property or 20. Rentorr helps you coordinate and prioritize in one place, without all the paperwork."
+        }
+    ]
+    }
+  ],
+  "question": [
+    {
+      "img": "images/home/3-descktop.png",
+      "title": "So, you’re a landlord?",
+      "desc": "Rentorr makes managing your rental property easier than ever. And it’s free*!",
+      "text": "List on Rentorr.com, accept applications and request screenings for all potential tenants. You can also add your bank account and let tenants pay rent online, directly depositing into your account within 2 business days."
+    }
+  ],
+  "property": [
+    {
+      "title": "Property management at the push of a button -For Free!",
+      "desc": "Advertise your property, review applications online, screen tenants and accept rent payments online all in one place. No monthly fees, no setup charges, no catch.",
+      "list-box": [
+        {
+          "list": "Advertise your property"
+        },
+        {
+          "list": "Manage your property from anywhere"
+        },
+        {
+          "list": "Accept online applications"
+        },
+        {
+          "list": "Collect rent, utilities and late fees online"
+        },
+        {
+          "list": "Comprehensive screening"
+        },
+        {
+          "list": "Maintenance request Management"
+        },
+        {
+          "list": "Confidently select tenants"
+        },
+        {
+          "list": "Management Reporting"
+        },
+        {
+          "list": "Schedule Showings"
+        },
+        {
+          "list": "Increase rent using our rentability reports"
+        }
+      ],
+      "skob": "images/home/scobki1.svg",
+      "text": "Being a busy doctor in the ER and father of 3, I don’t have as much time to manage my real estate properties. Rentorr makes it so easy and saves me time, that’s the time I get back to spend with my family. I appreciate the value that Rentorr provides."
+    }
+  ],
+  "tenat": [
+    {
+      "title": "But I’m a tenant!",
+      "desc": "No problem. We’ve got you covered.",
+      "text": "Live where you want. Never worry about missing another opportunity again because your rental application wasn’t first.",
+      "img": "images/home/tenat-bg.png"
+    }
+  ],
+  "secure": [
+    {
+      "img": "images/home/price.png",
+      "title": "Secure the property you want for a price that’s right for you",
+      "list-box": [
+        {
+          "list": "Apply to multiple properties for one low application fee"
+        },
+        {
+          "list": "Make real time offers"
+        },
+        {
+          "list": "Transparent pricing"
+        },
+        {
+          "list": "Apply online in minutes"
+        }
+      ]
+    }
+  ],
+  "city": [
+    {
+      "country": [
+        {
+          "img": "./images/city/one.png",
+          "title": "Cape town",
+          "desc": "256 properties"
+        },
+        {
+          "img": "./images/city/two.png",
+          "title": "Johannesburg",
+          "desc": "256 properties"
+        },
+        {
+          "img": "./images/city/three.png",
+          "title": "Durban",
+          "desc": "256 properties"
+        },
+        {
+          "img": "./images/city/four.png",
+          "title": "Pretoria",
+          "desc": "256 properties"
+        }
+      ]
+    }
+  ],
+  "operation": [
+    {
+      "title": "Rentorr – Free Property Management Software from Start to Finish",
+      "item": [
+        {
+          "img": "images/operation/one.svg",
+          "text": "Advertise your property"
+        },
+        {
+          "img": "images/operation/two.svg",
+          "text": "Schedule showings"
+        },
+        {
+          "img": "images/operation/three.svg",
+          "text": "Tenant screening"
+        },
+        {
+          "img": "images/operation/four.svg",
+          "text": "Online applications"
+        },
+        {
+          "img": "images/operation/five.svg",
+          "text": "Online rent payments"
+        },
+        {
+          "img": "images/operation/six.svg",
+          "text": "Maintenance"
+        }
+      ]
+    }
+  ],
+  "ready": [
+    {
+      "title": "Ready to start using Rentorr",
+      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience."
+    }
+  ]
+}

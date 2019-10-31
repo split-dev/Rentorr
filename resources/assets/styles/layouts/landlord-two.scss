@@ -1,0 +1,45 @@
+.landlord-two {
+  outline: none;
+  .top-pages {
+    margin-top: 65px;
+  }
+  .what {
+    padding: 125px 0 105px;
+    background-color: #f3f3f3;
+  }
+  .payment {
+    padding: 10px 0 197px 0;
+    .title-section {
+      margin-bottom: -80px;
+    }
+    .skill-box {
+      &__item {
+        margin-top: -126px;
+      }
+      .start {
+        .col-lg-6 {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .center {
+        margin-top: -50px;
+      }
+    }
+  }
+  .ready {
+    margin-top: 266px;
+  }
+  .img-desc {
+    &__images {
+      position: relative;
+      &:after {
+        content: url("images/land-three/dots.svg");
+        position: absolute;
+        right: -29px;
+        top: -55px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="landlord-four">
+{{> ../common/nav }}
+
+{{#each top-page}}
+  {{> ../common/top-page }}
+{{/each}}
+
+{{#each paragraf-one}}
+  {{> ../partials/paragraf }}
+{{/each}}
+<div class="map">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 offset-lg-3">
+                <img src="images/land-four/map.jpg" alt="maps">
+            </div>
+        </div>
+    </div>
+</div>
+{{#each author}}
+    <div class="author">
+        <div class="container">
+            <div class="row align-content-center">
+                <div class="col-lg-6">
+                    <div class="author__text-box">
+                        <h3>{{title}}</h3>
+                      {{#each info}}
+                          <p>{{text}}</p>
+                      {{/each}}
+                    </div>
+                </div>
+                <div class="col-lg-6 img">
+                    <img src="{{img}}" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
+{{#each rent}}
+  {{> ../common/ready }}
+{{/each}}
+
+{{> ../common/footer }}
+</body>
+</html>

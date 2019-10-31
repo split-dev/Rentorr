@@ -1,0 +1,36 @@
+.nav__button--white {
+  width: 100px;
+  height: 32px;
+  border: 2px solid rgba(183, 184, 199, 0.25);
+  color: #222634 !important;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  background-color: transparent;
+  @include over-extra;
+  @include flex-center;
+}
+.nav__button--blue {
+  width: 100px;
+  height: 32px;
+  color: $white !important;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  background-color: #1a5dc6;
+  text-transform: uppercase;
+  @include over-extra;
+  @include flex-center;
+}
+.buttons--white {
+  background-color: #fff;
+  width: 100%;
+  max-width: 224px;
+  height: 36px;
+  color: #1b5ec6;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  text-transform: uppercase;
+  @include flex-center;
+  @include over-extra;
+}

@@ -1,0 +1,18 @@
+.title-img {
+  &__text {
+    h3 {
+      color: #222634;
+      font-size: 42px;
+      letter-spacing: -0.44px;
+      line-height: 48px;
+      @include over-extra;
+    }
+    p {
+      color: #666b7c;
+      font-family: $roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+    }
+  }
+}

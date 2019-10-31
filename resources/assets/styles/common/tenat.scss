@@ -1,0 +1,51 @@
+.tenat {
+  background-color: #1b5ec6;
+  position: relative;
+  &:before {
+    position: absolute;
+    width: 120%;
+    top: -105px;
+    left: -200px;
+    right: 0;
+    z-index: -1;
+    content: "";
+    background-color: #1b5ec6;
+    height: 211px;
+    transform: rotate(-5deg);
+  }
+  &:after {
+    position: absolute;
+    width: 120%;
+    bottom: -105px;
+    left: -200px;
+    right: 0;
+    z-index: -1;
+    content: "";
+    background-color: #1b5ec6;
+    height: 211px;
+    transform: rotate(-5deg);
+  }
+  .container {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: url("images/home/Path3Copy2.svg");
+      right: -195px;
+      top: -370px;
+      height: 400px;
+      overflow: hidden;
+      z-index: -2;
+    }
+  }
+  img {
+    width: 114%;
+  }
+  .question__title {
+    &:before {
+      position: absolute;
+      content: url("images/home/scobki2.svg");
+      left: -75px;
+      top: -60px;
+    }
+  }
+}

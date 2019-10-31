@@ -1,0 +1,22 @@
+<div class="property">
+    <div class="container">
+        <div class="property__info">
+            <h2 class="property__title">{{title}}</h2>
+            <p class="property__desc">{{desc}}</p>
+            <ul>
+                {{#each list-box}}
+                    <li>{{list}}</li>
+                {{/each}}
+            </ul>
+            <div class="property__button">
+                <a href="#" class="nav__button--blue">Get started</a>
+                <a href="#" class="buttons--white">More Details</a>
+            </div>
+        </div>
+        <div class="property__img">
+            <span><img src="{{skob}}" alt="skob"></span>
+            <p class="property__img-text">{{text}}</p>
+            <strong>Alex S.</strong>
+        </div>
+    </div>
+</div>

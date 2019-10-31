@@ -1,0 +1,11 @@
+.title-section {
+  h3 {
+    color: #222634;
+    font-size: 42px;
+    letter-spacing: -0.44px;
+    line-height: 48px;
+    display: block;
+    margin-bottom: 58px;
+    @include over-extra;
+  }
+}

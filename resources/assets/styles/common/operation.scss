@@ -1,0 +1,62 @@
+.operation {
+  margin-top: 310px;
+  margin-bottom: 245px;
+  .container {
+    position: relative;
+    &:after {
+      content: url("images/operation/home-dots-6.svg");
+      position: absolute;
+      right: 0;
+      top: -91px;
+    }
+  }
+  &__all {
+    display: flex;
+  }
+  &__img {
+    width: 56px;
+    height: 56px;
+    margin: 17px 17px 17px 0;
+    border-radius: 50%;
+    background-color: #dfebff;
+    position: relative;
+    @include flex-center;
+    &:after {
+      position: absolute;
+      content: "";
+      right: -115px;
+      background-color: #dfebff;
+      width: 95px;
+      height: 7px;
+    }
+  }
+  &__title {
+    max-width: 675px;
+    color: #222634;
+    font-size: 42px;
+    letter-spacing: -0.44px;
+    line-height: 48px;
+    margin-bottom: 104px;
+    @include over-extra;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 42px;
+    p {
+      max-width: 150px;
+      color: #222634;
+      font-size: 20px;
+      letter-spacing: -0.21px;
+      line-height: 24px;
+      @include over-extra;
+    }
+    &:last-child {
+      .operation__img {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+}

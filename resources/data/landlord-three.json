@@ -1,0 +1,90 @@
+{
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "active": "active",
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "#",
+          "name": "Tenant"
+        },
+        {
+          "link": "#",
+          "name": "Browse"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/land-three/top.png",
+      "title": "Simple online rental applications",
+      "desc": "No more paper. No more hassle. When you accept time-stamped applications through Rentorr you see everything in one place, \nwhich makes it easy to track and compare potential new tenants.",
+      "link": "#",
+      "link-name": "RENT YOUR HOME"
+    }
+  ],
+  "img-desc": [
+    {
+      "img-full": "images/land-three/adult.png",
+      "title": "Bank-level security means your personal information is safe",
+      "text": "Any time you provide Rentorr with your sensitive information, we know you are putting a lot of trust in our system. We protect all of your information with a 128-bit encryption, the same that every bank uses. We have also partnered with Compuscan to make sure all of the credit information is accurate and secure.",
+      "img": "images/land-three/compuscanOrg.png"
+    }
+  ],
+  "title-one": [
+    {
+      "title": "What makes Rentorr's tenant screening the best?"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "3",
+          "oval": "images/land-three/check.svg",
+          "title": "Credit Check",
+          "text": "Rentorr gives you a detailed tenant credit report that includes all \nthe important details- like \na prospective tenant's credit score and payment history."
+        },
+        {
+          "size": "3",
+          "oval": "images/land-three/people.svg",
+          "title": "Verified Identity",
+          "text": "Successful renting starts with trust. Know the true identity of your renter. Avoid tenants from hell."
+        },
+        {
+          "size": "3",
+          "oval": "images/land-three/Shape.svg",
+          "title": "Affordability Score",
+          "text": "Use our clever math to determine long term affordability range of your renter. Rent to tenants who can afford the rent for your property and make on-time payments"
+        },
+        {
+          "size": "3",
+          "oval": "images/land-three/r.svg",
+          "title": "Rental History",
+          "text": "Keep track of all your completed payments, including deposits and special fees, for future reference."
+        }
+      ]
+    }
+  ],
+  "rent": [
+    {
+      "title": "Ready to start using Rentorr",
+      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience."
+    }
+  ],
+  "images": [
+    {
+      "title": "Accept applications \nand screen tenants right from your listings",
+      "desc": "Don't miss out on potential tenants: Allow people to apply right from your online rental listing. Applicants can apply as soon as they see your place, and you get a time-stamped digital application to help comply with Fair Housing laws.",
+      "img": "images/land-three/images-r.png"
+    }
+  ]
+}

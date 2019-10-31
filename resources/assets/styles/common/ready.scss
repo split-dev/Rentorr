@@ -1,0 +1,47 @@
+.ready {
+  padding-top: 60px;
+  position: relative;
+  .container {
+    position: relative;
+    &:after {
+      content: url("images/operation/home-dots-6.svg");
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+      height: 140px;
+      bottom: 50px;
+    }
+  }
+  &__info {
+    width: 100%;
+    flex-direction: column;
+    @include flex-center;
+  }
+  &__title {
+    color: #222634;
+    font-size: 44px;
+    letter-spacing: -0.46px;
+    line-height: 48px;
+    display: block;
+    margin-bottom: 15px;
+    @include over-extra;
+  }
+  &__desc {
+    max-width: 604px;
+    height: 57px;
+    color: #666b7c;
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    display: block;
+    margin: 0 auto 25px;
+  }
+  .nav__button--blue {
+    width: 100%;
+    max-width: 240px;
+    height: 36px;
+    background-color: #1a5dc6;
+    margin-bottom: 250px;
+  }
+}

@@ -1,0 +1,47 @@
+.image-info {
+  .row {
+    &.revers {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h3 {
+      color: #222634;
+      font-size: 42px;
+      letter-spacing: -0.44px;
+      line-height: 48px;
+      display: block;
+      margin-bottom: 10px;
+      @include over-extra;
+    }
+    p {
+      color: #666b7c;
+      font-family: $roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+  &__two {
+    width: 100%;
+    display: flex;
+    .nav__button--blue {
+      width: 100%;
+      max-width: 224px;
+      height: 32px;
+      margin-right: 16px;
+    }
+    .nav__button--white {
+      width: 100%;
+      max-width: 224px;
+      height: 32px;
+    }
+  }
+}

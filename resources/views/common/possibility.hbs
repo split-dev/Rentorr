@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="possibility">
+        <h2 class="possibility__header-title">{{title}}</h2>
+        <div class="possibility__all">
+            {{#each item}}
+                <div class="possibility__item">
+                  <div class="possibility__img">
+                      <img src="{{img}}" alt="img">
+                  </div>
+                  <h3 class="possibility__title">{{title-item}}</h3>
+                  <p class="possibility__desc">{{desc}}</p>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="dots-center">
+        <img src="{{dots}}" alt="">
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="city">
+    <div class="container">
+        <div class="row">
+            <div class="city__title">
+                <h2>Some of our most searched cities</h2>
+                <a href="#">View listings</a>
+            </div>
+            <div class="city__all">
+                {{#each country}}
+                    <a href="#" class="city__item" style="background-image: url('{{img}}')">
+                        <strong>{{title}}</strong>
+                        <p>{{desc}}</p>
+                    </a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

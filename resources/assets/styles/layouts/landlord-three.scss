@@ -1,0 +1,65 @@
+.landlord-three {
+  .top-pages {
+    margin-top: 65px;
+    margin-bottom: 200px;
+  }
+  .title-img {
+    margin-bottom: 180px;
+  }
+  .img-desc {
+    margin-bottom: 288px;
+    padding-bottom: 43px;
+    &:before {
+      content: "";
+      background-color: #1c5fc6;
+      width: 104%;
+      position: absolute;
+      top: -91px;
+      left: -20px;
+      z-index: -1;
+      height: 180px;
+      transform: rotate(4deg);
+    }
+    &:after {
+      content: "";
+      background-color: #1c5fc6;
+      width: 104%;
+      position: absolute;
+      bottom: -91px;
+      left: -20px;
+      z-index: -1;
+      height: 180px;
+      transform: rotate(5deg);
+    }
+    &__logo {
+      margin-top: 15px;
+    }
+    &__images {
+      position: relative;
+      img {
+        position: relative;
+      }
+      &:before {
+        content: url("images/land-three/dots.svg");
+        position: absolute;
+        left: -12px;
+        top: -55px;
+      }
+    }
+  }
+  .feature__all {
+    position: relative;
+    &:after {
+      content: url("images/land-three/Path-gradient.svg");
+      position: absolute;
+      right: 0;
+      top: 250px;
+      z-index: -1;
+      height: 810px;
+      overflow: hidden;
+    }
+  }
+  .ready__info {
+    margin-top: 236px;
+  }
+}

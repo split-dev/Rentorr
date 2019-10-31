@@ -1,0 +1,120 @@
+{
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "active": "active",
+          "link": "#",
+          "name": "Tenant"
+        },
+        {
+          "link": "#",
+          "name": "Browse"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "d-flex flex-row-reverse",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/tenat-two/top.jpg",
+      "title": "Simple online \nrental applications",
+      "desc": "Stop looking and start planning your move. Create one\n application, save it, and submit it instantly to all your\n favorite rentals - for free.",
+      "link": "#",
+      "link-name": "Start your application"
+    }
+  ],
+  "paragraf-one": [
+    {
+      "title": "All-in-one Renter Profile",
+      "text": [
+        {
+          "desc": "Avoid paying multiple application fees. One profile to share with any landlord.\nWe make the process so simple."
+        }
+      ]
+    }
+  ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/tenat-two/one.svg",
+          "title": "Verified Identity",
+          "text": "Successful renting starts with trust. Rentorr turns casual Internet visitors into names and faces so that you can feel more trusting in your rental dealings"
+        }
+      ],
+      "img-one": "images/tenat-two/text-1.png",
+      "text-center": [
+        {
+          "oval": "images/tenat-two/two.svg",
+          "title": "Credit Check",
+          "text": "We are more than a score. We work with industry leaders Compuscan to produce comprehensively detailed, yet easy to understand credit reports"
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/tenat-two/three.svg",
+          "title": "Rental History",
+          "text": "Writing down your previous addresses and landlord contact information is tedious. With your renter profile, your rental and employment histories are in one place"
+        }
+      ],
+      "img-two": "images/tenat-two/text-2.png"
+    }
+  ],
+  "title-one": [
+    {
+      "title": "What makes Rentorr's tenant screening the best?"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "3",
+          "oval": "images/tenat-two/card.svg",
+          "title": "It won’t hurt your credit",
+          "text": "Since you’re initiating the credit and background screening, it counts as a soft inquiry and won’t affect your credit score."
+        },
+        {
+          "size": "3",
+          "oval": "images/tenat-two/list.svg",
+          "title": "You get a copy",
+          "text": "Once your credit report is completed, you can view a copy by logging into your Rentorr account."
+        },
+        {
+          "size": "3",
+          "oval": "images/tenat-two/key.svg",
+          "title": "Total Privacy Control",
+          "text": "You control your information. Manage and revoke access anytime with just one click."
+        },
+        {
+          "size": "3",
+          "oval": "images/tenat-two/time.svg",
+          "title": "No waiting for results",
+          "text": "Doing it all online means your screening is processed faster than traditional paperwork, so you can start moving in ASAP."
+        }
+      ]
+    }
+  ],
+  "img-desc": [
+    {
+      "img-full": "images/land-three/adult.png",
+      "title": "Bank-level security means your personal information is safe",
+      "text": "Any time you provide Rentorr with your sensitive information, we know you are putting a lot of trust in our system. We protect all of your information with a 128-bit encryption, the same that every bank uses. We have also partnered with Compuscan to make sure all of the credit information is accurate and secure.",
+      "img": "images/land-three/compuscanOrg.png"
+    }
+  ],
+  "ready": [
+    {
+      "title": "Ready to start using Rentorr",
+      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience."
+    }
+  ]
+}

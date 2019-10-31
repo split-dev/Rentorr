@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="home">
+{{> ../common/nav }}
+{{#each search}}
+    <div class="search">
+        <div class="search__one" style="background-image: url('{{bg-one}}')">
+            <h2>Find Your New Home</h2>
+            <a href="#" class="nav__button--blue">Search listings</a>
+        </div>
+        <div class="search__two" style="background-image: url('{{bg-two}}')">
+            <h2>Find Your New Home</h2>
+            <a href="#" class="nav__button--blue">Learn more</a>
+        </div>
+    </div>
+{{/each}}
+{{#each what}}
+  {{> ../common/what-box }}
+{{/each}}
+{{#each possibility}}
+  {{> ../common/possibility }}
+{{/each}}
+{{#each question}}
+    {{> ../common/question }}
+{{/each}}
+{{#each property}}
+    {{> ../common/property }}
+{{/each}}
+{{#each tenat}}
+    {{> ../common/tenat-right }}
+{{/each}}
+{{#each secure}}
+    {{> ../common/secure }}
+{{/each}}
+{{#each city}}
+  {{> ../common/city }}
+{{/each}}
+{{#each operation}}
+  {{> ../common/operation }}
+{{/each}}
+{{#each ready}}
+  {{> ../common/ready }}
+{{/each}}
+{{> ../common/footer }}
+</body>
+</html>

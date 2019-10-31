@@ -1,0 +1,130 @@
+.property {
+  margin-bottom: 350px;
+  position: relative;
+  .container {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: url("images/home/Path3Copy.svg");
+      right: -142px;
+      top: -72px;
+      z-index: -2;
+    }
+  }
+  &__title {
+    max-width: 485px;
+    color: #222634;
+    font-size: 42px;
+    letter-spacing: -0.44px;
+    line-height: 48px;
+    display: block;
+    margin-bottom: 35px;
+    @include over-extra;
+  }
+  &__desc {
+    max-width: 532px;
+    color: #666b7c;
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    display: block;
+    margin-bottom: 25px;
+  }
+  ul {
+    width: 100%;
+    max-width: 625px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      color: #666b7c;
+      font-family: $roboto;
+      font-size: 16px;
+      font-weight: 400;
+      width: 50%;
+      position: relative;
+      padding-left: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      margin-bottom: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:before {
+        color: #1a5dc6;
+        position: absolute;
+        content: "\2022";
+        line-height: 24px;
+        left: 0;
+        font-size: 20px;
+      }
+    }
+  }
+  &__img {
+    margin-top: 640px;
+    width: 100%;
+    max-width: 430px;
+    height: 370px;
+    box-shadow: 0 0 32px rgba(129, 129, 139, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+    padding: 36px 40px 55px;
+    span {
+      display: block;
+      margin-bottom: 40px;
+    }
+    &:before {
+      z-index: -1;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: -40px;
+      top: -30px;
+      box-shadow: 0 0 32px rgba(129, 129, 139, 0.1);
+      border-radius: 8px;
+      background-color: #fff;
+    }
+    p {
+      color: #666b7c;
+      font-family: $roboto;
+      font-style: italic;
+      font-size: 14px;
+      line-height: 32px;
+      display: block;
+      margin-bottom: 30px;
+    }
+    strong {
+      color: #222634;
+      font-size: 20px;
+      letter-spacing: -0.21px;
+      line-height: 48px;
+      @include over-extra;
+    }
+  }
+  &__button {
+    margin-top: 46px;
+    display: flex;
+    .nav__button--blue {
+      width: 100%;
+      max-width: 224px;
+      height: 36px;
+      background-color: #1a5dc6;
+      margin-right: 15px;
+    }
+    .nav__button--white {
+      border: 2px solid rgba(183, 184, 199, 0.25);
+      max-width: 224px;
+      height: 36px;
+    }
+  }
+}

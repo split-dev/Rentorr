@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="landlord">
+{{> ../common/nav }}
+{{#each top-page}}
+  {{> ../common/top-page }}
+{{/each}}
+<div class="report">
+  {{#each image-info-one}}
+    {{> ../partials/image-info }}
+  {{/each}}
+  {{#each feature-one}}
+    {{> ../partials/features }}
+  {{/each}}
+</div>
+<div class="rent">
+    {{#each paragraf-one}}
+        {{> ../partials/paragraf }}
+    {{/each}}
+    {{#each skill}}
+        {{> ../common/skill-box }}
+    {{/each}}
+</div>
+<div class="list">
+    {{#each image-info-two}}
+        {{> ../partials/image-info }}
+    {{/each}}
+    {{#each feature-two}}
+        {{> ../partials/features }}
+    {{/each}}
+</div>
+<div class="list-white">
+    {{#each image-info-three}}
+        {{> ../partials/image-info }}
+    {{/each}}
+    {{#each feature-three}}
+        {{> ../partials/features }}
+    {{/each}}
+</div>
+{{#each relax}}
+    {{> ../common/ready }}
+{{/each}}
+{{> ../common/footer }}
+</body>
+</html>

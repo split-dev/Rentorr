@@ -1,0 +1,72 @@
+.landlord {
+  .top-pages {
+    margin-top: 70px;
+    margin-bottom: 90px;
+    &__text {
+      max-width: 510px;
+    }
+  }
+  .report {
+    padding: 110px 0;
+    background-color: #f3f3f3;
+    .image-info {
+      margin-bottom: 90px;
+      &__img {
+        img {
+          margin-left: -23px;
+        }
+      }
+      &__text {
+        h3,
+        p {
+          max-width: 465px;
+        }
+      }
+    }
+  }
+}
+.rent {
+  margin-top: 130px;
+}
+.list {
+  margin-top: 225px;
+  margin-bottom: 255px;
+  background-color: #f3f3f3;
+  position: relative;
+  &:before {
+    position: absolute;
+    width: 120%;
+    top: -105px;
+    left: -200px;
+    right: 0;
+    z-index: -1;
+    content: "";
+    background-color: #f3f3f3;
+    height: 211px;
+    transform: rotate(-5deg);
+  }
+  &:after {
+    position: absolute;
+    width: 120%;
+    bottom: -105px;
+    left: -200px;
+    right: 0;
+    z-index: -1;
+    content: "";
+    background-color: #f3f3f3;
+    height: 211px;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  div.image-info {
+    margin-bottom: 15px;
+  }
+}
+.list-white {
+  div.image-info__img * {
+    margin-left: -32px;
+  }
+  .feature__all {
+    margin-top: 45px;
+  }
+}

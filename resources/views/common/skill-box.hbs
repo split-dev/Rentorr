@@ -1,0 +1,49 @@
+<div class="skill-box">
+    <div class="container">
+        <div class="row start">
+            <div class="col-lg-4 align-items-center d-flex">
+                <div class="skill-box__item">
+                    {{#each text-start}}
+                        <div class="skill-box__oval">
+                            <img src="{{oval}}" alt="oval">
+                        </div>
+                        <h4>{{title}}</h4>
+                        <p>{{text}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-2">
+                <img src="{{img-one}}" class="start__img" alt="img">
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-lg-4 offset-lg-4">
+                <div class="skill-box__item">
+                    {{#each text-center}}
+                        <div class="skill-box__oval">
+                            <img src="{{oval}}" alt="oval">
+                        </div>
+                        <h4>{{title}}</h4>
+                        <p>{{text}}</p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="row end">
+            <div class="col-lg-5 img">
+                <img src="{{img-two}}" alt="img">
+            </div>
+            <div class="col-lg-4 offset-lg-3 align-items-end d-flex">
+                <div class="skill-box__item">
+                    {{#each text-end}}
+                        <div class="skill-box__oval">
+                            <img src="{{oval}}" alt="oval">
+                        </div>
+                        <h4>{{title}}</h4>
+                        <p>{{text}}</p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

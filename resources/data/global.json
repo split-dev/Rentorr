@@ -1,0 +1,30 @@
+{
+  "footer": [
+    {
+      "logo": "images/global/logo.svg",
+      "desc": "The easy way to connect landlords with tenants for mutual benefit!",
+      "nav": [
+        {
+          "adress": "#",
+          "link": "Blog"
+        },
+        {
+          "adress": "#",
+          "link": "Terms of Service"
+        },
+        {
+          "adress": "#",
+          "link": "Privacy Policy"
+        },
+        {
+          "adress": "#",
+          "link": "Keep in Touch"
+        },
+        {
+          "adress": "#",
+          "link": "F.A.Q."
+        }
+      ]
+    }
+  ]
+}

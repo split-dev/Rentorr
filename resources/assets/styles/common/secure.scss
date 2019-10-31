@@ -1,0 +1,95 @@
+.secure {
+  margin-top: 310px;
+  margin-bottom: 300px;
+  position: relative;
+  .line {
+    position: absolute;
+    display: block;
+    top: -220px;
+    left: -10px;
+    width: 110%;
+    height: 80px;
+    background-color: #fbfbfc;
+    transform: rotate(-5deg);
+    z-index: -2;
+  }
+  .container {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: url("images/home/Path3Copy10.svg");
+      overflow: hidden;
+      top: -158px;
+      height: 800px;
+      right: -150px;
+      z-index: -1;
+    }
+    &:after {
+      position: absolute;
+      content: url("images/home/Path3Copy8.svg");
+      overflow: hidden;
+      top: 380px;
+      z-index: -1;
+      right: -146px;
+      height: 400px;
+    }
+    .images {
+      position: relative;
+    }
+  }
+  .row {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    h2 {
+      color: #222634;
+      font-size: 23px;
+      letter-spacing: -0.24px;
+      line-height: 36px;
+      display: block;
+      margin-bottom: 28px;
+      @include over-extra;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        color: #666b7c;
+        font-family: $roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 20px;
+        &:before {
+          content: "\2022";
+          position: absolute;
+          left: 0;
+          line-height: 32px;
+          font-size: 24px;
+          color: #1a5dc6;
+        }
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    a {
+      width: 100%;
+      max-width: 224px;
+      height: 36px;
+      &:first-child {
+        margin-right: 16px;
+      }
+      &:last-child {
+        border: 2px solid rgba(183, 184, 199, 0.25);
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "active": "active",
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "#",
+          "name": "Tenant"
+        },
+        {
+          "link": "#",
+          "name": "Browse"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/land-one/top.jpg",
+      "title": "Manage Your Rental With Ease",
+      "desc": "Simplify property management with Rentorr, the ultimate tenant management app that automates admin and makes it easy to manage your tenants. It has never been easier to be a landlord than with our landlord property management software.",
+      "link": "#",
+      "link-name": "RENT YOUR HOME"
+    }
+  ],
+  "image-info-one": [
+    {
+      "revers": "revers",
+      "size-text": "6",
+      "off-text": "offset-lg-1",
+      "size-img": "5",
+      "off-img": "offset-lg-0",
+      "title": "Comprehensive Screening Reports",
+      "desc": "Make smarter decisions with our comprehensive tenant screening reports.",
+      "button-one": "<a href=\"#\" class=\"nav__button--blue\">START SCREENING</a>",
+      "button-two": "<a href=\"#\" class=\"nav__button--white\">View example application</a>",
+      "img": "images/land-one/speed.png"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "4",
+          "oval": "images/land-one/rating.svg",
+          "title": "Credit Reports and History",
+          "text": "With our landlord management software, you will be able to eliminate unqualified applicants easily. See their credit score and public financial records to help make smarter decisions."
+        },
+        {
+          "size": "4",
+          "oval": "images/land-one/profile.svg",
+          "title": "Employment history",
+          "text": "With our tenant application screening software, you will even be able to check employment histories, so that only tenants with a stable income can be chosen."
+        },
+        {
+          "size": "4",
+          "oval": "images/land-one/bank.svg",
+          "title": "Affordability Score",
+          "text": "In these tough time it's important to consider the long term affordability of a rental. We use clever math to help determine an affordability range to protect both the tenant and landlord"
+        }
+      ]
+    }
+  ],
+  "paragraf-one": [
+    {
+      "title": "Automated Rent Collection",
+      "text": [
+        {
+          "desc": "Make it easy to collect rent by using our tenant management software. Payments will be facilitated to you, through us, so you don’t need to chase after late payments."
+        }
+      ],
+      "button": "<a href=\"#\" class=\"nav__button--blue\">START COLLECTING RENT</a>"
+    }
+  ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/land-one/home.svg",
+          "title": "Automated Late Fee Rent Collection",
+          "text": "With automated rent, the chances of missed deadlines will be slim, but our tenant management services also include \nan automated late fee invoice to recoup \nthe cost."
+        }
+      ],
+      "img-one": "images/land-one/Image_Payments.png",
+      "text-center": [
+        {
+          "oval": "images/land-one/card.svg",
+          "title": "Flexible Rent Collection",
+          "text": "With hassle-free rent payment through \nour tenant management system, you can enjoy truly flexible rent collection. No need to make house calls – payments are made \nautomatically online."
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/land-one/check.svg",
+          "title": "Effortless Cash Flow",
+          "text": "Get real-time payments and updates from your tenants to know the status of rent for each individual tenant"
+        }
+      ],
+      "img-two": "images/land-one/Pictures2.png"
+    }
+  ],
+  "image-info-two": [
+    {
+      "size-text": "6",
+      "off-text": "offset-lg-0",
+      "size-img": "6",
+      "off-img": "offset-lg-0",
+      "title": "List And Manage \nYour Property",
+      "desc": "Rentorr helps with every step of the renting process, including creating high-quality listings for your property. List, manage and assess your cash flow in real-time with the property management system, Rentorr.",
+      "button-one": "<a href=\"#\" class=\"nav__button--blue\">List your property</a>",
+      "img": "images/land-one/list-img.png"
+    }
+  ],
+  "feature-two": [
+    {
+      "item": [
+        {
+          "oval": "images/land-one/people.svg",
+          "title": "Create Beutifull Listings",
+          "text": "With our property management system, you will be able to create beautiful listings that attract the best tenants to your property. Create stunning photo galleries, add floorplans, and so much more to make your listing a top choice for renters."
+        },
+        {
+          "oval": "images/land-one/web.svg",
+          "title": "Online Rental Applications",
+          "text": "Let potential tenants apply to your listing directly and then compare them within our property management portal."
+        },
+        {
+          "oval": "images/land-one/mess.svg",
+          "title": "Easy and Seamless Communication",
+          "text": "Manage all your properties in one place and connect with Tenants real-time irrespective of where you are. Get alerts of maintenance requests and emergencies anywhere you are"
+        }
+      ]
+    }
+  ],
+  "image-info-three": [
+    {
+      "revers": "revers",
+      "size-text": "6",
+      "off-text": "offset-lg-0",
+      "size-img": "6",
+      "off-img": "offset-lg-0",
+      "title": "Scalable & Flexible Property Management\n",
+      "desc": "Our services are perfect for individual landlords or property management companies, as it automates many tasks and makes managing a property a cinch.",
+      "button-one": "<a href=\"#\" class=\"nav__button--blue\">Manage your Property</a>",
+      "img": "images/land-one/Picture.png"
+    }
+  ],
+  "feature-three": [
+    {
+      "item": [
+        {
+          "oval": "images/land-one/search.svg",
+          "title": "List every available property",
+          "text": "Every detail about your property — from features and amenities, to photos and price — are saved in your account"
+        },
+        {
+          "oval": "images/land-one/time.svg",
+          "title": "Save time – do more",
+          "text": "Use your analytics for running a successful business. Receive notifications and respond to messages on time"
+        },
+        {
+          "oval": "images/land-one/wind.svg",
+          "title": "Get rapid insights from \nyour dashboards.",
+          "text": "Use real-time dashboards to get a quick overview of important metrics. Track tenant complaint status, vacant properties, rent received and much more"
+        }
+      ]
+    }
+  ],
+  "relax": [
+    {
+      "title": "Ready to start landing great tenants?",
+      "desc": "Relax, Find Your Tenant, and watch the rent come in every month."
+    }
+  ]
+}
