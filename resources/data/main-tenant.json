@@ -135,19 +135,19 @@
       "item": [
         {
           "size": "4",
-          "oval": "images/main-tenant/prot1.png",
+          "oval": "images/main-tenant/prot1.svg",
           "title": "Transparent and Clear",
           "text": "Your tenancy agreement should be transparent and easy to understand, which is why all the legal documents you will need to sign through our service are clear, making your experience smooth and hassle-free."
         },
         {
           "size": "4",
-          "oval": "images/main-tenant/prot2.png",
+          "oval": "images/main-tenant/prot2.svg",
           "title": "Safe Data Storage for All Your Documents",
           "text": "Never worry about losing your important documents again. We store your electronic agreements and legal documents safely and confidentially so that you can access them at any time."
         },
         {
           "size": "4",
-          "oval": "images/main-tenant/prot3.png",
+          "oval": "images/main-tenant/prot3.svg",
           "title": "eSign Tenancy Agreements",
           "text": "Sign your lease remotely wherever you are! Perfect for those who have busy schedules or those who are looking to rent a place but are currently out of town."
         }
