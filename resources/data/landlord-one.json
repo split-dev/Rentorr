@@ -1,0 +1,58 @@
+{
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "",
+      "size-text": "5",
+      "size-img": "6 offset-lg-1",
+      "images": "images/land/land-one-main.png",
+      "title": "Better listings mean\nbetter tenants",
+      "desc": "Our simple step-by-step process takes you through the listing creation, \nso you know you’ve included everything potential tenants want to see..",
+      "link": "#",
+      "link-name": "TRY IT FOR FREE"
+    }
+  ],
+  "paragraf-one": [
+    {
+      "title": "Not just landlords tools, we’re a listing service too",
+      "text": [
+        {
+          "desc": "Market far and wide. Post rentals with Rentorr and get massive exposure through our Partner Network. Minimize vacancies and save hundreds or thousands of rands in rental income loss."
+        }
+      ]
+    }
+  ],
+  "apply": [
+    {
+      "img": "images/main-tenant/map.svg",
+      "title": "Integrated applications on every listing",
+      "text": "Get qualified applicants quicker with Rentorr’s integrated applicants. Just make sure you allow tenants to apply from your listings page and our software does the rest. You can even let multiple roommates apply separately, so you know everyone who will be living there."
+    }
+  ],
+  "ready": [
+    {
+      "title": "Ready to start using Rentorr",
+      "desc": "It shouldn’t feel like a second job to live in a rental property. Rentorr was made to simplify the process and help you and your landlord have a better renting experience.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ]
+}

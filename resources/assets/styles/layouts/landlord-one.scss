@@ -1,0 +1,38 @@
+.landlord-one {
+  .top-pages {
+    margin-top: 56px;
+  }
+  .paragraf {
+    margin-top: 215px;
+    position: relative;
+    p {
+      margin-top: 15px;
+    }
+    &:after {
+      content: url("images/land/path1.svg");
+      position: absolute;
+      right: 0;
+      bottom: auto;
+      top: -240px;
+      z-index: -1;
+    }
+  }
+  .apply {
+    display: flex;
+    margin: 300px 0 300px;
+    .row {
+      flex-direction: row !important;
+    }
+    &__dots-position {
+      &:after {
+        content: none;
+      }
+    }
+    img {
+      margin-left: -190px;
+    }
+    a {
+      display: none;
+    }
+  }
+}

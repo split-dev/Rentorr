@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1360px" height="1816px" viewBox="0 0 1360 1816" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Path 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-17.4217317%" y1="-11.8269691%" x2="39.9647051%" y2="38.0739579%" id="linearGradient-1">
+            <stop stop-color="#93959C" stop-opacity="0.351753715" offset="0%"></stop>
+            <stop stop-color="#D7DBE6" stop-opacity="0.00592766608" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.684384301">
+        <g id="Rentorr-Landing---Landlord-2" transform="translate(0.000000, -1672.000000)" fill="url(#linearGradient-1)">
+            <g id="bg" transform="translate(-660.000000, 634.000000)">
+                <polygon id="Path-3" transform="translate(1010.000000, 1946.000000) scale(-1, 1) translate(-1010.000000, -1946.000000) " points="4.20496971e-14 2028.82391 4.20496971e-14 1038 659.462385 1492.91915 2020 2854 0 2854"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

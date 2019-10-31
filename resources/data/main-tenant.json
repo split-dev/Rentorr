@@ -96,7 +96,7 @@
     {
       "text-start": [
         {
-          "oval": "images/main-tenant/shape.png",
+          "oval": "images/main-tenant/shape1.svg",
           "title": "24/7 Repair Request Form Availability",
           "text": "Report pressing issues effortlessly and monitor request status real time right in your dashboard"
         }
@@ -104,14 +104,14 @@
       "img-one": "images/main-tenant/tenant-right.png",
       "text-center": [
         {
-          "oval": "images/main-tenant/shape2.png",
+          "oval": "images/main-tenant/shape2.svg",
           "title": "Set Priority and Urgency",
           "text": "Say the urgency of your request and sit back to watch how the issues are attended."
         }
       ],
       "text-end": [
         {
-          "oval": "images/main-tenant/shape3.png",
+          "oval": "images/main-tenant/shape3.svg",
           "title": "Seamlessly Communicate with \nyour Landlord",
           "text": "Lodging maintenance request has never been this easy."
         }
