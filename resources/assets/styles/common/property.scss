@@ -22,13 +22,13 @@
     }
   }
   &__title {
-    max-width: 485px;
+    max-width: 480px;
     color: #222634;
     font-size: 42px;
     letter-spacing: -0.44px;
     line-height: 48px;
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     @include over-extra;
   }
   &__desc {

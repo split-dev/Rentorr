@@ -22,7 +22,7 @@
   }
   &__header-title {
     display: block;
-    margin-bottom: 72px;
+    margin-bottom: 73px;
     color: #222634;
     font-size: 42px;
     letter-spacing: -0.44px;
@@ -50,6 +50,7 @@
     letter-spacing: -0.21px;
     line-height: 48px;
     display: block;
+    margin-bottom: 0;
     @include over-extra;
   }
   &__desc {

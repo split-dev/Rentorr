@@ -48,6 +48,35 @@
       "text": "Get qualified applicants quicker with Rentorr’s integrated applicants. Just make sure you allow tenants to apply from your listings page and our software does the rest. You can even let multiple roommates apply separately, so you know everyone who will be living there."
     }
   ],
+  "title-one": [
+    {
+      "title": "What it takes to set up payments"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "4",
+          "oval": "images/land/calendar.svg",
+          "title": "Featured Boosts",
+          "text": "Want to get more traffic to your listing? Get Featured Days to make sure your rental is front and center."
+        },
+        {
+          "size": "4",
+          "oval": "images/land/verify.svg",
+          "title": "Verified Status",
+          "text": "Highlight your property’s unique assets by adding a ribbon that shows up on the listings search page."
+        },
+        {
+          "size": "4",
+          "oval": "images/land/message.svg",
+          "title": "Messages",
+          "text": "Get time-stamped messages for each rental and respond directly in Rentorr or through email."
+        }
+      ]
+    }
+  ],
   "ready": [
     {
       "title": "Ready to start using Rentorr",

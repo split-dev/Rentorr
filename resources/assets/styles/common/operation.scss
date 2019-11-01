@@ -1,12 +1,12 @@
 .operation {
   margin-top: 310px;
-  margin-bottom: 245px;
+  margin-bottom: 450px;
   .container {
     position: relative;
     &:after {
       content: url("images/operation/home-dots-6.svg");
       position: absolute;
-      right: 0;
+      right: 60px;
       top: -91px;
     }
   }

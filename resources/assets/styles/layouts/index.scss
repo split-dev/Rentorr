@@ -75,7 +75,7 @@
 }
 .what {
   margin-top: 125px;
-  margin-bottom: 117px;
+  margin-bottom: 137px;
   &__title {
     color: #222634;
     font-size: 42px;
@@ -147,6 +147,17 @@
         left: 15px;
         z-index: 0;
       }
+    }
+  }
+  .property {
+    &__info {
+      margin-top: 50px;
+      margin-bottom: -20px;
+    }
+  }
+  .tenat {
+    .col-lg-6 {
+      margin-top: -85px;
     }
   }
 }

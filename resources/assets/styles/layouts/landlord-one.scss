@@ -34,5 +34,35 @@
     a {
       display: none;
     }
+    &__text-box {
+      &:after {
+        content: url("images/land/path2.svg");
+        position: absolute;
+        right: -200px;
+        bottom: auto;
+        top: -250px;
+        z-index: 0;
+      }
+      &:before {
+        position: absolute;
+        content: url("images/main-tenant/dots1.svg");
+        left: auto;
+        top: -170px;
+        right: 85px;
+      }
+    }
+  }
+  .feature {
+    margin-bottom: 400px;
+    .container {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: url("images/land/dots2.svg");
+        left: auto;
+        top: 390px;
+        right: 225px;
+      }
+    }
   }
 }
