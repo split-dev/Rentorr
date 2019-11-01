@@ -1,4 +1,17 @@
 .landlord-one {
+  .circle {
+    display: flex;
+    justify-content: center;
+    &__position {
+      width: 100%;
+      height: 100%;
+      max-width: 850px;
+      max-height: 575px;
+      img {
+        width: 100%;
+      }
+    }
+  }
   .top-pages {
     margin-top: 56px;
   }

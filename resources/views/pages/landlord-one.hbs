@@ -11,6 +11,13 @@
 {{#each paragraf-one}}
     {{> ../partials/paragraf }}
 {{/each}}
+<div class="circle">
+{{#each circle}}
+    <div class="circle__position">
+        <img src="{{circle-img}}" alt="img">
+    </div>
+{{/each}}
+</div>
 {{#each apply}}
     {{> ../common/apply}}
 {{/each}}

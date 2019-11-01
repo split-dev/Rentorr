@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="578px" height="620px" viewBox="0 0 578 620" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
     <title>Image_Payments</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -28,11 +28,11 @@
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Main-Landlord" transform="translate(-749.000000, -1996.000000)">
-            <g id="Block-3" transform="translate(-515.000000, 213.000000)">
-                <g id="Image_Payments" transform="translate(1208.000000, 1761.000000)">
+        <g id="Rentorr-Landing---Landlord-1" transform="translate(-750.000000, -1672.000000)">
+            <g id="Block-3" transform="translate(103.000000, 1587.000000)">
+                <g id="Image_Payments" transform="translate(591.000000, 63.000000)">
                     <g id="Card" transform="translate(89.000000, 55.000000)">
-                        <g id="Group-Copy">
+                        <g id="Group">
                             <g id="Group-48">
                                 <g id="Base">
                                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
@@ -44,13 +44,13 @@
                                 </g>
                             </g>
                             <g id="Group-47" transform="translate(56.000000, 33.000000)">
-                                <text id="Receiving-method" font-family="Helvetica" font-size="20.16" font-weight="normal" line-spacing="23.04" fill="#222634">
+                                <text id="Receiving-method" font-family="Overpass-Bold, Overpass" font-size="20.16" font-weight="bold" line-spacing="23.04" fill="#222634">
                                     <tspan x="0" y="20">Receiving method</tspan>
                                 </text>
                                 <g id="Add-method" transform="translate(0.000000, 52.000000)">
                                     <use id="Rectangle" stroke="#1A5DC6" mask="url(#mask-6)" stroke-width="1.44" fill-opacity="0.0325611888" fill="#FFFFFF" fill-rule="nonzero" stroke-dasharray="2.880000042915345,2.880000042915345" xlink:href="#path-5"></use>
-                                    <text id="Add-receiving-method" font-family="Helvetica" font-size="10.08" font-weight="normal" line-spacing="14.4" fill="#1A5DC6">
-                                        <tspan x="17.28" y="30.88">Add receiving method</tspan>
+                                    <text id="Add-receiving-method" font-family="Roboto-Medium, Roboto" font-size="10.08" font-weight="400" line-spacing="14.4" fill="#1A5DC6">
+                                        <tspan x="17.28" y="29.88">Add receiving method</tspan>
                                     </text>
                                     <g id="Icons/16/plus_blue" transform="translate(276.480000, 19.440000)" fill="#1A5DC6">
                                         <polygon id="Path" points="7.92 3.6 7.92 7.92 3.6 7.92 3.6 9.36 7.92 9.36 7.92 13.68 9.36 13.68 9.36 9.36 13.68 9.36 13.68 7.92 9.36 7.92 9.36 3.6"></polygon>
@@ -61,14 +61,14 @@
                                         <circle id="Oval" opacity="0.200000003" cx="4.32" cy="4.32" r="4.32"></circle>
                                         <circle id="Oval" cx="4.32" cy="4.32" r="2.16"></circle>
                                     </g>
-                                    <text id="Default" font-family="Helvetica" font-size="8.64" font-weight="normal" line-spacing="11.52" fill="#4CAF50">
+                                    <text id="Default" font-family="SourceSansPro-Black, Source Sans Pro" font-size="8.64" font-weight="700" line-spacing="11.52" fill="#4CAF50">
                                         <tspan x="225.36" y="21.24">DEFAULT</tspan>
                                     </text>
-                                    <text id="Ending-in-2858" font-family="Helvetica" font-size="9.36" font-weight="normal" line-spacing="17.28" fill="#9BA0B5">
+                                    <text id="Ending-in-2858" font-family="Roboto-Regular, Roboto" font-size="9.36" font-weight="normal" line-spacing="17.28" fill="#9BA0B5">
                                         <tspan x="53.28" y="26.28">Ending in 2858</tspan>
                                     </text>
-                                    <text id="MasterCard" font-family="Helvetica" font-size="10.08" font-weight="normal" line-spacing="14.4" fill="#222634">
-                                        <tspan x="53.28" y="11.44">MasterCard</tspan>
+                                    <text id="MasterCard" font-family="Roboto-Black, Roboto" font-size="10.08" font-weight="700" line-spacing="14.4" fill="#222634">
+                                        <tspan x="53.28" y="10.44">MasterCard</tspan>
                                     </text>
                                     <g id="Logo/Mastercard" transform="translate(11.520000, 7.200000)" fill-rule="evenodd" stroke-width="1">
                                         <g id="Mastercard_logo" transform="translate(0.000000, 1.440000)">
@@ -95,11 +95,11 @@
                                             <path d="M14.3882182,2.29506835 L15.5459455,1.49614177 L16.7869636,2.32656608 L16.7869636,5.51193722 L15.6176182,6.30118481 L14.4301091,5.54064608 L13.1941636,6.33448709 L11.8749273,5.54343494 L11.8854,2.33706532 L13.1004,1.49384506 L14.3882182,2.29506835 Z M13.1427818,1.82588354 L12.1698,2.48569519 L16.4965091,5.3142562 L16.5051818,2.50275646 L15.5930727,1.91004152 L15.5930727,3.45096911 L13.1427818,1.82588354 Z M14.1298364,5.36855696 L13.1941636,4.75189063 L13.1941636,5.98046582 L14.1298364,5.36855696 L14.1298364,5.36855696 Z" id="Fill-10"></path>
                                         </g>
                                     </g>
-                                    <text id="Checking-account-end" font-family="Helvetica" font-size="9.36" font-weight="normal" line-spacing="17.28" fill="#9BA0B5">
+                                    <text id="Checking-account-end" font-family="Roboto-Regular, Roboto" font-size="9.36" font-weight="normal" line-spacing="17.28" fill="#9BA0B5">
                                         <tspan x="53.28" y="25.56">Checking account ending in 6532</tspan>
                                     </text>
-                                    <text id="Banking-account-#1" font-family="Helvetica" font-size="10.08" font-weight="normal" line-spacing="14.4" fill="#222634">
-                                        <tspan x="53.28" y="10.72">Banking account #1</tspan>
+                                    <text id="Banking-account-#1" font-family="Roboto-Black, Roboto" font-size="10.08" font-weight="700" line-spacing="14.4" fill="#222634">
+                                        <tspan x="53.28" y="9.72">Banking account #1</tspan>
                                     </text>
                                     <polygon id="filled_field" fill="#EEEEF2" fill-rule="evenodd" points="0 45.36 311.04 45.36 311.04 46.08 0 46.08"></polygon>
                                     <g id="Icons/16/arrow-right_default" transform="translate(282.240000, 11.520000)" fill="#3B3F4E" fill-rule="nonzero">
@@ -109,23 +109,23 @@
                             </g>
                         </g>
                     </g>
-                    <g id="Group-2-Copy" transform="translate(188.000000, 372.000000)">
+                    <g id="Group-2" transform="translate(188.000000, 372.000000)">
                         <g id="Card" transform="translate(0.000000, 16.000000)">
                             <g id="Group-44" transform="translate(114.000000, 81.000000)">
                                 <g id="Group-39">
                                     <g id="Line-01">
-                                        <text id="Due" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                            <tspan x="188" y="22">Due</tspan>
+                                        <text id="Due" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                            <tspan x="188" y="21">Due</tspan>
                                         </text>
                                         <g id="Icons/Highlight-disabled" transform="translate(168.000000, 10.000000)" fill="#9BA0B5" fill-rule="nonzero">
                                             <circle id="Oval-Copy-9" opacity="0.200000003" cx="6" cy="6" r="6"></circle>
                                             <circle id="Oval-Copy-10" cx="6" cy="6" r="3"></circle>
                                         </g>
-                                        <text id="May-Rent" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                            <tspan x="0" y="14">May Rent</tspan>
+                                        <text id="May-Rent" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                            <tspan x="0" y="13">May Rent</tspan>
                                         </text>
-                                        <text id="Bank-of-Africa-X1234" font-family="Helvetica" font-size="14" font-weight="normal" fill="#9BA0B5">
-                                            <tspan x="0" y="38">Bank of Africa X1234</tspan>
+                                        <text id="Bank-of-Africa-X1234" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#9BA0B5">
+                                            <tspan x="0" y="37">Bank of Africa X1234</tspan>
                                         </text>
                                     </g>
                                 </g>
@@ -133,24 +133,24 @@
                             <g id="Group-44" transform="translate(18.000000, 61.000000)">
                                 <g id="Group-39">
                                     <g id="Line-01">
-                                        <text id="May-25,-2019" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                            <tspan x="0" y="14">May 25, 2019</tspan>
+                                        <text id="May-25,-2019" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                            <tspan x="0" y="13">May 25, 2019</tspan>
                                         </text>
-                                        <text id="1:00-PM" font-family="Helvetica" font-size="14" font-weight="normal" fill="#9BA0B5">
-                                            <tspan x="0" y="38">1:00 PM</tspan>
+                                        <text id="1:00-PM" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#9BA0B5">
+                                            <tspan x="0" y="37">1:00 PM</tspan>
                                         </text>
-                                        <text id="Due" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                            <tspan x="308" y="22">Due</tspan>
+                                        <text id="Due" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                            <tspan x="308" y="21">Due</tspan>
                                         </text>
                                         <g id="Icons/Highlight-disabled" transform="translate(288.000000, 10.000000)" fill="#9BA0B5" fill-rule="nonzero">
                                             <circle id="Oval-Copy-9" opacity="0.200000003" cx="6" cy="6" r="6"></circle>
                                             <circle id="Oval-Copy-10" cx="6" cy="6" r="3"></circle>
                                         </g>
-                                        <text id="May-Rent" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                            <tspan x="120" y="14">May Rent</tspan>
+                                        <text id="May-Rent" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                            <tspan x="120" y="13">May Rent</tspan>
                                         </text>
-                                        <text id="Bank-of-Africa-X1234" font-family="Helvetica" font-size="14" font-weight="normal" fill="#9BA0B5">
-                                            <tspan x="120" y="38">Bank of Africa X1234</tspan>
+                                        <text id="Bank-of-Africa-X1234" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#9BA0B5">
+                                            <tspan x="120" y="37">Bank of Africa X1234</tspan>
                                         </text>
                                     </g>
                                 </g>
@@ -161,44 +161,44 @@
                                         <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
                                         <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
                                     </g>
-                                    <text id="Mar-25,-2019" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                        <tspan x="40" y="146">Mar 25, 2019</tspan>
+                                    <text id="Mar-25,-2019" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                        <tspan x="40" y="145">Mar 25, 2019</tspan>
                                     </text>
-                                    <text id="10:15-AM" font-family="Helvetica" font-size="14" font-weight="normal" fill="#9BA0B5">
-                                        <tspan x="40" y="170">10:15 AM</tspan>
+                                    <text id="10:15-AM" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#9BA0B5">
+                                        <tspan x="40" y="169">10:15 AM</tspan>
                                     </text>
                                     <polygon id="Rectangle" fill="#EEEEF2" fill-rule="nonzero" points="40 103 377 103 377 104 40 104"></polygon>
-                                    <text id="Paid" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                        <tspan x="348" y="158">Paid</tspan>
+                                    <text id="Paid" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                        <tspan x="348" y="157">Paid</tspan>
                                     </text>
                                     <g id="Icons/Highlight-green" transform="translate(328.000000, 147.000000)" fill="#4CAF50" fill-rule="nonzero">
                                         <circle id="Oval" opacity="0.200000003" cx="6" cy="6" r="6"></circle>
                                         <circle id="Oval" cx="6" cy="6" r="3"></circle>
                                     </g>
-                                    <text id="March-Rent" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                        <tspan x="160" y="146">March Rent</tspan>
+                                    <text id="March-Rent" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                        <tspan x="160" y="145">March Rent</tspan>
                                     </text>
-                                    <text id="Bank-of-Africa-X1234" font-family="Helvetica" font-size="14" font-weight="normal" fill="#9BA0B5">
-                                        <tspan x="160" y="170">Bank of Africa X1234</tspan>
+                                    <text id="Bank-of-Africa-X1234" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#9BA0B5">
+                                        <tspan x="160" y="169">Bank of Africa X1234</tspan>
                                     </text>
-                                    <text id="May-25,-2019" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                        <tspan x="40" y="53">May 25, 2019</tspan>
+                                    <text id="May-25,-2019" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                        <tspan x="40" y="52">May 25, 2019</tspan>
                                     </text>
-                                    <text id="1:00-PM" font-family="Helvetica" font-size="14" font-weight="normal" fill="#9BA0B5">
-                                        <tspan x="40" y="77">1:00 PM</tspan>
+                                    <text id="1:00-PM" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#9BA0B5">
+                                        <tspan x="40" y="76">1:00 PM</tspan>
                                     </text>
-                                    <text id="Due" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                        <tspan x="348" y="61">Due</tspan>
+                                    <text id="Due" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                        <tspan x="348" y="60">Due</tspan>
                                     </text>
                                     <g id="Icons/Highlight-disabled" transform="translate(328.000000, 49.000000)" fill="#9BA0B5" fill-rule="nonzero">
                                         <circle id="Oval-Copy-9" opacity="0.200000003" cx="6" cy="6" r="6"></circle>
                                         <circle id="Oval-Copy-10" cx="6" cy="6" r="3"></circle>
                                     </g>
-                                    <text id="May-Rent" font-family="Helvetica" font-size="14" font-weight="normal" fill="#443F56">
-                                        <tspan x="160" y="53">May Rent</tspan>
+                                    <text id="May-Rent" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#443F56">
+                                        <tspan x="160" y="52">May Rent</tspan>
                                     </text>
-                                    <text id="Bank-of-Africa-X1234" font-family="Helvetica" font-size="14" font-weight="normal" fill="#9BA0B5">
-                                        <tspan x="160" y="77">Bank of Africa X1234</tspan>
+                                    <text id="Bank-of-Africa-X1234" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#9BA0B5">
+                                        <tspan x="160" y="76">Bank of Africa X1234</tspan>
                                     </text>
                                 </g>
                                 <g id="Line-03" transform="translate(40.000000, 103.000000)"></g>
@@ -209,8 +209,8 @@
                         </g>
                         <g id="Blue-Button_default" transform="translate(40.000000, 0.000000)">
                             <polygon id="Base" fill="#1A5DC6" fill-rule="nonzero" points="-1.22298005e-16 0 141 0 141 32 -1.22298005e-16 32"></polygon>
-                            <text id="Create-Listing" font-family="Helvetica" font-size="12" font-weight="normal" line-spacing="16" letter-spacing="0.400000006" fill="#FFFFFF">
-                                <tspan x="12.8253906" y="17">REQUEST  R11,960</tspan>
+                            <text id="Create-Listing" font-family="Overpass-Black, Overpass" font-size="12" font-weight="700" line-spacing="16" letter-spacing="0.400000006" fill="#FFFFFF">
+                                <tspan x="13.924" y="18">REQUEST  R11,960</tspan>
                             </text>
                         </g>
                     </g>

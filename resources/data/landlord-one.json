@@ -41,6 +41,11 @@
       ]
     }
   ],
+  "circle": [
+    {
+      "circle-img": "images/land-one/circle.svg"
+    }
+  ],
   "apply": [
     {
       "img": "images/main-tenant/map.svg",
