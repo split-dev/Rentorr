@@ -4,6 +4,9 @@
     margin-bottom: 225px;
     &__text {
       max-width: 533px;
+      p {
+        max-width: 340px;
+      }
     }
   }
   .paragraf {
@@ -15,20 +18,20 @@
   }
   .map {
     margin-top: -105px;
-    margin-bottom: 190px;
+    margin-bottom: 200px;
     position: relative;
     &:before {
       position: absolute;
       content: url("images/land-four/dots-double.svg");
       left: 200px;
-      bottom: 0;
+      bottom: 100px;
       z-index: -1;
     }
   }
   .author {
     background-color: #1c5fc6;
     position: relative;
-    padding: 29px 0 29px;
+    padding: 15px 0 29px;
     &:before {
       content: "";
       background-color: #1c5fc6;

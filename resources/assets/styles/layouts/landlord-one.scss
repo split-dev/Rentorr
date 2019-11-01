@@ -16,23 +16,34 @@
     margin-top: 56px;
   }
   .paragraf {
-    margin-top: 215px;
+    margin-top: 225px;
     position: relative;
+    .col-lg-6 {
+      @extend .col-lg-8;
+    }
     p {
       margin-top: 15px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: url("images/land-one/dots1.svg");
+        left: 0;
+        top: -320px;
+        right: auto;
+      }
     }
     &:after {
       content: url("images/land/path1.svg");
       position: absolute;
-      right: 0;
+      right: -30px;
       bottom: auto;
-      top: -240px;
+      top: -300px;
       z-index: -1;
     }
   }
   .apply {
     display: flex;
-    margin: 300px 0 300px;
+    margin: 230px 0 260px;
     .row {
       flex-direction: row !important;
     }
@@ -42,7 +53,7 @@
       }
     }
     img {
-      margin-left: -190px;
+      margin-left: -150px;
     }
     a {
       display: none;
@@ -58,9 +69,9 @@
       }
       &:before {
         position: absolute;
-        content: url("images/main-tenant/dots1.svg");
+        content: url("images/land-one/dots2.svg");
         left: auto;
-        top: -170px;
+        top: -140px;
         right: 85px;
       }
     }
@@ -73,7 +84,7 @@
         position: absolute;
         content: url("images/land/dots2.svg");
         left: auto;
-        top: 390px;
+        top: 375px;
         right: 225px;
       }
     }

@@ -22,8 +22,8 @@
   "top-page": [
     {
       "revers": "",
-      "size-text": "5",
-      "size-img": "6 offset-lg-1",
+      "size-text": "6",
+      "size-img": "6",
       "images": "images/land/land-one-main.png",
       "title": "Better listings mean\nbetter tenants",
       "desc": "Our simple step-by-step process takes you through the listing creation, \nso you know you’ve included everything potential tenants want to see..",
@@ -55,7 +55,7 @@
   ],
   "title-one": [
     {
-      "title": "What it takes to set up payments"
+      "title": "What features make Rentorr different"
     }
   ],
   "feature-one": [
