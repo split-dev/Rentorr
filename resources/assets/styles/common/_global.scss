@@ -51,4 +51,16 @@ img {
   position: relative;
   z-index: 1;
 }
+.size3x {
+  display: none;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    display: block;
+  }
+}
+.size1x {
+  display: block;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    display: none;
+  }
+}
 

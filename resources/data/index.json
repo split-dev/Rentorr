@@ -129,12 +129,14 @@
       "title": "But I’m a tenant!",
       "desc": "No problem. We’ve got you covered.",
       "text": "Live where you want. Never worry about missing another opportunity again because your rental application wasn’t first.",
-      "img": "images/home/tenant-bg3x.png"
+      "img-size3x": "images/home/tenant-bg3x.png",
+      "img-size1x": "images/home/tenant-bg.png"
     }
   ],
   "secure": [
     {
-      "img": "images/main-tenant/map3x.png",
+      "img-size3x": "images/main-tenant/map3x.png",
+      "img-size1x": "images/main-tenant/map.png",
       "title": "Secure the property you want for a price that’s right for you",
       "list-box": [
         {
