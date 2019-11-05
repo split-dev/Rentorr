@@ -94,6 +94,15 @@
     position: relative;
     display: block;
     &.active {
+      color: #222634 !important;
+      .arr {
+        &:before {
+          opacity: 1 !important;
+        }
+        &:after {
+          opacity: 0 !important;
+        }
+      }
       &:before {
         content: "";
         position: absolute;

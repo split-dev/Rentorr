@@ -17,6 +17,15 @@
     .image-info {
       margin-bottom: 90px;
       &__img {
+        position: relative;
+        &:after {
+          position: absolute;
+          content: url("images/land-four/dots-double.svg");
+          z-index: 0;
+          top: -200px;
+          right: auto;
+          left: 80px;
+        }
         img {
           margin-left: -23px;
         }
@@ -29,8 +38,10 @@
       }
     }
   }
-  .feature {
-    margin-bottom: 245px;
+  .list-white {
+    .feature {
+      margin-bottom: 245px;
+    }
   }
   .ready {
     padding-top: 300px;
