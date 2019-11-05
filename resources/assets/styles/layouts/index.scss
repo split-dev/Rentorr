@@ -102,9 +102,9 @@
     &:after {
       position: absolute;
       content: url("images/home/line-video.svg");
-      bottom: -600px;
+      right: -1761px;
+      top: 0;
       z-index: -1;
-      right: -150px;
     }
     video {
       object-fit: cover;

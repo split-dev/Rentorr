@@ -4,6 +4,15 @@
     margin-bottom: 90px;
     &__text {
       max-width: 510px;
+      &:after {
+        position: absolute;
+        content: url("images/land-one/first.svg");
+        overflow: hidden;
+        top: 81px;
+        z-index: -1;
+        right: -200px;
+        height: 1400px;
+      }
     }
   }
   .title-section {
@@ -49,6 +58,27 @@
 }
 .rent {
   margin-top: 130px;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: url("images/land-one/two.svg");
+    overflow: hidden;
+    top: -159px;
+    z-index: -1;
+    right: -580px;
+    height: 1400px;
+  }
+  .end {
+    &:after {
+      position: absolute;
+      content: url("images/land-one/third.svg");
+      overflow: hidden;
+      top: 810px;
+      z-index: -1;
+      right: 720px;
+      height: 750px;
+    }
+  }
 }
 .list {
   margin-top: 225px;
@@ -90,5 +120,17 @@
   }
   .feature__all {
     margin-top: 45px;
+  }
+  .image-info__text {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: url("images/land-one/four.svg");
+      overflow: hidden;
+      top: -130px;
+      z-index: -1;
+      right: -300px;
+      height: 750px;
+    }
   }
 }

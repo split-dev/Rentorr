@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1047px" height="1038px" viewBox="0 0 1047 1038" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="2823px" height="2358px" viewBox="0 0 2823 2358" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
-    <title>Path 3 Copy 4</title>
+    <title>first</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="-17.4217317%" y1="6.72017047%" x2="33.7182666%" y2="37.1127828%" id="linearGradient-1">
+        <linearGradient x1="5.90088098%" y1="7.95242602%" x2="50%" y2="44.9834973%" id="linearGradient-1">
             <stop stop-color="#93959C" offset="0%"></stop>
             <stop stop-color="#D7DBE6" stop-opacity="0.00592766608" offset="100%"></stop>
         </linearGradient>
     </defs>
-    <g id="archive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Find-a-home" transform="translate(-313.000000, -1295.000000)" fill="url(#linearGradient-1)">
-            <g id="Group" transform="translate(-1209.000000, 306.000000)">
-                <polygon id="Path-3-Copy-4" transform="translate(2212.000000, 1508.000000) scale(-1, 1) translate(-2212.000000, -1508.000000) " points="1522 1579 1990 1017 2011 989 2902 1599 2886 2027 1542 2027"></polygon>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-3466.000000, -4864.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="right-first" transform="translate(3466.000000, 4864.000000)">
+                <polygon id="first" transform="translate(1411.444426, 1179.000000) scale(-1, 1) translate(-1411.444426, -1179.000000) " points="1910.88886 28 1931.88886 0 2822.88886 610 2806.88886 2358 -3.99999999e-06 2358"></polygon>
             </g>
         </g>
     </g>
