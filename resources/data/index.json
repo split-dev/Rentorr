@@ -1,4 +1,23 @@
 {
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
   "nav": [
     {
       "logo": "images/global/logo.svg",
@@ -78,7 +97,7 @@
   ],
   "question": [
     {
-      "img": "images/home/3-descktop.svg",
+      "img": "images/home/3-descktop.png",
       "title": "So, you’re a landlord?",
       "desc": "Rentorr makes managing your rental property easier than ever. And it’s free*!",
       "text": "List on Rentorr.com, accept applications and request screenings for all potential tenants. You can also add your bank account and let tenants pay rent online, directly depositing into your account within 2 business days."

@@ -1,4 +1,23 @@
 {
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
   "nav": [
     {
       "logo": "images/global/logo.svg",

@@ -11,8 +11,11 @@
       margin-right: 50px;
     }
     &__img {
-      width: 110%;
       position: relative;
+      img {
+        max-width: 600px;
+        margin-right: -31px;
+      }
       &:before {
         position: absolute;
         content: url("images/land-four/dots-double.svg");

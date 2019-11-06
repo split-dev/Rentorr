@@ -1,4 +1,24 @@
 {
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "active": "active",
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
   "nav": [
     {
       "logo": "images/global/logo.svg",
@@ -43,7 +63,7 @@
       "desc": "Make smarter decisions with our comprehensive tenant screening reports.",
       "button-one": "<a href=\"#\" class=\"button--blue\">START SCREENING</a>",
       "button-two": "<a href=\"#\" class=\"button--white--border\">View example application</a>",
-      "img": "images/land-one/speed.svg"
+      "img": "images/land-one/speed.png"
     }
   ],
   "feature-one": [
@@ -90,7 +110,7 @@
           "text": "With automated rent, the chances of missed deadlines will be slim, but our tenant management services also include \nan automated late fee invoice to recoup \nthe cost."
         }
       ],
-      "img-one": "images/land-one/Image_Payments.svg",
+      "img-one": "images/land-one/Image_Payments.png",
       "text-center": [
         {
           "oval": "images/land-one/card.svg",
@@ -105,7 +125,7 @@
           "text": "Get real-time payments and updates from your tenants to know the status of rent for each individual tenant"
         }
       ],
-      "img-two": "images/land-one/Pictures2.svg"
+      "img-two": "images/land-one/Pictures2.png"
     }
   ],
   "image-info-two": [
@@ -117,7 +137,7 @@
       "title": "List And Manage \nYour Property",
       "desc": "Rentorr helps with every step of the renting process, including creating high-quality listings for your property. List, manage and assess your cash flow in real-time with the property management system, Rentorr.",
       "button-one": "<a href=\"#\" class=\"button--blue\">List your property</a>",
-      "img": "images/land-one/list-img.svg"
+      "img": "images/land-one/list-img.png"
     }
   ],
   "feature-two": [
@@ -154,7 +174,7 @@
       "title": "Scalable & Flexible Property Management\n",
       "desc": "Our services are perfect for individual landlords or property management companies, as it automates many tasks and makes managing a property a cinch.",
       "button-one": "<a href=\"#\" class=\"button--blue\">Manage your Property</a>",
-      "img": "images/land-one/Picture.svg"
+      "img": "images/land-one/Picture.png"
     }
   ],
   "feature-three": [

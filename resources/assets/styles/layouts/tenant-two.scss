@@ -23,7 +23,8 @@
         margin-bottom: 0;
         position: relative;
         &__img {
-          margin-left: 0;
+          margin-left: 25px;
+          max-width: 580px;
         }
         .skill-box__item {
           margin-top: -150px;
@@ -67,6 +68,11 @@
         margin-top: 0;
         .align-items-end {
           align-items: center !important;
+        }
+        .img {
+          img {
+            max-width: 580px;
+          }
         }
       }
     }

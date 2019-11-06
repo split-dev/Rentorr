@@ -21,7 +21,7 @@
     }
   }
   .report {
-    padding: 110px 0;
+    padding: 90px 0;
     background-color: #f3f3f3;
     .image-info {
       margin-bottom: 90px;
@@ -36,6 +36,7 @@
           left: 80px;
         }
         img {
+          max-width: 500px;
           margin-left: -23px;
         }
       }
@@ -53,7 +54,7 @@
     }
   }
   .ready {
-    padding-top: 300px;
+    padding-top: 345px;
   }
   .rent {
     margin-top: 130px;
@@ -70,6 +71,22 @@
       right: -580px;
       height: 1400px;
     }
+    .start {
+      .col-lg-4 {
+        align-items: flex-start !important;
+        .skill-box__item {
+          margin-top: 70px;
+        }
+      }
+      .col-lg-6 {
+        img {
+          max-width: 511px;
+        }
+      }
+    }
+    .center {
+      margin-top: -145px;
+    }
     .end {
       &:after {
         position: absolute;
@@ -79,6 +96,11 @@
         z-index: -1;
         right: 720px;
         height: 750px;
+      }
+      .col-lg-5 {
+        img {
+          max-width: 440px;
+        }
       }
     }
   }
@@ -116,6 +138,9 @@
   div.image-info {
     margin-bottom: 15px;
   }
+  img {
+    max-width: 540px;
+  }
 }
 .list-white {
   div.image-info__img * {
@@ -135,5 +160,8 @@
       right: -300px;
       height: 750px;
     }
+  }
+  img {
+    max-width: 540px;
   }
 }

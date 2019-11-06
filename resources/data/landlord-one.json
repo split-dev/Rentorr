@@ -1,4 +1,23 @@
 {
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
   "nav": [
     {
       "logo": "images/global/logo.svg",
@@ -48,7 +67,7 @@
   ],
   "apply": [
     {
-      "img": "images/main-tenant/map.svg",
+      "img": "images/main-tenant/map.png",
       "title": "Integrated applications on every listing",
       "text": "Get qualified applicants quicker with Rentorr’s integrated applicants. Just make sure you allow tenants to apply from your listings page and our software does the rest. You can even let multiple roommates apply separately, so you know everyone who will be living there."
     }

@@ -1,4 +1,23 @@
 {
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
   "nav": [
     {
       "logo": "images/global/logo.svg",
@@ -75,7 +94,7 @@
           "text": "Pay rent with your credit card or bank account automatically each month. Improve your credit score and earn more points with your on-time rental payments."
         }
       ],
-      "img-one": "images/tenant-two/right.svg",
+      "img-one": "images/tenant-two/right.png",
       "text-center": [
         {
           "oval": "images/land-two/list.svg",
@@ -90,7 +109,7 @@
           "text": "Keep track of all your completed payments, including deposits and special fees, for future reference."
         }
       ],
-      "img-two": "images/tenant-two/payment-left.svg"
+      "img-two": "images/tenant-two/payment-left.png"
     }
   ],
   "ready": [

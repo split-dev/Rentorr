@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 99;
   &:before {
     position: absolute;
     content: "";
@@ -25,6 +26,9 @@
   &__menu {
     display: flex;
     align-items: center;
+    @media (max-width: 991px) {
+      display: none;
+    }
     ul {
       display: flex;
       list-style: none;
@@ -120,8 +124,40 @@
   &__button {
     display: flex;
     align-items: center;
+    @media (max-width: 991px) {
+      display: none;
+    }
     &--white {
       margin-right: 24px;
+    }
+  }
+  &__mobile-button {
+    span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      position: relative;
+      background: #222634;
+      z-index: 1;
+      transition: 0.3s;
+      &:first-child {
+        margin-bottom: 8px;
+      }
+    }
+    &.open-mobile {
+      span {
+        &:first-child {
+          transform: rotate(45deg);
+          margin-bottom: 0;
+        }
+        &:last-child {
+          transform: rotate(-45deg);
+          transform-origin: 10px 0;
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      display: none;
     }
   }
 }

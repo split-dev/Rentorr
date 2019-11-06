@@ -1,7 +1,7 @@
 .landlord-four {
   .top-pages {
     margin-top: 65px;
-    margin-bottom: 225px;
+    margin-bottom: 200px;
     &__text {
       max-width: 533px;
       p {
@@ -20,6 +20,9 @@
     margin-top: -105px;
     margin-bottom: 200px;
     position: relative;
+    img {
+      max-width: 765px;
+    }
     &:before {
       position: absolute;
       content: url("images/land-four/dots-double.svg");
@@ -61,6 +64,7 @@
         font-size: 42px;
         letter-spacing: -0.44px;
         line-height: 48px;
+        margin-bottom: 20px;
         @include over-extra;
       }
       p {
@@ -84,6 +88,6 @@
     }
   }
   .ready {
-    margin-top: 255px;
+    margin-top: 285px;
   }
 }

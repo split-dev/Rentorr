@@ -1,4 +1,23 @@
 {
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
   "nav": [
     {
       "logo": "images/global/logo.svg",
@@ -85,7 +104,7 @@
     {
       "title": "Accept applications \nand screen tenants right from your listings",
       "desc": "Don't miss out on potential tenants: Allow people to apply right from your online rental listing. Applicants can apply as soon as they see your place, and you get a time-stamped digital application to help comply with Fair Housing laws.",
-      "img": "images/land-three/images-r.svg"
+      "img": "images/land-three/images-r.png"
     }
   ]
 }

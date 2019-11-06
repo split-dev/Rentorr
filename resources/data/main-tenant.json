@@ -1,4 +1,24 @@
 {
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "active": "active",
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
   "nav": [
     {
       "logo": "images/global/logo.svg",
@@ -63,7 +83,7 @@
   ],
   "apply": [
     {
-      "img": "images/main-tenant/map.svg",
+      "img": "images/main-tenant/map.png",
       "title": "Apply With Ease",
       "text": "Tenant management services aren’t just for landlords. Apply for houses and apartments quickly and easily using our One-Click Application service with the touch of a button. Your Renter profile includes verified financials, credit scores, and references."
     }
@@ -78,7 +98,7 @@
       "title": "Automated rent payments",
       "desc": "Our tenant management system makes it easy and convenient to pay your rent. Use a credit card or a bank account so that payments are automatically made every month so that you won’t ever miss a payment and you’ll improve your credit score on top of it all.",
       "button-one": "<a href=\"#\" class=\"apply__link\">LEARN MORE</a>",
-      "img": "images/main-tenant/group1.svg"
+      "img": "images/main-tenant/group1.png"
     }
   ],
   "paragraf": [

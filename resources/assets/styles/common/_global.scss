@@ -4,6 +4,10 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+.body-hidden {
+  overflow: hidden !important;
+  height: 100%;
+}
 .container-box-full {
   max-width: 1310px;
   margin: auto;
