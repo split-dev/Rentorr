@@ -55,28 +55,31 @@
   .ready {
     padding-top: 300px;
   }
-}
-.rent {
-  margin-top: 130px;
-  position: relative;
-  &:after {
-    position: absolute;
-    content: url("images/land-one/two.svg");
-    overflow: hidden;
-    top: -159px;
-    z-index: -1;
-    right: -580px;
-    height: 1400px;
-  }
-  .end {
+  .rent {
+    margin-top: 130px;
+    position: relative;
+    .paragraf__box {
+      max-width: 450px;
+    }
     &:after {
       position: absolute;
-      content: url("images/land-one/third.svg");
+      content: url("images/land-one/two.svg");
       overflow: hidden;
-      top: 810px;
+      top: -159px;
       z-index: -1;
-      right: 720px;
-      height: 750px;
+      right: -580px;
+      height: 1400px;
+    }
+    .end {
+      &:after {
+        position: absolute;
+        content: url("images/land-one/third.svg");
+        overflow: hidden;
+        top: 810px;
+        z-index: -1;
+        right: 720px;
+        height: 750px;
+      }
     }
   }
 }

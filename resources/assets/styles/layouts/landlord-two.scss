@@ -34,10 +34,24 @@
           img {
             width: 100%;
           }
+          &:after {
+            content: url("images/land-two/Gradient-2.svg");
+            position: absolute;
+            right: -867px;
+            bottom: -511px;
+            z-index: -1;
+          }
         }
       }
       .center {
         margin-top: -50px;
+      }
+      .end {
+        .img {
+          img {
+            width: 500px;
+          }
+        }
       }
     }
   }
