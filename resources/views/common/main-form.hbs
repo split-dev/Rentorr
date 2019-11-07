@@ -1,0 +1,51 @@
+{{#each main-form}}
+    <div class="main-form">
+        <div class="container-box-full main-form__close-position">
+            <a href="#"></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 main-form__left">
+                    <h3>{{{title}}}</h3>
+                    <p>{{par}}</p>
+                    <ul>
+                    {{#each item-li}}
+                        <li class="main-form__item-li">{{li-desc}}</li>
+                    {{/each}}
+                    </ul>
+                </div>
+                <div class="col-lg-6 main-form__right">
+                    <h3>{{{title-form}}}</h3>
+                    <form class="main-form__regist">
+                        <div class="main-form__first-row">
+                            <div class="field-wrap">
+                                <input class="form-control main-form__name-input" id="name" name="name" type="text">
+                                <label class="control-label" for="name">First Name</label>
+                            </div>
+                            <div class="field-wrap">
+                                <input class="form-control main-form__name-input" id="last-name" name="last-name" type="text">
+                                <label class="control-label" for="last-name">Last Name</label>
+                            </div>
+                        </div>
+
+                        <div class="field-wrap">
+                            <input class="form-control main-form__repass" id="pass" name="pass" type="password">
+                            <a class="main-form__glass" href="#"><img src="images/home/glass.svg" alt=""></a>
+                            <label class="control-label" for="pass">Password</label>
+                        </div>
+                        <div class="field-wrap">
+                            <input class="form-control main-form__repass" id="re-pass" name="re-pass" type="password">
+                            <a class="main-form__glass" href="#"><img src="images/home/glass.svg" alt=""></a>
+                            <label class="control-label" for="re-pass">Re-type Password</label>
+                        </div>
+                        <div class="main-form__checkbox-position">
+                            <input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" value="value">
+                            <label class="main-form__checkbox-label" for="main-form__checkbox">I agree to the Terms and Conditions and allow Rentorr to contact me by email.</label>
+                        </div>
+                        <button type="submit" class="button--blue">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}

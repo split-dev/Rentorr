@@ -40,6 +40,38 @@
   ],
   "search": [
     {
+      "main-search": [
+        {
+
+        }
+      ],
+      "main-form": [
+        {
+          "title": "List and Manage <span style=\"color: #1a5dc6\">Your</span> Property",
+          "par": "List on Rentorr.com, accept applications and request screenings for all potential tenants.",
+          "item-li": [
+            {
+              "li-desc": "Listings"
+            },
+            {
+              "li-desc": "Applications"
+            },
+            {
+              "li-desc": "Screenings"
+            },
+            {
+              "li-desc": "Payments"
+            },
+            {
+              "li-desc": "Forms"
+            },
+            {
+              "li-desc": "Maintenance"
+            }
+          ],
+          "title-form": "Join For Free"
+        }
+      ],
       "close": "",
       "bg-one": "./images/home/one-bg.jpg",
       "bg-two": "./images/home/two-bg.jpg"

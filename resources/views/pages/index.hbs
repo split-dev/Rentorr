@@ -7,13 +7,15 @@
 {{> ../common/nav }}
 {{#each search}}
     <div class="search">
+        {{> ../common/main-search}}
+        {{> ../common/main-form}}
         <div class="search__one" style="background-image: url('{{bg-one}}')">
             <h2>Find Your New Home</h2>
-            <a href="#" class="button--blue">Search listings</a>
+            <a href="#" class="button--blue search-open">Search listings</a>
         </div>
         <div class="search__two" style="background-image: url('{{bg-two}}')">
             <h2>Find Your New Home</h2>
-            <a href="#" class="button--blue">Learn more</a>
+            <a href="#" class="button--blue form-open">Learn more</a>
         </div>
     </div>
 {{/each}}

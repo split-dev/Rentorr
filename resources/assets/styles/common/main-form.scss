@@ -1,0 +1,193 @@
+.main-form {
+  height: 684px;
+  top: -120%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #fff;
+  transition: 0.3s;
+  &.main-form-open {
+    top: 0;
+  }
+  button {
+    margin-top: 20px;
+    width: 225px;
+    height: 37px;
+  }
+  &__close-position {
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    align-items: center;
+    a {
+      transition: 0.3s;
+      &:before {
+        content: url("images/home/close.svg");
+        display: block;
+      }
+      &:hover {
+        &:before {
+          content: url("images/home/close-hover.svg");
+          display: block;
+        }
+      }
+    }
+  }
+  &__left {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    h3 {
+      color: #000;
+      font-size: 54px;
+      line-height: 64px;
+      @include over-extra;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 350px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    p {
+      color: #666b7c;
+      font-family: $roboto;
+      font-size: 16px;
+      line-height: 32px;
+      max-width: 350px;
+      margin: 25px 0 25px;
+    }
+  }
+  &__item-li {
+    color: #666b7c;
+    font-family: $roboto;
+    font-size: 16px;
+    line-height: 32px;
+    width: 50%;
+    position: relative;
+    padding-left: 15px;
+    &:before {
+      content: url("images/home/blue-oval.svg");
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+  }
+  &__right {
+    max-height: 590px;
+    max-width: 535px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    background-color: #fff;
+    box-shadow: 0 0 33px 0 rgba(129, 129, 139, 0.1);
+    padding: 60px 55px 25px 55px;
+    h3 {
+      color: #222634;
+      font-size: 42px;
+      line-height: 48px;
+      @include over-extra;
+    }
+  }
+  &__regist > {
+    .field-wrap {
+      margin: 25px 0 0;
+    }
+  }
+  &__first-row {
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 40px;
+    .field-wrap {
+      max-width: 210px;
+      width: 50%;
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
+  &__repass {
+    margin: 40px 0 40px;
+  }
+  &__glass {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    & + label {
+      position: relative;
+      margin-left: 30px;
+      cursor: pointer;
+      padding: 0;
+      transition: 0.3s;
+    }
+    & + label:before {
+      content: url("images/home/radio-def.svg");
+      position: absolute;
+      display: inline-block;
+      top: 3px;
+      left: -30px;
+    }
+    &:checked + label:before {
+      content: url("images/home/radio.svg");
+    }
+  }
+  &__checkbox-label {
+    max-width: 385px;
+    color: #666b7c;
+    font-family: $roboto;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.field-wrap {
+  position: relative;
+  max-width: 450px;
+  .form-control {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #e1dfe6;
+    margin-right: 30px;
+    background-color: transparent;
+    font-size: 14px;
+    padding-left: 0;
+    color: #222634;
+    font-family: $roboto;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #e1dfe6;
+      background-color: transparent !important;
+    }
+  }
+  label {
+    color: #9ba0b5;
+    font-family: $roboto;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+  }
+}
+label.control-label {
+  position: absolute;
+  transform: translate(0, 0);
+  transition: transform 0.22s ease;
+  top: 5px;
+}
+.field-wrap.has-val,
+.field-wrap.is-focused {
+  label.control-label {
+    transform: translate(0, -25px);
+  }
+}
