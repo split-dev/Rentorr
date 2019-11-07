@@ -26,7 +26,7 @@
     }
   }
   .ready {
-    margin-top: 140px;
+    margin-top: 100px;
   }
   .title-section {
     margin-top: 80px;
@@ -48,6 +48,10 @@
         &:before,
         &:after {
           content: none;
+        }
+        img {
+          margin-left: -50px;
+          margin-bottom: -50px;
         }
       }
     }
@@ -74,7 +78,7 @@
       margin-top: 30px;
       align-items: flex-start !important;
       .skill-box__item {
-        margin-top: 50px;
+        margin-top: 10px;
       }
     }
   }

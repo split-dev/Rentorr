@@ -10,15 +10,17 @@
     margin-bottom: 120px;
     .start {
       .col-lg-6 {
+        position: relative;
         &:before {
           content: none;
         }
         &:after {
+          position: absolute;
           content: url("images/tenant-three/Path3.svg");
-          right: -255px;
-          bottom: -306px;
+          right: -715px;
+          bottom: -299px;
           overflow: hidden;
-          height: 851px;
+          height: 1291px;
           display: flex;
           align-items: flex-end;
         }
