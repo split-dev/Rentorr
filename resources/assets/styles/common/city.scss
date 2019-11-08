@@ -2,13 +2,16 @@
   background-color: #f3f3f3;
   position: relative;
   padding: 50px 0 152px 0;
+  @media (max-width: 1120px) {
+    padding: 0;
+  }
   .container {
     position: relative;
   }
   &:before {
     content: "";
     background-color: #f3f3f3;
-    width: 104%;
+    width: 115%;
     position: absolute;
     top: -91px;
     left: -20px;
@@ -19,7 +22,7 @@
   &:after {
     content: "";
     background-color: #f3f3f3;
-    width: 104%;
+    width: 115%;
     position: absolute;
     bottom: -91px;
     left: -20px;
@@ -29,6 +32,10 @@
   }
   .row {
     margin: 0;
+    @media (max-width: 1120px) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__title {
     width: 100%;
@@ -36,12 +43,19 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 45px;
+    @media (max-width: 820px) {
+      align-items: flex-start;
+    }
+
     h2 {
       color: #222634;
       font-size: 42px;
       letter-spacing: -0.44px;
       line-height: 48px;
       @include over-extra;
+      @media (max-width: 820px) {
+        @include title-h2-767;
+      }
     }
     a {
       color: #1a5dc6;
@@ -49,12 +63,25 @@
       letter-spacing: -0.21px;
       line-height: 48px;
       text-decoration: underline !important;
+      min-width: 85px;
       @include over-extra;
+      @media (max-width: 820px) {
+        margin-left: 10px;
+        @include title-p-767;
+      }
     }
   }
   &__all {
     display: flex;
     position: relative;
+    @media (max-width: 1120px) {
+      flex-wrap: wrap;
+      max-width: 70%;
+      justify-content: center;
+    }
+    @media (max-width: 830px) {
+      max-width: 95%;
+    }
     &:before {
       content: url("images/home/dots-city.svg");
       position: absolute;
@@ -63,11 +90,15 @@
       right: 0;
       width: max-content;
       margin: auto;
+      @media (max-width: 1120px) {
+        display: none;
+      }
     }
     a {
       transition: 0.3s;
       &:hover {
         transform: scale(1.04);
+        box-shadow: 0 2px 25px 0 #9ba0b5;
       }
     }
   }
@@ -85,8 +116,14 @@
     overflow: hidden;
     transition: 0.5s;
     z-index: 2;
+    @media (max-width: 1120px) {
+      margin: 0 15px 30px 15px;
+    }
     &:last-child {
       margin-right: 0;
+      @media (max-width: 1120px) {
+        margin: 0 15px 30px 15px;
+      }
     }
     strong {
       color: #fff;

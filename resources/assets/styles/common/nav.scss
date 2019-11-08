@@ -1,3 +1,14 @@
+.bg-white {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
+}
+.nav-position {
+  position: relative;
+  z-index: 9999;
+  background-color: #fff;
+}
 .nav {
   padding: 16px 0;
   width: 100%;

@@ -2,10 +2,13 @@
   background-color: #1c5fc6;
   position: relative;
   padding: 29px 0 29px;
+  @media (max-width: 1230px) {
+    padding: 0;
+  }
   &:before {
     content: "";
     background-color: #1c5fc6;
-    width: 104%;
+    width: 115%;
     position: absolute;
     top: -91px;
     left: -20px;
@@ -16,7 +19,7 @@
   &:after {
     content: "";
     background-color: #1c5fc6;
-    width: 104%;
+    width: 115%;
     position: absolute;
     bottom: -91px;
     left: -20px;
@@ -24,15 +27,44 @@
     height: 180px;
     transform: rotate(5deg);
   }
+  &__img-position {
+    @media (max-width: 991px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    h3 {
+      width: 100%;
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+  }
   img {
     margin-left: -77px;
     max-width: 600px;
+    @media (max-width: 1230px) {
+      max-width: 100%;
+      margin-left: 0;
+    }
+    @media (max-width: 991px) {
+      max-height: 500px;
+    }
+    @media (max-width: 575px) {
+      max-height: 350px;
+    }
   }
   &__text-box {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    h3 {
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
   }
   &__title {
     color: #fff;
@@ -43,6 +75,12 @@
     margin-bottom: 15px;
     position: relative;
     @include over-extra;
+    @media (max-width: 991px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 767px) {
+      @include title-h2-767;
+    }
   }
   &__desc {
     color: #fff;
@@ -58,6 +96,12 @@
       letter-spacing: -0.24px;
       line-height: 36px;
       text-decoration: underline;
+      @media (max-width: 767px) {
+        @include title-strong-767;
+      }
+    }
+    @media (max-width: 767px) {
+      @include title-strong-767;
     }
   }
   &__text {
@@ -68,5 +112,8 @@
     line-height: 32px;
     display: block;
     margin-bottom: 35px;
+    @media (max-width: 767px) {
+      @include title-p-767;
+    }
   }
 }

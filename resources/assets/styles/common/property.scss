@@ -1,12 +1,20 @@
 .property {
   margin-bottom: 350px;
   position: relative;
+  @media (max-width: 1260px) {
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
   .container {
     max-width: 1170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    @media (max-width: 1260px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &:before {
       position: absolute;
       content: url("images/home/Path3Copy.svg");
@@ -19,6 +27,9 @@
       position: absolute;
       right: 220px;
       top: 225px;
+      @media (max-width: 1100px) {
+        display: none;
+      }
     }
   }
   &__title {
@@ -30,6 +41,9 @@
     display: block;
     margin-bottom: 15px;
     @include over-extra;
+    @media (max-width: 767px) {
+      @include title-h2-767;
+    }
   }
   &__desc {
     max-width: 532px;
@@ -40,6 +54,9 @@
     line-height: 32px;
     display: block;
     margin-bottom: 25px;
+    @media (max-width: 767px) {
+      @include title-p-767;
+    }
   }
   ul {
     width: 100%;
@@ -61,6 +78,12 @@
       transition: 0.3s;
       text-decoration: none;
       margin-bottom: 10px;
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+      @media (max-width: 767px) {
+        @include title-p-767;
+      }
       &:hover {
         text-decoration: underline;
       }
@@ -74,19 +97,36 @@
       }
     }
   }
+  &__img-position {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 1260px) {
+      padding: 0 40px 0 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
   &__img {
     margin-top: 640px;
     width: 100%;
     max-width: 430px;
-    height: 370px;
+    min-height: 370px;
     box-shadow: 0 0 32px rgba(129, 129, 139, 0.1);
     border-radius: 8px;
     background-color: #fff;
     position: relative;
     padding: 36px 40px 55px;
+    @media (max-width: 1260px) {
+      margin-top: 100px;
+      padding: 36px 40px 30px;
+    }
     span {
       display: block;
       margin-bottom: 40px;
+      @media (max-width: 480px) {
+        margin-bottom: 20px;
+      }
     }
     &:before {
       z-index: -1;
@@ -108,6 +148,10 @@
       line-height: 32px;
       display: block;
       margin-bottom: 30px;
+      @media (max-width: 480px) {
+        margin-bottom: 15px;
+        line-height: 26px;
+      }
     }
     strong {
       color: #222634;
@@ -115,11 +159,18 @@
       letter-spacing: -0.21px;
       line-height: 48px;
       @include over-extra;
+      @media (max-width: 480px) {
+        font-size: 16px;
+        letter-spacing: -0.21px;
+        line-height: 32px;
+      }
     }
   }
   &__button {
     margin-top: 46px;
     display: flex;
+    position: relative;
+    z-index: 9;
     .button--blue {
       width: 100%;
       max-width: 224px;

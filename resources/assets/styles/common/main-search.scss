@@ -1,6 +1,6 @@
 .main-search {
   height: 684px;
-  top: -120%;
+  top: -250%;
   position: absolute;
   left: 0;
   right: 0;
@@ -12,12 +12,17 @@
   background-repeat: no-repeat;
   flex-direction: row;
   background-position: center;
+  @media (max-width: 991px) {
+    height: 480px;
+  }
   &.main-search-open {
     top: 0;
   }
   &__desc {
     flex-direction: column;
-    @include flex-center;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
     h3 {
       max-width: 600px;
       color: #fff;
@@ -26,9 +31,15 @@
       text-align: center;
       margin-bottom: 40px;
       @include luc;
+      @media (max-width: 767px) {
+        font-size: 38px;
+        line-height: 60px;
+      }
     }
   }
   &__close-position {
+    left: 0;
+    right: 0;
     position: absolute;
     display: flex;
     justify-content: flex-end;
@@ -36,7 +47,6 @@
     align-items: center;
     background-color: transparent;
     top: 0;
-    right: 15px;
     a {
       transition: 0.3s;
       &:before {
@@ -53,6 +63,8 @@
   }
   &__form {
     display: flex;
+    width: 100%;
+    justify-content: center;
     input {
       width: 580px;
       height: 56px;
@@ -67,6 +79,9 @@
       font-weight: 400;
       line-height: 24px;
       padding-left: 10px;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
       &:focus {
         border: none !important;
         box-shadow: 0 0 33px rgba(129, 129, 139, 0.1);

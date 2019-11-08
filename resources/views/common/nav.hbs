@@ -1,26 +1,28 @@
 {{#each nav}}
-    <div class="container-box-full">
-        <div class="nav">
-            <div class="nav__logo-nav">
-                <a href="/" class="nav__logo">
-                    <img src="{{logo}}" alt="logo">
-                </a>
-                <div class="nav__menu">
-                    <ul>
-                        {{#active}}
-                            <li><a class="nav__link {{active}}" href="{{link}}">{{name}}{{{arr}}}</a></li>
-                        {{/active}}
-                    </ul>
+    <div class="bg-white">
+        <div class="container-box-full nav-position">
+            <div class="nav">
+                <div class="nav__logo-nav">
+                    <a href="/" class="nav__logo">
+                        <img src="{{logo}}" alt="logo">
+                    </a>
+                    <div class="nav__menu">
+                        <ul>
+                            {{#active}}
+                                <li><a class="nav__link {{active}}" href="{{link}}">{{name}}{{{arr}}}</a></li>
+                            {{/active}}
+                        </ul>
+                    </div>
                 </div>
+                <div class="nav__button">
+                    <a href="#" class="nav__button--white button--white--border">SIGN IN</a>
+                    <a href="#" class="nav__button--blue button--blue">SIGN UP</a>
+                </div>
+                <a href="#" class="nav__mobile-button">
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
-            <div class="nav__button">
-                <a href="#" class="nav__button--white button--white--border">SIGN IN</a>
-                <a href="#" class="nav__button--blue button--blue">SIGN UP</a>
-            </div>
-            <a href="#" class="nav__mobile-button">
-                <span></span>
-                <span></span>
-            </a>
         </div>
     </div>
 {{/each}}
