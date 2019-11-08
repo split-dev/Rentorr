@@ -97,7 +97,7 @@ class Forms {
     let self = this
     this.inputs = []
     $(this.options.forms)
-      .find('input[type="text"], input[type="password"], textarea')
+      .find('input[type="text"], input[type="password"], input[type="email"], textarea')
       .each(function () {
         self.inputs.push(new Input($(this), {
           wrap: self.options.wrap,
