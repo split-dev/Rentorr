@@ -7,5 +7,8 @@
     display: block;
     margin-bottom: 58px;
     @include over-extra;
+    @media (max-width: 767px) {
+      @include title-h2-767;
+    }
   }
 }

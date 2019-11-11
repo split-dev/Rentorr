@@ -18,6 +18,9 @@
       display: block;
       margin-bottom: 10px;
       @include over-extra;
+      @media (max-width: 767px) {
+        @include title-h2-767;
+      }
     }
     p {
       color: #666b7c;
@@ -27,21 +30,50 @@
       line-height: 32px;
       display: block;
       margin-bottom: 25px;
+      @media (max-width: 767px) {
+        @include title-p-767;
+      }
     }
   }
   &__two {
     width: 100%;
     display: flex;
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
     .button--blue {
       width: 100%;
       max-width: 224px;
       height: 32px;
       margin-right: 16px;
+      @media (max-width: 480px) {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
     }
     .button--white--border {
       width: 100%;
       max-width: 224px;
       height: 32px;
+    }
+  }
+  &__img {
+    @media (max-width: 991px) {
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      @media (max-width: 991px) {
+        margin-top: 50px;
+        max-height: 300px;
+        width: auto;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        max-height: 400px;
+      }
     }
   }
 }

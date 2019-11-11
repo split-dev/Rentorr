@@ -25,6 +25,9 @@
     background-color: #f3f3f3;
     .image-info {
       margin-bottom: 90px;
+      @media (max-width: 575px) {
+        margin-bottom: 40px;
+      }
       &__img {
         position: relative;
         &:after {
@@ -34,6 +37,9 @@
           top: -200px;
           right: auto;
           left: 80px;
+          @media (max-width: 991px) {
+            display: none;
+          }
         }
         img {
           max-width: 500px;
@@ -59,6 +65,9 @@
   .rent {
     margin-top: 130px;
     position: relative;
+    @media (max-width: 767px) {
+      margin-top: 70px;
+    }
     .paragraf__box {
       max-width: 450px;
     }
@@ -79,8 +88,23 @@
         }
       }
       .col-lg-6 {
+        @media (max-width: 991px) {
+          display: flex;
+          justify-content: center;
+          margin-top: 30px;
+        }
         img {
           max-width: 511px;
+          @media (max-width: 1140px) {
+            max-width: 100%;
+            margin-left: 0;
+            padding-bottom: 30px;
+          }
+          @media (max-width: 991px) {
+            width: auto;
+            max-height: 500px;
+            padding-bottom: 0;
+          }
         }
       }
     }
@@ -98,8 +122,25 @@
         height: 750px;
       }
       .col-lg-5 {
+        @media (max-width: 991px) {
+          display: flex;
+          justify-content: center;
+        }
         img {
           max-width: 440px;
+          @media (max-width: 991px) {
+            width: auto;
+            max-height: 500px;
+          }
+          @media (max-width: 575px) {
+            width: auto;
+            max-height: 400px;
+          }
+          @media (max-width: 400px) {
+            width: 100%;
+            max-height: none;
+            height: auto;
+          }
         }
       }
     }
@@ -110,6 +151,9 @@
   margin-bottom: 255px;
   background-color: #f3f3f3;
   position: relative;
+  @media (max-width: 575px) {
+    margin-bottom: 200px;
+  }
   &:before {
     position: absolute;
     width: 120%;
@@ -121,6 +165,9 @@
     background-color: #f3f3f3;
     height: 211px;
     transform: rotate(-5deg);
+    @media (max-width: 1100px) {
+      width: 170%;
+    }
   }
   &:after {
     position: absolute;
@@ -134,6 +181,9 @@
     height: 211px;
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
+    @media (max-width: 1100px) {
+      width: 170%;
+    }
   }
   div.image-info {
     margin-bottom: 15px;
@@ -159,6 +209,9 @@
       z-index: -1;
       right: -300px;
       height: 750px;
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
   }
   img {

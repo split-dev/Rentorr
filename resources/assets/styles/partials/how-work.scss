@@ -2,6 +2,9 @@
   background-color: #1c5fc6;
   position: relative;
   padding: 0 0 80px;
+  @media (max-width: 575px) {
+    padding: 0;
+  }
   &:before {
     content: "";
     background-color: #1c5fc6;
@@ -39,14 +42,39 @@
     height: 1px;
     border-top: dashed 3px #fff;
     margin-left: 30px;
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
   &__item {
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: row;
+    }
+    &--line {
+      display: flex;
+      align-items: center;
+      @media (max-width: 991px) {
+        margin-right: 25px;
+      }
+    }
+  }
+  &__text-position {
     p {
       color: #fff;
       font-size: 20px;
       letter-spacing: -0.21px;
       line-height: 48px;
       @include over-extra;
+      @media (max-width: 991px) {
+        margin-bottom: 0;
+      }
+      @media (max-width: 575px) {
+        font-size: 16px;
+        letter-spacing: -0.17px;
+        line-height: 48px;
+        margin-bottom: 0;
+      }
     }
     span {
       opacity: 0.8;
@@ -56,13 +84,12 @@
       line-height: 24px;
       font-family: $roboto;
     }
-    &--line {
-      display: flex;
-      align-items: center;
-    }
   }
   &__item-position {
     display: flex;
+    @media (max-width: 991px) {
+      margin-bottom: 25px;
+    }
     &:last-child {
       .how-work__line {
         border: none;
@@ -72,6 +99,9 @@
   .first-row {
     margin-bottom: 202px;
     position: relative;
+    @media (max-width: 991px) {
+      margin-bottom: 0;
+    }
     .how-work__item-position-one {
       &:first-child {
         position: relative;
@@ -94,6 +124,9 @@
       bottom: -55px;
       left: 50px;
       right: 314px;
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
     &:after {
       position: absolute;
@@ -103,6 +136,9 @@
       height: 45px;
       bottom: -55px;
       right: 314px;
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
   }
   .second-row {
@@ -117,6 +153,9 @@
           height: 138px;
           top: -150px;
           left: 50px;
+          @media (max-width: 991px) {
+            display: none;
+          }
         }
       }
       &:nth-child(2) {
