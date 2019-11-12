@@ -2,6 +2,9 @@
   .top-pages {
     margin-top: 65px;
     margin-bottom: 160px;
+    @media (max-width: 991px) {
+      margin-bottom: 70px;
+    }
     p {
       max-width: 470px;
     }
@@ -18,6 +21,10 @@
   .img-desc {
     margin-bottom: 250px;
     padding-bottom: 43px;
+    @media (max-width: 991px) {
+      margin-bottom: 170px;
+      padding-bottom: 0;
+    }
     &:before {
       content: "";
       background-color: #1c5fc6;
@@ -53,6 +60,9 @@
         position: absolute;
         left: -12px;
         top: -55px;
+        @media (max-width: 991px) {
+          display: none;
+        }
       }
     }
   }
@@ -70,5 +80,8 @@
   }
   .ready__info {
     margin-top: 236px;
+    @media (max-width: 991px) {
+      margin-top: 150px;
+    }
   }
 }

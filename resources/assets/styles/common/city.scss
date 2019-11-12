@@ -71,6 +71,9 @@
       }
     }
   }
+  &__par2 {
+    display: none;
+  }
   &__all {
     display: flex;
     position: relative;
@@ -99,6 +102,12 @@
       &:hover {
         transform: scale(1.04);
         box-shadow: 0 2px 25px 0 #9ba0b5;
+        .city__par1 {
+          display: none;
+        }
+        .city__par2 {
+          display: block;
+        }
       }
     }
   }

@@ -1,5 +1,9 @@
 .image-info {
   .row {
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column-reverse !important;
+    }
     &.revers {
       display: flex;
       flex-direction: row-reverse;
@@ -18,8 +22,8 @@
       display: block;
       margin-bottom: 10px;
       @include over-extra;
-      @media (max-width: 767px) {
-        @include title-h2-767;
+      @media (max-width: 991px) {
+        display: none;
       }
     }
     p {
@@ -46,7 +50,7 @@
       max-width: 224px;
       height: 32px;
       margin-right: 16px;
-      @media (max-width: 480px) {
+      @media (max-width: 991px) {
         margin-bottom: 20px;
         margin-right: 0;
       }
@@ -60,11 +64,31 @@
   &__img {
     @media (max-width: 991px) {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    h3 {
+      color: #222634;
+      font-size: 42px;
+      letter-spacing: -0.44px;
+      line-height: 48px;
+      display: block;
+      margin-bottom: 10px;
+      @include over-extra;
+      @media (min-width: 992px) {
+        display: none;
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+        text-align: left;
+      }
+      @media (max-width: 767px) {
+        @include title-h2-767;
+      }
     }
     img {
       @media (max-width: 991px) {
-        margin-top: 50px;
+        margin-top: 40px;
         max-height: 300px;
         width: auto;
       }

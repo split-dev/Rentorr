@@ -9,12 +9,30 @@
     &__text {
       max-width: 483px;
       margin-right: 50px;
+      @media (max-width: 1070px) {
+        margin-right: 0;
+      }
+      @media (max-width: 1070px) {
+        max-width: 100%;
+      }
     }
     &__img {
       position: relative;
       img {
         max-width: 600px;
         margin-right: -31px;
+        @media (max-width: 1070px) {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+          margin-right: 0;
+          margin-bottom: 25px;
+        }
+        @media (max-width: 991px) {
+          max-width: 600px;
+          width: 100%;
+          height: auto;
+        }
       }
       &:before {
         position: absolute;
@@ -22,6 +40,9 @@
         right: 95px;
         top: -63px;
         z-index: 1;
+        @media (max-width: 991px) {
+          display: none;
+        }
       }
     }
   }
@@ -45,6 +66,10 @@
         }
       }
       .col-lg-6 {
+        @media (max-width: 991px) {
+          display: flex;
+          justify-content: center;
+        }
         &:before,
         &:after {
           content: none;
@@ -52,6 +77,15 @@
         img {
           margin-left: -50px;
           margin-bottom: -50px;
+          @media (max-width: 1170px) {
+            width: 100%;
+          }
+          @media (max-width: 991px) {
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 25px;
+            margin-top: 25px;
+          }
         }
       }
     }
@@ -59,15 +93,32 @@
       margin-top: -40px;
       .img {
         position: relative;
+        @media (max-width: 991px) {
+          display: flex;
+          justify-content: center;
+        }
         &:before {
           position: absolute;
           z-index: -1;
           content: url("images/tenant-one/dots-one.svg");
           top: 163px;
           left: -23px;
+          @media (max-width: 992px) {
+            display: none;
+          }
         }
         img {
           margin: 0;
+          @media (max-width: 1170px) {
+            width: 100%;
+            margin-left: 30px;
+          }
+          @media (max-width: 991px) {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+          }
         }
       }
     }

@@ -13,6 +13,9 @@
       position: absolute;
       right: 75px;
       top: -20px;
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
   }
   &__payment {
@@ -27,19 +30,39 @@
         margin-top: 80px;
         margin-bottom: 0;
         position: relative;
+        @media (max-width: 991px) {
+          margin-top: 40px;
+        }
         &__img {
           margin-left: 25px;
           max-width: 580px;
+          @media (max-width: 1220px) {
+            margin-left: 0 !important;
+            width: 100%;
+          }
+          @media (max-width: 991px) {
+            margin-bottom: 25px;
+          }
         }
         .skill-box__item {
           margin-top: -150px;
+          @media (max-width: 991px) {
+            margin-top: 0;
+          }
         }
         .col-lg-6 {
           position: relative;
+          @media (max-width: 991px) {
+            display: flex;
+            justify-content: center;
+          }
           &:before {
             left: auto;
             top: 40px;
             right: 0;
+            @media (max-width: 1220px) {
+              display: none;
+            }
           }
           &:after {
             position: absolute;
@@ -75,8 +98,16 @@
           align-items: center !important;
         }
         .img {
+          @media (max-width: 991px) {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+          }
           img {
             max-width: 580px;
+            @media (max-width: 1220px) {
+              width: 100%;
+            }
           }
         }
       }
@@ -94,6 +125,9 @@
         right: auto;
         left: 0;
         top: -55px;
+        @media (max-width: 991px) {
+          display: none;
+        }
       }
     }
   }

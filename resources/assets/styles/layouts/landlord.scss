@@ -195,6 +195,9 @@
 .list-white {
   div.image-info__img * {
     margin-left: -32px;
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
   }
   .feature__all {
     margin-top: 45px;

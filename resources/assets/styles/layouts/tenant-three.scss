@@ -2,15 +2,37 @@
   .top-pages {
     margin-top: 65px;
     margin-bottom: 212px;
+    @media (max-width: 991px) {
+      margin-bottom: 100px;
+    }
   }
   .paragraf {
     margin-bottom: 10px;
   }
   .skill-box {
     margin-bottom: 120px;
+    @media (max-width: 991px) {
+      margin-bottom: 80px;
+    }
     .start {
+      &__img {
+        @media (max-width: 991px) {
+          margin-left: 0 !important;
+        }
+      }
       .col-lg-6 {
         position: relative;
+        @media (max-width: 1400px) {
+          margin-left: 0 !important;
+        }
+        @media (max-width: 1050px) {
+          margin-left: 50px !important;
+        }
+        @media (max-width: 991px) {
+          margin-left: 0 !important;
+          display: flex;
+          justify-content: center;
+        }
         &:before {
           content: none;
         }
@@ -24,6 +46,20 @@
           display: flex;
           align-items: flex-end;
         }
+        img {
+          @media (max-width: 1050px) {
+            width: 100%;
+          }
+          @media (max-width: 991px) {
+            width: auto;
+            max-height: 340px;
+          }
+          @media (max-width: 575px) {
+            width: 100%;
+            max-height: none;
+            height: auto;
+          }
+        }
       }
     }
     .center {
@@ -32,8 +68,22 @@
     .end {
       margin-top: -72px;
       .img {
+        @media (max-width: 991px) {
+          display: flex;
+          justify-content: center;
+        }
         img {
           margin-left: -95px;
+          @media (max-width: 1240px) {
+            margin-left: -30px;
+          }
+          @media (max-width: 991px) {
+            margin-left: -10px;
+          }
+          @media (max-width: 575px) {
+            width: 100%;
+            height: auto;
+          }
         }
       }
       .align-items-end {
@@ -61,6 +111,9 @@
   }
   .img-desc {
     padding-bottom: 138px;
+    @media (max-width: 991px) {
+      padding-bottom: 80px;
+    }
     &:before {
       content: "";
       background-color: #1c5fc6;
@@ -86,6 +139,9 @@
         position: absolute;
         left: -12px;
         top: -55px;
+        @media (max-width: 991px) {
+          display: none;
+        }
       }
     }
   }

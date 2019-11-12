@@ -2,6 +2,9 @@
   .top-pages {
     margin-top: 65px;
     margin-bottom: 200px;
+    @media (max-width: 575px) {
+      margin-bottom: 100px;
+    }
     &__text {
       max-width: 533px;
       p {
@@ -20,8 +23,24 @@
     margin-top: -105px;
     margin-bottom: 200px;
     position: relative;
+    @media (max-width: 991px) {
+      margin-top: 0;
+    }
     img {
       max-width: 765px;
+      @media (max-width: 1160px) {
+        max-width: 700px;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .col-lg-9 {
+      @media (max-width: 991px) {
+        display: flex;
+        justify-content: center;
+      }
     }
     &:before {
       position: absolute;
@@ -29,6 +48,9 @@
       left: 200px;
       bottom: 100px;
       z-index: -1;
+      @media (max-width: 1230px) {
+        display: none;
+      }
     }
   }
   .author {
@@ -57,6 +79,12 @@
       height: 180px;
       transform: rotate(5deg);
     }
+    &__block-position {
+      @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
     &__text-box {
       h3 {
         max-width: 531px;
@@ -66,6 +94,12 @@
         line-height: 48px;
         margin-bottom: 20px;
         @include over-extra;
+        @media (max-width: 991px) {
+          display: none;
+        }
+        @media (max-width: 767px) {
+          @include title-h2-767;
+        }
       }
       p {
         max-width: 344px;
@@ -74,16 +108,67 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 32px;
+        @media (max-width: 991px) {
+          max-width: 100%;
+        }
+        @media (max-width: 767px) {
+          @include title-p-767;
+        }
       }
     }
     .img {
       padding-top: 190px;
       position: relative;
+      @media (max-width: 991px) {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       &:before {
         content: url("images/land-three/dots.svg");
         position: absolute;
         right: -42px;
         top: 96px;
+        @media (max-width: 1230px) {
+          display: none;
+        }
+      }
+      img {
+        width: 100%;
+        @media (max-width: 991px) {
+          max-height: 500px;
+          width: auto;
+          margin: 20px 0 25px;
+        }
+        @media (max-width: 575px) {
+          max-height: 400px;
+          width: auto;
+        }
+        @media (max-width: 400px) {
+          width: 100%;
+          height: auto;
+          max-height: none;
+        }
+      }
+      h3 {
+        max-width: 531px;
+        color: #fff;
+        font-size: 42px;
+        letter-spacing: -0.44px;
+        line-height: 48px;
+        margin-bottom: 20px;
+        @include over-extra;
+        @media (min-width: 992px) {
+          display: none;
+        }
+        @media (max-width: 991px) {
+          width: 100%;
+          max-width: none;
+        }
+        @media (max-width: 767px) {
+          @include title-h2-767;
+        }
       }
     }
   }
