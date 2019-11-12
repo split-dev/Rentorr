@@ -51,6 +51,10 @@
       }
     }
   }
+  &__block-position {
+    display: flex;
+    align-items: center;
+  }
   &__img-position {
     @media (max-width: 991px) {
       margin-top: -85px !important;

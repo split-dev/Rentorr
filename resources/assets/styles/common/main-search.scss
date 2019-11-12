@@ -1,5 +1,5 @@
 .main-search {
-  height: 684px;
+  height: 100%;
   top: -250%;
   position: absolute;
   left: 0;
@@ -12,9 +12,6 @@
   background-repeat: no-repeat;
   flex-direction: row;
   background-position: center;
-  @media (max-width: 991px) {
-    height: 480px;
-  }
   &.main-search-open {
     top: 0;
   }

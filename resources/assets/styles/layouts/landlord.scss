@@ -105,6 +105,10 @@
             max-height: 500px;
             padding-bottom: 0;
           }
+          @media (max-width: 575px) {
+            width: 100%;
+            max-height: none;
+          }
         }
       }
     }

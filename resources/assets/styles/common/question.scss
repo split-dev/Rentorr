@@ -27,6 +27,10 @@
     height: 180px;
     transform: rotate(5deg);
   }
+  &__box-position {
+    display: flex;
+    align-items: center;
+  }
   &__img-position {
     @media (max-width: 991px) {
       display: flex;
@@ -56,7 +60,7 @@
     }
   }
   &__text-box {
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -143,6 +143,10 @@
     }
   }
   &__mobile-button {
+    min-height: 16px;
+    @media (min-width: 992px) {
+      display: none;
+    }
     span {
       display: block;
       width: 25px;
@@ -166,9 +170,6 @@
           transform-origin: 10px 0;
         }
       }
-    }
-    @media (min-width: 992px) {
-      display: none;
     }
   }
 }
