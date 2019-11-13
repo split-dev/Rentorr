@@ -5,6 +5,9 @@
   .what {
     padding: 125px 0 105px;
     background-color: #f3f3f3;
+    @media (max-width: 575px) {
+      padding: 80px 0 70px;
+    }
   }
   &__dots-position {
     position: relative;
@@ -56,6 +59,9 @@
             display: flex;
             justify-content: center;
           }
+          @media (max-width: 575px) {
+            display: block;
+          }
           &:before {
             left: auto;
             top: 40px;
@@ -68,6 +74,19 @@
             position: absolute;
             bottom: -190px;
             z-index: -1;
+          }
+          img {
+            @media (max-width: 991px) {
+              width: auto;
+              max-height: 320px;
+              padding-bottom: 0;
+              margin-left: -10px;
+            }
+            @media (max-width: 575px) {
+              width: 100%;
+              max-height: none;
+              height: auto;
+            }
           }
         }
         &:after {
@@ -103,10 +122,24 @@
             justify-content: center;
             margin-top: 25px;
           }
+          @media (max-width: 575px) {
+            display: block;
+          }
           img {
             max-width: 580px;
             @media (max-width: 1220px) {
               width: 100%;
+            }
+            @media (max-width: 991px) {
+              width: auto;
+              max-height: 320px;
+              padding-bottom: 0;
+              margin-left: -10px;
+            }
+            @media (max-width: 575px) {
+              width: 100%;
+              max-height: none;
+              height: auto;
             }
           }
         }
@@ -115,6 +148,9 @@
   }
   .ready {
     margin-top: 266px;
+    @media (max-width: 575px) {
+      margin-top: 150px;
+    }
   }
   .img-desc {
     &__images {

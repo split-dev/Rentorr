@@ -147,5 +147,8 @@
   }
   .ready {
     padding-top: 183px;
+    @media (max-width: 575px) {
+      padding-top: 80px;
+    }
   }
 }

@@ -21,7 +21,7 @@ export default {
     }
     $('.nav__mobile-button').click(function (e) {
       e.preventDefault();
-      $('body').toggleClass('body-hidden');
+      $('html, body').toggleClass('body-hidden');
       $('.nav__mobile-button').toggleClass('open-mobile');
       $('.mobile-menu').toggleClass('active-menu');
     });

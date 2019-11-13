@@ -271,6 +271,9 @@
           display: flex;
           justify-content: center;
         }
+        @media (max-width: 991px) {
+          display: block;
+        }
         &:before {
           content: none;
         }
@@ -331,6 +334,9 @@
         @media (max-width: 991px) {
           display: flex;
           justify-content: center;
+        }
+        @media (max-width: 575px) {
+          display: block;
         }
         img {
           margin-left: -90px;

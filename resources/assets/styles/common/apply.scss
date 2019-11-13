@@ -67,8 +67,12 @@
       }
     }
   }
+  &__text-box-position {
+    display: flex;
+    align-items: center;
+  }
   &__text-box {
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

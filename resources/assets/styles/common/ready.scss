@@ -1,6 +1,9 @@
 .ready {
   padding-top: 60px;
   position: relative;
+  @media (max-width: 575px) {
+    padding-top: 20px;
+  }
   .container {
     position: relative;
     &:after {
@@ -54,6 +57,9 @@
     margin-bottom: 250px;
     @media (max-width: 767px) {
       margin-bottom: 150px;
+    }
+    @media (max-width: 575px) {
+      margin-bottom: 80px;
     }
   }
 }

@@ -11,6 +11,7 @@
   z-index: 5;
   &.active-menu {
     top: 0;
+    z-index: 999;
   }
   ul {
     list-style: none;

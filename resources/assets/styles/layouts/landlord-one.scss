@@ -4,7 +4,7 @@
     justify-content: center;
     &__position {
       width: 100%;
-      height: 100%;
+      height: auto;
       max-width: 850px;
       max-height: 575px;
       img {
@@ -115,6 +115,16 @@
         @media (max-width: 991px) {
           display: none;
         }
+      }
+    }
+  }
+  .ready {
+    @media (max-width: 575px) {
+      padding: 0;
+    }
+    a {
+      @media (max-width: 575px) {
+        margin-bottom: 80px;
       }
     }
   }

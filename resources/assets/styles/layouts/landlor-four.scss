@@ -41,6 +41,9 @@
         display: flex;
         justify-content: center;
       }
+      @media (max-width: 767px) {
+        display: block;
+      }
     }
     &:before {
       position: absolute;
@@ -174,5 +177,13 @@
   }
   .ready {
     margin-top: 285px;
+    @media (max-width: 575px) {
+      margin-top: 180px;
+    }
+    a {
+      @media (max-width: 575px) {
+        margin-bottom: 80px;
+      }
+    }
   }
 }

@@ -6,6 +6,9 @@
   .what {
     padding: 125px 0 105px;
     background-color: #f3f3f3;
+    @media (max-width: 575px) {
+      padding: 80px 0 70px;
+    }
     .title-section {
       .container {
         position: relative;
@@ -42,13 +45,21 @@
             justify-content: center;
             margin-top: 30px;
           }
+          @media (max-width: 575px) {
+            display: block;
+          }
           img {
             width: 100%;
             @media (max-width: 991px) {
               width: auto;
-              max-height: 380px;
+              max-height: 450px;
               padding-bottom: 0;
               margin-left: -10px;
+            }
+            @media (max-width: 480px) {
+              width: 100%;
+              max-height: none;
+              height: auto;
             }
           }
           &:after {
@@ -69,6 +80,9 @@
             display: flex;
             justify-content: center;
           }
+          @media (max-width: 575px) {
+            display: block;
+          }
           img {
             width: 500px;
             @media (max-width: 991px) {
@@ -80,7 +94,7 @@
               width: auto;
               max-height: 400px;
             }
-            @media (max-width: 400px) {
+            @media (max-width: 480px) {
               width: 100%;
               max-height: none;
               height: auto;

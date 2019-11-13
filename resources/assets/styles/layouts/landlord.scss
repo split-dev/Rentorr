@@ -57,6 +57,9 @@
   .list-white {
     .feature {
       margin-bottom: 245px;
+      @media (max-width: 575px) {
+        margin-bottom: 170px;
+      }
     }
   }
   .ready {
@@ -92,6 +95,9 @@
           display: flex;
           justify-content: center;
           margin-top: 30px;
+          @media (max-width: 575px) {
+            display: block;
+          }
         }
         img {
           max-width: 511px;
@@ -129,6 +135,9 @@
         @media (max-width: 991px) {
           display: flex;
           justify-content: center;
+        }
+        @media (max-width: 575px) {
+          display: block;
         }
         img {
           max-width: 440px;

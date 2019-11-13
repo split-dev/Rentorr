@@ -33,6 +33,9 @@
   &__logo-nav {
     width: 100%;
     display: flex;
+    @include media-breakpoint-down(md) {
+      width: auto;
+    }
   }
   &__menu {
     display: flex;
@@ -53,8 +56,8 @@
           transition: 0.3s;
           .arr {
             &:after {
+              content: url("images/global/arr-nav.svg");
               position: absolute;
-              content: url(images/global/arr-nav.svg);
               top: 0;
               bottom: 0;
               right: 0;
@@ -65,8 +68,8 @@
               opacity: 1;
             }
             &:before {
+              content: url("images/global/arr-nav-black.svg");
               position: absolute;
-              content: url(images/global/arr-nav-black.svg);
               top: 0;
               bottom: 0;
               right: 0;
@@ -143,7 +146,13 @@
     }
   }
   &__mobile-button {
-    min-height: 16px;
+    height: 28px;
+    min-width: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 9999 !important;
     @media (min-width: 992px) {
       display: none;
     }
@@ -153,22 +162,45 @@
       height: 2px;
       position: relative;
       background: #222634;
-      z-index: 1;
-      transition: 0.3s;
+      z-index: 9999;
+      transform: scale(1);
+      transition: 0.5s;
       &:first-child {
         margin-bottom: 8px;
       }
     }
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: #222634 !important;
+      z-index: 9999;
+      transition: 0.5s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    &:before {
+      transform: translateX(-50%) rotate(45deg) scale(0);
+    }
+    &:after {
+      transform: translateX(-50%) rotate(-45deg) scale(0);
+    }
     &.open-mobile {
+      z-index: 9999;
       span {
-        &:first-child {
-          transform: rotate(45deg);
-          margin-bottom: 0;
-        }
-        &:last-child {
-          transform: rotate(-45deg);
-          transform-origin: 10px 0;
-        }
+        transform: scale(0);
+        z-index: 9999;
+      }
+      &:before {
+        transform: translateX(-50%) rotate(45deg) scale(1);
+        z-index: 9999;
+      }
+      &:after {
+        transform: translateX(-50%) rotate(-45deg) scale(1);
+        z-index: 9999;
       }
     }
   }
