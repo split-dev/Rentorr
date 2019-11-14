@@ -214,6 +214,16 @@
     letter-spacing: 0.3px;
     line-height: 20px;
   }
+  .main-form__valid {
+    &:not(:placeholder-shown) {
+      &:invalid ~ label {
+        color: #ff726d;
+      }
+      &:invalid {
+        border-bottom: 1px solid #ff726d;
+      }
+    }
+  }
 }
 label.control-label {
   position: absolute;
