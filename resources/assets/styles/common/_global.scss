@@ -41,6 +41,10 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     content: url("images/global/play.svg");
     @include flex-center;
     z-index: 99;
