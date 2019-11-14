@@ -12,19 +12,19 @@
 <div class="trend-city">
     <div class="container">
         <div class="row trend-city__all-position">
-            <div class="trend-city__title">
+            <div class="trend-city__title wow bounceInLeft">
                 <h2>Trending cities in South Africa</h2>
             </div>
             <div class="trend-city__all">
                 {{#each country}}
-                    <a href="#" class="trend-city__item" style="background-image: url('{{img}}')">
+                    <a href="#" class="trend-city__item wow bounceInRight" style="background-image: url('{{img}}')">
                         <strong>{{title}}</strong>
                         <p class="trend-city__par1">{{desc}}</p>
                         <p class="trend-city__par2">Discover all properties</p>
                     </a>
                 {{/each}}
             </div>
-            <a href="#" class="button--blue trend-city__link">Find your Next home</a>
+            <a href="#" class="button--blue trend-city__link wow bounceInUp">Find your Next home</a>
         </div>
     </div>
 </div>
@@ -56,7 +56,7 @@
         <div class="container explore__link-position">
                 <ul>
                     {{#each explore-link}}
-                    <li>
+                    <li class="wow bounceInRight">
                         <a class="explore__link" href="#">{{link-desc}}</a>
                     </li>
                     {{/each}}

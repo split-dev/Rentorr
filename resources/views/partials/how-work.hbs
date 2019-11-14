@@ -3,41 +3,43 @@
         {{#each title-how}}
             {{> ../partials/title-section }}
         {{/each}}
-        <div class="row first-row">
-            {{#each item-1}}
-            <div class="col-lg-4 how-work__item-position how-work__item-position-one">
-                <div class="how-work__item">
-                    <div class="how-work__item--line">
-                        <div class="how-work__img">
-                            <img src="{{box-img}}" alt="oval">
-                        </div>
-                        <div class="how-work__line"></div>
-                    </div>
-                    <div class="how-work__text-position">
-                        <p>{{how-work-p}}</p>
-                        <span>{{how-work-span}}</span>
-                    </div>
-                </div>
-            </div>
-            {{/each}}
-        </div>
-        <div class="row second-row">
-            {{#each item-2}}
-                <div class="col-lg-4 how-work__item-position how-work__item-position-two">
-                    <div class="how-work__item">
-                        <div class="how-work__item--line">
-                            <div class="how-work__img">
-                                <img src="{{box-img}}" alt="oval">
+        <div class="how-work__anim wow fadeIn" data-wow-duration="2s">
+            <div class="row first-row">
+                {{#each item-1}}
+                    <div class="col-lg-4 how-work__item-position how-work__item-position-one">
+                        <div class="how-work__item">
+                            <div class="how-work__item--line">
+                                <div class="how-work__img">
+                                    <img src="{{box-img}}" alt="oval">
+                                </div>
+                                <div class="how-work__line"></div>
                             </div>
-                            <div class="how-work__line"></div>
-                        </div>
-                        <div class="how-work__text-position">
-                            <p>{{how-work-p}}</p>
-                            <span>{{how-work-span}}</span>
+                            <div class="how-work__text-position">
+                                <p>{{how-work-p}}</p>
+                                <span>{{how-work-span}}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            {{/each}}
+                {{/each}}
+            </div>
+            <div class="row second-row">
+                {{#each item-2}}
+                    <div class="col-lg-4 how-work__item-position how-work__item-position-two">
+                        <div class="how-work__item">
+                            <div class="how-work__item--line">
+                                <div class="how-work__img">
+                                    <img src="{{box-img}}" alt="oval">
+                                </div>
+                                <div class="how-work__line"></div>
+                            </div>
+                            <div class="how-work__text-position">
+                                <p>{{how-work-p}}</p>
+                                <span>{{how-work-span}}</span>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
         </div>
     </div>
 </div>

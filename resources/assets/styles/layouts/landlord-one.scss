@@ -73,26 +73,6 @@
     a {
       display: none;
     }
-    &__text-box {
-      &:after {
-        content: url("images/land/path2.svg");
-        position: absolute;
-        right: -1180px;
-        bottom: auto;
-        top: -950px;
-        z-index: 0;
-      }
-      &:before {
-        position: absolute;
-        content: url("images/land-one/dots2.svg");
-        left: auto;
-        top: -140px;
-        right: 85px;
-        @media (max-width: 991px) {
-          display: none;
-        }
-      }
-    }
     .col-lg-6 {
       img {
         max-width: 665px;
@@ -125,6 +105,26 @@
     a {
       @media (max-width: 575px) {
         margin-bottom: 80px;
+      }
+    }
+  }
+  .apply__text-box-position {
+    &:after {
+      content: url("images/land/path2.svg");
+      position: absolute;
+      right: -1180px;
+      bottom: auto;
+      top: -950px;
+      z-index: 0;
+    }
+    &:before {
+      position: absolute;
+      content: url("images/land-one/dots2.svg");
+      left: auto;
+      top: -140px;
+      right: 85px;
+      @media (max-width: 991px) {
+        display: none;
       }
     }
   }

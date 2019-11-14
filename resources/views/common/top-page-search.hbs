@@ -1,16 +1,19 @@
 <div class="top-pages-search">
     <div class="container">
         <div class="row {{revers}} justify-content-between top-pages-search__block-position">
-            <div class="col-lg-{{size-text}} top-pages-search__text">
+            <div class="col-lg-{{size-text}} top-pages-search__text wow bounceInDown" data-wow-duration="2s">
                 <h1>{{title}}</h1>
                 <p>{{desc}}</p>
                 <form class="top-pages-search__form">
-                    <input class="form-control top-pages-search__name-input" placeholder="Where will home be for you?" type="text">
-                    <button type="submit" class="small-button newsletter-form__button">SEARCH</button>
+                    <input class="form-control top-pages-search__name-input wow bounceInLeft" data-wow-duration="2s" placeholder="Where will home be for you?" type="text">
+                    <button type="submit" class="small-button newsletter-form__button wow bounceInRight" data-wow-duration="2s">SEARCH</button>
                 </form>
-                    <a href="#">Have a property? List with us <span>→</span></a>
+                <div class="top-pages-search__link-position">
+                    <p>Have a property? </p>
+                    <a href="#"> List with us <span>→</span></a>
+                </div>
             </div>
-            <div class="col-lg-{{size-img}} top-pages-search__image">
+            <div class="col-lg-{{size-img}} top-pages-search__image wow zoomIn">
                 <h1>{{title}}</h1>
                 <img src="{{images}}" alt="img">
             </div>

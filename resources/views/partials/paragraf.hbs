@@ -1,12 +1,14 @@
 <div class="paragraf">
     <div class="container">
         <div class="row">
-            <div class="paragraf__box col-lg-6">
+            <div class="paragraf__box col-lg-6 wow bounceInUp">
                 <h3>{{title}}</h3>
                 {{# each text}}
                     <p>{{desc}}</p>
                 {{/each}}
-                {{{button}}}
+                <div class="paragraf__button wow bounceInLeft">
+                    {{{button}}}
+                </div>
             </div>
         </div>
     </div>
