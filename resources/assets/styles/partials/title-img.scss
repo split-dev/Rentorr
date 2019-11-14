@@ -22,6 +22,7 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 32px;
+
       @media (max-width: 767px) {
         @include title-p-767;
       }
@@ -40,7 +41,7 @@
       line-height: 48px;
       @include over-extra;
       @media (min-width: 992px) {
-        display: none;
+        display: none !important;
       }
       @media (max-width: 767px) {
         @include title-h2-767;

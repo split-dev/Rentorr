@@ -23,8 +23,10 @@ export default {
       playPause();
     });
     function playPause() {
-      if (myVideo.paused)
+      if (myVideo.paused) {
         myVideo.play();
+        myVideo.muted = false
+      }
       else
         myVideo.pause();
     }

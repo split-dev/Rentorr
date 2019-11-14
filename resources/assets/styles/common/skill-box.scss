@@ -2,6 +2,7 @@
   &__item {
     display: flex;
     flex-direction: column;
+    width: 100%;
     @media (max-width: 991px) {
       flex-direction: row;
     }
@@ -59,7 +60,7 @@
         content: url("images/land-three/dots-3.svg");
         position: absolute;
         left: 35px;
-        top: 165px;
+        top: 15px;
         @media (max-width: 991px) {
           display: none;
         }

@@ -1,0 +1,22 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .button--white--border {
+    padding-top: 5px;
+  }
+  .button--white {
+    padding-top: 5px;
+  }
+  .button--blue {
+    padding-top: 5px;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  .button--white--border {
+    padding-top: 3px;
+  }
+  .button--white {
+    padding-top: 3px;
+  }
+  .button--blue {
+    padding-top: 3px;
+  }
+}

@@ -19,6 +19,7 @@
       line-height: 64px;
       display: block;
       margin-bottom: 35px;
+      width: 100%;
       @include over-extra;
       @media (max-width: 991px) {
         display: none;
@@ -100,7 +101,7 @@
       margin-bottom: 42px;
       @include over-extra;
       @media (min-width: 992px) {
-        display: none;
+        display: none !important;
       }
       @media (max-width: 991px) {
         font-size: 48px;

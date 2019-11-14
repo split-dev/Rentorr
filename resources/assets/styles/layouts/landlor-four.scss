@@ -163,7 +163,7 @@
         margin-bottom: 20px;
         @include over-extra;
         @media (min-width: 992px) {
-          display: none;
+          display: none !important;
         }
         @media (max-width: 991px) {
           width: 100%;

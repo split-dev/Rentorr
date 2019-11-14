@@ -20,6 +20,9 @@
     z-index: -1;
     content: url("images/home/Path3Copy5.svg");
   }
+  &__desc-position {
+    width: 100%;
+  }
   &__img {
     margin-bottom: 15px;
     @media (max-width: 991px) {
@@ -49,6 +52,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
     @media (max-width: 991px) {
       flex-direction: row;
       margin-right: 30px !important;

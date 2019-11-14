@@ -48,7 +48,7 @@
       line-height: 48px;
       @include over-extra;
       @media (min-width: 992px) {
-        display: none;
+        display: none !important;
       }
       @media (max-width: 767px) {
         @include title-h2-767;

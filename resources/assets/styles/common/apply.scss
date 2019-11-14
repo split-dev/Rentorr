@@ -36,7 +36,7 @@
     h3 {
       width: 100%;
       @media (min-width: 992px) {
-        display: none;
+        display: none !important;
       }
       @media (max-width: 767px) {
         @include title-h2-767;
