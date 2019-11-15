@@ -1,0 +1,34 @@
+{{#each sign-in}}
+    <div class="sign-in">
+    <div class="sign-in__box-shadow"></div>
+    <div class="sign-in__block">
+        <div class="sign-in__first-row">
+            <h3>{{{title-sign-in}}}</h3>
+            <div class="sign-in__close-position">
+                <a href="#"></a>
+            </div>
+        </div>
+        <form class="sign-in__login">
+            <div class="field-wrap">
+                <input class="form-control sign-in__valid" placeholder=" " id="email" name="pass"  required="" type="email">
+                <label class="control-label sign-in__valid-label" for="email">Email</label>
+            </div>
+            <div class="field-wrap">
+                <input class="form-control sign-in__repass" id="pass" name="pass" type="password">
+                <a class="sign-in__glass" href="#"><img src="images/home/glass.svg" alt=""></a>
+                <label class="control-label" for="pass">Password</label>
+            </div>
+            <div class="sign-in__forgot-position">
+                <a class="sign-in__forgot second-link" href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="button--blue sign-in__button">SIGN IN</button>
+        </form>
+        <div class="sign-in__line"></div>
+        <div class="sign-in__or-position">
+            <div class="sign-in__or">
+                <span>OR</span>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

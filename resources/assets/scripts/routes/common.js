@@ -66,9 +66,41 @@ export default {
       $('.main-search').removeClass('main-search-open');
     });
 
+    $('.nav__sign-in').click(function (e) {
+      e.preventDefault();
+      $('.sign-in').addClass('sign-in-active');
+      $('html, body').toggleClass('body-hidden');
+    });
+    $('.sign-in__button').click(function (e) {
+      e.preventDefault();
+      $('.sign-in').removeClass('sign-in-active');
+      $('html, body').toggleClass('body-hidden');
+    });
+    $('.sign-in__box-shadow').click(function (e) {
+      e.preventDefault();
+      $('.sign-in').removeClass('sign-in-active');
+      $('html, body').toggleClass('body-hidden');
+    });
+    $('.sign-in__close-position a').click(function (e) {
+      e.preventDefault();
+      $('.sign-in').removeClass('sign-in-active');
+      $('html, body').toggleClass('body-hidden');
+    });
+
+    $('.sign-in__glass').click(function (e) {
+      e.preventDefault();
+      let parent = $(this).parent();
+      let attrib = parent.children('.sign-in__repass').attr('type');
+      if ('password' == attrib) {
+        parent.children('.sign-in__repass').attr('type','text');
+      } else {
+        parent.children('.sign-in__repass').attr('type','password');
+      }
+    });
+
     const form = new Forms({
       wrap: '.field-wrap',
-      forms: 'form.main-form__regist',
+      forms: 'form.main-form__regist, form.sign-in__login',
     });
     form.init();
 

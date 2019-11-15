@@ -38,6 +38,11 @@
       ]
     }
   ],
+  "sign-in": [
+    {
+      "title-sign-in": "Hey, welcome back!"
+    }
+  ],
   "search": [
     {
       "main-search": [
