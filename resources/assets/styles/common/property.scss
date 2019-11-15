@@ -122,6 +122,7 @@
     width: auto;
     display: flex;
     justify-content: flex-end;
+    animation: move-img 3s infinite ease-in-out;
     @media (max-width: 1260px) {
       padding: 0 40px 0 0;
       width: 100%;

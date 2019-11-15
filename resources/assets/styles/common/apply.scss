@@ -43,6 +43,7 @@
       }
     }
     img {
+      animation: move-img 3s infinite ease-in-out;
       @media (max-width: 1415px) {
         margin-left: -80px !important;
       }

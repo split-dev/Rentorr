@@ -68,6 +68,7 @@
     }
     &__img {
       margin-left: 60px;
+      animation: move-img 3s infinite ease-in-out;
     }
   }
   .center {
@@ -86,6 +87,7 @@
     .img {
       img {
         margin-left: -60px;
+        animation: move-img 3s infinite ease-in-out;
         @media (max-width: 1140px) {
           margin-left: 0;
         }

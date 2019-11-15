@@ -78,6 +78,7 @@
       img {
         margin-left: -90px;
         max-width: 650px;
+        animation: move-img 3s infinite ease-in-out;
         @media (max-width: 991px) {
           margin: 0;
           width: auto;

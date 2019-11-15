@@ -73,6 +73,7 @@
   }
   img {
     width: 114%;
+    animation: move-img 3s infinite ease-in-out;
     @media (max-width: 1260px) {
       width: 100%;
     }

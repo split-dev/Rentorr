@@ -28,6 +28,7 @@
     }
     img {
       max-width: 765px;
+      animation: move-img 3s infinite ease-in-out;
       @media (max-width: 1160px) {
         max-width: 700px;
       }
@@ -139,6 +140,7 @@
       }
       img {
         width: 100%;
+        animation: move-img 3s infinite ease-in-out;
         @media (max-width: 991px) {
           max-height: 500px;
           width: auto;

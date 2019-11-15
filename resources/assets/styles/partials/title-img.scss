@@ -22,7 +22,6 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 32px;
-
       @media (max-width: 767px) {
         @include title-p-767;
       }
@@ -48,6 +47,7 @@
       }
     }
     img {
+      animation: move-img 3s infinite ease-in-out;
       @media (max-width: 480px) {
         width: 100%;
         height: auto;

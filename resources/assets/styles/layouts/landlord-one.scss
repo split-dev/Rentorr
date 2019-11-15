@@ -9,6 +9,7 @@
       max-height: 575px;
       img {
         width: 100%;
+        animation: move-img 3s infinite ease-in-out;
         @media (max-width: 991px) {
           margin-top: 30px;
         }

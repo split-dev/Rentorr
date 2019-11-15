@@ -89,6 +89,7 @@
       }
     }
     img {
+      animation: move-img 3s infinite ease-in-out;
       @media (max-width: 991px) {
         margin-top: 40px;
         max-height: 300px;

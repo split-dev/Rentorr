@@ -55,6 +55,7 @@
       }
     }
     img {
+      animation: move-img 3s infinite ease-in-out;
       @media (max-width: 991px) {
         margin: 25px 0 25px;
         max-height: 500px;
