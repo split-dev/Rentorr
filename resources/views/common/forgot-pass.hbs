@@ -1,0 +1,27 @@
+{{#each forgot-pass}}
+    <div class="forgot-pass">
+    <div class="sign-in__box-shadow"></div>
+    <div class="sign-in__block">
+        <div class="sign-in__first-row">
+            <h3>{{{title-forgot-pass}}}</h3>
+            <div class="sign-in__close-position">
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="forgot-pass__info">
+            <p>No problem! We'll send you an email so you can quickly change your password and go back to apartment surfing.</p>
+        </div>
+        <form class="main-form__regist">
+            <div class="field-wrap">
+                <input class="form-control main-form__valid" placeholder=" " id="email" name="pass"  required="" type="email">
+                <label class="control-label main-form__valid-label" for="email">Email</label>
+            </div>
+        </form>
+        <button type="submit" class="button--blue">Reset password</button>
+        <div class="forgot-pass__cancel">
+            <a href="#">Cancel</a>
+        </div>
+        <p class="forgot-pass__desc">By signing up you agree on Rentorr’s <a href="#" class="second-link">Terms of use</a> and <a href="#" class="second-link">Privacy policy.</a></p>
+    </div>
+</div>
+{{/each}}

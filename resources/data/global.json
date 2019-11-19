@@ -14,6 +14,11 @@
       "title-check-email": "Great, check your inbox"
     }
   ],
+  "forgot-pass": [
+    {
+      "title-forgot-pass": "I forgot my password!"
+    }
+  ],
   "footer": [
     {
       "logo": "images/global/logo.svg",
