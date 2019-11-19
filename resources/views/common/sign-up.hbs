@@ -1,0 +1,55 @@
+{{#each sign-up}}
+    <div class="sign-up">
+    <div class="sign-in__box-shadow"></div>
+    <div class="sign-in__block">
+        <div class="sign-in__first-row">
+            <h3>{{{title-sign-up}}}</h3>
+            <div class="sign-in__close-position">
+                <a href="#"></a>
+            </div>
+        </div>
+
+        <form class="main-form__regist">
+            <div class="main-form__first-row">
+                <div class="field-wrap">
+                    <input class="form-control main-form__name-input" id="name" name="name" type="text">
+                    <label class="control-label" for="name">First Name</label>
+                </div>
+                <div class="field-wrap">
+                    <input class="form-control main-form__name-input" id="last-name" name="last-name" type="text">
+                    <label class="control-label" for="last-name">Last Name</label>
+                </div>
+            </div>
+
+            <div class="field-wrap">
+                <input class="form-control main-form__valid" placeholder=" " id="email" name="pass"  required="" type="email">
+                <label class="control-label main-form__valid-label" for="email">Email</label>
+            </div>
+
+            <div class="field-wrap">
+                <input class="form-control main-form__repass" id="pass" name="pass" type="password">
+                <a class="main-form__glass" href="#"><img src="images/home/glass.svg" alt=""></a>
+                <label class="control-label" for="pass">Password</label>
+            </div>
+            <button type="submit" class="button--blue">Sign Up with email</button>
+        </form>
+
+        <div class="sign-in__line"></div>
+        <div class="sign-in__or-position">
+            <div class="sign-in__or">
+                <span>OR</span>
+            </div>
+        </div>
+        <div class="sign-in__facebook-position">
+            <a class="sign-in__facebook" href="#">
+                <img src="images/global/facebook.png" alt="">
+                <span class="second-link">Sign up with facebook</span>
+            </a>
+            <div class="sign-in__sign-up">
+                <span>Already have an account?</span>
+                <a href="#" class="second-link">Sign In</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

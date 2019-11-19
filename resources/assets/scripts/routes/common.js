@@ -66,6 +66,18 @@ export default {
       $('.main-search').removeClass('main-search-open');
     });
 
+    $('.nav__sign-up').click(function (e) {
+      e.preventDefault();
+      $('.sign-up').addClass('sign-up-active');
+      $('html, body').toggleClass('body-hidden');
+    });
+    $('.mobile-menu__sign-up').click(function (e) {
+      e.preventDefault();
+      $('.sign-up').addClass('sign-up-active');
+      $('.nav__mobile-button').toggleClass('open-mobile');
+      $('.mobile-menu').toggleClass('active-menu');
+    });
+
     $('.nav__sign-in').click(function (e) {
       e.preventDefault();
       $('.sign-in').addClass('sign-in-active');
@@ -85,11 +97,13 @@ export default {
     $('.sign-in__box-shadow').click(function (e) {
       e.preventDefault();
       $('.sign-in').removeClass('sign-in-active');
+      $('.sign-up').removeClass('sign-up-active');
       $('html, body').toggleClass('body-hidden');
     });
     $('.sign-in__close-position a').click(function (e) {
       e.preventDefault();
       $('.sign-in').removeClass('sign-in-active');
+      $('.sign-up').removeClass('sign-up-active');
       $('html, body').toggleClass('body-hidden');
     });
 

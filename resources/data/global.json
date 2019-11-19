@@ -1,4 +1,14 @@
 {
+  "sign-in": [
+    {
+      "title-sign-in": "Hey, welcome back!"
+    }
+  ],
+  "sign-up": [
+    {
+      "title-sign-up": "SIGN UP"
+    }
+  ],
   "footer": [
     {
       "logo": "images/global/logo.svg",

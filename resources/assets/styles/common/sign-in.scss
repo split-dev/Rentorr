@@ -133,6 +133,11 @@
       letter-spacing: 0.3px;
       color: #666b7c;
       line-height: 24px;
+      @media (max-width: 575px) {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+      }
     }
     .sign-in__valid {
       &:not(:placeholder-shown) {
