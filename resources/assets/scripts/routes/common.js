@@ -71,6 +71,12 @@ export default {
       $('.sign-in').addClass('sign-in-active');
       $('html, body').toggleClass('body-hidden');
     });
+    $('.mobile-menu__sign-in').click(function (e) {
+      e.preventDefault();
+      $('.sign-in').addClass('sign-in-active');
+      $('.nav__mobile-button').toggleClass('open-mobile');
+      $('.mobile-menu').toggleClass('active-menu');
+    });
     $('.sign-in__button').click(function (e) {
       e.preventDefault();
       $('.sign-in').removeClass('sign-in-active');
