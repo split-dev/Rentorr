@@ -94,16 +94,23 @@ export default {
       $('.sign-in').removeClass('sign-in-active');
       $('html, body').toggleClass('body-hidden');
     });
+    $('.sign-up__button').click(function (e) {
+      e.preventDefault();
+      $('.sign-up').removeClass('sign-up-active');
+      $('.check-email').addClass('check-email-active');
+    });
     $('.sign-in__box-shadow').click(function (e) {
       e.preventDefault();
       $('.sign-in').removeClass('sign-in-active');
-      $('.sign-up').removeClass('sign-up-active');
+      $('.sign-up').removeClass('sign-up-active')
+      $('.check-email').removeClass('check-email-active');
       $('html, body').toggleClass('body-hidden');
     });
     $('.sign-in__close-position a').click(function (e) {
       e.preventDefault();
       $('.sign-in').removeClass('sign-in-active');
       $('.sign-up').removeClass('sign-up-active');
+      $('.check-email').removeClass('check-email-active');
       $('html, body').toggleClass('body-hidden');
     });
 

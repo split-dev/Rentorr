@@ -9,6 +9,11 @@
       "title-sign-up": "SIGN UP"
     }
   ],
+  "check-email": [
+    {
+      "title-check-email": "Great, check your inbox"
+    }
+  ],
   "footer": [
     {
       "logo": "images/global/logo.svg",
