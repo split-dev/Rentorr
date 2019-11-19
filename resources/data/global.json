@@ -19,6 +19,11 @@
       "title-forgot-pass": "I forgot my password!"
     }
   ],
+  "select-role": [
+    {
+      "title-select-role": "Select your role"
+    }
+  ],
   "footer": [
     {
       "logo": "images/global/logo.svg",

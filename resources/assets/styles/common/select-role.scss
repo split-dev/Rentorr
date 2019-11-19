@@ -1,4 +1,4 @@
-.check-email {
+.select-role {
   visibility: hidden;
   transition: 0.3s;
   opacity: 0;
@@ -13,24 +13,13 @@
   @media (max-width: 575px) {
     transition: none;
   }
-  &.check-email-active {
+  &.select-role-active {
     visibility: visible;
     opacity: 1;
   }
-  button {
-    width: 100%;
-    outline: none;
-    border: none;
-  }
-  .sign-in__first-row {
-    margin-bottom: 35px;
-    h3 {
-      margin-right: 5px;
-    }
-  }
   .sign-in__block {
     min-width: 500px;
-    min-height: 290px;
+    min-height: 460px;
     @media (max-width: 480px) {
       min-width: auto;
     }
@@ -39,22 +28,43 @@
       height: 100vh;
     }
   }
-  &__info {
-    max-width: 350px;
-    margin-bottom: 55px;
+  button {
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 65px;
+  }
+  &__form {
     p {
+      color: #222634;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      margin: 0 0 0 8px;
+      padding-top: 4px;
+    }
+  }
+  &__landlord,
+  &__tenant {
+    display: flex;
+    align-items: center;
+  }
+  &__desc {
+    p {
+      color: #222634;
+      font-size: 14px;
+      line-height: 14px;
+      @include over-bold;
+    }
+    span {
       color: #666b7c;
       font-family: $roboto;
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
-      margin: 0;
-    }
-    span {
-      color: #222634;
-      font-size: 14px;
-      line-height: 14px;
-      @include over-bold;
+      margin: 25px 0 50px;
     }
   }
 }

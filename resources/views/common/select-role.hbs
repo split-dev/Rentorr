@@ -1,0 +1,29 @@
+{{#each select-role}}
+    <div class="select-role">
+    <div class="sign-in__box-shadow"></div>
+    <div class="sign-in__block">
+        <div class="sign-in__first-row">
+            <h3>{{{title-select-role}}}</h3>
+            <div class="sign-in__close-position">
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="select-role__desc">
+            <p>What is your purpose of using Rentorr?</p>
+            <span>You will be able to select other role via settings in your profile</span>
+        </div>
+        <form class="select-role__form">
+            <div class="select-role__landlord">
+                <input type="radio" name="select-role">
+                <p>I’m Landlord, looking for a tenants</p>
+            </div>
+            <div class="select-role__tenant">
+                <input type="radio" name="select-role">
+                <p>I’m Tenant, looking for place to rent</p>
+            </div>
+        </form>
+        <button type="submit" class="button--blue select-role__button">select</button>
+        <p class="forgot-pass__desc">By signing up you agree on Rentorr’s <a href="#" class="second-link">Terms of use</a> and <a href="#" class="second-link">Privacy policy.</a></p>
+    </div>
+</div>
+{{/each}}
