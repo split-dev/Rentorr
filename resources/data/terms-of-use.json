@@ -1,0 +1,61 @@
+{
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "main-tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "landlord-two.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "privacy-terms-title": [
+    {
+      "title": "Terms of Use",
+      "data": "Last updated on March 26, 2019"
+    }
+  ],
+  "privacy-terms-desc": [
+    {
+      "title": "Introduction",
+      "info": "This privacy policy is designed to inform users of the Renterr, Inc. website about how Renterr, Inc. (\"Renterr”, \"we\" or \"us\") gathers and uses personal information submitted to Renterr through the Website. Renterr will take reasonable steps to protect user privacy consistent with the guidelines set forth in this policy and with applicable U.S. laws. In this policy, \"user\" or \"you\" means any person viewing the Website or submitting any personal information to Renterr in connection with using the Website. By using the Website, you are indicating your consent to this Privacy Policy. \n\n"
+    },
+    {
+      "title": "What Information Do We Collect?",
+      "info": "If you sign up to use services offered through the Website, Renterr and/or certain third party service providers that we engage to provide services to us (\"Contractors\") may collect certain personal information, including your name, email address, home address, employment information, phone number, educational background, credit score, criminal and eviction history, financial information and income and tenancy history (collectively, the \"Personal Information\"). The collection of such Personal Information is consistent with our provision of services to you, including the facilitation of determinations by landlords, landlord representatives, brokers, property managers and sub-lessors of your suitability as a potential tenant. In addition, if you contact Renterr and disclose additional personal information, we may store that Personal Information. <br> <br> Information that we collect when you register (including Personal Information) may be provided to our third-party service providers through certain features of the Website. This information is used in order to fulfill your request to provide certain other users of the Website with your credit report and credit score and/or with the results of background checks in regard to your criminal and/or eviction history."
+    },
+    {
+      "title": "How Do We Use the Information We Collect?",
+      "info": "We will use and store Personal Information for the purpose of delivering the Website and our services to you, and to analyze and enhance the operation of the Website. We may also use Personal Information for the internal operational and administrative purposes of the Website. We may enter Personal Information into our contact management database, and may use such database to send you marketing materials and to contact you regarding your interest in Renterr products and services."
+    }
+  ]
+}

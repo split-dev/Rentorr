@@ -1,0 +1,26 @@
+.privacy-terms-title {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #eeeef2;
+  h2 {
+    color: #222634;
+    font-size: 54px;
+    letter-spacing: -0.56px;
+    line-height: 64px;
+    margin: 0;
+    @include over-extra;
+    @media (max-width: 575px) {
+      font-size: 28px;
+      letter-spacing: -0.29px;
+      line-height: 32px;
+    }
+  }
+  p {
+    color: #9ba0b5;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 40px 0 0 0;
+  }
+}

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="privacy-terms">
+    {{> ../common/mobile-menu}}
+    {{> ../common/nav }}
+    {{> ../common/sign-in}}
+    {{> ../common/sign-up}}
+    {{> ../common/check-email}}
+    {{> ../common/forgot-pass}}
+    {{> ../common/select-role}}
+    <div class="container privacy-terms__container">
+        <div class="row">
+            <div class="col-lg-9">
+                {{#each privacy-terms-title}}
+                    {{> ../partials/privacy-terms-title }}
+                {{/each}}
+                {{#each privacy-terms-desc}}
+                    {{> ../partials/privacy-terms-desc }}
+                {{/each}}
+            </div>
+            <div class="col-lg-3">
+                <div class="privacy-terms__link-position">
+                    <a href="privacy-police.html">Privacy Policy</a>
+                    <a href="terms-of-use.html" class="privacy-terms__active-link">Terms of use</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> ../common/footer }}
+</body>
+</html>

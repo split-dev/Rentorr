@@ -1,0 +1,40 @@
+.privacy-terms {
+  &__container {
+    max-width: 1040px;
+  }
+  &__link-position {
+    display: flex;
+    flex-direction: column;
+    margin: 340px 0 0 80px;
+    @media (max-width: 1040px) {
+      margin: 340px 0 0 60px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+    a {
+      color: #9ba0b5;
+      font-family: $roboto;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1.73px;
+      line-height: 18px;
+      text-transform: uppercase;
+      transition: 0.3s;
+      margin: 0;
+      &:hover {
+        color: #222634;
+        text-decoration: none !important;
+      }
+      &:first-child {
+        margin-bottom: 40px !important;
+      }
+    }
+  }
+  &__active-link {
+    color: #222634 !important;
+  }
+  footer {
+    margin-top: 80px;
+  }
+}

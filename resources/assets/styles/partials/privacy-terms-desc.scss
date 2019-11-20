@@ -1,0 +1,32 @@
+.privacy-terms-desc {
+  margin-top: 50px;
+  @media (max-width: 575px) {
+    margin-top: 40px;
+  }
+  h3 {
+    color: #222634;
+    font-size: 23px;
+    letter-spacing: -0.24px;
+    line-height: 36px;
+    margin: 0 0 24px 0;
+    @include over-extra;
+    @media (max-width: 575px) {
+      font-size: 18px;
+      letter-spacing: -0.19px;
+      line-height: 36px;
+      margin: 0;
+    }
+  }
+  p {
+    color: #666b7c;
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    @media (max-width: 575px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
