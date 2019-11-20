@@ -1,0 +1,22 @@
+{{#each error}}
+<html lang="en">
+<head>
+    {{> ../common/head }}
+</head>
+<body class="error">
+    <div class="container-box-full error__logo-position">
+        <a href="/" class="nav__logo">
+            <img src="{{logo}}" alt="logo">
+        </a>
+    </div>
+    <div class="container-box-full error__img-position">
+        <img src="{{img}}" alt="img">
+    </div>
+    <div class="container-box-full error__desc">
+        <h3>Ooops!</h3>
+        <span>Something went wrong</span>
+        <p><a class="error__link second-link" href="#">Go back</a> or head over to <a class="error__link second-link" href="/">Home Page</a> to choose a new direction.</p>
+    </div>
+</body>
+</html>
+{{/each}}
