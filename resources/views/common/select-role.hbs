@@ -13,14 +13,11 @@
             <span>You will be able to select other role via settings in your profile</span>
         </div>
         <form class="select-role__form">
-            <div class="select-role__landlord">
-                <input type="radio" name="select-role">
-                <p>I’m Landlord, looking for a tenants</p>
-            </div>
-            <div class="select-role__tenant">
-                <input type="radio" name="select-role">
-                <p>I’m Tenant, looking for place to rent</p>
-            </div>
+            <input class="select-role__input" id="select-role__input" name="select-role" type="radio">
+            <label class="select-role__input-label" for="select-role__input">I’m Landlord, looking for a tenants</label>
+
+            <input class="select-role__input" id="select-role__input-2" name="select-role" type="radio">
+            <label class="select-role__input-label" for="select-role__input-2">I’m Tenant, looking for place to rent</label>
         </form>
         <button type="submit" class="button--blue select-role__button">select</button>
         <p class="forgot-pass__desc">By signing up you agree on Rentorr’s <a href="#" class="second-link">Terms of use</a> and <a href="#" class="second-link">Privacy policy.</a></p>
