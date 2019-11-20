@@ -2,6 +2,13 @@
   &__container {
     max-width: 1040px;
   }
+  .nav {
+    @media (max-width: 575px) {
+      &:before {
+        display: none;
+      }
+    }
+  }
   &__link-position {
     display: flex;
     flex-direction: column;

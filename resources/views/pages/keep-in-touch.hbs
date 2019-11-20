@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="keep-in-touch">
+    {{> ../common/mobile-menu}}
+    {{> ../common/nav }}
+    {{> ../common/sign-in}}
+    {{> ../common/sign-up}}
+    {{> ../common/check-email}}
+    {{> ../common/forgot-pass}}
+    {{> ../common/select-role}}
+    <div class="container keep-in-touch__container">
+        <div class="row keep-in-touch__block-position">
+            <div class="col-lg-6 keep-in-touch__left">
+                {{#each keep-in-touch-title}}
+                    <h1>{{title}}</h1>
+                    <p>{{desc}}</p>
+                {{/each}}
+                <form class="sign-in__login">
+                    <div class="field-wrap">
+                        <input class="form-control sign-in__valid" placeholder=" " id="email" name="pass" required="" type="email">
+                        <label class="control-label sign-in__valid-label" for="email">Email</label>
+                    </div>
+                    <div class="field-wrap">
+                        <input class="form-control sign-in__repass" id="massege" name="massege" type="text">
+                        <label class="control-label" for="massege">Massege</label>
+                    </div>
+                    <button type="submit" class="button--blue keep-in-touch__button">Send</button>
+                </form>
+            </div>
+            <div class="col-lg-6 keep-in-touch__right">
+                <img src="images/keep-in-touch/dver.svg" alt="">
+                <div class="keep-in-touch__right-box">
+                    <p>The Pinnacle Building, Cnr Burg & Castle Streets, Cape Town</p>
+                    <span>0861322223</span>
+                    <a href="#" class="second-link">Support@rentorr.co</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> ../common/footer }}
+</body>
+</html>
