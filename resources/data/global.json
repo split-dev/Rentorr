@@ -24,10 +24,15 @@
       "title-select-role": "Select your role"
     }
   ],
+  "application": [
+    {
+      "title-application": "Application preview"
+    }
+  ],
   "footer": [
     {
       "logo": "images/global/logo.svg",
-      "desc": "The easy way to connect landlords with tenants for mutual benefit!",
+      "desc": "The easiest way to connect landlords with tenants for mutual benefit!",
       "nav": [
         {
           "adress": "#",
@@ -35,7 +40,7 @@
         },
         {
           "adress": "terms-of-use.html",
-          "link": "Terms of Service"
+          "link": "Terms of Use"
         },
         {
           "adress": "privacy-police.html",

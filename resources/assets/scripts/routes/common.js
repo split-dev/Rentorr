@@ -109,6 +109,10 @@ export default {
       $('.sign-in').removeClass('sign-in-active');
       $('.forgot-pass').addClass('forgot-pass-active');
     });
+    $('.landlord .top-pages a').click(function (e) {
+      e.preventDefault();
+      $('.application').addClass('application-active');
+    });
     $('.sign-in__box-shadow').click(function (e) {
       e.preventDefault();
       $('.sign-in').removeClass('sign-in-active');
@@ -116,6 +120,7 @@ export default {
       $('.check-email').removeClass('check-email-active');
       $('.forgot-pass').removeClass('forgot-pass-active');
       $('.select-role').removeClass('select-role-active');
+      $('.application').removeClass('application-active');
       $('html, body').toggleClass('body-hidden');
     });
     $('.sign-in__close-position a').click(function (e) {
@@ -125,6 +130,7 @@ export default {
       $('.check-email').removeClass('check-email-active');
       $('.forgot-pass').removeClass('forgot-pass-active');
       $('.select-role').removeClass('select-role-active');
+      $('.application').removeClass('application-active');
       $('html, body').toggleClass('body-hidden');
     });
 
