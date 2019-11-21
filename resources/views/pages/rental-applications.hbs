@@ -2,35 +2,40 @@
 <head>
   {{> ../common/head }}
 </head>
-<body class="landlord-three">
+<body class="rental-applications">
 {{> ../common/mobile-menu}}
 {{> ../common/nav }}
+
 {{#each top-page}}
-    {{> ../common/top-page }}
+  {{> ../common/top-page }}
 {{/each}}
 {{> ../common/sign-in}}
 {{> ../common/sign-up}}
 {{> ../common/check-email}}
 {{> ../common/forgot-pass}}
 {{> ../common/select-role}}
-{{#each images}}
-  {{> ../partials/title-img }}
+{{#each paragraf-one}}
+  {{> ../partials/paragraf }}
 {{/each}}
 
-{{#each img-desc}}
-    {{> ../common/img-desc }}
+{{#each skill}}
+  {{> ../common/skill-box }}
 {{/each}}
 
 {{#each title-one}}
-    {{> ../partials/title-section }}
+  {{> ../partials/title-section }}
 {{/each}}
 
 {{#each feature-one}}
-    {{> ../partials/features }}
+  {{> ../partials/features }}
 {{/each}}
 
-{{#each rent}}
-    {{> ../common/ready }}
+{{#each img-desc}}
+  {{> ../common/img-desc }}
+{{/each}}
+
+{{#each ready}}
+  {{> ../common/ready }}
 {{/each}}
 {{> ../common/footer }}
 </body>

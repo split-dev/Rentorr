@@ -7,11 +7,11 @@
           "name": "Landlord"
         },
         {
-          "link": "main-tenant.html",
+          "link": "tenant.html",
           "name": "Tenant"
         },
         {
-          "link": "landlord-two.html",
+          "link": "collect-rent-online.html",
           "name": "Browse",
           "arr": "<i class=\"arr\"></i>"
         }
@@ -27,11 +27,11 @@
           "name": "Landlord"
         },
         {
-          "link": "main-tenant.html",
+          "link": "tenant.html",
           "name": "Tenant"
         },
         {
-          "link": "landlord-two.html",
+          "link": "collect-rent-online.html",
           "name": "Browse",
           "arr": "<i class=\"arr\"></i>"
         }

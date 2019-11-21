@@ -2,7 +2,7 @@
 <head>
   {{> ../common/head }}
 </head>
-<body class="landlord-two">
+<body class="maintenance-requests">
 {{> ../common/mobile-menu}}
 {{> ../common/nav }}
 
@@ -14,28 +14,24 @@
 {{> ../common/check-email}}
 {{> ../common/forgot-pass}}
 {{> ../common/select-role}}
-<div class="what">
-  {{#each title-one}}
-    {{> ../partials/title-section }}
-  {{/each}}
-  {{#each feature-one}}
-    {{> ../partials/features }}
+<div class="info">
+  {{#each images}}
+    {{> ../partials/title-img }}
   {{/each}}
 </div>
-<div class="payment">
-  {{#each title-two}}
-    {{> ../partials/title-section }}
-  {{/each}}
-  {{#each skill}}
-    {{> ../common/skill-box }}
-  {{/each}}
-</div>
-{{#each img-desc}}
-  {{> ../common/img-desc }}
+
+{{#each title-one}}
+  {{> ../partials/title-section }}
 {{/each}}
+
+{{#each skill}}
+  {{> ../common/skill-box }}
+{{/each}}
+
 {{#each ready}}
   {{> ../common/ready }}
 {{/each}}
+
 {{> ../common/footer }}
 </body>
 </html>

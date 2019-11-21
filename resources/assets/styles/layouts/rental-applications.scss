@@ -1,4 +1,4 @@
-.tenant-three {
+.rental-applications {
   .top-pages {
     margin-top: 65px;
     margin-bottom: 212px;
@@ -38,7 +38,7 @@
         }
         &:after {
           position: absolute;
-          content: url("images/tenant-three/Path3.svg");
+          content: url("images/rental-applications/Path3.svg");
           right: -715px;
           bottom: -299px;
           overflow: hidden;
@@ -96,14 +96,14 @@
     position: relative;
     &:before {
       position: absolute;
-      content: url("images/tenant-three/Path4.svg");
+      content: url("images/rental-applications/Path4.svg");
       left: 0;
       top: -205px;
       z-index: -1;
     }
     &:after {
       position: absolute;
-      content: url("images/tenant-three/Path5.svg");
+      content: url("images/rental-applications/Path5.svg");
       right: -50px;
       top: 188px;
       z-index: -1;

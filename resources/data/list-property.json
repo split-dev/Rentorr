@@ -1,0 +1,111 @@
+{
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/land/land-one-main.png",
+      "title": "Want Better Tenants? Start with Better Listings",
+      "desc": "The first part of Rentorr's property management software walks you through listing creation so you can be sure you've included all of the details that high quality tenants care about.",
+      "link": "#",
+      "link-name": "TRY IT FOR FREE"
+    }
+  ],
+  "paragraf-one": [
+    {
+      "title": "More Than Just Tools for Landlords, We're also A Listing Service",
+      "text": [
+        {
+          "desc": "Rentorr utilizes a partner network to make our property management services useful before\nyour properties are even filled. Posting your listing across a wide range of services ensure more\npotential tenants become interested in renting your property."
+        }
+      ]
+    }
+  ],
+  "circle": [
+    {
+      "circle-img": "images/land-one/oval.png"
+    }
+  ],
+  "apply": [
+    {
+      "img": "images/main-tenant/map.png",
+      "title": "Listings Include Integrated Applications",
+      "text": "Sick of sifting through rental applications for tenants who aren't qualified? We understand, and\nthat's why our integrated service can help you see the best possible applicants faster when you\nallow them to apply directly from your listing."
+    }
+  ],
+  "title-one": [
+    {
+      "title": "What Makes Rentorr Different?"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "4",
+          "oval": "images/land/calendar.svg",
+          "title": "Featured Rentals",
+          "text": "Want to be absolutely certain your property rentals are getting the attention they deserve? Feature your listing so it appears front and center."
+        },
+        {
+          "size": "4",
+          "oval": "images/land/verify.svg",
+          "title": "Verified Status",
+          "text": "Like many social media platforms, Rentorr highlights your listing's features with a special ribbon badge that appears on the search page for listings."
+        },
+        {
+          "size": "4",
+          "oval": "images/land/message.svg",
+          "title": "Easy Correspondence",
+          "text": "Rentorr allows you to receive messages from applicants with a time stamp, and to apply directly through the app or through your own email."
+        }
+      ]
+    }
+  ],
+  "ready": [
+    {
+      "title": "Ready to Get Started?",
+      "desc": "Get the kinds of qualified applicants your property deserves when you created a specialized listing with Rentorr.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ]
+}

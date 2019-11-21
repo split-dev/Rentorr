@@ -1,0 +1,110 @@
+{
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/land-three/top.png",
+      "title": "Online Rental Applications Made Easy",
+      "desc": "No more paper cuts or illegible handwriting to contend with when you use Rentorr's tenant management system. Our time-stamped digital applications will allow you to track and compare all of the potential tenants.",
+      "link": "#",
+      "link-name": "RENT YOUR HOME"
+    }
+  ],
+  "img-desc": [
+    {
+      "img-full": "images/land-three/adult.png",
+      "title": "High Quality Security Protects Your Information",
+      "text": "Rentorr understands that it takes a lot of trust to supply your personal information. That's why we encrypt it with the same system that banks use. What's more, we've partnered with Compuscan to ensure that all credit information is not only accurate, but also secure.",
+      "img": "images/land-three/compuscanOrg.png"
+    }
+  ],
+  "title-one": [
+    {
+      "title": "What Sets Rentorr Tenant Screeing Apart?"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "3",
+          "oval": "images/land-three/check.svg",
+          "title": "Credit Check",
+          "text": "Financial responsibility is one of the biggest concerns when renting your property, and that's why Rentorr takes care to supply detailed financial histories including credit reports and payment histories."
+        },
+        {
+          "size": "3",
+          "oval": "images/land-three/people.svg",
+          "title": "Verified Identity",
+          "text": "Nothing good ever started with deceit, so make sure you know who you're truly renting to by verifying applicants' identity with Rentorr."
+        },
+        {
+          "size": "3",
+          "oval": "images/land-three/Shape.svg",
+          "title": "Affordability Score",
+          "text": "Landlord and tenant alike are protected when you understand the financial implications of a rental. We use a clever algorithm to figure out whether a renter can genuinely afford to rent your property long term."
+        },
+        {
+          "size": "3",
+          "oval": "images/land-three/r.svg",
+          "title": "Rental History",
+          "text": "Rentorr does the record keeping for you, tracking all completed payments (including rent and deposits) for you to call upon in the future."
+        }
+      ]
+    }
+  ],
+  "rent": [
+    {
+      "title": "Get to Work with Rentorr",
+      "desc": "Finding the right tenant has never been easier or more autonomous than with Rentorr, so capitalize on this service.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ],
+  "images": [
+    {
+      "title": "Use Your Listing to Screen Tenants and Accept Applications",
+      "desc": "Capitalize on the heat of the moment, allow potential tenants to apply right from your listing. Rental applications will be time-stamped and complete with financial screening information so you can make an informed decision.",
+      "img": "images/land-three/images-r.png"
+    }
+  ]
+}

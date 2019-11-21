@@ -1,0 +1,277 @@
+{
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "active": "active",
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "active": "active",
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page-search": [
+    {
+      "revers": "d-flex flex-row-reverse",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/main-tenant/top-img.png",
+      "title": "House Hunting <br> Made <span style=\"color: #1a5dc6\">Simple</span>"
+    }
+  ],
+  "country": [
+    {
+      "img": "./images/main-tenant/city1.jpg",
+      "title": "Cape town",
+      "desc": "Properties renting around R18,500"
+    },
+    {
+      "img": "./images/main-tenant/city2.jpg",
+      "title": "Johannesburg",
+      "desc": "Properties renting around R18,500"
+    },
+    {
+      "img": "./images/main-tenant/city3.jpg",
+      "title": "Durban",
+      "desc": "Properties renting around R18,500"
+    },
+    {
+      "img": "./images/main-tenant/city4.jpg",
+      "title": "Pretoria",
+      "desc": "Properties renting around R18,500"
+    },
+    {
+      "img": "./images/main-tenant/city5.jpg",
+      "title": "Port Elizabeth",
+      "desc": "Properties renting around R28,000"
+    },
+    {
+      "img": "./images/main-tenant/city6.jpg",
+      "title": "Polokwane",
+      "desc": "Properties renting around R45,000"
+    }
+  ],
+  "apply": [
+    {
+      "img": "images/main-tenant/map.png",
+      "title": "No-Hassle Applications",
+      "text": "Landlords aren't the only ones who can benefit from property management software. Our oneclick application software allows you to apply for the property rentals of your dreams, and your tenant application form will jump to the top of the stack with verified financial reports and references."
+    }
+  ],
+  "image-info": [
+    {
+      "revers": "flex-row-reverse",
+      "size-text": "6",
+      "off-text": "offset-lg-0",
+      "size-img": "6",
+      "off-img": "offset-lg-0",
+      "title": "Automated Rent Payments",
+      "desc": "You're human; you're bound to forget what day of the month is every once in a while, but that doesn't mean you have to pay a late fee anymore. Our services allow you to automatically withdraw rent each month so you don't even have to think about it.",
+      "button-one": "<a href=\"#\" class=\"apply__link\">LEARN MORE</a>",
+      "img": "images/main-tenant/group1.png"
+    }
+  ],
+  "paragraf": [
+    {
+      "title": "Lodge Complaints and Request Maintenance",
+      "text": [
+        {
+          "desc": "Having trouble with your property? Our tenant management system allows you to fill out a maintenance request, complete with photos and videos, then send it off to your landlord and track the status in real time."
+        }
+      ],
+      "button": "<a href=\"#\" class=\"second-link\">REQUEST MAINTENANCE</a>"
+    }
+  ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/main-tenant/shape1.svg",
+          "title": "24/7 Repair Request Form",
+          "text": "Report a pressing issue any time of the day or night, and watch as your request progresses."
+        }
+      ],
+      "img-one": "images/main-tenant/tenant-right.png",
+      "text-center": [
+        {
+          "oval": "images/main-tenant/shape2.svg",
+          "title": "Set the Level of Urgency",
+          "text": "If an issue is especially pressing, you can indicate that on your request then watch as it is processed."
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/main-tenant/shape3.svg",
+          "title": "Communicate Easily with Your Landlord",
+          "text": "It's never been so simple to get a message to your landlord, and to see how they manage its content."
+        }
+      ],
+      "img-two": "images/main-tenant/tenant-left.png"
+    }
+  ],
+  "paragraf-two": [
+    {
+      "title": "Data Protection for Tenants",
+      "text": [
+        {
+          "desc": "All legal documents, from tenancy agreements to lease terms, are made simple with Rentorr. Enjoy total transparency and round the clock support when you use our services."
+        }
+      ],
+      "button": "<a href=\"#\" class=\"second-link\">Find a place</a>"
+    }
+  ],
+  "feature": [
+    {
+      "item": [
+        {
+          "size": "4",
+          "oval": "images/main-tenant/prot1.svg",
+          "title": "Transparency",
+          "text": "Your tenant agreement should be clear and easy to understand; Rentorr makes sure that all the documents you sign with our service are written in plain English."
+        },
+        {
+          "size": "4",
+          "oval": "images/main-tenant/prot2.svg",
+          "title": "Safe Storage for Sensitive Documents",
+          "text": "You won't have to worry about losing important documents or lease agreements when you use Rentorr - we save electronic copies for you safely, and you can access them whenever you'd like."
+        },
+        {
+          "size": "4",
+          "oval": "images/main-tenant/prot3.svg",
+          "title": "eSign with Ease",
+          "text": "When everyone is leading busy lifestyles, it's difficult to sit down together to sign a lease. eSign allows you to officially sign from anywhere you'd like, whenever it fits into your schedule."
+        }
+      ]
+    }
+  ],
+  "paragraf-three": [
+    {
+      "title": "Explore South Africa!",
+      "text": [
+        {
+          "desc": "Rentorr has property rentals available in all of the most desirable cities."
+        }
+      ]
+    }
+  ],
+  "explore-link": [
+    {
+      "link-desc": "Pretoria Properties"
+    },
+    {
+      "link-desc": "Cape Town Properties"
+    },
+    {
+      "link-desc": "Durban Properties"
+    },
+    {
+      "link-desc": "Johannesburg Properties"
+    },
+    {
+      "link-desc": "Kempton Park Properties"
+    },
+    {
+      "link-desc": "Nelspruit Properties"
+    },
+    {
+      "link-desc": "Centurion Properties"
+    },
+    {
+      "link-desc": "Kroonstad Properties"
+    },
+    {
+      "link-desc": "Witbank Properties"
+    },
+    {
+      "link-desc": "Rustenburg Properties"
+    },
+    {
+      "link-desc": "Bethlehem Propertiess"
+    },
+    {
+      "link-desc": "Boland Properties"
+    },
+    {
+      "link-desc": "Klerksdorp Properties"
+    },
+    {
+      "link-desc": "Jeffreys Bay Properties"
+    },
+    {
+      "link-desc": "Soweto Properties"
+    },
+    {
+      "link-desc": "Bela-Bela Properties"
+    },
+    {
+      "link-desc": "East London Properties"
+    },
+    {
+      "link-desc": "Boksburg Properties"
+    },
+    {
+      "link-desc": "Polokwane Properties"
+    },
+    {
+      "link-desc": "Bloemfontein Properties"
+    },
+    {
+      "link-desc": "Hoedspruit Properties"
+    },
+    {
+      "link-desc": "Northern Cape Properties"
+    },
+    {
+      "link-desc": "Randburg Properties"
+    },
+    {
+      "link-desc": "Hartbeespoort Properties"
+    },
+    {
+      "link-desc": "Port Elizabeth Properties"
+    },
+    {
+      "link-desc": "Middleburg Properties"
+    },
+    {
+      "link-desc": "Montana Properties"
+    }
+  ],
+  "ready": [
+    {
+      "title": "Protecting Your Privacy Is Our Priority",
+      "desc": "You don't need to worry about data breaches or leaked information with Rentorr - we use the most cutting edge safety measures in the property management industry so you can focus on finding the house or apartment of your dreams.",
+      "link": "Find your home now"
+    }
+  ]
+}

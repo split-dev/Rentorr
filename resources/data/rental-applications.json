@@ -1,0 +1,141 @@
+{
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "active": "active",
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "d-flex flex-row-reverse",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/rental-applications/top.jpg",
+      "title": "Streamline the Online Application Process",
+      "desc": "Stop filling out countless rental applications and make the system work for you instead. Fill out a single application and save it to your profile. Then you can instantly apply to your favorite rentals for free.",
+      "link": "#",
+      "link-name": "Start your application"
+    }
+  ],
+  "paragraf-one": [
+    {
+      "title": "Comprehensive Renter Profile",
+      "text": [
+        {
+          "desc": "Don't let those application fees pile up. Pay a single fee, then share your profile with any landlord whose property rentals you're interested in.\n\n"
+        }
+      ]
+    }
+  ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/rental-applications/one.svg",
+          "title": "Verified Identity",
+          "text": "We make sure that you are who you say you are, so landlords have a sense of trust toward you right from the start."
+        }
+      ],
+      "img-one": "images/rental-applications/text-1.svg",
+      "text-center": [
+        {
+          "oval": "images/rental-applications/two.svg",
+          "title": "Credit Check",
+          "text": "You're more than just a credit score, which is why we provide detailed financial histories to landlords, so they can get a whole view with your tenant application form."
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/rental-applications/three.svg",
+          "title": "Rental History",
+          "text": "You won't have to recount past addresses and landlords over and over again with Rentorr- simply do it once, then you're good to go."
+        }
+      ],
+      "img-two": "images/rental-applications/text-2.svg"
+    }
+  ],
+  "title-one": [
+    {
+      "title": "Why Is Rentorr Tenant Screen The Best?"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "3",
+          "oval": "images/rental-applications/card.svg",
+          "title": "It Won't Impact Your Credit",
+          "text": "Since the screening is initiated by you, it counts as only a soft inquiry, which won't negatively impact your credit score."
+        },
+        {
+          "size": "3",
+          "oval": "images/rental-applications/list.svg",
+          "title": "You Get The Information Too",
+          "text": "Once your screening is complete, you can log in to view a copy of the credit report that Rentorr generated."
+        },
+        {
+          "size": "3",
+          "oval": "images/rental-applications/key.svg",
+          "title": "Control Over Privacy",
+          "text": "You have the final say in terms of who gets to see your information, and you can also revoke access anytime you'd like."
+        },
+        {
+          "size": "3",
+          "oval": "images/rental-applications/time.svg",
+          "title": "Less Wait Time",
+          "text": "Since the entire process is handled digitally, you don't have to wait for paperwork to process. Instead, you'll be able to apply faster, and therefore move into your new rental faster."
+        }
+      ]
+    }
+  ],
+  "img-desc": [
+    {
+      "img-full": "images/land-three/adult.png",
+      "title": "High Quality Security Keeps You Protected",
+      "text": "We understand that it can be nerve-wracking handing out your personal information, and that's why Rentorr uses the same encryption method as all banks to protect your information from security breaches. We also work with Compuscan to ensure the credit information we collect is accurate.",
+      "img": "images/land-three/compuscanOrg.png"
+    }
+  ],
+  "ready": [
+    {
+      "title": "Ready to Use Rentorr?",
+      "desc": "You won't believe how simple it is to apply to the rentals of your dreams with Rentorr-get started today to see for yourself.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ]
+}

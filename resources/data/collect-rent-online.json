@@ -1,0 +1,140 @@
+{
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "active": "active",
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "active": "active",
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "",
+      "size-text": "5",
+      "size-img": "6 offset-lg-1",
+      "images": "images/land-two/top.png",
+      "title": "Put Rent Collection on Auto-Pilot",
+      "desc": "When you invite tenants to pay rent using Rentorr, you'lll receive money directly to your bank account on time each month.",
+      "link": "#",
+      "link-name": "TRY IT FOR FREE"
+    }
+  ],
+  "title-one": [
+    {
+      "title": "What Goes in to Setting\nup Payments"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "4",
+          "oval": "images/land-two/card.svg",
+          "title": "Creating the Schedule",
+          "text": "Simply create the monthly payment that's due, and tenants will have the option to withdraw money automatically or pay manually. They'll be reminded when the due date is approaching."
+        },
+        {
+          "size": "4",
+          "oval": "images/land-two/secure.svg",
+          "title": "Security Deposit",
+          "text": "If a deposit is part of renting your property, simply add that amount to the tenant's first month of rent so they can pay it automatically through our tenant management system."
+        },
+        {
+          "size": "4",
+          "oval": "images/land-two/r.svg",
+          "title": "One-Time Fees",
+          "text": "Need to charge a pet deposit, or some other single fee to your tenant? No problem-simply add those fees to the payments due, and they can be paid along with rent."
+        }
+      ]
+    }
+  ],
+  "title-two": [
+    {
+      "title": "Why is Rentorr the best choice for payment processing?"
+    }
+  ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/land-two/arr.svg",
+          "title": "Effortless Collection",
+          "text": "Paying rent is one of the tensest parts of the relationship between landlord and tenant, but Rentorr eliminates in completely by automating the process. Plus, our property management software will give you insight into where payments are at, and will allow you to receive them in real time."
+        }
+      ],
+      "img-one": "images/land-two/img-right3x.png",
+      "text-center": [
+        {
+          "oval": "images/land-two/list.svg",
+          "title": "Record Keeping",
+          "text": "One of the most mundane aspects of property management is keeping detailed records. Luckily, Rentorr does that for you, compiling all of the receipts for paid rent in one convenient place. Rentorr can even provide monthly break downs that include those one-time fees."
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/land-two/check.svg",
+          "title": "Building Credit for Tenants",
+          "text": "Why shouldn't your tenants be rewarded for paying their rent on time? When they opt in for automatic payments with Rentorr, we automatically report those on-time payments to the credit bureau, thereby improving their credit history.."
+        }
+      ],
+      "img-two": "images/land-two/img-left3x.png"
+    }
+  ],
+  "tenat": [
+    {
+      "reverse": "reverse",
+      "title": "Focus on your properties, let us worry about the hard stuff",
+      "desc": "",
+      "text": "Live where you want. Never worry about missing another opportunity again because your rental application wasn’t first.",
+      "img": "images/home/tenat-bg.svg"
+    }
+  ],
+  "ready": [
+    {
+      "title": "Ready to Start Using Rentorr?",
+      "desc": "Property management doesn't have to feel like rocket science. Work with Rentorr to strike a balance that's right for you.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ],
+  "img-desc": [
+    {
+      "img-full": "images/land-two/thought.png",
+      "title": "Don't Sweat The Small Stuff",
+      "text": "You've got enough on your plate managing property without having to worry about the details of your finances. That's why we have partnered with Flutterwave to ensure all of our bank connections are completely safe. On top of that, we never keep your information, so you stay secure.",
+      "img": "images/land-two/wave.svg"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-.landlord-four {
+.rental-forms {
   .top-pages {
     margin-top: 65px;
     margin-bottom: 200px;
@@ -106,7 +106,7 @@
         }
       }
       p {
-        max-width: 344px;
+        max-width: 400px;
         color: #fff;
         font-family: $roboto;
         font-size: 16px;
@@ -121,7 +121,7 @@
       }
     }
     .img {
-      padding-top: 190px;
+      padding-top: 10px;
       position: relative;
       @media (max-width: 991px) {
         padding-top: 0;
@@ -133,7 +133,7 @@
         content: url("images/land-three/dots.svg");
         position: absolute;
         right: -42px;
-        top: 96px;
+        top: -26px;
         @media (max-width: 1230px) {
           display: none;
         }

@@ -1,0 +1,130 @@
+{
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "active": "active",
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "d-flex flex-row-reverse",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/pay-rent-online/top-tenant2.jpg",
+      "title": "Get Rewarded Just for Paying Rent",
+      "desc": "Every landlord in the game is wondering how to collect rent from tenants online, and the answer is simple: Rentorr. We allow you to connect your credit card or bank account to pay your landlord automatically each month. These automatic payments help boost your credit score.",
+      "link": "#",
+      "link-name": "TRY IT FOR FREE"
+    }
+  ],
+  "title-one": [
+    {
+      "title": "How to Set Up Automatic Payments"
+    }
+  ],
+  "feature-one": [
+    {
+      "item": [
+        {
+          "size": "4",
+          "oval": "images/land-two/card.svg",
+          "title": "It Starts with an Invitation",
+          "text": "Your landlord will have to set up a payment series within their property management software. Rentorr will then send you an email inviting you to use our platform to pay your rent. If your landlord isn't using Rentorr, you can send them an invite, too."
+        },
+        {
+          "size": "4",
+          "oval": "images/land-two/secure.svg",
+          "title": "Automate Your Payments",
+          "text": "Rentorr will give you the option to set up recurring monthly payments. This will keep you from ever paying another late fee, and it will help your credit, too."
+        },
+        {
+          "size": "4",
+          "oval": "images/land-two/r.svg",
+          "title": "Turn on Credit Reporting",
+          "text": "Once you opt in for this service, Rentorr will automatically report your on-time rent payments to the credit bureau, and you'll be rewarded with a higher credit score."
+        }
+      ]
+    }
+  ],
+  "title-two": [
+    {
+      "title": "Why Choose Rentorr to Process Your Payments?"
+    }
+  ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/land-two/arr.svg",
+          "title": "Improved Credit Score",
+          "text": "You're already paying you rent, so wouldn't it be nice to get something in return? Rentorr reports your payment history so your credit goes up at the same time."
+        }
+      ],
+      "img-one": "images/pay-rent-online/right.png",
+      "text-center": [
+        {
+          "oval": "images/land-two/list.svg",
+          "title": "Automated Options",
+          "text": "To err is human, but you don't have to pay late fees just because you've forgotten the date anymore. Set up automatic rent payments and Rentorr will remind you before the money is withdrawn each month."
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/land-two/check.svg",
+          "title": "Record Keeping",
+          "text": "When you pay your rent with Rentorr, we keep a detailed history of receipts for all of the fees that you've paid, so you don't have to. You can access them anytime."
+        }
+      ],
+      "img-two": "images/pay-rent-online/payment-left.png"
+    }
+  ],
+  "ready": [
+    {
+      "title": "Let Rentorr Make Your Life Easier",
+      "desc": "Don't stress over paying your rent each month, let Rentorr take care of that for you.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ],
+  "img-desc": [
+    {
+      "img-full": "images/land-two/thought.png",
+      "title": "Don't Worry-Your Information Is Safe with Us",
+      "text": "Rentorr doesn't keep your information-even when you've set up recurring payments. Plus, we work with Flutterwave to ensure that all of our connections with banks are secure, and your payment information is never in jeopardy.",
+      "img": "images/land-two/wave.svg"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/land-four/top.jpg",
+      "title": "Be Save with Lawyer-Approved Rental Agreements",
+      "desc": "We have worked with real estate lawyers in your area so you don't have to, and have developed the correct forms so you're protected every time you embark on a new journey renting your property.",
+      "link": "#",
+      "link-name": "TRY IT FOR FREE"
+    }
+  ],
+  "paragraf-one": [
+    {
+      "title": "Get access to rental forms for free",
+      "text": [
+        {
+          "desc": "We have a vast library of online forms that you can view any time of the day or night as part of our property manager services. What's more, all of these forms comply with state laws so you're keeping your business safe."
+        }
+      ]
+    }
+  ],
+  "author": [
+    {
+      "title": "Get a Rental Forms Package Made Just for You",
+      "info": [
+        {
+          "text": "Rental agreements are just the tip of the iceberg when it comes to landlord and tenant legal forms. Our comprehensive offering of rental forms protects you in this early stage, but also later on. <br>  <br>"
+        },
+        {
+          "text": "During the course of a rental, you might encounter a number of property management issues that require legal documents. Eviction notices, maintenance requests, and everything in between can be found with Rentorr. <br>  <br>"
+        },
+        {
+          "text": "When it comes time for the current tenant to move out, we have all of the necessary forms to help with that process, too. We'll help you make sure that deposits are returned and you're ready to rent to the next tenant. <br>  <br>"
+        }
+      ],
+      "img": "images/land-four/beautiful.png"
+    }
+  ],
+  "rent": [
+    {
+      "title": "Stay Safe with Rentorr",
+      "desc": "The world of property management can be murky and confusing. See through all of that haze with Rentorr's property management services.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ]
+}

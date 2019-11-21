@@ -1,4 +1,4 @@
-.tenant-one {
+.maintenance-requests {
   .top-pages {
     margin-top: 65px;
   }
@@ -71,7 +71,7 @@
         &:before {
           position: absolute;
           z-index: -1;
-          content: url("images/tenant-one/Gradient.svg");
+          content: url("images/maintenance-requests/Gradient.svg");
           top: -134px;
           left: -700px;
           height: 1000px;
@@ -127,7 +127,7 @@
         &:before {
           position: absolute;
           z-index: -1;
-          content: url("images/tenant-one/dots-one.svg");
+          content: url("images/maintenance-requests/dots-one.svg");
           top: 163px;
           left: -23px;
           @media (max-width: 992px) {

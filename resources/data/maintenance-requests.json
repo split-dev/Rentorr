@@ -1,0 +1,99 @@
+{
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "logo": "images/global/logo.svg",
+      "active": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
+  "top-page": [
+    {
+      "revers": "flex-row-reverse",
+      "size-text": "6",
+      "size-img": "6",
+      "images": "images/maintenance-requests/top.png",
+      "title": "Don't Put in Extra Work Making Maintenance Requests",
+      "desc": "Easily input a request with our tenant management system, then track its progress. Access your history of resolved requests for maintenance to ensure you receive your deposit back when you move out.",
+      "link": "#",
+      "link-name": "TRY IT FOR FREE"
+    }
+  ],
+  "images": [
+    {
+      "title": "Easily Communicate with Landlord to Resolve Issues",
+      "desc": "Landlord and tenant communications are notoriously difficult, but Rentorr makes them easier with transparent messaging. Talk through any problems in real time, and receive a prompt response thanks to our property management software notifications.",
+      "img": "images/maintenance-requests/images-r.png"
+    }
+  ],
+  "title-one": [
+    {
+      "title": "How Are Rentorr Maintenance Requests Different?"
+    }
+  ],
+  "skill": [
+    {
+      "text-start": [
+        {
+          "oval": "images/maintenance-requests/play.svg",
+          "title": "Attach Photos and Videos",
+          "text": "Make the status of your issue clear by attaching photos and videos to your maintenance request so your landlord understands the problem at hand."
+        }
+      ],
+      "img-one": "images/maintenance-requests/work.png",
+      "text-center": [
+        {
+          "oval": "images/maintenance-requests/doc.svg",
+          "title": "Acess Request History",
+          "text": "You can look through the archive of your resolved maintenance requests at any time to keep your own record of repairs that have been made in your property rentals."
+        }
+      ],
+      "text-end": [
+        {
+          "oval": "images/maintenance-requests/mus.svg",
+          "title": "Get Notifications",
+          "text": "Rentorr will keep you updated on the status of your maintenance request, and will also send you a notification once your request has been completed."
+        }
+      ],
+      "img-two": "images/maintenance-requests/work-2.png"
+    }
+  ],
+  "ready": [
+    {
+      "title": "Get Issues Resolved Faster",
+      "desc": "Putting in a maintenance request doesn't have to be a headache, complete it in seconds using Rentorr.",
+      "link": "SIGN UP FOR FREE"
+    }
+  ]
+}

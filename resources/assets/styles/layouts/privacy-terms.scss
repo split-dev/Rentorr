@@ -12,14 +12,15 @@
   &__link-position {
     display: flex;
     flex-direction: column;
-    margin: 340px 0 0 80px;
+    margin: 270px 0 0 80px;
     @media (max-width: 1040px) {
-      margin: 340px 0 0 60px;
+      margin: 270px 0 0 40px;
     }
     @media (max-width: 991px) {
       display: none;
     }
     a {
+      min-width: 151px;
       color: #9ba0b5;
       font-family: $roboto;
       font-size: 16px;
