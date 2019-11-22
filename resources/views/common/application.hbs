@@ -1,13 +1,66 @@
 {{#each application}}
     <div class="application">
-    <div class="sign-in__box-shadow"></div>
-    <div class="sign-in__block">
-        <div class="sign-in__first-row">
+    <div class="sign-in__block" id="application-show">
+        <div class="application__first-row">
             <h3>{{{title-application}}}</h3>
-            <div class="sign-in__close-position">
+            <div class="application__close-position">
                 <a href="#"></a>
             </div>
         </div>
+            <div class="application__info-block-position">
+                <div class="application__info-block application__first">
+                    <div class="application__info-block-title">
+                        <h4>{{info-block-title}}</h4>
+                        <span>{{info-block-data}}</span>
+                    </div>
+                    <div class="application__info-block-content">
+                        {{#each info-block-desc}}
+                        <div class="application__info-block-desc">
+                            <span>{{info-block-label}}</span>
+                            <p>{{info-block-text}}</p>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="application__info-block application__decond">
+                    <div class="application__info-block-title">
+                        <h4>{{info-block-title-two}}</h4>
+                        <span>{{info-block-data-two}}</span>
+                    </div>
+                    <div class="application__info-block-content">
+                        <div class="col-md-6 application__img-position">
+                            <img src="images/application/credit_score.svg" alt="credit">
+                        </div>
+                        <div class="col-md-6 application__content-position">
+                            <div class="application__low-row">
+                                <span>Potential credit risk</span>
+                                <p>Low</p>
+                            </div>
+                            {{#each application__other-row}}
+                            <div class="application__other-row">
+                                <span>{{other-row-span}}</span>
+                                <p>{{other-row-p}}</p>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <div class="application__info-block application__third">
+                    <div class="application__info-block-title">
+                        <h4>{{info-block-title-three}}</h4>
+                        <span>{{info-block-data-three}}</span>
+                    </div>
+                    <div class="application__content-position application__stat-position">
+                        {{#each application__stat}}
+                            <div class="application__stat">
+                                <img src="{{stat-img}}" alt="logo">
+                                <p>{{stat-p}}</p>
+                                <span>{{stat-span}}</span>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
 {{/each}}

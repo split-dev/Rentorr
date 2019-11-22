@@ -26,7 +26,82 @@
   ],
   "application": [
     {
-      "title-application": "Application preview"
+      "title-application": "Application preview",
+      "info-block-title": "verified identity",
+      "info-block-data": "ID Verified on May 5, 2019",
+      "info-block-title-two": "Credit check",
+      "info-block-data-two": "Data Synchronized on May 5, 2019",
+      "info-block-title-three": "Affordability index",
+      "info-block-data-three": "Data Synchronized on May 5, 2019",
+      "info-block-desc": [
+        {
+          "info-block-label": "Last name",
+          "info-block-text": "Simon"
+        },
+        {
+          "info-block-label": "Age",
+          "info-block-text": "34"
+        },
+        {
+          "info-block-label": "Identity number",
+          "info-block-text": "1234567890"
+        },
+        {
+          "info-block-label": "First name",
+          "info-block-text": "Havarian"
+        },
+        {
+          "info-block-label": "Date of birth",
+          "info-block-text": "31 May, 1982"
+        },
+        {
+          "info-block-label": "Telephone",
+          "info-block-text": "+ 27 671 230 1234"
+        },
+        {
+          "info-block-label": "Gender",
+          "info-block-text": "Male"
+        },
+        {
+          "info-block-label": "Marital status",
+          "info-block-text": "Single"
+        },
+        {
+          "info-block-label": "Email",
+          "info-block-text": "simon.havarian@gmail.com"
+        }
+      ],
+      "application__other-row": [
+        {
+          "other-row-span": "Enquiries",
+          "other-row-p": "1"
+        },
+        {
+          "other-row-span": "Fraud notices",
+          "other-row-p": "0"
+        },
+        {
+          "other-row-span": "Negative information",
+          "other-row-p": "0"
+        }
+      ],
+      "application__stat": [
+        {
+          "stat-img": "images/application/moneys.svg",
+          "stat-p": "R48,000",
+          "stat-span": "Gross monthly income"
+        },
+        {
+          "stat-img": "images/application/house.svg",
+          "stat-p": "R16,000",
+          "stat-span": "Comfortable rent (30%)"
+        },
+        {
+          "stat-img": "images/application/money.svg",
+          "stat-p": "R24,000",
+          "stat-span": "Upper limit (50%)"
+        }
+      ]
     }
   ],
   "footer": [
