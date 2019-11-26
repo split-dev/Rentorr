@@ -33,6 +33,7 @@
 @import "components/button";
 @import "components/ie";
 @import "common/nav";
+@import "common/nav-brows";
 @import "common/possibility";
 @import "common/property";
 @import "common/question";
@@ -54,6 +55,7 @@
 @import "partials/how-work.scss";
 @import "partials/privacy-terms-desc";
 @import "partials/privacy-terms-title";
+@import "partials/apartment-tile";
 @import "common/skill-box";
 @import "common/mobile-menu";
 @import "common/main-form";
@@ -64,6 +66,7 @@
 @import "common/forgot-pass";
 @import "common/select-role";
 @import "common/application";
+@import "common/filters-menu";
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 /**
@@ -87,3 +90,4 @@
 @import "layouts/404";
 @import "layouts/privacy-terms";
 @import "layouts/keep-in-touch";
+@import "layouts/browsing";

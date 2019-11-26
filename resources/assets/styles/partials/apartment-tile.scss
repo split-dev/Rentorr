@@ -1,0 +1,49 @@
+.apartment-tile {
+  width: 310px;
+  height: 365px;
+  box-shadow: 0 0 4px #eeeef2;
+  margin: 8px;
+  &__tile-position {
+    margin: 0 -8px;
+  }
+  &__slider {
+    width: 310px;
+    height: 200px;
+    &:hover {
+      .slick-next,
+      .slick-prev {
+        opacity: 1;
+      }
+    }
+    img {
+      width: 310px;
+      height: 100%;
+    }
+  }
+}
+.slick-next {
+  right: 0;
+  z-index: 9;
+  &:before {
+    content: url("images/global/slick-next.svg") !important;
+  }
+}
+.slick-prev {
+  left: 0;
+  z-index: 9;
+  &:before {
+    content: url("images/global/slick-prev.svg") !important;
+  }
+}
+.slick-next,
+.slick-prev {
+  width: 40px;
+  transition: 0.3s;
+  opacity: 0;
+  height: 100%;
+  background-color: rgba(59, 63, 78, 0.13);
+  @include flex-center;
+  &:hover {
+    background-color: rgba(59, 63, 78, 0.13);
+  }
+}

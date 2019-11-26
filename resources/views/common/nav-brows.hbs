@@ -1,0 +1,33 @@
+{{#each nav-brows}}
+    <div class="bg-white">
+        <div class="container-box-full nav-position">
+            <div class="nav-brows">
+                <div class="nav-brows__logo-nav">
+                    <a href="/" class="nav__logo">
+                        <img src="{{logo}}" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-brows__search-position">
+                    <div class="nav-brows__search">
+                        <form>
+                            <input type="text" placeholder="{{search-input}}">
+                            <input type="text" placeholder="{{search-input-mobile}}">
+                        </form>
+                    </div>
+                    <div class="nav-brows__user-info">
+                        <a href="#"><img src="{{message-img}}" alt=""></a>
+                        <a href="#"><img src="{{bell-img}}" alt=""></a>
+                        <a class="nav-brows__face" href="#">
+                            <img src="{{foto-img}}" alt="">
+                            <img src="{{arrow-img}}" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="nav__mobile-button">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}

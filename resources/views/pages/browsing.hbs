@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="browsing">
+    {{> ../common/nav-brows}}
+    {{> ../common/filters-menu}}
+    <div class="container-box-full">
+        <div class="browsing__search-result">
+            <p>15 properties available for rent in Cape Town</p>
+            <a href="#">Closest to search</a>
+        </div>
+        <div class="browsing__tile-position">
+            {{> ../partials/apartment-tile}}
+        </div>
+    </div>
+    {{> ../common/footer }}
+</body>
+</html>

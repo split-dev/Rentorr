@@ -1,0 +1,37 @@
+{
+  "nav-brows": [
+    {
+      "logo": "images/global/logo.svg",
+      "search-input": "Cape Town, Western Cape, South Africa",
+      "search-input-mobile": "Try Cape Town",
+      "message-img": "images/global/letter.svg",
+      "bell-img": "images/global/bell.svg",
+      "foto-img": "images/browsing/face.png",
+      "arrow-img": "images/global/arrow-down-gray.svg"
+    }
+  ],
+  "apartment-tile": [
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom1.png"
+        },
+        {
+          "img": "images/browsing/bedroom2.png"
+        }
+      ],
+      "title": "Smart 1bedroomer in downtown"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom2.png"
+        },
+        {
+          "img": "images/browsing/bedroom1.png"
+        }
+      ],
+      "title": "Huge & Beautiful two badroom"
+    }
+  ]
+}

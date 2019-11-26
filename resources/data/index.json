@@ -140,12 +140,8 @@
       "title": "Property Management at Your Fingertips-For Free!",
       "desc": "Rentorr allows you to advertise your property, look through applications, screen possible tenants, and even accept online rent payments from a single, convenient place. No sneaky set up charges, no monthly fees to worry about, no catch-just convenience.",
       "list-box": [
-        {
-          "list": "List your property"
-        },
-        {
-          "list": "View online applications"
-        },
+        { "list": "List your property" },
+        { "list": "View online applications" },
         {
           "list": "Enjoy thorough screening"
         },
