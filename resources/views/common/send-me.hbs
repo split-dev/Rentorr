@@ -1,0 +1,22 @@
+{{#each send-me}}
+    <div class="send-me">
+    <div class="sign-in__block" id="send-me-show">
+        <div class="send-me__first-row">
+            <h3>{{{title-send-me}}}</h3>
+            <div class="send-me__close-position">
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="send-me__info">
+            <p>Sign up to get a daily email with newly listed places near Cape Town, that match you’re looking for.</p>
+        </div>
+        <form class="main-form__regist">
+            <div class="field-wrap">
+                <input class="form-control main-form__valid" placeholder=" " id="email" name="pass"  required="" type="email">
+                <label class="control-label main-form__valid-label" for="email">Email</label>
+            </div>
+        </form>
+        <button type="submit" class="send-me__button button--blue">Keep me in the loop</button>
+    </div>
+</div>
+{{/each}}

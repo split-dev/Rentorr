@@ -19,6 +19,16 @@
       "title-forgot-pass": "I forgot my password!"
     }
   ],
+  "send-me": [
+    {
+      "title-send-me": "Don’t miss out on the <br> perfect place!"
+    }
+  ],
+  "keep-me": [
+    {
+      "title-keep-me": "Don’t miss out on the <br> perfect place!"
+    }
+  ],
   "select-role": [
     {
       "title-select-role": "Select your role"

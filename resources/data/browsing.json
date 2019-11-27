@@ -20,7 +20,20 @@
           "img": "images/browsing/bedroom2.png"
         }
       ],
-      "title": "Smart 1bedroomer in downtown"
+      "label-id" : "1",
+      "label-for" : "1",
+      "zar": "19,470",
+      "title": "Smart 1bedroomer in downtown",
+      "color-desc": "apartment-tile__blue",
+      "apartment-tile__verification": "Verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__star": "<img src=\"images/global/star.svg\" alt=\"star\">",
+      "apartment-tile__rating": "4,78",
+      "apartment-tile__review": "(32)",
+      "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
     },
     {
       "apartment-tile-img": [
@@ -31,7 +44,150 @@
           "img": "images/browsing/bedroom1.png"
         }
       ],
-      "title": "Huge & Beautiful two badroom"
+      "label-id" : "2",
+      "label-for" : "2",
+      "zar": "19,470",
+      "title": "Huge & Beautiful two badroom",
+      "color-desc": "apartment-tile__gray",
+      "apartment-tile__verification": "Verification PENDING",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom3.png"
+        },
+        {
+          "img": "images/browsing/bedroom2.png"
+        }
+      ],
+      "label-id" : "3",
+      "label-for" : "3",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__blue",
+      "apartment-tile__verification": "Verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
+      "apartment-tile__new-label": "new!",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom4.png"
+        },
+        {
+          "img": "images/browsing/bedroom3.png"
+        }
+      ],
+      "label-id" : "4",
+      "label-for" : "4",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__orange",
+      "apartment-tile__verification": "Not verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom5.png"
+        },
+        {
+          "img": "images/browsing/bedroom4.png"
+        }
+      ],
+      "label-id" : "5",
+      "label-for" : "5",
+      "zar": "19,470",
+      "title": "Smart 1bedroomer in downtown",
+      "color-desc": "apartment-tile__blue",
+      "apartment-tile__verification": "Verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__star": "<img src=\"images/global/star.svg\" alt=\"star\">",
+      "apartment-tile__rating": "4,78",
+      "apartment-tile__review": "(32)",
+      "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom5.png"
+        },
+        {
+          "img": "images/browsing/bedroom4.png"
+        }
+      ],
+      "label-id" : "6",
+      "label-for" : "6",
+      "zar": "19,470",
+      "title": "Huge & Beautiful two badroom",
+      "color-desc": "apartment-tile__gray",
+      "apartment-tile__verification": "Verification PENDING",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom7.png"
+        },
+        {
+          "img": "images/browsing/bedroom6.png"
+        }
+      ],
+      "label-id" : "7",
+      "label-for" : "7",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__blue",
+      "apartment-tile__verification": "Verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__star": "<img src=\"images/global/star.svg\" alt=\"star\">",
+      "apartment-tile__rating": "3,22",
+      "apartment-tile__review": "(412)",
+      "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom8.png"
+        },
+        {
+          "img": "images/browsing/bedroom7.png"
+        }
+      ],
+      "label-id" : "8",
+      "label-for" : "8",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__orange",
+      "apartment-tile__verification": "Not verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
     }
   ]
 }

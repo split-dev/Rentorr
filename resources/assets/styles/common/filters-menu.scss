@@ -36,6 +36,7 @@
           min-height: 25px;
           transition: 0.3s;
           border-radius: 2px;
+          background-color: #fbfcfe;
           @include flex-center;
           &:hover {
             background-color: #1a5dc6;

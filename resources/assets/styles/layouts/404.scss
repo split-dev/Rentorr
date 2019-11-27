@@ -1,11 +1,5 @@
 .error {
-  &__logo-position {
-    height: 64px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 1px 0 rgba(183, 184, 199, 0.24);
-    background-color: #fff;
-  }
+  height: auto;
   &__img-position {
     display: flex;
     justify-content: center;
@@ -18,6 +12,12 @@
       @media (max-width: 480px) {
         margin-top: 10px !important;
         margin-bottom: 35px;
+        max-width: 360px;
+        height: auto;
+      }
+      @media (max-height: 750px) {
+        margin-top: 0 !important;
+        margin-bottom: 10px;
         max-width: 360px;
         height: auto;
       }
@@ -38,8 +38,11 @@
       font-size: 14px;
       font-weight: 400;
       margin: 35px 0 15px;
-      @media (max-width: 480px) {
+      @media (max-width: 450px) {
         margin: 20px 0 15px;
+      }
+      @media (max-height: 700px) {
+        margin: 5px 0 5px;
       }
     }
     p {

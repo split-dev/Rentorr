@@ -1,16 +1,24 @@
-{{#each error}}
+
 <html lang="en">
 <head>
     {{> ../common/head }}
 </head>
 <body class="error">
-    <div class="container-box-full error__logo-position">
-        <a href="/" class="nav__logo">
-            <img src="{{logo}}" alt="logo">
-        </a>
-    </div>
+{{> ../common/mobile-menu}}
+{{> ../common/nav }}
+
+{{#each top-page}}
+    {{> ../common/top-page }}
+{{/each}}
+{{> ../common/sign-in}}
+{{> ../common/sign-up}}
+{{> ../common/check-email}}
+{{> ../common/forgot-pass}}
+{{> ../common/select-role}}
     <div class="container-box-full error__img-position">
+{{#each error}}
         <img src="{{img}}" alt="img">
+{{/each}}
     </div>
     <div class="container-box-full error__desc">
         <h3>Ooops!</h3>
@@ -19,4 +27,4 @@
     </div>
 </body>
 </html>
-{{/each}}
+
