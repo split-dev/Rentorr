@@ -104,6 +104,11 @@
           opacity: 1;
         }
       }
+      &.has-val {
+        span {
+          opacity: 1;
+        }
+      }
       span {
         opacity: 0;
         transition: 0.2s;
