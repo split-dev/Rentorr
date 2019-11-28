@@ -1,5 +1,5 @@
-import 'slick-carousel'
-
+import 'slick-carousel';
+import Forms from './forms';
 
 export default {
   init() {
@@ -70,6 +70,29 @@ export default {
         }
       });
     });
+    // filters on browsing.html
+
+    $('.filters-menu__items ul li').click(function (e) {
+      e.preventDefault();
+      $(this).children('div').toggleClass('filters-menu__dropdown-active');
+      $(this).children('a').toggleClass('filters-menu__filter-color-active');
+    });
+    jQuery(function($){
+      $(document).mouseup(function (e){
+        if(jQuery('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
+          var div = $('.filters-menu__dropdown-show');
+          if (!div.is(e.target) && div.has(e.target).length === 0) {
+            $('.filters-menu__dropdown').removeClass('filters-menu__dropdown-active');
+            $('.filters-menu__items ul li a').removeClass('filters-menu__filter-color-active');
+          }
+        }
+      });
+    });
+    const form = new Forms({
+      wrap: '.field-wrap',
+      forms: '.main-form__filters',
+    });
+    form.init();
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

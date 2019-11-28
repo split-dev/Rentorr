@@ -26,13 +26,14 @@
       align-items: center;
       li {
         margin-right: 15px;
+        position: relative;
         a {
           text-decoration: none;
           color: #666b7c;
           font-family: $roboto;
-          font-size: 10px;
+          font-size: 12px;
           font-weight: 400;
-          min-width: 105px;
+          padding: 0 20px;
           min-height: 25px;
           transition: 0.3s;
           border-radius: 2px;
@@ -45,6 +46,10 @@
         }
       }
     }
+  }
+  &__filter-color-active {
+    background-color: #1a5dc6 !important;
+    color: #fff !important;
   }
   &__send-me {
     color: #1a5dc6;
@@ -65,7 +70,56 @@
     border: 1px solid rgba(151, 151, 151, 0.2);
     @include flex-center;
     &:hover {
-      border: 1px solid #1a5dc6;
+      border: 1px solid rgba(151, 151, 151, 0.8);
+    }
+  }
+  &__dropdown {
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    top: 30px;
+    padding: 25px 30px;
+    box-shadow: 0 1px 5px rgba(27, 26, 33, 0.1);
+    border-radius: 1px;
+    border: 1px solid rgba(225, 223, 230, 0.5);
+    background-color: #fff;
+    pointer-events: none;
+    visibility: hidden;
+    transition: 0.1s;
+  }
+  &__dropdown-active {
+    pointer-events: auto;
+    visibility: visible !important;
+  }
+  .main-form__filters {
+    display: flex;
+    margin-top: 15px;
+    .field-wrap {
+      min-width: 110px;
+      &:first-child {
+        margin-right: 20px;
+      }
+      &.is-focused {
+        span {
+          opacity: 1;
+        }
+      }
+      span {
+        opacity: 0;
+        transition: 0.2s;
+        display: inline-block;
+        margin-top: -27.5px;
+        font-size: 14px;
+        padding-left: 0;
+        color: #222634;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+      }
+      input {
+        padding-left: 12px;
+      }
     }
   }
 }
