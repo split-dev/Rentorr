@@ -13,6 +13,13 @@ export default {
     $('.open-map').click(function (e) {
       e.preventDefault();
       $('.browsing__tile-position').toggleClass('tile-position-map');
+      if ($('.open-map img').attr('data-number') == 0) {
+        $('.open-map img').attr('src', 'images/browsing/map-blue.svg');
+        $('.open-map img').attr('data-number','1');
+      } else {
+        $('.open-map img').attr('src', 'images/browsing/map-black.svg');
+        $('.open-map img').attr('data-number','0');
+      }
     });
 
     $('.filters-menu__send-me').click(function (e) {

@@ -3,17 +3,22 @@
   {{> ../common/head }}
 </head>
 <body class="browsing">
-    {{> ../common/nav-brows}}
-    {{> ../common/send-me}}
-    {{> ../common/keep-me}}
-    {{> ../common/filters-menu}}
+    {{> ../common/header-footer/nav-brows}}
+    {{> ../common/modal/sign-in}}
+    {{> ../common/modal/sign-up}}
+    {{> ../common/modal/check-email}}
+    {{> ../common/modal/forgot-pass}}
+    {{> ../common/modal/select-role}}
+    {{> ../common/modal/send-me}}
+    {{> ../common/modal/keep-me}}
+    {{> ../common/browsing/filters-menu}}
     <div class="container-box-full">
         <div class="browsing__search-result">
             <p>15 properties available for rent in Cape Town</p>
             <a href="#">Closest to search</a>
         </div>
         <div class="browsing__tile-position">
-            {{> ../partials/apartment-tile}}
+            {{> ../common/browsing/apartment-tile}}
         </div>
     </div>
 </body>

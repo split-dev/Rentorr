@@ -4,15 +4,15 @@
 </head>
 <body class="tenant-screening">
 {{> ../common/mobile-menu}}
-{{> ../common/nav }}
+{{> ../common/header-footer/nav }}
 {{#each top-page}}
     {{> ../common/top-page }}
 {{/each}}
-{{> ../common/sign-in}}
-{{> ../common/sign-up}}
-{{> ../common/check-email}}
-{{> ../common/forgot-pass}}
-{{> ../common/select-role}}
+{{> ../common/modal/sign-in}}
+{{> ../common/modal/sign-up}}
+{{> ../common/modal/check-email}}
+{{> ../common/modal/forgot-pass}}
+{{> ../common/modal/select-role}}
 {{#each images}}
   {{> ../partials/title-img }}
 {{/each}}
@@ -32,6 +32,6 @@
 {{#each rent}}
     {{> ../common/ready }}
 {{/each}}
-{{> ../common/footer }}
+{{> ../common/header-footer/footer }}
 </body>
 </html>

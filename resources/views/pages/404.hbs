@@ -5,16 +5,16 @@
 </head>
 <body class="error">
 {{> ../common/mobile-menu}}
-{{> ../common/nav }}
+{{> ../common/header-footer/nav }}
 
 {{#each top-page}}
     {{> ../common/top-page }}
 {{/each}}
-{{> ../common/sign-in}}
-{{> ../common/sign-up}}
-{{> ../common/check-email}}
-{{> ../common/forgot-pass}}
-{{> ../common/select-role}}
+{{> ../common/modal/sign-in}}
+{{> ../common/modal/sign-up}}
+{{> ../common/modal/check-email}}
+{{> ../common/modal/forgot-pass}}
+{{> ../common/modal/select-role}}
     <div class="container-box-full error__img-position">
 {{#each error}}
         <img src="{{img}}" alt="img">

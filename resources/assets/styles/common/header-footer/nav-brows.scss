@@ -38,30 +38,6 @@
       margin-left: 0;
     }
   }
-  &__user-info {
-    display: flex;
-    align-items: center;
-    @media (max-width: 991px) {
-      display: none;
-    }
-    a {
-      margin-right: 25px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-  &__face {
-    display: flex;
-    align-items: center;
-    img {
-      &:first-child {
-        margin-right: 10px;
-        width: 32px;
-        height: 32px;
-      }
-    }
-  }
   &__search {
     display: flex;
     align-items: center;

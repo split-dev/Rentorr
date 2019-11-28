@@ -85,6 +85,9 @@
         },
         {
           "img": "images/browsing/bedroom3.png"
+        },
+        {
+          "img": "images/browsing/bedroom7.png"
         }
       ],
       "label-id" : "4",
@@ -106,6 +109,12 @@
         },
         {
           "img": "images/browsing/bedroom4.png"
+        },
+        {
+          "img": "images/browsing/bedroom6.png"
+        },
+        {
+          "img": "images/browsing/bedroom2.png"
         }
       ],
       "label-id" : "5",

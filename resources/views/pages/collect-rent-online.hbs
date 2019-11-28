@@ -4,16 +4,16 @@
 </head>
 <body class="collect-rent-online">
 {{> ../common/mobile-menu}}
-{{> ../common/nav }}
+{{> ../common/header-footer/nav }}
 
 {{#each top-page}}
   {{> ../common/top-page }}
 {{/each}}
-{{> ../common/sign-in}}
-{{> ../common/sign-up}}
-{{> ../common/check-email}}
-{{> ../common/forgot-pass}}
-{{> ../common/select-role}}
+{{> ../common/modal/sign-in}}
+{{> ../common/modal/sign-up}}
+{{> ../common/modal/check-email}}
+{{> ../common/modal/forgot-pass}}
+{{> ../common/modal/select-role}}
 <div class="what">
   {{#each title-one}}
     {{> ../partials/title-section }}
@@ -36,6 +36,6 @@
 {{#each ready}}
   {{> ../common/ready }}
 {{/each}}
-{{> ../common/footer }}
+{{> ../common/header-footer/footer }}
 </body>
 </html>

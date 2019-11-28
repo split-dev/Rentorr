@@ -4,16 +4,16 @@
 </head>
 <body class="landlord">
 {{> ../common/mobile-menu}}
-{{> ../common/nav }}
+{{> ../common/header-footer/nav }}
 {{#each top-page}}
   {{> ../common/top-page }}
 {{/each}}
-{{> ../common/sign-in}}
-{{> ../common/sign-up}}
-{{> ../common/check-email}}
-{{> ../common/forgot-pass}}
-{{> ../common/select-role}}
-{{> ../common/application}}
+{{> ../common/modal/sign-in}}
+{{> ../common/modal/sign-up}}
+{{> ../common/modal/check-email}}
+{{> ../common/modal/forgot-pass}}
+{{> ../common/modal/select-role}}
+{{> ../common/modal/application}}
 <div class="report">
   {{#each image-info-one}}
     {{> ../partials/image-info }}
@@ -54,6 +54,6 @@
 {{#each relax}}
     {{> ../common/ready }}
 {{/each}}
-{{> ../common/footer }}
+{{> ../common/header-footer/footer }}
 </body>
 </html>

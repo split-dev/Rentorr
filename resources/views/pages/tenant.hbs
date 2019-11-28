@@ -4,16 +4,16 @@
 </head>
 <body class="main-tenant">
 {{> ../common/mobile-menu}}
-{{> ../common/nav }}
+{{> ../common/header-footer/nav }}
 
 {{#each top-page-search}}
     {{> ../common/top-page-search}}
 {{/each}}
-{{> ../common/sign-in}}
-{{> ../common/sign-up}}
-{{> ../common/check-email}}
-{{> ../common/forgot-pass}}
-{{> ../common/select-role}}
+{{> ../common/modal/sign-in}}
+{{> ../common/modal/sign-up}}
+{{> ../common/modal/check-email}}
+{{> ../common/modal/forgot-pass}}
+{{> ../common/modal/select-role}}
 <div class="trend-city">
     <div class="container">
         <div class="row trend-city__all-position">
@@ -72,6 +72,6 @@
 {{#each ready}}
     {{> ../common/ready}}
 {{/each}}
-{{> ../common/footer}}
+{{> ../common/header-footer/footer}}
 </body>
 </html>

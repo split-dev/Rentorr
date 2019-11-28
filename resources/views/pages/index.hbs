@@ -4,7 +4,7 @@
 </head>
 <body class="home">
 {{> ../common/mobile-menu}}
-{{> ../common/nav}}
+{{> ../common/header-footer/nav}}
 {{#each search}}
     <div class="search">
         {{> ../common/main-search}}
@@ -23,11 +23,11 @@
 {{#each what}}
   {{> ../common/what-box }}
 {{/each}}
-{{> ../common/sign-in}}
-{{> ../common/sign-up}}
-{{> ../common/check-email}}
-{{> ../common/forgot-pass}}
-{{> ../common/select-role}}
+{{> ../common/modal/sign-in}}
+{{> ../common/modal/sign-up}}
+{{> ../common/modal/check-email}}
+{{> ../common/modal/forgot-pass}}
+{{> ../common/modal/select-role}}
 {{#each possibility}}
   {{> ../common/possibility }}
 {{/each}}
@@ -52,6 +52,6 @@
 {{#each ready}}
   {{> ../common/ready }}
 {{/each}}
-{{> ../common/footer }}
+{{> ../common/header-footer/footer }}
 </body>
 </html>

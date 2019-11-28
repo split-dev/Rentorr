@@ -100,6 +100,11 @@
   &__desc {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  &__verification-position {
+    display: flex;
+    align-items: center;
   }
   &__verification {
     font-family: "Source Sans Pro", sans-serif;
@@ -137,12 +142,17 @@
       top: 6px;
     }
   }
+  &__rating-position {
+    display: flex;
+    align-items: baseline;
+  }
   &__rating {
     color: #666b7c;
     font-family: $roboto;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.06px;
+    margin: 0 5px;
   }
   &__review {
     color: #1a5dc6;
