@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>checkbox-true</title>
+    <desc>Created with Sketch.</desc>
+    <g id="01-03-Browse" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-03-03-05-Browsing-Filters_Type" transform="translate(-170.000000, -140.000000)">
+            <g id="Action" transform="translate(137.000000, 110.000000)">
+                <g id="List-01" transform="translate(32.000000, 27.000000)">
+                    <g id="checkbox-true" transform="translate(1.000000, 3.000000)">
+                        <rect id="Base" fill="#1A5DC6" x="0" y="0" width="14" height="14" rx="3"></rect>
+                        <polygon id="Check" fill="#FFFFFF" fill-rule="nonzero" points="5.6444841 8.273222 3.90282833 6.60176367 3 7.46210183 5.6444841 10 11 4.86033815 10.1035296 4"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

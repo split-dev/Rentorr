@@ -4,32 +4,46 @@
             <ul>
                 <li>
                     <a href="#">Price range</a>
-                    <div class="filters-menu__dropdown filters-menu__price" id="filters-menu__dropdown-show">
+                    <div class="filters-menu__dropdown filters-menu__price">
                         <form class="main-form__filters">
-                            <div class="field-wrap">
-                                <input class="form-control main-form__name-input" id="min-price" name="min-price" type="number">
-                                <label class="control-label" for="min-price">Min price</label>
-                                <span>R</span>
+                            <div class="filters-menu__input-position">
+                                <div class="field-wrap">
+                                    <input class="form-control main-form__name-input" id="min-price" name="min-price" type="number">
+                                    <label class="control-label" for="min-price">Min price</label>
+                                    <span>R</span>
+                                </div>
+                                <div class="field-wrap">
+                                    <input class="form-control main-form__name-input" id="max-price" name="max-price" type="number">
+                                    <label class="control-label" for="max-price">Max price</label>
+                                    <span>R</span>
+                                </div>
                             </div>
-                            <div class="field-wrap">
-                                <input class="form-control main-form__name-input" id="max-price" name="max-price" type="number">
-                                <label class="control-label" for="max-price">Max price</label>
-                                <span>R</span>
+                            <p>Average price in Cape Town R 19,000</p>
+                            <div class="filters-menu__apply-clear">
+                                <button class="filters-menu__button second-link">APPLY</button>
                             </div>
                         </form>
                     </div>
                 </li>
                 <li>
                     <a href="#">Apartment</a>
-                    <div class="filters-menu__dropdown filters-menu__price" id="filters-menu__dropdown-show">
-                        <form>
-                            <p>HELOOO</p>
-                        </form>
+                    <div class="filters-menu__dropdown filters-menu__apartment">
+                        <div class="filters-menu__checkbox-position">
+                            {{#each global-checkbox--apart}}
+                                <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value">
+                                <label class="global-checkbox-label" for="global-checkbox{{for}}">{{label-name}}</label>
+                                <span>{{desc-apart}}</span>
+                            {{/each}}
+                        </div>
+                        <div class="filters-menu__apply-clear">
+                            <button class="filters-menu__button second-link">APPLY</button>
+                            <button class="filters-menu__button--black second-link">CLEAR</button>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#">Pet Policy</a>
-                    <div class="filters-menu__dropdown filters-menu__pet" id="filters-menu__dropdown-show">
+                    <div class="filters-menu__dropdown filters-menu__pet">
                         <form>
                             <p>HELOOO</p>
                         </form>
@@ -37,7 +51,7 @@
                 </li>
                 <li>
                     <a href="#">Rooms & area</a>
-                    <div class="filters-menu__dropdown filters-menu__price" id="filters-menu__dropdown-show">
+                    <div class="filters-menu__dropdown filters-menu__price">
                         <form>
                             <p>HELOOO</p>
                         </form>
@@ -45,14 +59,14 @@
                 </li>
                 <li>
                     <a href="#">Availability & duration</a>
-                    <div class="filters-menu__dropdown filters-menu__price" id="filters-menu__dropdown-show">
+                    <div class="filters-menu__dropdown filters-menu__price">
                         <form>
                             <p>HELOOO</p>
                         </form>
                     </div></li>
                 <li>
                     <a href="#">Features</a>
-                    <div class="filters-menu__dropdown filters-menu__price" id="filters-menu__dropdown-show">
+                    <div class="filters-menu__dropdown filters-menu__price">
                         <form>
                             <p>HELOOO</p>
                         </form>

@@ -78,10 +78,43 @@ input::-webkit-inner-spin-button {
 input[type=‘number’] {
   -moz-appearance: textfield;
 }
-
+.control-label {
+  pointer-events: none;
+}
 @keyframes move-img {
   0% { transform: translateY(-5px); }
   50% { transform: translateY(10px); }
   100% { transform: translateY(-5px); }
+}
+.global-checkbox {
+  position: absolute;
+  opacity: 0;
+  & + label {
+    position: relative;
+    margin-left: 23px;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.3s;
+  }
+  & + label:before {
+    content: url("images/global/checkbox-empty.svg");
+    position: absolute;
+    display: inline-block;
+    z-index: 20;
+    left: -23px;
+    top: 2px;
+  }
+  &:checked + label:before {
+    content: url("images/global/checkbox-true.svg");
+  }
+}
+.global-checkbox-label {
+  color: #222634;
+  font-family: $roboto;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  margin-bottom: 0;
 }
 

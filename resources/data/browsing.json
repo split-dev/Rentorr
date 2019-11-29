@@ -10,6 +10,32 @@
       "arrow-img": "images/global/arrow-down-gray.svg"
     }
   ],
+  "global-checkbox--apart": [
+    {
+      "id": "1",
+      "for": "1",
+      "label-name": "Apartment",
+      "desc-apart": "Find a best-in-class luxury vacation apartment"
+    },
+    {
+      "id": "2",
+      "for": "2",
+      "label-name": "Duplex",
+      "desc-apart": "Have a pair of small houses on a single floor"
+    },
+    {
+      "id": "3",
+      "for": "3",
+      "label-name": "House",
+      "desc-apart": "Have a place to yourself"
+    },
+    {
+      "id": "4",
+      "for": "4",
+      "label-name": "Room",
+      "desc-apart": "Have your own room and share some common spaces"
+    }
+  ],
   "apartment-tile": [
     {
       "apartment-tile-img": [

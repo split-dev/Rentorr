@@ -83,19 +83,18 @@
     border-radius: 1px;
     border: 1px solid rgba(225, 223, 230, 0.5);
     background-color: #fff;
-    pointer-events: none;
     visibility: hidden;
     transition: 0.1s;
   }
   &__dropdown-active {
-    pointer-events: auto;
     visibility: visible !important;
   }
-  .main-form__filters {
+  &__input-position {
     display: flex;
-    margin-top: 15px;
+  }
+  &__price {
     .field-wrap {
-      min-width: 110px;
+      min-width: 150px;
       &:first-child {
         margin-right: 20px;
       }
@@ -124,6 +123,82 @@
       }
       input {
         padding-left: 12px;
+      }
+    }
+  }
+  &__checkbox-position {
+    display: flex;
+    flex-direction: column;
+  }
+  &__apartment {
+    min-width: 350px;
+    span {
+      color: #9ba0b5;
+      font-family: $roboto;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      margin-left: 23px;
+      margin-bottom: 15px;
+    }
+  }
+  &__apply-clear {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .main-form__filters {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 0;
+    > p {
+      color: #666b7c;
+      font-family: $roboto;
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin: 20px 0 20px;
+    }
+  }
+  &__button {
+    display: inline-block;
+    width: auto;
+    color: #1a5dc6;
+    font-size: 12px;
+    letter-spacing: 0.69px;
+    text-transform: uppercase;
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: 0;
+    @include over-extra;
+    &:after {
+      content: none;
+      padding: 0;
+    }
+    &--black {
+      display: inline-block;
+      width: auto;
+      color: #222634;
+      font-size: 12px;
+      letter-spacing: 0.69px;
+      text-transform: uppercase;
+      background: #fff;
+      border: none;
+      outline: none;
+      padding: 0;
+      @include over-extra;
+      &:hover {
+        color: #222634;
+      }
+      &:after {
+        content: none;
+        padding: 0;
+      }
+      &:before {
+        background-color: #222634;
       }
     }
   }

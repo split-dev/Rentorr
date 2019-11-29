@@ -8,7 +8,7 @@ export default {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-  })
+    })
 
     $('.open-map').click(function (e) {
       e.preventDefault();
@@ -72,25 +72,28 @@ export default {
     });
     // filters on browsing.html
 
-    $('.filters-menu__items ul li').click(function (e) {
-      e.preventDefault();
-      $(this).children('div').toggleClass('filters-menu__dropdown-active');
-      $(this).children('a').toggleClass('filters-menu__filter-color-active');
+     $('.filters-menu__items ul li').click(function () {
+      if($(this).children('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
+        // eslint-disable-next-line no-unused-vars
+        let test;
+      }
+      else {
+        $(this).children('.filters-menu__dropdown').toggleClass('filters-menu__dropdown-active');
+        $(this).children('a').toggleClass('filters-menu__filter-color-active');
+      }
     });
-    jQuery(function($){
-      $(document).mouseup(function (e){
-        if(jQuery('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
-          var div = $('.filters-menu__dropdown-show');
-          if (!div.is(e.target) && div.has(e.target).length === 0) {
-            $('.filters-menu__dropdown').removeClass('filters-menu__dropdown-active');
-            $('.filters-menu__items ul li a').removeClass('filters-menu__filter-color-active');
-          }
+    $(document).mouseup(function (e){
+      if($('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
+        var div = $('.filters-menu__dropdown');
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+          $('.filters-menu__dropdown').removeClass('filters-menu__dropdown-active');
+          $('.filters-menu__items ul li a').removeClass('filters-menu__filter-color-active');
         }
-      });
+      }
     });
     const form = new Forms({
       wrap: '.field-wrap',
-      forms: '.main-form__filters',
+      forms: '.main-form__filters, filters-menu__input-position',
     });
     form.init();
   },
