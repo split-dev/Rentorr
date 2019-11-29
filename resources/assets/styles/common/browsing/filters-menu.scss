@@ -131,7 +131,7 @@
     flex-direction: column;
   }
   &__apartment {
-    min-width: 350px;
+    min-width: 370px;
     span {
       color: #9ba0b5;
       font-family: $roboto;
@@ -140,6 +140,22 @@
       line-height: 16px;
       margin-left: 23px;
       margin-bottom: 15px;
+    }
+    .global-checkbox-label {
+      margin-bottom: 0;
+    }
+  }
+  &__pet {
+    min-width: 370px;
+  }
+  &__features {
+    min-width: 460px;
+    .global-checkbox-label {
+      min-width: 44%;
+    }
+    .filters-menu__checkbox-position {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
   &__apply-clear {

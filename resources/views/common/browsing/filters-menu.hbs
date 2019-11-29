@@ -29,7 +29,7 @@
                     <a href="#">Apartment</a>
                     <div class="filters-menu__dropdown filters-menu__apartment">
                         <div class="filters-menu__checkbox-position">
-                            {{#each global-checkbox--apart}}
+                            {{#each global-checkbox-apart}}
                                 <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value">
                                 <label class="global-checkbox-label" for="global-checkbox{{for}}">{{label-name}}</label>
                                 <span>{{desc-apart}}</span>
@@ -44,9 +44,17 @@
                 <li>
                     <a href="#">Pet Policy</a>
                     <div class="filters-menu__dropdown filters-menu__pet">
-                        <form>
-                            <p>HELOOO</p>
-                        </form>
+                        <div class="filters-menu__checkbox-position">
+                            {{#each global-checkbox-pet}}
+                                <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value">
+                                <label class="global-checkbox-label" for="global-checkbox{{for}}">{{label-name}}</label>
+                                <span>{{desc-apart}}</span>
+                            {{/each}}
+                        </div>
+                        <div class="filters-menu__apply-clear">
+                            <button class="filters-menu__button second-link">APPLY</button>
+                            <button class="filters-menu__button--black second-link">CLEAR</button>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -66,10 +74,17 @@
                     </div></li>
                 <li>
                     <a href="#">Features</a>
-                    <div class="filters-menu__dropdown filters-menu__price">
-                        <form>
-                            <p>HELOOO</p>
-                        </form>
+                    <div class="filters-menu__dropdown filters-menu__features">
+                        <div class="filters-menu__checkbox-position">
+                            {{#each global-checkbox-features}}
+                                <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value">
+                                <label class="global-checkbox-label" for="global-checkbox{{for}}">{{label-name}}</label>
+                            {{/each}}
+                        </div>
+                        <div class="filters-menu__apply-clear">
+                            <button class="filters-menu__button second-link">APPLY</button>
+                            <button class="filters-menu__button--black second-link">CLEAR</button>
+                        </div>
                     </div>
                 </li>
             </ul>

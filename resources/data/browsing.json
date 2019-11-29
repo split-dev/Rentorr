@@ -10,7 +10,7 @@
       "arrow-img": "images/global/arrow-down-gray.svg"
     }
   ],
-  "global-checkbox--apart": [
+  "global-checkbox-apart": [
     {
       "id": "1",
       "for": "1",
@@ -34,6 +34,125 @@
       "for": "4",
       "label-name": "Room",
       "desc-apart": "Have your own room and share some common spaces"
+    }
+  ],
+  "global-checkbox-pet": [
+    {
+      "id": "5",
+      "for": "5",
+      "label-name": "Pet Allowed"
+    },
+    {
+      "id": "6",
+      "for": "6",
+      "label-name": "Pet Not Allowed"
+    }
+  ],
+  "global-checkbox-features": [
+    {
+      "id": "7",
+      "for": "7",
+      "label-name": "Washer/Dryer in Unit"
+    },
+    {
+      "id": "8",
+      "for": "8",
+      "label-name": "Doorman"
+    },
+    {
+      "id": "10",
+      "for": "10",
+      "label-name": "Gym"
+    },
+    {
+      "id": "11",
+      "for": "11",
+      "label-name": "Top floor unit"
+    },
+    {
+      "id": "12",
+      "for": "12",
+      "label-name": "Garden"
+    },
+    {
+      "id": "13",
+      "for": "13",
+      "label-name": "Furnished"
+    },
+    {
+      "id": "14",
+      "for": "14",
+      "label-name": "Air Conditioning"
+    },
+    {
+      "id": "15",
+      "for": "15",
+      "label-name": "Fridge"
+    },
+    {
+      "id": "16",
+      "for": "16",
+      "label-name": "Dishwasher"
+    },
+    {
+      "id": "17",
+      "for": "17",
+      "label-name": "Elevator"
+    },
+    {
+      "id": "18",
+      "for": "18",
+      "label-name": "WiFi"
+    },
+    {
+      "id": "19",
+      "for": "19",
+      "label-name": "Security system"
+    },
+    {
+      "id": "20",
+      "for": "20",
+      "label-name": "Hardwood Floors"
+    },
+    {
+      "id": "21",
+      "for": "21",
+      "label-name": "Parking garage"
+    },
+    {
+      "id": "22",
+      "for": "22",
+      "label-name": "Balcony"
+    },
+    {
+      "id": "23",
+      "for": "23",
+      "label-name": "Parking Spot"
+    },
+    {
+      "id": "24",
+      "for": "24",
+      "label-name": "View"
+    },
+    {
+      "id": "25",
+      "for": "25",
+      "label-name": "High Rise"
+    },
+    {
+      "id": "26",
+      "for": "26",
+      "label-name": "Pool or hot tub"
+    },
+    {
+      "id": "27",
+      "for": "27",
+      "label-name": "Utilities Included"
+    },
+    {
+      "id": "28",
+      "for": "28",
+      "label-name": "Wheelchair-friendly"
     }
   ],
   "apartment-tile": [
