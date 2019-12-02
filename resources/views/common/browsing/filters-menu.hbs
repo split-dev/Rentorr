@@ -59,19 +59,46 @@
                 </li>
                 <li>
                     <a href="#">Rooms & area</a>
-                    <div class="filters-menu__dropdown filters-menu__price">
-                        <form>
-                            <p>HELOOO</p>
-                        </form>
+                    <div class="filters-menu__dropdown filters-menu__rooms">
+                        {{#each global-checkbox-rooms}}
+                            <div class="filters-menu__rooms-position">
+                                <p>{{rooms-desc}}</p>
+                                <div class="filters-menu__rooms-number">
+                                    <a class="filters-menu__rooms-minus {{rooms-minus-disabled}}" href="#"><img src="images/global/minus-active.svg" alt=""></a>
+                                    <input class="filters-menu__rooms-input" type="text" data-step="{{step}}" data-min="{{data-min}}" data-max="{{data-max}}" data-value="{{rooms-number-count}}" value="{{rooms-number}}" disabled>
+                                    <a class="filters-menu__rooms-plus" href="#"><img src="images/global/plus-active.svg" alt=""></a>
+                                </div>
+                            </div>
+                        {{/each}}
+                        <div class="filters-menu__apply-clear">
+                            <button class="filters-menu__button second-link">APPLY</button>
+                            <button class="filters-menu__button--black second-link">CLEAR</button>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#">Availability & duration</a>
-                    <div class="filters-menu__dropdown filters-menu__price">
-                        <form>
-                            <p>HELOOO</p>
-                        </form>
-                    </div></li>
+                    <div class="filters-menu__dropdown filters-menu__calendar">
+                        <div class="filters-menu__calendar-data">
+                            <form class="main-form__filters">
+                                <div class="field-wrap">
+                                    <input data-toggle="datepicker" class="form-control main-form__name-input" id="calendar" name="calendar" type="text">
+                                    <label class="control-label" for="calendar">Available</label>
+                                </div>
+                            </form>
+                        </div>
+                        <p>Duration</p>
+                        <span class="min-position">—</span>
+                        <span class="months-position">months</span>
+                        <div class="filters-menu__range-slider">
+                            <input type="text" class="js-range-slider" name="js-range-slider">
+                        </div>
+                        <div class="filters-menu__apply-clear">
+                            <button class="filters-menu__button second-link">APPLY</button>
+                            <button class="filters-menu__button--black second-link">CLEAR</button>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <a href="#">Features</a>
                     <div class="filters-menu__dropdown filters-menu__features">

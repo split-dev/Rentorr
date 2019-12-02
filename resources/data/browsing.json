@@ -155,6 +155,35 @@
       "label-name": "Wheelchair-friendly"
     }
   ],
+  "global-checkbox-rooms": [
+    {
+      "rooms-desc": "Bedrooms",
+      "rooms-number-count": "1",
+      "rooms-number": "1+",
+      "step": "1",
+      "data-min": "1",
+      "data-max": "30",
+      "rooms-minus-disabled": "rooms-minus-disabled"
+    },
+    {
+      "rooms-desc": "Bathrooms",
+      "rooms-number-count": "0",
+      "rooms-number": "0+",
+      "step": "1",
+      "data-min": "0",
+      "data-max": "10",
+      "rooms-minus-disabled": "rooms-minus-disabled"
+    },
+    {
+      "rooms-desc": "Area, m2",
+      "rooms-number-count": "30",
+      "rooms-number": "30+",
+      "step": "10",
+      "data-min": "30",
+      "data-max": "500",
+      "rooms-minus-disabled": "rooms-minus-disabled"
+    }
+  ],
   "apartment-tile": [
     {
       "apartment-tile-img": [
