@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="apartment-details">
+<section class="apartment-details_header">
+  {{#with background}}
+    <div class="row apartment-details__bcground" style="background-image: url('{{ bgd }}')">
+      <div class="container">
+        <h1>Smart 1bedroomer in downtown</h1>
+      </div>
+    </div>
+  {{/with}}
+</section>
+<div class="container">
+  <div class="row apartment-details__features">
+    <div class="row apartment-details__description"></div>
+    <div class="row apartment-details__map"></div>
+  </div>
+</div>
+{{> ../common/header-footer/footer }}
+</body>
+</html>

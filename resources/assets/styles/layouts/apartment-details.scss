@@ -1,0 +1,16 @@
+.apartment-details {
+  &__bcground {
+    height: 536px;
+    background-position: center;
+    background-size: cover;
+    h1 {
+      width: 478px;
+      height: 85px;
+      color: #fff;
+      @include over-extra;
+      font-size: 46px;
+      font-weight: 900;
+      line-height: 45px;
+    }
+  }
+}
