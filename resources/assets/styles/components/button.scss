@@ -90,4 +90,33 @@
     }
   }
 }
+.second-link-global {
+  position: relative;
+  width: auto;
+  text-decoration: none !important;
+  color: #222634;
+  display: block;
+  @include over-extra;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #222634;
+    bottom: -7px;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, 0);
+    transition: 0.3s;
+    opacity: 0;
+  }
+  &:hover {
+    color: #222634;
+    text-decoration: none !important;
+    &:before {
+      transform: translate(-50%, -5px);
+      opacity: 1;
+    }
+  }
+}
 

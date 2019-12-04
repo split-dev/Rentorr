@@ -92,6 +92,7 @@ export default {
           if (!div.is(e.target) && div.has(e.target).length === 0) {
             $('.filters-menu__dropdown').removeClass('filters-menu__dropdown-active');
             $('.filters-menu__items ul li a').removeClass('filters-menu__filter-color-active');
+            $('.browsing__search-result a').removeClass('triangle-blue');
           }
         }
       }
@@ -160,14 +161,26 @@ export default {
     $('body').click(function () {
       $('.datepicker-container').addClass('datepicker-container-init');
     });
-    //range-slider
 
+    //range-slider
     $('.js-range-slider').ionRangeSlider({
       type: 'double',
       min: 1,
       max: 24,
     });
 
+    // closest filter
+    $('.browsing__closest-filter').click(function () {
+      $('.filters-menu__items ul li div').removeClass('filters-menu__dropdown-active')
+      if($(this).children('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
+        // eslint-disable-next-line no-unused-vars
+        let test;
+      }
+      else {
+        $(this).children('.filters-menu__dropdown').toggleClass('filters-menu__dropdown-active');
+        $(this).children('a').addClass('triangle-blue');
+      }
+    });
     const form = new Forms({
       wrap: '.field-wrap',
       forms: '.main-form__filters, filters-menu__input-position',

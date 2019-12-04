@@ -17,7 +17,12 @@
         <div class="browsing__search-result">
             <p>15 properties available for rent in Cape Town</p>
             <div class="browsing__closest-filter">
-                <a href="#">Closest to search</a>
+                <a class="browsing__triangle" href="#">Closest to search</a>
+                <div class="filters-menu__dropdown browsing__closest">
+                    {{#each browsing-closest}}
+                        <a class="second-link-global" href="#">{{closest-item}}</a>
+                    {{/each}}
+                </div>
             </div>
         </div>
         <div class="browsing__tile-position">

@@ -184,6 +184,26 @@
       "rooms-minus-disabled": "rooms-minus-disabled"
     }
   ],
+  "browsing-closest": [
+    {
+      "closest-item": "Newest first"
+    },
+    {
+      "closest-item": "Closest to search"
+    },
+    {
+      "closest-item": "Places I Like"
+    },
+    {
+      "closest-item": "Most Popular"
+    },
+    {
+      "closest-item": "By price: Low to High"
+    },
+    {
+      "closest-item": "By price: High to Low"
+    }
+  ],
   "apartment-tile": [
     {
       "apartment-tile-img": [
