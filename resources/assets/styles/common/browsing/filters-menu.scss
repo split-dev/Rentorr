@@ -243,7 +243,7 @@
     }
     .months-position {
       position: absolute;
-      left: 97px;
+      left: 87px;
       top: 143px;
     }
   }
@@ -272,6 +272,7 @@
   }
   &__range-slider {
     margin-top: 40px;
+    padding-left: 5px;
     position: relative;
     input {
       width: 100%;
@@ -306,6 +307,9 @@
         }
       }
     }
+    .irs-single {
+      visibility: hidden !important;
+    }
     .irs-from,
     .irs-to {
       background-color: #fff;
@@ -316,6 +320,7 @@
       letter-spacing: 0.3px;
       line-height: 20px;
       top: -20px !important;
+      visibility: visible !important;
       &:before {
         content: none;
       }
@@ -324,7 +329,7 @@
       left: -10px !important;
     }
     .irs-to {
-      left: 34px !important;
+      left: 24px !important;
     }
   }
   &__apply-clear {
