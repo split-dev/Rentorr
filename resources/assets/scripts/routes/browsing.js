@@ -150,6 +150,9 @@ export default {
       }
     });
     //calendar
+    setTimeout(function(){
+      $('.datepicker-container').addClass('datepicker-hide');
+    }, 50);
     $('[data-toggle="datepicker"]').datepicker( {
       autoShow: true,
       autoHide: true,
