@@ -292,7 +292,14 @@
       font-size: 10px;
       font-weight: 500;
       background-color: #fff;
-      top: 35px;
+      top: 38px;
+      visibility: visible !important;
+    }
+    .irs-min {
+      left: -7px;
+    }
+    .irs-max {
+      right: -4px;
     }
     .irs {
       .irs-handle {
