@@ -4,7 +4,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    box-shadow: 0 0 4px rgba(183, 184, 199, 0.16);
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 260%;
+      left: -430px;
+      bottom: 0;
+      height: 1px;
+      background-color: rgba(183, 184, 199, 0.16);
+    }
     p {
       max-width: 50%;
       color: #222634;
@@ -12,6 +21,8 @@
       font-size: 14px;
       font-weight: 500;
     }
+  }
+  &__closest-filter {
     a {
       color: #222634;
       font-family: $roboto;

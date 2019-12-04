@@ -164,6 +164,9 @@
   &__rooms {
     min-width: 380px;
   }
+  &__rooms-input {
+    background-color: #fff;
+  }
   &__rooms-position {
     display: flex;
     justify-content: space-between;
@@ -193,7 +196,7 @@
       border: none;
       outline: none;
       box-shadow: none;
-      max-width: 30px;
+      max-width: 34px;
       text-align: center;
       color: #222634;
       font-family: $roboto;
