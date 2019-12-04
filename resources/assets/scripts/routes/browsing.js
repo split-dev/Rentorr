@@ -157,6 +157,9 @@ export default {
       autoShow: true,
       autoHide: true,
     });
+    $('body').click(function () {
+      $('.datepicker-container').addClass('datepicker-container-init');
+    });
     //range-slider
 
     $('.js-range-slider').ionRangeSlider({

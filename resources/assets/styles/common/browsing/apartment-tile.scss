@@ -114,15 +114,20 @@
     letter-spacing: 0.05px;
     text-transform: uppercase;
     padding: 4px;
+    white-space: nowrap;
   }
   &__blue {
     background-color: #1a5dc6;
   }
   &__orange {
     background-color: #ff8364;
+    min-width: 80px;
+    text-align: center;
   }
   &__gray {
     background-color: #9ba0b5;
+    text-align: center;
+    min-width: 130px;
   }
   &__desc-apart {
     color: #222634;
