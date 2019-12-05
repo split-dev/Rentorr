@@ -1,5 +1,24 @@
 {
   "background": {
-      "bgd": "./images/apartment-details/Img_bg.png"
-  }
+      "bgd": "./images/apartment-details/Img_bg.png",
+    "img-apart":[
+      {
+        "apart": "images/apartment-details/01.png"
+      },
+      {
+        "apart": "images/apartment-details/02.png"
+      },
+      {
+        "apart": "images/apartment-details/03.png"
+      }
+    ]
+  },
+  "title":[
+    {
+      "target": "images/apartment-details/target.svg",
+      "bed": "images/apartment-details/bed.svg",
+      "bath": "images/apartment-details/bath.svg",
+      "bild": "images/apartment-details/bild.svg"
+    }
+  ]
 }

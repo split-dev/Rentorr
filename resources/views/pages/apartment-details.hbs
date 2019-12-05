@@ -3,19 +3,45 @@
   {{> ../common/head }}
 </head>
 <body class="apartment-details">
-<section class="apartment-details_header">
+<section class="apartment-details-header">
   {{#with background}}
-    <div class="row apartment-details__bcground" style="background-image: url('{{ bgd }}')">
+    <div class="apartment-details-header__bcground" style="background-image: url('{{ bgd }}')">
       <div class="container">
-        <h1>Smart 1bedroomer in downtown</h1>
+        <div class="apartment-details-header__title">
+          <a href="#" class="button--blue">Verified</a>
+          <h1>Smart 1bedroomer in downtown</h1>
+          <span class="target">6280 Northampton Boulevard, Cape Town</span>
+          <div class="row-statist">
+            <p class="bed">4</p>
+            <p class="bath">2</p>
+            <p class="size">187m<sup>2</sup></p>
+            <p class="bild">Apartment</p>
+          </div>
+          <div class="apartment-details-header__gallery">
+<!--            <div class="gallery-img">-->
+            <div class="gallery-img d-flex">
+              {{#each img-apart}}
+                <img src="{{apart}}" alt="apartments">
+              {{/each}}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   {{/with}}
 </section>
 <div class="container">
-  <div class="row apartment-details__features">
-    <div class="row apartment-details__description"></div>
-    <div class="row apartment-details__map"></div>
+  <div class="apartment-details-features">
+    <div class="apartment-details-features__description">
+      <h3>Apartment Description</h3>
+      <p>This is a beautiful, spacious 1 bedroom apartment located right on the East Riverside district! It is super
+        close to downtown and you get a beautiful view of the city skyline from the dog park! I have barely lived in it
+        and the condition is like new. <br><br>It is on the first floor and parking is always available right in front. It is newly renovated and comes with
+        top of the line amenities.</p>
+    </div>
+    <div class="apartment-details-features__map">
+      <p>R19,470</p>
+    </div>
   </div>
 </div>
 {{> ../common/header-footer/footer }}
