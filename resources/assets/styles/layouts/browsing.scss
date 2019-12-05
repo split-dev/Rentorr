@@ -49,6 +49,7 @@
     .filters-menu__dropdown {
       left: auto !important;
       right: -5px !important;
+      padding: 24px 0 25px !important;
     }
     .triangle-blue {
       &:before {
@@ -71,17 +72,38 @@
     min-width: 210px;
     display: inline-block;
     flex-direction: column;
-    a {
+  }
+  &__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    & + label {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 0;
+    }
+    & + label:before {
+      content: url("");
+      position: absolute;
       display: inline-block;
-      color: #282830;
-      font-family: $roboto;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 14px;
-      margin-bottom: 25px;
-      &:last-child {
-        margin-bottom: 0;
-      }
+      top: 13px;
+      right: 25px;
+    }
+    &:checked + label:before {
+      content: url("images/global/check.svg");
+    }
+  }
+  &__input-label {
+    display: inline-block;
+    color: #282830;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 12.5px 25px 12.5px !important;
+    width: 100%;
+    &:hover {
+      background-color: #dfebff;
     }
   }
   &__tile-position {

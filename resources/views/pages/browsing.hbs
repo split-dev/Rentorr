@@ -19,9 +19,12 @@
             <div class="browsing__closest-filter">
                 <a class="browsing__triangle" href="#">Closest to search</a>
                 <div class="filters-menu__dropdown browsing__closest">
-                    {{#each browsing-closest}}
-                        <a class="second-link-global" href="#">{{closest-item}}</a>
-                    {{/each}}
+                    <div class="browsing__form-closest">
+                        {{#each browsing-closest}}
+                        <input class="browsing__input" id="browsing__input{{id}}" type="checkbox">
+                        <label class="browsing__input-label" for="browsing__input{{for}}">{{closest-item}}</label>
+                        {{/each}}
+                    </div >
                 </div>
             </div>
         </div>

@@ -5059,6 +5059,13 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+lightpick@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/lightpick/-/lightpick-1.5.2.tgz#0c0bfb0a9d8bb1c729025c2a20884ed7970a277c"
+  integrity sha512-ySxarv1UUaO2KNRljn1rMLDZ3pN6RyQazmTnudlxUMbhL/ob0ttrEgr7JJpqnB1dDNxQjFbA0piyovUZwgHxgw==
+  dependencies:
+    moment "^2.22.2"
+
 limiter@^1.0.5:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/limiter/-/limiter-1.1.4.tgz#87c9c3972d389fdb0ba67a45aadbc5d2f8413bc1"
@@ -5759,6 +5766,11 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+moment@^2.22.2:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
 
 most@^1.7.3:
   version "1.7.3"

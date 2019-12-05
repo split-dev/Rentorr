@@ -181,6 +181,10 @@ export default {
         $(this).children('a').addClass('triangle-blue');
       }
     });
+    $('.browsing__input').on('click', function(){
+      $('.browsing__input').not(this).prop('checked', false)
+    });
+
     const form = new Forms({
       wrap: '.field-wrap',
       forms: '.main-form__filters, filters-menu__input-position',
