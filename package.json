@@ -61,7 +61,6 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
-    "@chenfengyuan/datepicker": "^1.0.9",
     "animate.css": "^3.7.2",
     "aos": "^2.3.4",
     "babel-minify-webpack-plugin": "^0.3.1",

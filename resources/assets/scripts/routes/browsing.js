@@ -1,6 +1,5 @@
 import 'slick-carousel';
 import Forms from './forms';
-import '@chenfengyuan/datepicker';
 import 'ion-rangeslider';
 
 export default {
@@ -151,7 +150,20 @@ export default {
       }
     });
     //calendar
-    setTimeout(function(){
+    /* var picker = new Lightpick ({
+      field: document.getElementById('datepicker'),
+      singleDate: false,
+      numberOfColumns: 3,
+      numberOfMonths: 6,
+      onSelect: function(start, end){
+        var str = '';
+        str += start ? start.format('Do MMMM YYYY') + ' to ' : '';
+        str += end ? end.format('Do MMMM YYYY') : '...';
+        document.getElementById('result-5').innerHTML = str;
+      }
+    }); */
+
+    /* setTimeout(function(){
       $('.datepicker-container').addClass('datepicker-hide');
     }, 2);
     $('[data-toggle="datepicker"]').datepicker( {
@@ -160,7 +172,7 @@ export default {
     });
     $('body').click(function () {
       $('.datepicker-container').addClass('datepicker-container-init');
-    });
+    }); */
 
     //range-slider
     $('.js-range-slider').ionRangeSlider({
