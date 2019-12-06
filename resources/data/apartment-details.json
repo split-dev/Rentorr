@@ -9,7 +9,8 @@
         "apart": "images/apartment-details/02.png"
       },
       {
-        "apart": "images/apartment-details/03.png"
+        "apart": "images/apartment-details/03.png",
+        "other": "+5"
       }
     ]
   },
@@ -19,6 +20,28 @@
       "bed": "images/apartment-details/bed.svg",
       "bath": "images/apartment-details/bath.svg",
       "bild": "images/apartment-details/bild.svg"
+    }
+  ],
+  "img-symbol":[
+    {
+      "symbol": "images/apartment-details/gym.svg",
+      "text": "Gym"
+    },
+    {
+      "symbol": "images/apartment-details/wifi.svg",
+      "text": "WiFi"
+    },
+    {
+      "symbol": "images/apartment-details/eye.svg",
+      "text": "View"
+    },
+    {
+      "symbol": "images/apartment-details/parking.svg",
+      "text": "Parking Garage"
+    },
+    {
+      "symbol": "images/apartment-details/rise.svg",
+      "text": "High Rise"
     }
   ]
 }

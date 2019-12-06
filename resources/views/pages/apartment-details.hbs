@@ -21,7 +21,8 @@
 <!--            <div class="gallery-img">-->
             <div class="gallery-img d-flex">
               {{#each img-apart}}
-                <img src="{{apart}}" alt="apartments">
+                <a href="#"><img src="{{apart}}" alt="apartments"></a>
+                <a href="#"><span class="ingallery">{{other}}</span></a>
               {{/each}}
             </div>
           </div>
@@ -30,20 +31,32 @@
     </div>
   {{/with}}
 </section>
-<div class="container">
-  <div class="apartment-details-features">
-    <div class="apartment-details-features__description">
-      <h3>Apartment Description</h3>
-      <p>This is a beautiful, spacious 1 bedroom apartment located right on the East Riverside district! It is super
-        close to downtown and you get a beautiful view of the city skyline from the dog park! I have barely lived in it
-        and the condition is like new. <br><br>It is on the first floor and parking is always available right in front. It is newly renovated and comes with
-        top of the line amenities.</p>
-    </div>
-    <div class="apartment-details-features__map">
-      <p>R19,470</p>
+<section class="apartment-details-blocks">
+  <div class="container">
+    <div class="apartment-details-blocks__features">
+      <div class="apartment-details-blocks__description">
+        <h3>Apartment Description</h3>
+        <p>This is a beautiful, spacious 1 bedroom apartment located right on the East Riverside district! It is super
+          close to downtown and you get a beautiful view of the city skyline from the dog park! I have barely lived in it
+          and the condition is like new. <br><br>It is on the first floor and parking is always available right in front. It is newly renovated and comes with
+          top of the line amenities.</p>
+        <h3>Cool Features</h3>
+        <div class="features-img">
+<!--        <div class="features-img d-flex">-->
+          {{#each img-symbol}}
+            <div class="features-img-text">
+              <a href="#"><img src="{{symbol}}" alt="cool features"></a>
+              <span class="symbol">{{text}}</span>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="apartment-details-blocks__map">
+        <p>R19,470</p>
+      </div>
     </div>
   </div>
-</div>
+</section>
 {{> ../common/header-footer/footer }}
 </body>
 </html>

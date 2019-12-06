@@ -68,7 +68,7 @@
         }
         .bed {
           &:before {
-            top: 12;
+            top: 12px;
             content: url("../../images/apartment-details/bed.svg");
           }
         }
@@ -104,16 +104,45 @@
       justify-content: center;
       align-items: center;
       .gallery-img {
+        position: relative;
         margin-right: 20px;
         img {
           margin-left: 10px;
         }
+        .ingallery {
+          position: absolute;
+          right: 55px;
+          top: 25px;
+          z-index: 99;
+          width: 25px;
+          height: 40px;
+          color: #fff;
+          font-family: $roboto;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 40px;
+        }
       }
     }
   }
-  &-features {
-    display: flex;
-    justify-content: space-between;
+  &-blocks {
+    .container {
+      max-width: 910px;
+      padding: 0 15px;
+      margin: auto;
+    }
+    &__features {
+      display: flex;
+      justify-content: space-between;
+      .features-img {
+        display: flex;
+        justify-content: space-between;
+      }
+      .features-img-text {
+        display: flex;
+        flex-direction: column;
+      }
+    }
     &__description {
       max-width: 500px;
     }
