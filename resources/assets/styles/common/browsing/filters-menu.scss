@@ -254,12 +254,25 @@
   &__calendar-data {
     min-width: 350px;
     position: relative;
+    &:hover {
+      &:before {
+        content: url("images/global/calendar-hover.svg");
+      }
+    }
     &:before {
       content: url("images/global/calendar.svg");
       position: absolute;
       pointer-events: none;
       right: 0;
       top: 8px;
+    }
+    .field-wrap {
+      &.is-focused {
+        input {
+          border-bottom: 1px solid #1b5ec6;
+          color: #1b5ec6;
+        }
+      }
     }
     input {
       width: 100%;
@@ -410,9 +423,13 @@
 .irs {
   display: none;
 }
-.datepicker-container {
-  opacity: 0;
-}
-.datepicker-container-init {
-  opacity: 1 !important;
+.calendar-active {
+  &:before {
+    content: url("images/global/calendar-active.svg");
+  }
+  &:hover {
+    &:before {
+      content: url("images/global/calendar-active.svg") !important;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import 'slick-carousel';
 import Forms from './forms';
 import 'ion-rangeslider';
+import Lightpick from 'lightpick/lightpick'
 
 export default {
   init() {
@@ -85,13 +86,15 @@ export default {
       }
     });
     $(document).mouseup(function (e){
-      if ($('.datepicker-container').hasClass('datepicker-hide')) {
+      if ($('.lightpick').hasClass('is-hidden')) {
+        $('.filters-menu__calendar-data').removeClass('calendar-active');
         if($('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
           var div = $('.filters-menu__dropdown');
           if (!div.is(e.target) && div.has(e.target).length === 0) {
             $('.filters-menu__dropdown').removeClass('filters-menu__dropdown-active');
             $('.filters-menu__items ul li a').removeClass('filters-menu__filter-color-active');
             $('.browsing__search-result a').removeClass('triangle-blue');
+            $('.filters-menu__calendar-data').removeClass('calendar-active');
           }
         }
       }
@@ -150,30 +153,26 @@ export default {
       }
     });
     //calendar
-    /* var picker = new Lightpick ({
+    // eslint-disable-next-line no-unused-vars
+    var picker = new Lightpick ({
       field: document.getElementById('datepicker'),
       singleDate: false,
-      numberOfColumns: 3,
-      numberOfMonths: 6,
+      numberOfColumns: 2,
+      numberOfMonths: 2,
       onSelect: function(start, end){
         var str = '';
         str += start ? start.format('Do MMMM YYYY') + ' to ' : '';
         str += end ? end.format('Do MMMM YYYY') : '...';
         document.getElementById('result-5').innerHTML = str;
-      }
-    }); */
-
-    /* setTimeout(function(){
-      $('.datepicker-container').addClass('datepicker-hide');
-    }, 2);
-    $('[data-toggle="datepicker"]').datepicker( {
-      autoShow: true,
-      autoHide: true,
+      },
     });
-    $('body').click(function () {
-      $('.datepicker-container').addClass('datepicker-container-init');
-    }); */
-
+    $('.filters-menu__calendar-data .main-form__filters .field-wrap input').click(function () {
+      if ($('.filters-menu__calendar-data .main-form__filters .field-wrap' ).hasClass('is-focused')) {
+        $('.filters-menu__calendar-data').addClass('calendar-active');
+      }
+    });
+    console.log(document.querySelector('.lightpick'))
+    document.querySelector('.lightpick__inner').insertAdjacentHTML('afterend', '<div class="filters-menu__apply-clear"><button class="filters-menu__button second-link">APPLY</button><button class="filters-menu__button--black second-link">CLEAR</button></div>');
     //range-slider
     $('.js-range-slider').ionRangeSlider({
       type: 'double',

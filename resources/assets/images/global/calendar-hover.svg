@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>calendar-hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-04-calendar" transform="translate(-719.000000, -323.000000)" fill="#8A8E9B" fill-rule="nonzero">
+            <g id="Fields/input_active" transform="translate(534.000000, 299.000000)">
+                <g id="icons/drop_default" transform="translate(185.000000, 24.000000)">
+                    <path d="M12.8999997,1.4333333 L12.183333,1.4333333 L12.183333,0 L10.7499998,0 L10.7499998,1.4333333 L3.58333325,1.4333333 L3.58333325,0 L2.14999995,0 L2.14999995,1.4333333 L1.4333333,1.4333333 C0.644999985,1.4333333 0,2.07833328 0,2.8666666 L0,14.333333 C0,15.1216663 0.644999985,15.7666663 1.4333333,15.7666663 L12.8999997,15.7666663 C13.688333,15.7666663 14.333333,15.1216663 14.333333,14.333333 L14.333333,2.8666666 C14.333333,2.07833328 13.688333,1.4333333 12.8999997,1.4333333 Z M12.8999997,14.333333 L1.4333333,14.333333 L1.4333333,5.01666655 L12.8999997,5.01666655 L12.8999997,14.333333 Z" id="calendar-hover"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
