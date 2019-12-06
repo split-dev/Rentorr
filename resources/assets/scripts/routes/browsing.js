@@ -159,20 +159,16 @@ export default {
       singleDate: false,
       numberOfColumns: 2,
       numberOfMonths: 2,
-      onSelect: function(start, end){
-        var str = '';
-        str += start ? start.format('Do MMMM YYYY') + ' to ' : '';
-        str += end ? end.format('Do MMMM YYYY') : '...';
-        document.getElementById('result-5').innerHTML = str;
-      },
+      autoclose: false,
     });
     $('.filters-menu__calendar-data .main-form__filters .field-wrap input').click(function () {
       if ($('.filters-menu__calendar-data .main-form__filters .field-wrap' ).hasClass('is-focused')) {
         $('.filters-menu__calendar-data').addClass('calendar-active');
       }
     });
-    console.log(document.querySelector('.lightpick'))
+
     document.querySelector('.lightpick__inner').insertAdjacentHTML('afterend', '<div class="filters-menu__apply-clear"><button class="filters-menu__button second-link">APPLY</button><button class="filters-menu__button--black second-link">CLEAR</button></div>');
+    document.querySelector('.lightpick__toolbar').innerHTML = '<button type="button" class="lightpick__previous-action"><img src="images/global/calendar-arrow.svg" alt="prev"></button><button type="button" class="lightpick__next-action"><img src="images/global/calendar-arrow.svg" alt="next"></button></div>';
     //range-slider
     $('.js-range-slider').ionRangeSlider({
       type: 'double',

@@ -433,3 +433,97 @@
     }
   }
 }
+.lightpick {
+  &__inner {
+    position: relative;
+  }
+  &__month {
+    width: 240px;
+    padding: 12.5px;
+  }
+  &__month-title-bar {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px #e1dfe6;
+    margin-bottom: 0;
+  }
+  &__select {
+    color: #222634 !important;
+    font-family: $roboto;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+  }
+  &__days-of-the-week {
+    color: #3b3f4e;
+    font-size: 11px;
+    letter-spacing: 0.37px;
+    text-transform: uppercase;
+    padding: 8px 0 8px;
+    border-bottom: solid 1px #e1dfe6;
+    @include over-bold;
+  }
+  &__day {
+    font-family: $roboto;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 20px;
+    height: 30px;
+    margin-bottom: 2px;
+  }
+  &__previous-action,
+  &__next-action {
+    background-color: #fff;
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    img {
+      pointer-events: none;
+    }
+  }
+  &__previous-action {
+    position: absolute;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  &__next-action {
+    position: absolute;
+    right: 9px;
+  }
+}
+.is-in-range {
+  background-color: #dfebff !important;
+}
+.lightpick__day.is-end-date.is-in-range,
+.lightpick__day.is-start-date.is-in-range.is-flipped {
+  /* border-radius: 50% !important;
+  background-color: #fff !important;
+  border: solid 1px #1a5dc6 !important; */
+  background-image: url("images/global/start.svg");
+  background-position-x: 1px;
+  &:hover {
+    background-image: url("images/global/start.svg");
+  }
+}
+.lightpick__day.is-start-date.is-in-range,
+.lightpick__day.is-end-date.is-in-range.is-flipped {
+  background-image: url("images/global/end.svg");
+  background-position-x: 1px;
+  &:hover {
+    background-image: url("images/global/end.svg");
+  }
+}
+.lightpick__day.is-start-date,
+.lightpick__day.is-end-date,
+.lightpick__day.is-start-date:hover,
+.lightpick__day.is-end-date:hover {
+  color: #222634 !important;
+}
+.lightpick__day.is-start-date.is-end-date {
+  background-image: url("images/global/calender-circle.jpg") !important;
+  background-position-x: 0;
+  &:hover {
+    background-image: url("images/global/calender-circle.jpg");
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-04-calendar" transform="translate(-894.000000, -543.000000)">
+            <g id="Calendar" transform="translate(534.000000, 433.000000)">
+                <g id="Calendar-01" transform="translate(268.000000, 34.000000)">
+                    <g id="Calendar">
+                        <g id="Group" transform="translate(92.000000, 76.000000)">
+                            <rect id="Rectangle" fill="#DFEBFF" x="0" y="0" width="13" height="30"></rect>
+                            <rect id="Rectangle" stroke="#1A5DC6" fill="#FFFFFF" x="0.5" y="0.5" width="29" height="29" rx="14.5"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
