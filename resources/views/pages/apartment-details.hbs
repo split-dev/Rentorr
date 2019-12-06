@@ -18,7 +18,6 @@
             <p class="bild">Apartment</p>
           </div>
           <div class="apartment-details-header__gallery">
-<!--            <div class="gallery-img">-->
             <div class="gallery-img d-flex">
               {{#each img-apart}}
                 <a href="#"><img src="{{apart}}" alt="apartments"></a>
@@ -36,23 +35,71 @@
     <div class="apartment-details-blocks__features">
       <div class="apartment-details-blocks__description">
         <h3>Apartment Description</h3>
-        <p>This is a beautiful, spacious 1 bedroom apartment located right on the East Riverside district! It is super
-          close to downtown and you get a beautiful view of the city skyline from the dog park! I have barely lived in it
-          and the condition is like new. <br><br>It is on the first floor and parking is always available right in front. It is newly renovated and comes with
+        <p class="bottom-line">This is a beautiful, spacious 1 bedroom apartment located right on the East Riverside district! It is super
+          close to downtown and you get a beautiful view of the city skyline from the dog park! I have barely lived in
+          it
+          and the condition is like new. <br><br>It is on the first floor and parking is always available right in
+          front. It is newly renovated and comes with
           top of the line amenities.</p>
         <h3>Cool Features</h3>
-        <div class="features-img">
-<!--        <div class="features-img d-flex">-->
+        <div class="features-img bottom-line">
           {{#each img-symbol}}
             <div class="features-img-text">
-              <a href="#"><img src="{{symbol}}" alt="cool features"></a>
+              <a class="images" href="#"><img src="{{symbol}}" alt="cool features"></a>
               <span class="symbol">{{text}}</span>
             </div>
           {{/each}}
         </div>
+        <h3>Pet Policy</h3>
+        <div class="features-img bottom-line">
+          {{#with img-symbol-pets}}
+            <div class="features-img-text">
+              <a class="images" href="#"><img src="{{symbol}}" alt="cool features"></a>
+              <span class="symbol">{{text}}</span>
+            </div>
+          {{/with}}
+        </div>
+        <div class="message">
+          {{#with client-avatar}}
+            <div class="message-text">
+              <h3>Meet <a href="#">{{first-name}} {{last-name}}</a> — your future Landlord</h3>
+              <p class="date">Member since June, 2018</p>
+              <p class="date dot"></p>
+              <p class="date Estate">Real Estate Company</p>
+              <p>It is on the first floor and parking is always available right in front. It is newly renovated and comes
+                with top of the line… amenities.</p>
+            </div>
+            <div class="message-img-text">
+              <img class="images images_mass" src="{{avatar}}" alt="uncle Bob">
+              <img class="images images_check" src="{{avatar_check}}" alt="check">
+              <a href="#">Message {{first-name}}</a>
+            </div>
+          {{/with}}
+        </div>
       </div>
       <div class="apartment-details-blocks__map">
-        <p>R19,470</p>
+        {{#with map_pleace}}
+          <div class="map">
+            <a class="images" href="#"><img src="{{map}}" alt="cool features"></a>
+          </div>
+        {{/with}}
+        <div class="apartment-details-blocks__undermap">
+          <div class="apartment-details-blocks__block-top">
+            <p class="h-font">R19,470</p><p class="map-font">/month</p>
+          </div>
+          <div class="apartment-details-blocks__block-middle">
+            <p class="map-font">Availability</p>
+            <p class="big-font">Right Now</p>
+            <p class="map-font">Duration</p>
+            <p class="big-font">12 months</p>
+          </div>
+          <div class="apartment-details-blocks__block-bottom">
+            <p class="map-font">Monthly Rent</p><p class="big-font">R19,470</p>
+            <p class="map-font">Security Deposit</p><p class="big-font">R0.00</p>
+            <p class="map-font">What you’ll pay at move in</p><p class="big-font">R19,470</p>
+            <a href="#" class="button--blue">Apply Now</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

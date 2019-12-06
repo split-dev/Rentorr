@@ -43,5 +43,21 @@
       "symbol": "images/apartment-details/rise.svg",
       "text": "High Rise"
     }
-  ]
+  ],
+  "img-symbol-pets":
+    {
+      "symbol": "images/apartment-details/pets.svg",
+      "text": "Pets Not Allowed"
+    },
+  "client-avatar":
+  {
+    "avatar": "images/apartment-details/Img_avatar.png",
+    "avatar_check": "images/apartment-details/check.svg",
+    "first-name": "David",
+    "last-name": "Fitzpatrick"
+  },
+  "map_pleace":
+  {
+    "map": "images/apartment-details/map-with-pin.png"
+  }
 }

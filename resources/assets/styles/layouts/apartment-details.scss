@@ -1,4 +1,11 @@
 .apartment-details {
+  p {
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    line-height: 24px;
+  }
   &-header {
     .container {
       max-width: 910px;
@@ -105,9 +112,27 @@
       align-items: center;
       .gallery-img {
         position: relative;
-        margin-right: 20px;
+        a {
+          margin-left: 5px;
+          position: relative;
+          &:first-child {
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              z-index: 99;
+              -webkit-transition: 0.3s;
+              transition: 0.3s;
+              //opacity: 0;
+              background: rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
         img {
-          margin-left: 10px;
+          //margin-left: 10px;
         }
         .ingallery {
           position: absolute;
@@ -126,10 +151,20 @@
     }
   }
   &-blocks {
+    padding-bottom: 120px;
     .container {
       max-width: 910px;
       padding: 0 15px;
       margin: auto;
+      h3 {
+        max-width: 340px;
+        //width: 77px;
+        height: 24px;
+        color: #222634;
+        @include over-extra;
+        font-size: 16px;
+        font-weight: 900;
+      }
     }
     &__features {
       display: flex;
@@ -141,10 +176,114 @@
       .features-img-text {
         display: flex;
         flex-direction: column;
+        height: 125px;
+        .images {
+          width: 72px;
+          height: 72px;
+          display: flex;
+          justify-content: center;
+          border: 1px solid #f3f3f4;
+        }
+        .symbol {
+          text-align: center;
+          width: 72px;
+          color: #666b7c;
+          font-family: $roboto;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16px;
+        }
+      }
+      .message {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-family: $roboto;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: -0.1px;
+          line-height: 24px;
+        }
+        &-text {
+          min-width: 330px;
+          .date {
+            display: inline-block;
+            color: #9ba0b5;
+            font-family: $roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+          }
+          .dot {
+            width: 4px;
+            height: 4px;
+            background-color: #9ba0b5;
+            margin: 3px 16px;
+          }
+          .Estate {
+            margin-bottom: 20px;
+          }
+        }
+        &-img-text {
+          position: relative;
+          margin-top: 40px;
+          img {
+            margin-bottom: 20px;
+          }
+          .images_check {
+            position: absolute;
+            transform: translate(70px, -50px);
+          }
+        }
       }
     }
     &__description {
       max-width: 500px;
+      .bottom-line {
+        box-shadow: 0 1px 0 rgba(183, 184, 199, 0.24);
+        background-color: #fff;
+        padding-bottom: 40px;
+      }
+    }
+    &__map {
+      margin-top: 40px;
+      width: 296px;
+      height: 712px;
+      box-shadow: 0 22px 45px rgba(148, 154, 170, 0.1);
+      background-color: #fff;
+      .map {
+        margin-bottom: 23px;
+      }
+      .h-font {
+        color: #222634;
+        @include over-extra;
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: -0.74px;
+        text-transform: uppercase;
+        padding-right: 4px;
+      }
+      .map-font {
+        color: #9ba0b5;
+        font-family: $roboto;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.08px;
+      }
+      .big-font {
+        color: #222634;
+        font-family: $roboto;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.09px;
+      }
+    }
+    &__block-top {
+      display: flex;
+      justify-content: flex-start;
+    }
+    &__undermap {
+      margin-left: 32px;
     }
   }
 }
