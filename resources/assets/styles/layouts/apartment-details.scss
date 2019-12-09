@@ -193,6 +193,7 @@
           border: 1px solid #f3f3f4;
         }
         .symbol {
+          padding-top: 11px;
           text-align: center;
           width: 72px;
           color: #666b7c;
@@ -271,7 +272,7 @@
     &__map {
       margin-top: 40px;
       width: 296px;
-      height: 712px;
+      //height: 712px;
       box-shadow: 0 22px 45px rgba(148, 154, 170, 0.1);
       background-color: #fff;
       position: relative;
@@ -287,13 +288,6 @@
         text-transform: uppercase;
         padding-right: 4px;
       }
-      //.map-font {
-      //  color: #9ba0b5;
-      //  font-family: $roboto;
-      //  font-size: 12px;
-      //  font-weight: 400;
-      //  letter-spacing: 0.08px;
-      //}
       .big-font {
         color: #222634;
         font-family: $roboto;
@@ -378,6 +372,9 @@
         margin-top: 28px;
       }
     }
+    //&__block-top {
+    //  align-items: end;
+    //}
   }
   &-map {
     .container {
