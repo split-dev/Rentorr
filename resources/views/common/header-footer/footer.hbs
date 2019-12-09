@@ -1,18 +1,16 @@
 {{#each footer}}
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="footer">
-                    <div class="footer__logo">
-                        <img src="{{logo}}" alt="logo">
-                        <p>{{desc}}</p>
-                    </div>
-                    <ul class="footer__nav">
-                      {{#each nav}}
-                          <li><a class="explore__link" href="{{adress}}">{{link}}</a></li>
-                      {{/each}}
-                    </ul>
+            <div class="footer">
+                <div class="footer__logo">
+                    <img src="{{logo}}" alt="logo">
+                    <p>{{desc}}</p>
                 </div>
+                <ul class="footer__nav">
+                  {{#each nav}}
+                      <li><a class="explore__link" href="{{adress}}">{{link}}</a></li>
+                  {{/each}}
+                </ul>
             </div>
         </div>
     </footer>
