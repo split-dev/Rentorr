@@ -1,6 +1,7 @@
 {
   "background": {
       "bgd": "./images/apartment-details/Img_bg.png",
+      "arrow-back": "images/apartment-details/arrow-back.svg",
     "img-apart":[
       {
         "apart": "images/apartment-details/01.png"
@@ -59,5 +60,31 @@
   "map_pleace":
   {
     "map": "images/apartment-details/map-with-pin.png"
+  },
+  "map": {
+     "bgd-map": "./images/apartment-details/map.png",
+     "group": "images/apartment-details/group.svg",
+    "map-apart":[
+      {
+        "apart": "images/apartment-details/map-1.png",
+        "apart_text_up": "Downtown penthouse",
+        "apart_text_down": "72 Willay Road, 7903"
+      },
+      {
+        "apart": "images/apartment-details/map-2.png",
+        "apart_text_up": "Downtown penthouse",
+        "apart_text_down": "72 Willay Road, 7903"
+      },
+      {
+        "apart": "images/apartment-details/map-3.png",
+        "apart_text_up": "Downtown penthouse",
+        "apart_text_down": "72 Willay Road, 7903"
+      },
+      {
+        "apart": "images/apartment-details/map-4.png",
+        "apart_text_up": "Downtown penthouse",
+        "apart_text_down": "72 Willay Road, 7903"
+      }
+    ]
   }
 }

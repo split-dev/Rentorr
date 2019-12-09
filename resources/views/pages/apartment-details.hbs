@@ -6,6 +6,7 @@
 <section class="apartment-details-header">
   {{#with background}}
     <div class="apartment-details-header__bcground" style="background-image: url('{{ bgd }}')">
+      <a href="#"><img class="images arrow-back" src="{{arrow-back}}" alt="back"></a>
       <div class="container">
         <div class="apartment-details-header__title">
           <a href="#" class="button--blue">Verified</a>
@@ -114,6 +115,58 @@
       </div>
     </div>
   </div>
+</section>
+<section class="apartment-details-map">
+  {{#with map}}
+    <div class="apartment-details-map__bcground" style="background-image: url('{{ bgd-map }}')">
+      <div class="container">
+        <div class="apartment-details-map__buttons-on-map">
+          <img class="images" src="{{group}}" alt="buttons">
+        </div>
+      </div>
+    </div>
+    <div class="apartment-details-map__around">
+      <div class="container">
+        <div class="apartment-details-map__title">
+          <h3>Similar properties nearby</h3>
+          <div class="apartment-details-map__gallery">
+            <div class="gallery-img d-flex">
+              {{#each map-apart}}
+                <div class="gallery-column">
+                  <a href="#"><img src="{{apart}}" alt="apartments"></a>
+                  <p class="text_bold">{{apart_text_up}}</p>
+                  <p class="map-font">{{apart_text_down}}</p>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+          <div class="apartment-details-map__button">
+            <a href="#" class="button--white">Show More</a>
+          </div>
+          <div class="apartment-details-map__other">
+            <div class="offset-text">
+              <h3>More places to rent in Cape Town:</h3>
+              <a href="#">Apartment</a>
+              <a href="#">Houses</a>
+              <a href="#">Rooms for Rent</a>
+            </div>
+            <div class="offset-text">
+              <h3>Renters are also looking for:</h3>
+              <a href="#">Durban</a>
+              <a href="#">Pretoria</a>
+              <a href="#">Bloemfontein</a>
+              <a href="#">Johannesburg</a>
+              <a href="#">Soweto</a>
+              <a href="#">Rustenburg</a>
+              <a href="#">Port Elizabeth</a>
+              <a href="#">East London</a>
+              <a href="#">Nelspruit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/with}}
 </section>
 {{> ../common/header-footer/footer }}
 </body>
