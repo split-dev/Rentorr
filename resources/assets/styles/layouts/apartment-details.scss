@@ -400,6 +400,12 @@
     &__around {
       padding-top: 95px;
       padding-bottom: 24px;
+      h3 {
+        color: #222634;
+        @include over-extra;
+        font-size: 16px;
+        font-weight: 900;
+      }
     }
     &__gallery {
       .gallery-img {
