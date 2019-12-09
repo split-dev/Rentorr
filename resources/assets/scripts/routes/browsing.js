@@ -11,7 +11,6 @@ export default {
       slidesToShow: 1,
       slidesToScroll: 1,
     })
-
     $('.open-map').click(function (e) {
       e.preventDefault();
       $('.browsing__tile-position').toggleClass('tile-position-map');
@@ -82,10 +81,10 @@ export default {
       }
       else {
         $(this).children('.filters-menu__dropdown').toggleClass('filters-menu__dropdown-active');
-        $(this).children('a').toggleClass('filters-menu__filter-color-active');
+        $(this).children('a').addClass('filters-menu__filter-color-active');
       }
     });
-    $(document).mouseup(function (e){
+    $(document).mousedown(function (e){
       if ($('.lightpick').hasClass('is-hidden')) {
         $('.filters-menu__calendar-data').removeClass('calendar-active');
         if($('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
@@ -156,9 +155,7 @@ export default {
     // eslint-disable-next-line no-unused-vars
     var picker = new Lightpick ({
       field: document.getElementById('datepicker'),
-      singleDate: false,
-      numberOfColumns: 2,
-      numberOfMonths: 2,
+      singleDate: true,
       autoclose: false,
       footer: true,
     });
@@ -167,17 +164,49 @@ export default {
         $('.filters-menu__calendar-data').addClass('calendar-active');
       }
     });
-    document.querySelector('.lightpick__toolbar').innerHTML = '<button type="button" class="lightpick__previous-action"><img src="images/global/calendar-arrow.svg" alt="prev"></button><button type="button" class="lightpick__next-action"><img src="images/global/calendar-arrow.svg" alt="next"></button></div>';
+    $('.lightpick__reset-action').text('CLEAR');
+    $('.lightpick__apply-action').click(function () {
+      $('.filters-menu__calendar').addClass('filters-menu__dropdown-active');
+    })
     //range-slider
     $('.js-range-slider').ionRangeSlider({
       type: 'double',
       min: 1,
       max: 24,
+      // eslint-disable-next-line no-unused-vars
+      onUpdate: function (data) {
+        // eslint-disable-next-line no-undef
+        highlight('onUpdate');
+      },
     });
 
     //clear button
-    $('.filters-menu__apartment .filters-menu__apartment .filters-menu__button--black').click(function () {
-      $('.filters-menu__apartment .filters-menu__checkbox-position input').attr('checked');
+    $('.filters-menu__apartment .filters-menu__apply-clear .filters-menu__button--black').click(function () {
+      $('.filters-menu__apartment .filters-menu__checkbox-position input').prop('checked', false)
+    });
+    $('.filters-menu__pet .filters-menu__apply-clear .filters-menu__button--black').click(function () {
+      $('.filters-menu__pet .filters-menu__checkbox-position input').prop('checked', false)
+    });
+    $('.filters-menu__features .filters-menu__apply-clear .filters-menu__button--black').click(function () {
+      $('.filters-menu__features .filters-menu__checkbox-position input').prop('checked', false)
+    });
+    $('.filters-menu__rooms .filters-menu__apply-clear .filters-menu__button--black').click(function () {
+      $('.filters-menu__rooms-minus').addClass('rooms-minus-disabled');
+      let inp = $('.filters-menu__rooms-input');
+      for (let i = 0; i<inp.length; i++) {
+        let min = inp[i].getAttribute('data-min');
+        inp[i].setAttribute('value', min + '+');
+        inp[i].setAttribute('data-value', min);
+      }
+    });
+    $('.filters-menu__calendar .filters-menu__apply-clear .filters-menu__button--black').click(function () {
+      $('#datepicker').val('');
+      $('.filters-menu__calendar .field-wrap').removeClass('has-val');
+      var d0_instance = $('.js-range-slider').data('ionRangeSlider');
+      d0_instance.update({
+        from: 1,
+        to: 24,
+      });
     });
 
     // closest filter

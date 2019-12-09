@@ -316,7 +316,7 @@
       left: -7px;
     }
     .irs-max {
-      right: -4px;
+      right: -10px;
     }
     .irs {
       .irs-handle {
@@ -447,9 +447,6 @@
     background-color: #fff !important;
     grid-gap: 0 !important;
     padding: 0;
-    &:first-child {
-      margin-right: 15px;
-    }
   }
   &__month-title-bar {
     display: flex;
@@ -479,27 +476,32 @@
     font-weight: 500;
     line-height: 20px;
     height: 30px;
-    margin-bottom: 2px;
+  }
+  &__close-action {
+    display: none;
   }
   &__previous-action,
   &__next-action {
     background-color: #fff;
-    border-radius: 0;
     width: 20px;
     height: 20px;
     top: 5px;
-    img {
-      pointer-events: none;
-    }
+    color: transparent;
   }
   &__previous-action {
     position: absolute;
-    left: -11px;
-    transform: rotate(180deg);
+    left: -9px;
+    &:before {
+      content: url("images/global/calendar-arrow.svg");
+      transform: rotate(180deg);
+    }
   }
   &__next-action {
     position: absolute;
     right: -4px;
+    &:before {
+      content: url("images/global/calendar-arrow.svg");
+    }
   }
   &__footer {
     display: flex;
@@ -577,9 +579,6 @@
 }
 .lightpick__day.is-end-date.is-in-range,
 .lightpick__day.is-start-date.is-in-range.is-flipped {
-  /* border-radius: 50% !important;
-  background-color: #fff !important;
-  border: solid 1px #1a5dc6 !important; */
   background-image: url("images/global/start.svg");
   background-position-x: 1px;
   &:hover {
@@ -598,7 +597,11 @@
 .lightpick__day.is-end-date,
 .lightpick__day.is-start-date:hover,
 .lightpick__day.is-end-date:hover {
-  color: #222634 !important;
+  background-color: #fff;
+  color: #222634;
+  border-radius: 50%;
+  border: solid 1px #1b5ec6;
+  background-image: none;
 }
 .lightpick__day.is-start-date.is-end-date {
   background-image: url("images/global/circle-white.svg") !important;
