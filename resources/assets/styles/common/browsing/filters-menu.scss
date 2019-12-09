@@ -434,12 +434,22 @@
   }
 }
 .lightpick {
+  padding: 25px;
   &__inner {
     position: relative;
   }
+  &__months {
+    background-color: #fff !important;
+    grid-gap: 0 !important;
+  }
   &__month {
-    width: 240px;
-    padding: 12.5px;
+    width: 220px;
+    background-color: #fff !important;
+    grid-gap: 0 !important;
+    padding: 0;
+    &:first-child {
+      margin-right: 15px;
+    }
   }
   &__month-title-bar {
     display: flex;
@@ -477,19 +487,89 @@
     border-radius: 0;
     width: 20px;
     height: 20px;
-    top: 17px;
+    top: 5px;
     img {
       pointer-events: none;
     }
   }
   &__previous-action {
     position: absolute;
-    left: 0;
+    left: -11px;
     transform: rotate(180deg);
   }
   &__next-action {
     position: absolute;
-    right: 9px;
+    right: -4px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 15px 5px 0;
+  }
+  &__reset-action {
+    position: relative;
+    width: auto;
+    text-decoration: none !important;
+    color: #222634;
+    display: block;
+    background: transparent;
+    text-transform: uppercase;
+    padding: 0;
+    @include over-extra;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #222634;
+      bottom: -7px;
+      left: 50%;
+      right: 0;
+      transform: translate(-50%, 0);
+      transition: 0.3s;
+      opacity: 0;
+    }
+    &:hover {
+      color: #222634;
+      text-decoration: none !important;
+      &:before {
+        transform: translate(-50%, -5px);
+        opacity: 1;
+      }
+    }
+  }
+  &__apply-action {
+    position: relative;
+    width: auto;
+    text-decoration: none !important;
+    color: #1b5ec6;
+    display: block;
+    background: transparent;
+    text-transform: uppercase;
+    padding: 0;
+    @include over-extra;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #1b5ec6;
+      bottom: -7px;
+      left: 50%;
+      right: 0;
+      transform: translate(-50%, 0);
+      transition: 0.3s;
+      opacity: 0;
+    }
+    &:hover {
+      color: #1b5ec6;
+      text-decoration: none !important;
+      &:before {
+        transform: translate(-50%, -5px);
+        opacity: 1;
+      }
+    }
   }
 }
 .is-in-range {
@@ -521,9 +601,9 @@
   color: #222634 !important;
 }
 .lightpick__day.is-start-date.is-end-date {
-  background-image: url("images/global/calender-circle.jpg") !important;
+  background-image: url("images/global/circle-white.svg") !important;
   background-position-x: 0;
   &:hover {
-    background-image: url("images/global/calender-circle.jpg");
+    background-image: url("images/global/circle-white.svg");
   }
 }
