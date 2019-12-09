@@ -75,27 +75,26 @@
         }
         .bed {
           &:before {
-            top: 12px;
+            top: 9px;
             content: url("../../images/apartment-details/bed.svg");
           }
         }
         .bath {
           &:before {
-            top: 14px;
+            top: 11px;
             content: url("../../images/apartment-details/bath.svg");
           }
         }
         .size {
           &:before {
-            top: 11px;
+            top: 8px;
             content: url("../../images/apartment-details/size.svg");
           }
         }
         .bild {
-          right: 3px;
+          //right: 2px;
           &:before {
-            top: 11px;
-            left: 0;
+            top: 7px;
             content: url("../../images/apartment-details/bild.svg");
           }
         }
@@ -206,6 +205,13 @@
         }
         &-text {
           min-width: 330px;
+          .link-name {
+            @include over-extra;
+            font-size: 16px;
+            font-weight: 900;
+            color: #1a5dc6;
+            font-family: $roboto;
+          }
           .date {
             display: inline-block;
             color: #9ba0b5;
@@ -234,13 +240,21 @@
             position: absolute;
             transform: translate(70px, -50px);
           }
+          .link-bold {
+            color: #1a5dc6;
+            @include over-extra;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 0.69px;
+            text-transform: uppercase;
+          }
         }
       }
     }
     &__description {
       max-width: 500px;
       .bottom-line {
-        box-shadow: 0 1px 0 rgba(183, 184, 199, 0.24);
+        border-bottom: 1px solid #eeeff3;
         background-color: #fff;
         padding-bottom: 40px;
       }
@@ -251,6 +265,7 @@
       height: 712px;
       box-shadow: 0 22px 45px rgba(148, 154, 170, 0.1);
       background-color: #fff;
+      position: relative;
       .map {
         margin-bottom: 23px;
       }
@@ -277,13 +292,82 @@
         font-weight: 500;
         letter-spacing: 0.09px;
       }
+      .link-vulgatus {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        bottom: -50px;
+        color: #1a5dc6;
+        font-family: $roboto;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.35px;
+        line-height: 20px;
+      }
     }
     &__block-top {
       display: flex;
       justify-content: flex-start;
+      position: relative;
+      //margin-top: 28px;
+      .heard:after {
+        position: absolute;
+        right: 27px;
+        top: 0;
+        content: url("../../images/apartment-details/Like_selected.svg");
+        font-size: 20px;
+      }
+    }
+    &__block-middle {
+      position: relative;
+      .checker:after {
+        position: absolute;
+        right: 27px;
+        top: 28px;
+        content: url("../../images/apartment-details/checkker.svg");
+        font-size: 20px;
+      }
+      .calendar:after {
+        position: absolute;
+        right: 27px;
+        top: 74px;
+        content: url("../../images/apartment-details/calendar.svg");
+        font-size: 20px;
+      }
+    }
+    &__block-bottom {
+      margin-right: 27px;
+      .blocks-allow {
+        display: flex;
+        justify-content: space-between;
+      }
+      .button--blue {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 23px;
+      }
+    }
+    &__block-text {
+      margin-top: 20px;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.09px;
+      .map-font-big {
+        color: #666b7c;
+      }
+      .map-font-middle {
+        color: #9ba0b5;
+      }
     }
     &__undermap {
       margin-left: 32px;
+      .bottom-line-small {
+        border-bottom: 1px solid #eeeff3;
+        background-color: #fff;
+        padding-bottom: 12px;
+        margin-top: 28px;
+      }
     }
   }
 }
