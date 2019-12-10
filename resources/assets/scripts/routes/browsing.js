@@ -237,12 +237,23 @@ export default {
     });
     //Apply button pets
     $('.filters-menu__pet .filters-menu__checkbox-position input').on('click', function(){
+      info();
+    });
+    function info() {
       let  contentPet = $(this).next().html();
-      if($('.filters-menu__pet .filters-menu__button').click(function () {
+      $('.filters-menu__pet .filters-menu__button').click(function () {
+        let inp = $(this).parent().parent().children('.filters-menu__checkbox-position').children('input');
+        let count = 0;
+        console.log(inp.length);
+        for(let i = 0; i<inp.length; i++) {
+          if (inp[i].checked) {
+            console.log(count)
+          }
+        }
         $(this).parent().parent().prev().text(contentPet);
         $(this).parent().parent().removeClass('filters-menu__dropdown-active');
-      }));
-    });
+      });
+    }
     //Apply button features
     $('.filters-menu__features .filters-menu__checkbox-position input').on('click', function(){
       if($('.filters-menu__features .filters-menu__button').click(function () {
