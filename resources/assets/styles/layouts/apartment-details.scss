@@ -127,6 +127,7 @@
         a {
           margin-left: 5px;
           position: relative;
+          //&:nth-child(1) {
           &:first-child {
             &:after {
               content: "";
@@ -271,8 +272,10 @@
     }
     &__map {
       margin-top: 40px;
+      padding-bottom: 27px;
       width: 296px;
       //height: 712px;
+      height: 100%;
       box-shadow: 0 22px 45px rgba(148, 154, 170, 0.1);
       background-color: #fff;
       position: relative;
