@@ -188,32 +188,42 @@
     {
       "id": "1",
       "for": "1",
-      "closest-item": "Newest first"
+      "closest-item": "Recently Added"
     },
     {
       "id": "2",
       "for": "2",
-      "closest-item": "Closest to search"
+      "closest-item": "Place I Like"
     },
     {
       "id": "3",
       "for": "3",
-      "closest-item": "Places I Like"
+      "closest-item": "By Price: Low to High"
     },
     {
       "id": "4",
       "for": "4",
-      "closest-item": "Most Popular"
+      "closest-item": "By Price: High to Low"
     },
     {
       "id": "5",
       "for": "5",
-      "closest-item": "By price: Low to High"
+      "closest-item": "Rating: From 3 Stars"
     },
     {
       "id": "6",
       "for": "6",
-      "closest-item": "By price: High to Low"
+      "closest-item": "Rating: From 4 Stars"
+    },
+    {
+      "id": "6",
+      "for": "6",
+      "closest-item": "Rating: From 5 Stars"
+    },
+    {
+      "id": "6",
+      "for": "6",
+      "closest-item": "All Review Rating"
     }
   ],
   "apartment-tile": [

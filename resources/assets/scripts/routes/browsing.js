@@ -15,11 +15,9 @@ export default {
       e.preventDefault();
       $('.browsing__tile-position').toggleClass('tile-position-map');
       if ($('.open-map img').attr('data-number') == 0) {
-        $('.open-map img').attr('src', 'images/browsing/map-blue.svg');
-        $('.open-map img').attr('data-number','1');
+        $('.open-map img').attr('src', 'images/browsing/map-blue.svg').attr('data-number','1');
       } else {
-        $('.open-map img').attr('src', 'images/browsing/map-black.svg');
-        $('.open-map img').attr('data-number','0');
+        $('.open-map img').attr('src', 'images/browsing/map-black.svg').attr('data-number','0');
       }
     });
 
@@ -40,8 +38,7 @@ export default {
           var div = $('#send-me-show');
           if (!div.is(e.target) && div.has(e.target).length === 0) {
             $('.send-me').removeClass('send-me-active');
-            $('html, body').removeClass('body-hidden');
-            $('html, body').removeClass('send-me-hidden');
+            $('html, body').removeClass('body-hidden send-me-hidden');
           }
         }
       });
@@ -90,10 +87,12 @@ export default {
         if($('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
           var div = $('.filters-menu__dropdown');
           if (!div.is(e.target) && div.has(e.target).length === 0) {
+            $('.filters-menu__dropdown-active input').prop('checked', false);
+            $('.filters-menu__dropdown-active .field-wrap input').val('');
+            $('.filters-menu__dropdown-active .field-wrap input').val('');
+            $('.filters-menu__dropdown-active').prev().removeClass('filters-menu__filter-color-active');
             $('.filters-menu__dropdown').removeClass('filters-menu__dropdown-active');
-            $('.filters-menu__items ul li a').removeClass('filters-menu__filter-color-active');
             $('.browsing__search-result a').removeClass('triangle-blue');
-            $('.filters-menu__calendar-data').removeClass('calendar-active');
           }
         }
       }
@@ -165,9 +164,6 @@ export default {
       }
     });
     $('.lightpick__reset-action').text('CLEAR');
-    $('.lightpick__apply-action').click(function () {
-      $('.filters-menu__calendar').addClass('filters-menu__dropdown-active');
-    })
     //range-slider
     $('.js-range-slider').ionRangeSlider({
       type: 'double',
@@ -201,6 +197,7 @@ export default {
       }
     });
     $('.filters-menu__calendar .filters-menu__apply-clear .filters-menu__button--black').click(function () {
+      $(this).parent().parent().prev().text('Availability & duration');
       $('#datepicker').val('');
       $('.filters-menu__calendar .field-wrap').removeClass('has-val');
       var d0_instance = $('.js-range-slider').data('ionRangeSlider');
@@ -230,7 +227,7 @@ export default {
       $('.browsing__triangle').removeClass('triangle-blue');
     });
 
-    //Apply button
+    //Apply button apart
     $('.filters-menu__apartment .filters-menu__checkbox-position input').on('click', function(){
       let  contentApart = $(this).next().html();
       if($('.filters-menu__apartment .filters-menu__button').click(function () {
@@ -238,7 +235,43 @@ export default {
         $(this).parent().parent().removeClass('filters-menu__dropdown-active');
       }));
     });
+    //Apply button pets
+    $('.filters-menu__pet .filters-menu__checkbox-position input').on('click', function(){
+      let  contentPet = $(this).next().html();
+      if($('.filters-menu__pet .filters-menu__button').click(function () {
+        $(this).parent().parent().prev().text(contentPet);
+        $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+      }));
+    });
+    //Apply button features
+    $('.filters-menu__features .filters-menu__checkbox-position input').on('click', function(){
+      if($('.filters-menu__features .filters-menu__button').click(function () {
+        $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+      }));
+    });
+    //Apply button rooms
+    $('.filters-menu__rooms .filters-menu__button').click(function () {
+      $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+    });
 
+    //Apply button price
+    $('.filters-menu__price .filters-menu__button').on('click', function(e){
+      e.preventDefault();
+      let  minPrice = $('#min-price').val();
+      let  maxPrice = $('#max-price').val();
+      console.log(maxPrice)
+      $(this).parent().parent().parent().prev().text('R' + minPrice + ' - ' + 'R' + maxPrice);
+      $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+    });
+    //Apply button calendar
+    $('.filters-menu__calendar .filters-menu__button').on('click', function(e){
+      e.preventDefault();
+      let  date = $('#datepicker').val();
+      let  fromRange = $('.irs-from').html();
+      let  toRange = $('.irs-to').html();
+      $(this).parent().parent().prev().text(date + ' | ' + fromRange + ' - ' + toRange + ' months');
+      $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+    });
 
     const form = new Forms({
       wrap: '.field-wrap',
