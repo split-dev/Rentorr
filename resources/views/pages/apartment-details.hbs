@@ -2,7 +2,7 @@
 <head>
   {{> ../common/head }}
 </head>
-<body class="apartment-details">
+<body class="apartment-details apartment">
 <section class="apartment-details-header">
   {{#with background}}
     <div class="apartment-details-header__bcground" style="background-image: url('{{ bgd }}')">
@@ -125,19 +125,14 @@
         </div>
       </div>
     </div>
+  {{/with}}
     <div class="apartment-details-map__around">
       <div class="container">
         <div class="apartment-details-map__title">
           <h3>Similar properties nearby</h3>
           <div class="apartment-details-map__gallery">
-            <div class="gallery-img d-flex">
-              {{#each map-apart}}
-                <div class="gallery-column">
-                  <a href="#"><img src="{{apart}}" alt="apartments"></a>
-                  <p class="text_bold">{{apart_text_up}}</p>
-                  <p class="map-font">{{apart_text_down}}</p>
-                </div>
-              {{/each}}
+            <div class="apartment-details-map__position">
+              {{> ../common/browsing/apartment-tile}}
             </div>
           </div>
           <div class="apartment-details-map__button">
@@ -166,7 +161,6 @@
         </div>
       </div>
     </div>
-  {{/with}}
 </section>
 {{> ../common/header-footer/footer }}
 </body>

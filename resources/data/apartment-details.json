@@ -84,7 +84,127 @@
         "apart": "images/apartment-details/map-4.png",
         "apart_text_up": "Downtown penthouse",
         "apart_text_down": "72 Willay Road, 7903"
+      },
+      {
+        "apart": "images/apartment-details/map-2.png",
+        "apart_text_up": "Downtown penthouse",
+        "apart_text_down": "72 Willay Road, 7903"
       }
     ]
-  }
+  },
+  "apartment-tile": [
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/apartment-details/map-1.png"
+        },
+        {
+          "img": "images/apartment-details/map-2.png"
+        },
+        {
+          "img": "images/apartment-details/map-3.png"
+        },
+        {
+          "img": "images/apartment-details/map-4.png"
+        }
+      ],
+      "label-id" : "1",
+      "label-for" : "1",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__blue",
+      "apartment-tile__verification": "Verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__star": "<img src=\"images/global/star.svg\" alt=\"star\">",
+      "apartment-tile__rating": "4,78",
+      "apartment-tile__review": "(32)",
+      "apartment-tile__adress": "72 Willay Road, 7903",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/apartment-details/map-2.png"
+        },
+        {
+          "img": "images/apartment-details/map-3.png"
+        },
+        {
+          "img": "images/apartment-details/map-4.png"
+        },
+        {
+          "img": "images/apartment-details/map-1.png"
+        }
+      ],
+      "label-id" : "2",
+      "label-for" : "2",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__gray",
+      "apartment-tile__verification": "Verification PENDING",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "72 Willay Road, 7903",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/apartment-details/map-3.png"
+        },
+        {
+          "img": "images/apartment-details/map-4.png"
+        },
+        {
+          "img": "images/apartment-details/map-1.png"
+        },
+        {
+          "img": "images/apartment-details/map-2.png"
+        }
+      ],
+      "label-id" : "3",
+      "label-for" : "3",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__blue",
+      "apartment-tile__verification": "Verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "72 Willay Road, 7903",
+      "apartment-tile__new-label": "new!",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/apartment-details/map-4.png"
+        },
+        {
+          "img": "images/apartment-details/map-1.png"
+        },
+        {
+          "img": "images/apartment-details/map-2.png"
+        },
+        {
+          "img": "images/apartment-details/map-3.png"
+        }
+      ],
+      "label-id" : "3",
+      "label-for" : "3",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__blue",
+      "apartment-tile__verification": "Verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "72 Willay Road, 7903",
+      "apartment-tile__new-label": "new!",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    }
+  ]
 }

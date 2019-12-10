@@ -408,7 +408,11 @@
       }
     }
     &__gallery {
+      display: flex;
+      justify-content: space-between;
+      //width: 50%;
       .gallery-img {
+        width: 25%;
         display: flex;
         justify-content: space-between;
         .gallery-column {
@@ -427,6 +431,316 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 16px;
+          }
+        }
+      }
+    }
+    &__position {
+      display: flex;
+      .apartment-tile {
+        width: 204px;
+        height: auto;
+        //box-shadow: 0 0 4px #eeeef2;
+        box-shadow: none !important;
+        margin: 7px;
+        position: relative;
+        &__checkbox-position {
+          display: none;
+          position: absolute;
+        }
+        &__checkbox {
+          display: none;
+          position: absolute;
+          opacity: 0;
+          & + label {
+            position: relative;
+            margin-left: 30px;
+            cursor: pointer;
+            padding: 0;
+            transition: 0.3s;
+          }
+          & + label:before {
+            content: url("images/global/heart-white.svg");
+            position: absolute;
+            display: inline-block;
+            top: 27px;
+            left: -10px;
+            z-index: 20;
+          }
+          &:checked + label:before {
+            content: url("images/global/heart-red.svg");
+          }
+        }
+        &__slider {
+          width: 204px;
+          height: 256px;
+          margin: 0 !important;
+          &:hover {
+            .slick-next,
+            .slick-prev {
+              opacity: 1;
+            }
+            .slick-dots {
+              li.slick-active {
+                button {
+                  &:before {
+                    opacity: 1 !important;
+                  }
+                }
+              }
+              li {
+                button {
+                  &:before {
+                    opacity: 1 !important;
+                  }
+                }
+              }
+            }
+          }
+          img {
+            width: 204px;
+            //width: 310px;
+            height: 100%;
+          }
+        }
+        &__zar-box {
+          position: absolute;
+          width: 90px;
+          height: 48px;
+          background-color: #3b3f4e;
+          right: 0;
+          top: -245px;
+          padding: 10px 6px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          span {
+            color: #fff;
+            font-size: 12px;
+            letter-spacing: -0.09px;
+            @include over-extra;
+            &:first-child {
+              opacity: 0.5;
+              color: #fff;
+              font-family: $roboto;
+              font-size: 10px;
+              font-weight: 400;
+              letter-spacing: -0.31px;
+              text-transform: uppercase;
+            }
+          }
+        }
+        &__desc-position {
+          position: relative;
+          //padding: 20px 24px 22px;
+          padding: 20px 24px 0;
+          h3 {
+            color: #222634;
+            margin: 0;
+            @include over-extra;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+          }
+        }
+        &__desc {
+          display: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        &__verification-position {
+          display: none;
+          display: flex;
+          align-items: center;
+        }
+        &__verification {
+          display: none;
+          font-family: "Source Sans Pro", sans-serif;
+          color: #fff;
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.05px;
+          text-transform: uppercase;
+          padding: 4px;
+        }
+        &__blue {
+          background-color: #1a5dc6;
+        }
+        &__orange {
+          background-color: #ff8364;
+        }
+        &__gray {
+          background-color: #9ba0b5;
+        }
+        &__desc-apart {
+          display: none;
+          color: #222634;
+          font-family: $roboto;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 0.06px;
+          margin-left: 40px;
+          position: relative;
+          &:before {
+            position: absolute;
+            content: url("images/global/browsing-dot.svg");
+            width: 16px;
+            height: 9px;
+            left: -24px;
+            right: auto;
+            top: 6px;
+          }
+        }
+        &__rating-position {
+          display: none;
+          display: flex;
+          align-items: baseline;
+          img {
+            display: none;
+          }
+        }
+        &__rating {
+          display: none;
+          color: #666b7c;
+          font-family: $roboto;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 0.06px;
+          margin: 0 5px;
+        }
+        &__review {
+          display: none;
+          color: #1a5dc6;
+          font-family: $roboto;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 0.06px;
+        }
+        &__new-label {
+          display: none;
+          color: #ff7e42;
+          font-size: 12px;
+          letter-spacing: 0.4px;
+          text-transform: uppercase;
+          @include over-extra;
+        }
+        &__adress {
+          font-family: $roboto;
+          margin-top: 3px;
+          color: #9ba0b5;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 0.08px;
+        }
+        &__details {
+          display: none;
+          display: flex;
+          margin-top: 15px;
+          span {
+            color: #666b7c;
+            font-family: $roboto;
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 45px;
+            &:first-child {
+              margin-left: 25px;
+            }
+          }
+        }
+        &__details-sofa {
+          display: none;
+          position: relative;
+          &:before {
+            position: absolute;
+            content: url("images/global/sofa.svg");
+            width: 16px;
+            height: 9px;
+            left: -24px;
+            right: auto;
+            top: 6px;
+          }
+        }
+        &__details-bath {
+          display: none;
+          position: relative;
+          &:before {
+            position: absolute;
+            content: url("images/global/bath.svg");
+            width: 16px;
+            height: 8px;
+            left: -24px;
+            right: auto;
+            top: 6px;
+          }
+        }
+        &__details-square {
+          display: none;
+          position: relative;
+          &:before {
+            position: absolute;
+            content: url("images/global/square.svg");
+            width: 24px;
+            height: 24px;
+            left: -24px;
+            right: auto;
+            top: 4px;
+          }
+        }
+      }
+      .slick-next {
+        right: 0;
+        z-index: 9;
+        &:before {
+          content: url("images/global/slick-next.svg") !important;
+        }
+      }
+      .slick-prev {
+        left: 0;
+        z-index: 9;
+        &:before {
+          content: url("images/global/slick-prev.svg") !important;
+        }
+      }
+      .slick-next,
+      .slick-prev {
+        width: 40px;
+        transition: 0.3s;
+        opacity: 0;
+        height: 100%;
+        background-color: rgba(59, 63, 78, 0.13);
+        @include flex-center;
+        &:hover {
+          background-color: rgba(59, 63, 78, 0.13);
+        }
+      }
+      .slick-dots {
+        li.slick-active {
+          button {
+            position: relative;
+            &:before {
+              content: url("images/global/dot-active-slider.svg") !important;
+              position: absolute;
+              top: -20px;
+              left: 0;
+              width: 20px;
+              height: 20px;
+              opacity: 0;
+            }
+          }
+        }
+        li {
+          button {
+            position: relative;
+            &:before {
+              content: url("images/global/dot-slider.svg");
+              position: absolute;
+              top: -20px;
+              left: 0;
+              width: 20px;
+              height: 20px;
+              opacity: 0;
+            }
           }
         }
       }
@@ -450,7 +764,7 @@
     &__button {
       display: flex;
       justify-content: center;
-      padding: 60px 0 110px;
+      padding: 40px 0 110px;
       .button--white {
         width: 272px;
         height: 32px;
