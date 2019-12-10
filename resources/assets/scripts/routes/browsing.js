@@ -73,15 +73,15 @@ export default {
     });
     // filters on browsing.html
 
-     $('.filters-menu__items ul li').click(function () {
+     $('.filters-menu__items ul li >a').click(function () {
        $('.filters-menu__items ul li div').removeClass('filters-menu__dropdown-active')
-      if($(this).children('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
+      if($(this).parent().children('.filters-menu__dropdown').hasClass('filters-menu__dropdown-active')) {
         // eslint-disable-next-line no-unused-vars
         let test;
       }
       else {
-        $(this).children('.filters-menu__dropdown').addClass('filters-menu__dropdown-active');
-        $(this).children('a').addClass('filters-menu__filter-color-active');
+        $(this).parent().children('.filters-menu__dropdown').addClass('filters-menu__dropdown-active');
+        $(this).parent().children('a').addClass('filters-menu__filter-color-active');
       }
     });
     $(document).mousedown(function (e){
@@ -182,7 +182,8 @@ export default {
 
     //clear button
     $('.filters-menu__apartment .filters-menu__apply-clear .filters-menu__button--black').click(function () {
-      $('.filters-menu__apartment .filters-menu__checkbox-position input').prop('checked', false)
+      $('.filters-menu__apartment .filters-menu__checkbox-position input').prop('checked', false);
+      $(this).parent().parent().prev().text('Apartment');
     });
     $('.filters-menu__pet .filters-menu__apply-clear .filters-menu__button--black').click(function () {
       $('.filters-menu__pet .filters-menu__checkbox-position input').prop('checked', false)
@@ -228,6 +229,16 @@ export default {
       $('.filters-menu__dropdown').removeClass('filters-menu__dropdown-active');
       $('.browsing__triangle').removeClass('triangle-blue');
     });
+
+    //Apply button
+    $('.filters-menu__apartment .filters-menu__checkbox-position input').on('click', function(){
+      let  contentApart = $(this).next().html();
+      if($('.filters-menu__apartment .filters-menu__button').click(function () {
+        $(this).parent().parent().prev().text(contentApart);
+        $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+      }));
+    });
+
 
     const form = new Forms({
       wrap: '.field-wrap',
