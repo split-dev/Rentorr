@@ -88,8 +88,8 @@ export default {
           var div = $('.filters-menu__dropdown');
           if (!div.is(e.target) && div.has(e.target).length === 0) {
             $('.filters-menu__dropdown-active input').prop('checked', false);
-            $('.filters-menu__dropdown-active .field-wrap input').val('');
-            $('.filters-menu__dropdown-active .field-wrap input').val('');
+            /*$('.filters-menu__dropdown-active .field-wrap input').val('');
+            $('.filters-menu__dropdown-active .field-wrap input').val('');*/
             $('.filters-menu__dropdown-active').prev().removeClass('filters-menu__filter-color-active');
             $('.filters-menu__dropdown').removeClass('filters-menu__dropdown-active');
             $('.browsing__search-result a').removeClass('triangle-blue');
@@ -183,6 +183,7 @@ export default {
     });
     $('.filters-menu__pet .filters-menu__apply-clear .filters-menu__button--black').click(function () {
       $('.filters-menu__pet .filters-menu__checkbox-position input').prop('checked', false)
+      $(this).parent().parent().prev().text('Pet Policy');
     });
     $('.filters-menu__features .filters-menu__apply-clear .filters-menu__button--black').click(function () {
       $('.filters-menu__features .filters-menu__checkbox-position input').prop('checked', false)
@@ -229,31 +230,54 @@ export default {
 
     //Apply button apart
     $('.filters-menu__apartment .filters-menu__checkbox-position input').on('click', function(){
-      let  contentApart = $(this).next().html();
-      if($('.filters-menu__apartment .filters-menu__button').click(function () {
-        $(this).parent().parent().prev().text(contentApart);
-        $(this).parent().parent().removeClass('filters-menu__dropdown-active');
-      }));
+      $('.filters-menu__apartment .filters-menu__button').click(function () {
+        let inpApart = $(this).parent().parent().children('.filters-menu__checkbox-position').children('input');
+        let countApart = 0;
+        let  contentApart = '';
+        for(let i = 0; i<inpApart.length; i++) {
+          if (inpApart[i].checked) {
+            countApart = countApart + 1;
+          }
+        }
+        if(countApart == 1) {
+          for(let i = 0; i<inpApart.length; i++) {
+            if (inpApart[i].checked) {
+              contentApart = $(inpApart[i]).next().html();
+            }
+          }
+          $(this).parent().parent().prev().text(contentApart);
+          $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+        } else if (countApart > 1) {
+          $(this).parent().parent().prev().text('Apartment');
+          $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+        }
+      });
     });
     //Apply button pets
     $('.filters-menu__pet .filters-menu__checkbox-position input').on('click', function(){
-      info();
-    });
-    function info() {
-      let  contentPet = $(this).next().html();
       $('.filters-menu__pet .filters-menu__button').click(function () {
-        let inp = $(this).parent().parent().children('.filters-menu__checkbox-position').children('input');
-        let count = 0;
-        console.log(inp.length);
-        for(let i = 0; i<inp.length; i++) {
-          if (inp[i].checked) {
-            console.log(count)
+        let inpPet = $(this).parent().parent().children('.filters-menu__checkbox-position').children('input');
+        let countPet = 0;
+        let  contentPet = '';
+        for(let i = 0; i<inpPet.length; i++) {
+          if (inpPet[i].checked) {
+            countPet = countPet + 1;
           }
         }
-        $(this).parent().parent().prev().text(contentPet);
-        $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+        if(countPet == 1) {
+          for(let i = 0; i<inpPet.length; i++) {
+            if (inpPet[i].checked) {
+              contentPet = $(inpPet[i]).next().html();
+            }
+          }
+          $(this).parent().parent().prev().text(contentPet);
+          $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+        } else if (countPet > 1) {
+          $(this).parent().parent().prev().text('Pet Policy');
+          $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+        }
       });
-    }
+    });
     //Apply button features
     $('.filters-menu__features .filters-menu__checkbox-position input').on('click', function(){
       if($('.filters-menu__features .filters-menu__button').click(function () {
@@ -270,9 +294,16 @@ export default {
       e.preventDefault();
       let  minPrice = $('#min-price').val();
       let  maxPrice = $('#max-price').val();
-      console.log(maxPrice)
-      $(this).parent().parent().parent().prev().text('R' + minPrice + ' - ' + 'R' + maxPrice);
-      $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+      if (minPrice == '') {
+        $(this).parent().parent().parent().prev().text('Price range');
+      }
+      if (maxPrice == '') {
+        $(this).parent().parent().parent().prev().text('Price range');
+      }
+      else {
+        $(this).parent().parent().parent().prev().text('R' + minPrice + ' - ' + 'R' + maxPrice);
+        $(this).parent().parent().parent().removeClass('filters-menu__dropdown-active');
+      }
     });
     //Apply button calendar
     $('.filters-menu__calendar .filters-menu__button').on('click', function(e){
