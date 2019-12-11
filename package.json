@@ -72,6 +72,7 @@
     "ion-rangeslider": "^2.3.0",
     "jquery": "^3.3.1",
     "lightpick": "^1.5.2",
+    "jquery.nicescroll": "^3.7.6",
     "popper.js": "^1.14.7",
     "select2": "^4.0.10",
     "slick-carousel": "^1.8.1",

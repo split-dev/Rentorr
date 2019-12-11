@@ -13,24 +13,29 @@
     {{> ../common/modal/keep-me}}
     {{> ../common/browsing/filters-menu}}
     <div class="container-box-full">
-        <div class="browsing__search-result-position"></div>
-        <div class="browsing__search-result">
-            <p>15 properties available for rent in Cape Town</p>
-            <div class="browsing__closest-filter">
-                <a class="browsing__triangle" href="#">Sort by</a>
-                <div class="filters-menu__dropdown browsing__closest">
-                    <div class="browsing__form-closest">
-                        {{#each browsing-closest}}
-                        <input class="browsing__input" id="browsing__input{{id}}" type="checkbox">
-                        <label class="browsing__input-label" for="browsing__input{{for}}">{{closest-item}}</label>
-                        {{/each}}
-                    </div >
+        <div class="browsing__map-position">
+            <div class="browsing__search-result-position"></div>
+            <div class="browsing__search-result">
+                <p>15 properties available for rent in Cape Town</p>
+                <div class="browsing__closest-filter">
+                    <a class="browsing__triangle" href="#">Sort by</a>
+                    <div class="filters-menu__dropdown browsing__closest">
+                        <div class="browsing__form-closest">
+                            {{#each browsing-closest}}
+                                <input class="browsing__input" id="browsing__input{{id}}" type="checkbox">
+                                <label class="browsing__input-label" for="browsing__input{{for}}">{{closest-item}}</label>
+                            {{/each}}
+                        </div >
+                    </div>
                 </div>
             </div>
+            <div class="browsing__tile-position nicescroll-box">
+                    {{> ../common/browsing/apartment-tile}}
+            </div>
         </div>
-        <div class="browsing__tile-position">
-            {{> ../common/browsing/apartment-tile}}
-        </div>
+    </div>
+    <div class="browsing__google-map">
+
     </div>
 </body>
 </html>

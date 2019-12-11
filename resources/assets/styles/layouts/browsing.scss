@@ -1,4 +1,7 @@
 .browsing {
+  .nicescroll-rails {
+    opacity: 0;
+  }
   &__search-result {
     display: flex;
     align-items: center;
@@ -15,7 +18,7 @@
       background-color: rgba(183, 184, 199, 0.16);
     }
     p {
-      max-width: 50%;
+      max-width: 70%;
       color: #222634;
       font-family: $roboto;
       font-size: 14px;
@@ -112,9 +115,83 @@
     padding: 30px 0;
     margin: 0 -8px;
     transition: 0.3s;
-    &.tile-position-map {
-      box-shadow: 0 2px 19px #c5c5cf;
-      max-width: 50% !important;
+  }
+  &.click-open-map {
+    height: 100vh;
+    .browsing__search-result {
+      &:before {
+        content: none;
+        width: 0;
+      }
     }
+    .browsing__tile-position {
+      padding: 0;
+      height: 100vh;
+    }
+    .browsing__map-position {
+      -webkit-box-shadow: 6px 0 10px -5px rgba(197, 197, 207, 1);
+      -moz-box-shadow: 6px 0 10px -5px rgba(197, 197, 207, 1);
+      box-shadow: 6px 0 10px -5px rgba(197, 197, 207, 1);
+      max-width: 45% !important;
+      padding-right: 15px;
+      z-index: 4;
+      position: relative;
+    }
+    .apartment-tile {
+      display: flex;
+      width: 100%;
+      box-shadow: none;
+      border-bottom: 1px solid #eeeef2;
+      margin-right: 40px;
+      margin-top: 25px;
+      padding-bottom: 25px;
+    }
+    .apartment-tile__checkbox-position {
+      left: auto;
+      right: 0;
+    }
+    .apartment-tile__slider {
+      width: 220px;
+    }
+    .apartment-tile__zar-box {
+      width: 90px;
+      height: 48px;
+      right: auto;
+      left: -90px;
+      top: 15px;
+      padding: 5px 12px;
+      span {
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: -0.09px;
+        @include over-extra;
+        &:first-child {
+          opacity: 0.5;
+          color: #fff;
+          font-family: $roboto;
+          font-size: 10px;
+          font-weight: 400;
+          letter-spacing: -0.31px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .browsing__google-map {
+      display: block;
+    }
+    .nicescroll-rails {
+      opacity: 1;
+    }
+  }
+  .container-box-full {
+    position: relative;
+  }
+  &__google-map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+    display: none;
+    z-index: 3;
   }
 }

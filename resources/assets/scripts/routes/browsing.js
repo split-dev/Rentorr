@@ -1,7 +1,8 @@
 import 'slick-carousel';
 import Forms from './forms';
 import 'ion-rangeslider';
-import Lightpick from 'lightpick/lightpick'
+import Lightpick from 'lightpick/lightpick';
+import 'jquery.nicescroll'
 
 export default {
   init() {
@@ -13,7 +14,17 @@ export default {
     })
     $('.open-map').click(function (e) {
       e.preventDefault();
-      $('.browsing__tile-position').toggleClass('tile-position-map');
+      $('html, body').toggleClass('body-hidden');
+      //tile scroll
+      $('.browsing__tile-position').niceScroll({
+        cursorcolor: '#9ba0b5',
+        cursorwidth: '5px',
+        cursorfixedheight: 50,
+        cursoropacitymin: 1,
+        horizrailenabled: false,
+      });
+
+      $('.browsing').toggleClass('click-open-map');
       if ($('.open-map img').attr('data-number') == 0) {
         $('.open-map img').attr('src', 'images/browsing/map-blue.svg').attr('data-number','1');
       } else {
@@ -29,8 +40,7 @@ export default {
     $('.send-me .send-me__close-position a').click(function (e) {
       e.preventDefault();
       $('.send-me').removeClass('send-me-active');
-      $('html, body').removeClass('body-hidden');
-      $('html, body').removeClass('send-me-hidden');
+      $('html, body').removeClass('body-hidden send-me-hidden');
     });
     jQuery(function($){
       $(document).mouseup(function (e){
@@ -53,8 +63,7 @@ export default {
     $('.keep-me .keep-me__close-position a').click(function (e) {
       e.preventDefault();
       $('.keep-me').removeClass('keep-me-active');
-      $('html, body').removeClass('body-hidden');
-      $('html, body').removeClass('keep-me-hidden');
+      $('html, body').removeClass('body-hidden keep-me-hidden');
     });
     jQuery(function($){
       $(document).mouseup(function (e){
@@ -62,8 +71,7 @@ export default {
           var div = $('#keep-me-show');
           if (!div.is(e.target) && div.has(e.target).length === 0) {
             $('.keep-me').removeClass('keep-me-active');
-            $('html, body').removeClass('body-hidden');
-            $('html, body').removeClass('keep-me-hidden');
+            $('html, body').removeClass('body-hidden keep-me-hidden');
           }
         }
       });
@@ -314,6 +322,7 @@ export default {
       $(this).parent().parent().prev().text(date + ' | ' + fromRange + ' - ' + toRange + ' months');
       $(this).parent().parent().removeClass('filters-menu__dropdown-active');
     });
+
 
     const form = new Forms({
       wrap: '.field-wrap',
