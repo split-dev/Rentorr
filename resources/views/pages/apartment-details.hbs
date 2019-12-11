@@ -20,10 +20,13 @@
           </div>
           <div class="apartment-details-header__gallery">
             <div class="gallery-img d-flex">
-              {{#each img-apart}}
-                <a href="#"><img src="{{apart}}" alt="apartments"></a>
-                <a href="#"><span class="ingallery">{{other}}</span></a>
-              {{/each}}
+              <div id="aniimated-thumbnials">
+                {{#each img-apart}}
+                  <a href="{{bgd_slide}}">
+                    <img src="{{apart}}" />
+                  </a>
+                {{/each}}
+              </div>
             </div>
           </div>
         </div>
