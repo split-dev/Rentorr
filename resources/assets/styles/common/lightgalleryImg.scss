@@ -69,8 +69,6 @@
 .lg-outer .lg-thumb-outer {
   display: flex;
   justify-content: center;
-  //background-color: red;
-  background: opacity(0.5);
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -82,4 +80,17 @@
   -moz-transition: -moz-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
   -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
+}
+.lg-group {
+  //opacity: 1;
+}
+.lg-toolbar {
+  display: none;
+}
+.lg-outer,
+.lg-thumb-outer {
+  background-color: transparent !important;
+}
+.lg-toogle-thumb {
+  display: none;
 }

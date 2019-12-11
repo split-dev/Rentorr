@@ -124,27 +124,39 @@
       align-items: center;
       .gallery-img {
         position: relative;
-        //a {
-        //  margin-left: 5px;
-        //  position: relative;
-        //  &:after {
-        //    content: "";
-        //    position: absolute;
-        //    left: 0;
-        //    top: 0;
-        //    right: 0;
-        //    bottom: 0;
-        //    z-index: 99;
-        //    -webkit-transition: 0.3s;
-        //    transition: 0.3s;
-        //    background: rgba(0, 0, 0, 0.5);
-        //  }
-        //  &:first-child {
-        //    &:after {
-        //      background: none;
-        //    }
-        //  }
-        //}
+        .plus {
+          position: absolute;
+          color: #fff;
+          font-family: $roboto;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 40px;
+          right: 55px;
+          top: -10px;
+          z-index: 999;
+        }
+        a {
+          margin-left: 5px;
+          position: relative;
+          &:after {
+            content: url("../../images/apartment-details/Fade.png");
+            position: absolute;
+            left: 0;
+            top: -35px;
+            right: 0;
+            bottom: 0;
+            z-index: 99;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            //background: rgba(0, 0, 0, 0.5);
+          }
+          &:first-child {
+            &:after {
+              z-index: 0;
+              background: none;
+            }
+          }
+        }
         .ingallery {
           position: absolute;
           right: 55px;
