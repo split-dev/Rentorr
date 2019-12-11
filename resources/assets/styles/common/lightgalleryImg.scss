@@ -26,7 +26,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .lg-actions .lg-next,
 .lg-actions .lg-prev {
   background-color: rgba(0, 0, 0, 0.45);
@@ -81,10 +80,18 @@
   -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
-.lg-group {
-  //opacity: 1;
-}
 .lg-toolbar {
+  background-color: transparent !important;
+}
+#lg-share,
+#lg-zoom-in,
+#lg-zoom-out,
+#lg-autoplay-button,
+#lg-actual-size,
+.lg-fullscreen,
+.lg-autoplay-button,
+.lg-download,
+#lg-counter {
   display: none;
 }
 .lg-outer,
