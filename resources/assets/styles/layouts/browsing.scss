@@ -211,9 +211,8 @@
       height: 100vh;
     }
   }
-  &__bgc {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-  }
+}
+.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
+  right: auto !important;
+  left: 10px !important;
 }
