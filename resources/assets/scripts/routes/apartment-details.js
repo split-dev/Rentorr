@@ -13,6 +13,7 @@ export default {
       thumbnail:true,
       animateThumb: false,
       showThumbByDefault: true,
+      width: '100%',
       thumbMargin: 20,
       mode: 'lg-fade',
       thumbContHeight: 120,

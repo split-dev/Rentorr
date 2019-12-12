@@ -98,6 +98,43 @@
 .lg-thumb-outer {
   background-color: transparent !important;
 }
+.lg-outer.lg-thumb-open .lg-thumb-outer {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
 .lg-toogle-thumb {
   display: none;
+}
+.lg-outer .lg-thumb-item {
+  border-radius: 0;
+  border: none;
+}
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  //border-color: #fff;
+  border: none;
+}
+.lg-thumb-item {
+  position: relative;
+  &:after {
+    content: url("../../images/apartment-details/Fade.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    //border: none;
+    border-color: #999;
+    //background: rgba(0, 0, 0, 0.5);
+  }
+  &.active {
+    &:after {
+      z-index: 0;
+      background: none;
+      border-color: #fff;
+    }
+  }
 }
