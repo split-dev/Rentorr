@@ -15,14 +15,12 @@
   opacity: 0.8;
 }
 .lg-icon {
-  //font-family: 'lg';
   speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -53,17 +51,17 @@
 }
 .lg-actions .lg-next {
   right: 40px;
+  //height: 500px;
 }
 .lg-actions .lg-next:before {
   content: url("../../images/apartment-details/next.svg");
-  //content: "\e095";
 }
 .lg-actions .lg-prev {
   left: 40px;
+  //height: 500px;
 }
 .lg-actions .lg-prev:after {
   content: url("../../images/apartment-details/prev.svg");
-  //content: "\e094";
 }
 .lg-outer .lg-thumb-outer {
   display: flex;
@@ -111,7 +109,6 @@
 }
 .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
-  //border-color: #fff;
   border: none;
 }
 .lg-thumb-item {
@@ -126,12 +123,11 @@
     z-index: 99;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    //border: none;
     border-color: #999;
-    //background: rgba(0, 0, 0, 0.5);
   }
   &.active {
     &:after {
+      transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
       z-index: 0;
       background: none;
       border-color: #fff;

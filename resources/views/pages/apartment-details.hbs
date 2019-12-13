@@ -5,9 +5,27 @@
 <body class="apartment-details apartment">
 <section class="apartment-details-header">
   {{#with background}}
+    <div class="apartment-details-header__position-in-header">
+      <div class="apartment-details-header__slider">
+        {{> ../common/browsing/apartment-tile}}
+      </div>
+      <div class="container container_mobile">
+        <div class="apartment-details-header__title-mobile">
+          <a href="#" class="button--blue">Verified</a>
+          <h1>Smart 1bedroomer in downtown</h1>
+          <span class="target">6280 Northampton Boulevard, Cape Town</span>
+          <div class="row-statist">
+            <p class="bed">4</p>
+            <p class="bath">2</p>
+            <p class="size">187m<sup>2</sup></p>
+            <p class="bild">Apartment</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="apartment-details-header__bcground" style="background-image: url('{{ bgd }}')">
       <a href="#"><img class="images arrow-back" src="{{arrow-back}}" alt="back"></a>
-      <div class="container">
+      <div class="container container_max">
         <div class="apartment-details-header__title">
           <a href="#" class="button--blue">Verified</a>
           <h1>Smart 1bedroomer in downtown</h1>
