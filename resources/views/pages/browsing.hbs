@@ -45,7 +45,7 @@
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: -34.1950419, lng: 18.4513917},
-                zoom: 16,
+                zoom: 17,
                 disableDefaultUI: true,
                 zoomControl: true,
                 styles: [
@@ -327,8 +327,78 @@
                                 "visibility": "simplified"
                             }
                         ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            },
+                            {
+                                "hue": "#1a5dc6"
+                            }
+
+                        ]
                     }
                 ]
+            });
+            var image = {
+                url: 'images/global/map-marker-big.svg',
+                scaledSize: new google.maps.Size(62, 42),
+                labelOrigin: new google.maps.Point(32, 15)
+            };
+            var apart1 = new google.maps.Marker({
+                position: {lat: -34.1957846, lng: 18.4482404},
+                map: map,
+                title: 'Rentorr',
+                icon: image,
+                label: {
+                    text: 'R12.400',
+                    color: '#fff',
+                    fontSize: '12px',
+                    fontWeight: '900',
+                    fontFamily: 'Overpass'
+                }
+            });
+            var apart2 = new google.maps.Marker({
+                position: {lat: -34.1960906, lng: 18.4475311},
+                map: map,
+                title: 'Rentorr',
+                icon: image,
+                label: {
+                    text: 'R11.400',
+                    color: '#fff',
+                    fontSize: '12px',
+                    fontWeight: '900',
+                    fontFamily: 'Overpass'
+                }
+            });
+            var apart3 = new google.maps.Marker({
+                position: {lat: -34.1954096, lng: 18.4472335},
+                map: map,
+                title: 'Rentorr',
+                icon: image,
+                labelAnchor: new google.maps.Point(100, 50),
+                label: {
+                    text: 'R13.400',
+                    color: '#fff',
+                    fontSize: '12px',
+                    fontWeight: '900',
+                    fontFamily: 'Overpass'
+                }
+            });
+            var apart4 = new google.maps.Marker({
+                position: {lat: -34.1966497, lng: 18.4485186},
+                map: map,
+                title: 'Rentorr',
+                icon: image,
+                label: {
+                    text: 'R15.400',
+                    color: '#fff',
+                    fontSize: '12px',
+                    fontWeight: '900',
+                    fontFamily: 'Overpass',
+                }
             });
         }
         window.initMap = initMap;
