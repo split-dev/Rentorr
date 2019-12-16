@@ -212,7 +212,37 @@
     }
   }
 }
-.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
-  right: auto !important;
-  left: 40px !important;
+
+.zoom-map {
+  width: 30px !important;
+  height: 60px !important;
+  background-color: #fff !important;
+  position: absolute !important;
+  left: 30px !important;
+  #cd-zoom-out {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    &:before {
+      position: absolute;
+      content: url("images/global/zoomOut.svg");
+      top: 13px;
+      left: 8px;
+    }
+  }
+  #cd-zoom-in {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    &:before {
+      position: absolute;
+      content: url("images/global/zoomIn.svg");
+      top: 10px;
+      left: 8px;
+    }
+  }
 }

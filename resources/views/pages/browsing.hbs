@@ -36,18 +36,21 @@
     </div>
     <div class="browsing__google-map">
         <div class="map" id="map"></div>
+        <div id="cd-zoom-in"></div>
+        <div id="cd-zoom-out"></div>
     </div>
     <script type="text/javascript">
-        // Определяем переменную map
-        var map;
 
         // Функция initMap которая отрисует карту на странице
         function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
+            var map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: -34.1950419, lng: 18.4513917},
                 zoom: 17,
                 disableDefaultUI: true,
-                zoomControl: true,
+                zoomControl: false,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.SMALL
+                },
                 styles: [
                     {
                         "featureType": "administrative",
@@ -332,7 +335,7 @@
                         "featureType": "poi",
                         "stylers": [
                             {
-                                "visibility": "simplified"
+                                "visibility": "on"
                             },
                             {
                                 "hue": "#1a5dc6"
@@ -400,8 +403,26 @@
                     fontFamily: 'Overpass',
                 }
             });
+            function CustomZoomControl(controlDiv, map) {
+                //grap the zoom elements from the DOM and insert them in the map
+                var controlUIzoomIn= document.getElementById('cd-zoom-in'),
+                        controlUIzoomOut= document.getElementById('cd-zoom-out');
+                controlDiv.appendChild(controlUIzoomIn);
+                controlDiv.appendChild(controlUIzoomOut);
+
+                // Setup the click event listeners and zoom-in or out according to the clicked element
+                google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
+                    map.setZoom(map.getZoom()+1)
+                });
+                google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
+                    map.setZoom(map.getZoom()-1)
+                });
+            }
+            var zoomControlDiv = document.createElement('div');
+            zoomControlDiv.setAttribute('class', 'zoom-map');
+            var zoomControl = new CustomZoomControl(zoomControlDiv, map);
+            map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(zoomControlDiv);
         }
-        window.initMap = initMap;
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-_AEib7vHKXFg7mgGbQPhrweik5bo9X0&callback=initMap"></script>
 </body>
