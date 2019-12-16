@@ -3,6 +3,7 @@
   {{> ../common/head }}
 </head>
 <body class="apartment-details apartment">
+{{> ../common/mobile-menu }}
 <section class="apartment-details-header">
   {{#with background}}
     <div class="apartment-details-header__position-in-header">
@@ -25,7 +26,7 @@
     </div>
     <div class="apartment-details-header__bcground" style="background-image: url('{{ bgd }}')">
       <a href="#"><img class="images arrow-back" src="{{arrow-back}}" alt="back"></a>
-      <div class="container container_max">
+      <div class="container container_mobile">
         <div class="apartment-details-header__title">
           <a href="#" class="button--blue">Verified</a>
           <h1>Smart 1bedroomer in downtown</h1>
@@ -54,7 +55,7 @@
   {{/with}}
 </section>
 <section class="apartment-details-blocks">
-  <div class="container">
+  <div class="container container_mobile">
     <div class="apartment-details-blocks__features">
       <div class="apartment-details-blocks__description">
         <h3>Apartment Description</h3>
@@ -86,6 +87,10 @@
           {{#with client-avatar}}
             <div class="message-text">
               <h3>Meet <a href="#" class="link-name">{{first-name}} {{last-name}}</a> — your future Landlord</h3>
+              <div class="message-img-text__mobile">
+                <img class="images images_mass" src="{{avatar}}" alt="uncle Bob">
+                <img class="images images_check" src="{{avatar_check}}" alt="check">
+              </div>
               <p class="date">Member since June, 2018</p>
               <p class="date dot"></p>
               <p class="date Estate">Real Estate Company</p>
@@ -145,7 +150,7 @@
         </div>
     </div>
     <div class="apartment-details-map__around">
-      <div class="container">
+      <div class="container container_mobile">
         <div class="apartment-details-map__title">
           <h3>Similar properties nearby</h3>
           <div class="apartment-details-map__gallery">
@@ -181,7 +186,6 @@
     </div>
 </section>
 {{> ../common/header-footer/footer }}
-<!--<div class="map" id="map"></div>-->
 <script type="text/javascript">
   // Определяем переменную map
   var map;

@@ -1,4 +1,13 @@
 .apartment-details {
+  .container_mobile {
+    max-width: 910px;
+    padding: 0;
+    //padding: 0 15px;
+    margin: auto;
+    @include media-breakpoint-down(md) {
+      max-width: 285px;
+    }
+  }
   p {
     font-family: $roboto;
     font-size: 14px;
@@ -19,6 +28,9 @@
       justify-content: center;
     }
     &__position-in-header {
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
       .container_mobile {
         display: flex;
         justify-content: center;
@@ -33,9 +45,6 @@
       }
       display: flex;
       flex-direction: column;
-      @include media-breakpoint-up(lg) {
-        display: none;
-      }
       .apartment-tile {
         width: 344px;
         height: auto;
@@ -360,7 +369,8 @@
     }
     .container_max {
       max-width: 910px;
-      padding: 0 15px;
+      padding: 0;
+      //padding: 0 15px;
       margin: auto;
     }
     &__bcground {
@@ -462,6 +472,11 @@
       }
       .button--blue {
         margin-bottom: 7px;
+        @include media-breakpoint-down(md) {
+          margin: 20px 0;
+          width: 80px;
+          height: 20px;
+        }
       }
       .target {
         width: 259px;
@@ -594,9 +609,12 @@
   }
   &-blocks {
     padding-bottom: 120px;
+    @include media-breakpoint-down(md) {
+      padding-bottom: 70px;
+    }
     .container {
       max-width: 910px;
-      padding: 0 15px;
+      padding: 0;
       margin: auto;
       h3 {
         max-width: 340px;
@@ -607,18 +625,37 @@
         font-size: 16px;
         font-weight: 900;
       }
+      &_mobile {
+        @include media-breakpoint-down(md) {
+          max-width: 285px;
+        }
+      }
     }
     &__features {
       display: flex;
       justify-content: space-between;
+      @include media-breakpoint-down(md) {
+        max-width: 285px;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
       .features-img {
         display: flex;
         justify-content: space-between;
+        @include media-breakpoint-down(md) {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding-right: 0;
+        }
       }
       .features-img-text {
         display: flex;
         flex-direction: column;
         height: 125px;
+        @include media-breakpoint-down(md) {
+          margin-top: 20px;
+          margin-right: 15px;
+        }
         .images {
           width: 72px;
           height: 72px;
@@ -640,15 +677,43 @@
       .message {
         display: flex;
         justify-content: space-between;
+        @include media-breakpoint-down(md) {
+          max-width: 285px;
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+        }
         p {
           font-family: $roboto;
           font-size: 14px;
           font-weight: 400;
           letter-spacing: -0.1px;
           line-height: 24px;
+          @include media-breakpoint-down(md) {
+            text-align: center;
+            align-items: center;
+          }
         }
         &-text {
-          min-width: 330px;
+          //min-width: 330px;
+          @include media-breakpoint-down(md) {
+            max-width: 285px;
+            text-align: center;
+          }
+          .message-img-text__mobile {
+            @include media-breakpoint-up(lg) {
+              display: none;
+            }
+            @include media-breakpoint-down(md) {
+              margin-top: 50px;
+              margin-bottom: 25px;
+            }
+            position: relative;
+            .images_check {
+              position: absolute;
+              transform: translate(-25px, 65px);
+            }
+          }
           .link-name {
             @include over-extra;
             font-size: 16px;
@@ -657,6 +722,11 @@
             font-family: $roboto;
           }
           .date {
+            @include media-breakpoint-down(md) {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
             display: inline-block;
             color: #9ba0b5;
             font-family: $roboto;
@@ -665,6 +735,9 @@
             line-height: 16px;
           }
           .dot {
+            @include media-breakpoint-down(md) {
+              display: none;
+            }
             width: 4px;
             height: 4px;
             background-color: #9ba0b5;
@@ -672,6 +745,11 @@
           }
           .Estate {
             margin-bottom: 20px;
+            @include media-breakpoint-down(md) {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
           }
         }
         &-img-text {
@@ -679,12 +757,32 @@
           margin-top: 40px;
           img {
             margin-bottom: 20px;
+            @include media-breakpoint-down(md) {
+              display: none;
+            }
           }
           .images_check {
             position: absolute;
             transform: translate(70px, -50px);
           }
           .link-bold {
+            transition: 0.3s;
+            @include media-breakpoint-down(md) {
+              width: 272px;
+              height: 32px;
+              color: #222634;
+              font-weight: 800;
+              font-size: 12px;
+              letter-spacing: 0.4px;
+              text-transform: uppercase;
+              border: 2px solid rgba(183, 184, 199, 0.25);
+              @include flex-center;
+              @include over-extra;
+              &:hover {
+                background-color: #e8e8e8;
+                color: #1b5ec6;
+              }
+            }
             color: #1a5dc6;
             @include over-extra;
             font-size: 12px;
@@ -694,22 +792,19 @@
           }
         }
       }
-      @include media-breakpoint-down(md) {
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-      }
     }
     &__description {
       max-width: 500px;
+      @include media-breakpoint-down(md) {
+        max-width: 285px;
+      }
       .bottom-line {
         border-bottom: 1px solid #eeeff3;
         background-color: #fff;
         padding-bottom: 40px;
-      }
-      @include media-breakpoint-down(md) {
-        display: flex;
-        justify-content: center;
+        @include media-breakpoint-down(md) {
+          padding-top: 20px;
+        }
       }
     }
     &__map {
@@ -723,6 +818,9 @@
       position: relative;
       .map {
         margin-bottom: 23px;
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
       }
       .h-font {
         color: #222634;
@@ -751,17 +849,18 @@
         font-weight: 500;
         letter-spacing: 0.35px;
         line-height: 20px;
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
       }
-      //@include media-breakpoint-down(md) {
-      //  text-align: center;
-      //  //width: 100%;
-      //}
     }
     &__block-top {
       display: flex;
       justify-content: flex-start;
       position: relative;
-      //margin-top: 28px;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
       .heard:after {
         position: absolute;
         right: 27px;
@@ -797,6 +896,12 @@
         width: 100%;
         margin-top: 50px;
         margin-bottom: 23px;
+        @include media-breakpoint-down(md) {
+          display: none;
+          margin: 20px 0;
+          width: 80px;
+          height: 20px;
+        }
       }
     }
     &__block-text {
@@ -834,15 +939,28 @@
         position: absolute;
         top: 20px;
       }
+      @include media-breakpoint-down(md) {
+        max-width: 285px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+      }
     }
     &__bcground {
       height: 600px;
-      background-position: center;
-      background-size: cover;
+      //background-position: center;
+      //background-size: cover;
     }
     &__around {
       padding-top: 95px;
       padding-bottom: 24px;
+      @include media-breakpoint-down(md) {
+        max-width: 370px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 30px;
+      }
       h3 {
         color: #222634;
         @include over-extra;
@@ -853,7 +971,9 @@
     &__gallery {
       display: flex;
       justify-content: space-between;
-      //width: 50%;
+      @include media-breakpoint-down(md) {
+        overflow: auto;
+      }
       .gallery-img {
         width: 25%;
         display: flex;
@@ -1202,12 +1322,24 @@
       }
       .offset-text {
         margin-bottom: 24px;
+        //display: flex;
+        @include media-breakpoint-down(md) {
+          display: flex;
+          flex-direction: column;
+          a {
+            margin-top: 20px;
+            padding-right: 0;
+          }
+        }
       }
     }
     &__button {
       display: flex;
       justify-content: center;
       padding: 40px 0 110px;
+      @include media-breakpoint-down(md) {
+        padding-bottom: 50px;
+      }
       .button--white {
         width: 272px;
         height: 32px;
