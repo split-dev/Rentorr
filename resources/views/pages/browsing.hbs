@@ -345,6 +345,47 @@
                     }
                 ]
             });
+            var contentApart1 = '<div id="content1">'+
+                    '<div><div class="apartment-tile-1">'+
+                    '<div class="apartment-tile-1__checkbox-position">'+
+                    '<input class="apartment-tile-1__checkbox" id="apartment-tile__checkbox99" type="checkbox" value="value">'+
+                    '<label class="apartment-tile-1__checkbox-label" for="apartment-tile__checkbox99"></label>'+
+                    '</div>'+
+                    '<div class="apartment-tile-1__slider-1">'+
+                    '<img src="images/browsing/bedroom1.png" alt="apartments">'+
+                    '<img src="images/browsing/bedroom1.png" alt="apartments">'+
+                '</div>'+
+                '<div class="apartment-tile-1__desc-position">'+
+                    '<div class="apartment-tile-1__zar-box">'+
+                    '<span>ZAR</span>'+
+                    '<span>19,470</span>'+
+                    '</div>'+
+                    '<h3>Smart 1bedroomer in downtown</h3>'+
+                    '<div class="apartment-tile-1__desc">'+
+                    '<div class="apartment-tile-1__verification-position">'+
+                    '<span class="apartment-tile-1__verification apartment-tile__blue">Verified</span>'+
+                    '<span class="apartment-tile-1__desc-apart">Apartment</span>'+
+                    '</div>'+
+                    '<div class="apartment-tile-1__rating-position">'+
+                '<img src="images/global/star.svg" alt="star">'+
+                    '<span class="apartment-tile-1__rating">4,78</span>'+
+                    '<span class="apartment-tile-1__review">(32)</span>'+
+                    '</div>'+
+                    '</div>'+
+                    '<p class="apartment-tile-1__adress">6280 Northampton Boulevard, Cape Town</p>'+
+                    '<div class="apartment-tile-1__details">'+
+                    '<span class="apartment-tile-1__details-sofa">4</span>'+
+                    '<span class="apartment-tile-1__details-bath">2</span>'+
+                    '<span class="apartment-tile-1__details-square">187 m<sup>2</sup></span>'+
+            '</div>'+
+            '</div>'+
+                    '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentApart1
+            });
+            google.maps.event.addListener(map, "click", function(event) {
+                infowindow.close();
+            });
             var image = {
                 url: 'images/global/map-marker-big.svg',
                 scaledSize: new google.maps.Size(62, 42),
@@ -362,6 +403,9 @@
                     fontWeight: '900',
                     fontFamily: 'Overpass'
                 }
+            });
+            apart1.addListener('click', function() {
+                infowindow.open(map, apart1);
             });
             var apart2 = new google.maps.Marker({
                 position: {lat: -34.1960906, lng: 18.4475311},

@@ -414,5 +414,35 @@
       "apartment-tile__details-bath": "2",
       "apartment-tile__details-square": "187"
     }
+  ],
+  "mapTile": [
+    {
+      "apartment-tile": [
+        {
+          "apartment-tile-img": [
+            {
+              "img": "images/browsing/bedroom1.png"
+            },
+            {
+              "img": "images/browsing/bedroom2.png"
+            }
+          ],
+          "label-id" : "1",
+          "label-for" : "1",
+          "zar": "19,470",
+          "title": "Smart 1bedroomer in downtown",
+          "color-desc": "apartment-tile__blue",
+          "apartment-tile__verification": "Verified",
+          "apartment-tile__desc-apart": "Apartment",
+          "apartment-tile__star": "<img src=\"images/global/star.svg\" alt=\"star\">",
+          "apartment-tile__rating": "4,78",
+          "apartment-tile__review": "(32)",
+          "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
+          "apartment-tile__details-sofa": "4",
+          "apartment-tile__details-bath": "2",
+          "apartment-tile__details-square": "187"
+        }
+      ]
+    }
   ]
 }

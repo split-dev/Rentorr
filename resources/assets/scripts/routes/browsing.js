@@ -6,12 +6,22 @@ import 'jquery.nicescroll'
 
 export default {
   init() {
+    $('.browsing__google-map').on('click', function () {
+      if ($('.apartment-tile-1__slider-1').hasClass('slick-initialized'))
+        return;
+      $('.apartment-tile-1__slider-1').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    })
     $('.apartment-tile__slider').slick({
       dots: true,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-    })
+    });
     $('.open-map').click(function (e) {
       e.preventDefault();
       $('html, body').toggleClass('body-hidden');
