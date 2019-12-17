@@ -14,7 +14,24 @@
     {{> ../common/browsing/filters-menu}}
     <div class="container-box-full">
         <div class="browsing__map-position">
-            <div class="browsing__search-result-position"></div>
+            <a class="browsing__sity-info-btn nav__button--white button--white--border" href="#">VIEW City Information</a>
+            <div class="browsing__sity-info nicescroll-box">
+                    <div class="browsing__sity-info-head">
+                        <h2>{{sity-info-h2}}</h2>
+                        <a class="browsing__sity-info-close" href="#"></a>
+                    </div>
+                    {{#each sity-info}}
+                        <div class="browsing__sity-info-desc">
+                            <div class="browsing__sity-info-img">
+                                <img src="{{sity-info-img}}" alt="">
+                            </div>
+                            <div class="browsing__sity-info-text">
+                                <h3>{{sity-info-h3}}</h3>
+                                <p>{{sity-info-p}}</p>
+                            </div>
+                        </div>
+                    {{/each}}
+            </div>
             <div class="browsing__search-result">
                 <p>15 properties available for rent in Cape Town</p>
                 <div class="browsing__closest-filter">
@@ -29,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="browsing__tile-position nicescroll-box">
+            <div class="browsing__tile-position">
                 {{> ../common/browsing/apartment-tile}}
             </div>
         </div>
@@ -38,8 +55,8 @@
         <div class="map" id="map"></div>
         <div id="cd-zoom-in"></div>
         <div id="cd-zoom-out"></div>
-        <a class="browsing__map-filter-btn" href="#"></a>
         <div class="browsing__map-filter" id="browsing__map-filter-show">
+            <a class="browsing__map-filter-btn" href="#"></a>
             {{#each global-checkbox-map-filter}}
                 <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value">
                 <label class="global-checkbox-label" for="global-checkbox{{for}}">{{label-name}}</label>
