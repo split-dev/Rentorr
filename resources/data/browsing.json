@@ -415,34 +415,51 @@
       "apartment-tile__details-square": "187"
     }
   ],
-  "mapTile": [
+  "global-checkbox-map-filter": [
     {
-      "apartment-tile": [
-        {
-          "apartment-tile-img": [
-            {
-              "img": "images/browsing/bedroom1.png"
-            },
-            {
-              "img": "images/browsing/bedroom2.png"
-            }
-          ],
-          "label-id" : "1",
-          "label-for" : "1",
-          "zar": "19,470",
-          "title": "Smart 1bedroomer in downtown",
-          "color-desc": "apartment-tile__blue",
-          "apartment-tile__verification": "Verified",
-          "apartment-tile__desc-apart": "Apartment",
-          "apartment-tile__star": "<img src=\"images/global/star.svg\" alt=\"star\">",
-          "apartment-tile__rating": "4,78",
-          "apartment-tile__review": "(32)",
-          "apartment-tile__adress": "6280 Northampton Boulevard, Cape Town",
-          "apartment-tile__details-sofa": "4",
-          "apartment-tile__details-bath": "2",
-          "apartment-tile__details-square": "187"
-        }
-      ]
+      "id": "map1",
+      "for": "map1",
+      "label-name": "All"
+    },
+    {
+      "id": "map2",
+      "for": "map2",
+      "label-name": "Schools"
+    },
+    {
+      "id": "map3",
+      "for": "map3",
+      "label-name": "Kindergartens"
+    },
+    {
+      "id": "map4",
+      "for": "map4",
+      "label-name": "Restaurans"
+    },
+    {
+      "id": "map5",
+      "for": "map5",
+      "label-name": "Bars"
+    },
+    {
+      "id": "map6",
+      "for": "map6",
+      "label-name": "Shoping malls"
+    },
+    {
+      "id": "map7",
+      "for": "map7",
+      "label-name": "Pharmacy"
+    },
+    {
+      "id": "map8",
+      "for": "map8",
+      "label-name": "Art spaces"
+    },
+    {
+      "id": "map9",
+      "for": "map9",
+      "label-name": "Gyms"
     }
   ]
 }

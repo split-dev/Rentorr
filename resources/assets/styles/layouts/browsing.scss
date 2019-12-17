@@ -211,14 +211,57 @@
       height: 100vh;
     }
   }
+  &__map-filter-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #fff;
+    bottom: 110px;
+    left: 30px;
+    &:hover {
+      &:before {
+        content: url("images/global/filterMap-active.svg");
+      }
+    }
+    &:before {
+      position: absolute;
+      content: url("images/global/filterMap.svg");
+      top: 6px;
+      left: 7px;
+    }
+  }
+  &__map-filter-btn-active {
+    &:before {
+      content: url("images/global/filterMap-active.svg") !important;
+    }
+  }
+  &__map-filter {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 5px 25px;
+    width: 200px;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(27, 26, 33, 0.1);
+    border: 1px solid rgba(225, 223, 230, 0.5);
+    bottom: 25px;
+    left: 70px;
+    visibility: hidden;
+  }
+  &__map-filter-active {
+    visibility: visible !important;
+  }
 }
-
+.map {
+  position: relative;
+}
 .zoom-map {
   width: 30px !important;
   height: 60px !important;
   background-color: #fff !important;
   position: absolute !important;
   left: 30px !important;
+  box-shadow: 0 2px 4px rgba(201, 202, 209, 0.5);
   #cd-zoom-out {
     width: 30px;
     height: 30px;

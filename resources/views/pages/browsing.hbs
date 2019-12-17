@@ -38,13 +38,20 @@
         <div class="map" id="map"></div>
         <div id="cd-zoom-in"></div>
         <div id="cd-zoom-out"></div>
+        <a class="browsing__map-filter-btn" href="#"></a>
+        <div class="browsing__map-filter" id="browsing__map-filter-show">
+            {{#each global-checkbox-map-filter}}
+                <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value">
+                <label class="global-checkbox-label" for="global-checkbox{{for}}">{{label-name}}</label>
+            {{/each}}
+        </div>
     </div>
     <script type="text/javascript">
 
         // Функция initMap которая отрисует карту на странице
         function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: -34.1950419, lng: 18.4513917},
+                center: {lat: -34.1958549, lng: 18.4449913},
                 zoom: 17,
                 disableDefaultUI: true,
                 zoomControl: false,
@@ -385,6 +392,7 @@
             });
             google.maps.event.addListener(map, "click", function(event) {
                 infowindow.close();
+                OnPoiClickListener.close();
             });
             var image = {
                 url: 'images/global/map-marker-big.svg',
@@ -397,7 +405,7 @@
                 title: 'Rentorr',
                 icon: image,
                 label: {
-                    text: 'R12.400',
+                    text: 'R19.470',
                     color: '#fff',
                     fontSize: '12px',
                     fontWeight: '900',

@@ -331,6 +331,22 @@ export default {
       $(this).parent().parent().prev().text(date + ' | ' + fromRange + ' - ' + toRange + ' months');
       $(this).parent().parent().removeClass('filters-menu__dropdown-active');
     });
+    // Map filters
+    $('.browsing__map-filter-btn').click(function () {
+      $(this).toggleClass('browsing__map-filter-btn-active');
+      $(this).next('.browsing__map-filter').toggleClass('browsing__map-filter-active');
+    });
+    jQuery(function($){
+      $(document).mouseup(function (e){
+        if(jQuery('.browsing__map-filter').hasClass('browsing__map-filter-active')) {
+          var div = $('#browsing__map-filter-show');
+          if (!div.is(e.target) && div.has(e.target).length === 0) {
+            $('.browsing__map-filter').removeClass('browsing__map-filter-active');
+            $('.browsing__map-filter-btn').removeClass('browsing__map-filter-btn-active');
+          }
+        }
+      });
+    });
 
 
     const form = new Forms({
