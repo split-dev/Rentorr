@@ -3,7 +3,8 @@
   {{> ../common/head }}
 </head>
 <body class="apartment-details apartment">
-{{> ../common/mobile-menu }}
+{{> ../common/mobile-menu}}
+{{> ../common/header-footer/nav}}
 <section class="apartment-details-header">
   {{#with background}}
     <div class="apartment-details-header__position-in-header">
@@ -86,7 +87,7 @@
         <div class="message">
           {{#with client-avatar}}
             <div class="message-text">
-              <h3>Meet <a href="#" class="link-name">{{first-name}} {{last-name}}</a> — your future Landlord</h3>
+              <h3 class="text-h3">Meet <a href="#" class="link-name">{{first-name}} {{last-name}}</a> — your future Landlord</h3>
               <div class="message-img-text__mobile">
                 <img class="images images_mass" src="{{avatar}}" alt="uncle Bob">
                 <img class="images images_check" src="{{avatar_check}}" alt="check">
