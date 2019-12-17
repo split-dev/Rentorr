@@ -301,5 +301,37 @@
       "apart": "images/apartment-details/03.png",
       "bgd_slide": "images/apartment-details/Img_bg_slide.png"
     }
+  ],
+  "img-apart-slider":[
+    {
+      "apart": "images/apartment-details/map-1.png",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "apartment-tile__adress": "72 Willay Road, 7903"
+    },
+    {
+      "apart": "images/apartment-details/map-2.png",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "apartment-tile__adress": "72 Willay Road, 7903"
+    },
+    {
+      "apart": "images/apartment-details/map-3.png",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "apartment-tile__adress": "72 Willay Road, 7903"
+    },
+    {
+      "apart": "images/apartment-details/map-4.png",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "apartment-tile__adress": "72 Willay Road, 7903"
+    },
+    {
+      "apart": "images/apartment-details/map-2.png",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "apartment-tile__adress": "72 Willay Road, 7903"
+    }
   ]
 }

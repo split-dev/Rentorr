@@ -9,6 +9,13 @@ export default {
       slidesToShow: 1,
       slidesToScroll: 1,
     });
+    $('.apartment-details-map__slider2').slick({
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      swipe: true,
+    });
     $('#aniimated-thumbnials').lightGallery({
       thumbnail:true,
       animateThumb: false,
