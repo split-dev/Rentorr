@@ -2,7 +2,7 @@ import 'slick-carousel';
 import Forms from './forms';
 import 'ion-rangeslider';
 import Lightpick from 'lightpick/lightpick';
-import 'jquery.nicescroll'
+import 'jquery.nicescroll/jquery.nicescroll'
 
 export default {
   init() {

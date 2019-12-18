@@ -9,7 +9,7 @@ import 'jquery';
 import Router from './util/Router';
 import common from './routes/common';
 import Detection from './util/Detection';
-/*import browsing from './routes/browsing';*/
+import browsing from './routes/browsing';
 import home from './routes/home';
 
 window._detector = new Detection({
@@ -21,7 +21,7 @@ window._detector.init();
 const routes = new Router({
   // All pages
   common,
-  /*'browsing': browsing,*/
+  'browsing': browsing,
   'home': home,
 });
 
