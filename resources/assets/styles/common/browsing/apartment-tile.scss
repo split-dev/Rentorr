@@ -4,6 +4,9 @@
   box-shadow: 0 0 4px #eeeef2;
   margin: 6px;
   position: relative;
+  &:hover {
+    box-shadow: 0 2px 4px rgba(217, 219, 224, 0.65), 0 -2px 4px rgba(217, 219, 224, 0.5);
+  }
   &__checkbox-position {
     position: absolute;
   }

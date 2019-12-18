@@ -369,7 +369,7 @@
                     }
                 ]
             });
-            var contentApart1 = '<div id="content1">'+
+            var contentApart = ['<div id="content1">'+
                     '<div><div class="apartment-tile-1">'+
                     '<div class="apartment-tile-1__checkbox-position">'+
                     '<input class="apartment-tile-1__checkbox" id="apartment-tile__checkbox99" type="checkbox" value="value">'+
@@ -403,75 +403,152 @@
                     '<span class="apartment-tile-1__details-square">187 m<sup>2</sup></span>'+
             '</div>'+
             '</div>'+
-                    '</div>';
-            var infowindow = new google.maps.InfoWindow({
-                content: contentApart1
-            });
-            google.maps.event.addListener(map, "click", function(event) {
-                infowindow.close();
-                OnPoiClickListener.close();
-            });
+                    '</div>',
+                '<div id="content1">'+
+            '<div><div class="apartment-tile-1">'+
+            '<div class="apartment-tile-1__checkbox-position">'+
+            '<input class="apartment-tile-1__checkbox" id="apartment-tile__checkbox99" type="checkbox" value="value">'+
+            '<label class="apartment-tile-1__checkbox-label" for="apartment-tile__checkbox99"></label>'+
+            '</div>'+
+            '<div class="apartment-tile-1__slider-1">'+
+            '<img src="images/browsing/bedroom1.png" alt="apartments">'+
+            '<img src="images/browsing/bedroom1.png" alt="apartments">'+
+            '</div>'+
+            '<div class="apartment-tile-1__desc-position">'+
+            '<div class="apartment-tile-1__zar-box">'+
+            '<span>ZAR</span>'+
+            '<span>19,470</span>'+
+            '</div>'+
+            '<h3>Smart House</h3>'+
+            '<div class="apartment-tile-1__desc">'+
+            '<div class="apartment-tile-1__verification-position">'+
+            '<span class="apartment-tile-1__verification apartment-tile__blue">Verified</span>'+
+            '<span class="apartment-tile-1__desc-apart">Apartment</span>'+
+            '</div>'+
+            '<div class="apartment-tile-1__rating-position">'+
+            '<img src="images/global/star.svg" alt="star">'+
+            '<span class="apartment-tile-1__rating">4,78</span>'+
+            '<span class="apartment-tile-1__review">(32)</span>'+
+            '</div>'+
+            '</div>'+
+            '<p class="apartment-tile-1__adress">6280 Northampton Boulevard, Cape Town</p>'+
+            '<div class="apartment-tile-1__details">'+
+            '<span class="apartment-tile-1__details-sofa">4</span>'+
+            '<span class="apartment-tile-1__details-bath">2</span>'+
+            '<span class="apartment-tile-1__details-square">187 m<sup>2</sup></span>'+
+            '</div>'+
+            '</div>'+
+            '</div>'];
+            // var infowindow = new google.maps.InfoWindow({
+            //     content: contentApart1
+            // });
+
             var image = {
                 url: 'images/global/map-marker-big.svg',
                 scaledSize: new google.maps.Size(62, 42),
                 labelOrigin: new google.maps.Point(32, 15)
             };
-            var apart1 = new google.maps.Marker({
-                position: {lat: -34.1957846, lng: 18.4482404},
-                map: map,
-                title: 'Rentorr',
-                icon: image,
-                label: {
-                    text: 'R19.470',
-                    color: '#fff',
-                    fontSize: '12px',
-                    fontWeight: '900',
-                    fontFamily: 'Overpass'
-                }
-            });
-            apart1.addListener('click', function() {
-                infowindow.open(map, apart1);
-            });
-            var apart2 = new google.maps.Marker({
-                position: {lat: -34.1960906, lng: 18.4475311},
-                map: map,
-                title: 'Rentorr',
-                icon: image,
-                label: {
-                    text: 'R11.400',
-                    color: '#fff',
-                    fontSize: '12px',
-                    fontWeight: '900',
-                    fontFamily: 'Overpass'
-                }
-            });
-            var apart3 = new google.maps.Marker({
-                position: {lat: -34.1954096, lng: 18.4472335},
-                map: map,
-                title: 'Rentorr',
-                icon: image,
-                labelAnchor: new google.maps.Point(100, 50),
-                label: {
-                    text: 'R13.400',
-                    color: '#fff',
-                    fontSize: '12px',
-                    fontWeight: '900',
-                    fontFamily: 'Overpass'
-                }
-            });
-            var apart4 = new google.maps.Marker({
-                position: {lat: -34.1966497, lng: 18.4485186},
-                map: map,
-                title: 'Rentorr',
-                icon: image,
-                label: {
-                    text: 'R15.400',
-                    color: '#fff',
-                    fontSize: '12px',
-                    fontWeight: '900',
-                    fontFamily: 'Overpass',
-                }
-            });
+            var imageOrange = {
+                url: 'images/global/marker-orange.svg',
+                scaledSize: new google.maps.Size(62, 42),
+                labelOrigin: new google.maps.Point(32, 15)
+            };
+            // var apart1 = new google.maps.Marker({
+            //     position: {lat: -34.1957846, lng: 18.4482404},
+            //     map: map,
+            //     title: 'Rentorr',
+            //     icon: image,
+            //     label: {
+            //         text: 'R19.470',
+            //         color: '#fff',
+            //         fontSize: '12px',
+            //         fontWeight: '900',
+            //         fontFamily: 'Overpass'
+            //     }
+            // });
+            let apartList = document.querySelectorAll('.apartment-tile');
+            for (let i = 0; i < apartList.length; i++) {
+                let x = parseFloat(apartList[i].getAttribute('data-x'));
+                let y = parseFloat(apartList[i].getAttribute('data-y'));
+                let dataPrice = apartList[i].getAttribute('data-price');
+                let marker = new google.maps.Marker({
+                    position: {lat: x, lng: y},
+                    map: map,
+                    title: 'Rentorr',
+                    icon: image,
+                    label: {
+                        text: dataPrice,
+                        color: '#fff',
+                        fontSize: '12px',
+                        fontWeight: '900',
+                        fontFamily: 'Overpass'
+                    }
+                });
+                let infowindow = new google.maps.InfoWindow({
+                    content: contentApart[i]
+                });
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+                apartList[i].addEventListener('mouseover', function () {
+                    marker.setIcon(imageOrange);
+                });
+                apartList[i].addEventListener('mouseout', function () {
+                    marker.setIcon(image);
+                });
+                google.maps.event.addListener(map, "click", function(event) {
+                    infowindow.close();
+                });
+            }
+            // document.querySelector('.apartment-tile').addEventListener('mouseover', function () {
+            //     apart1.setIcon(imageOrange);
+            // });
+            // document.querySelector('.apartment-tile').addEventListener('mouseout', function () {
+            //     apart1.setIcon(image);
+            // });
+            // apart1.addListener('click', function() {
+            //     infowindow.open(map, apart1);
+            // });
+            // var apart2 = new google.maps.Marker({
+            //     position: {lat: -34.1960906, lng: 18.4475311},
+            //     map: map,
+            //     title: 'Rentorr',
+            //     icon: image,
+            //     label: {
+            //         text: 'R11.400',
+            //         color: '#fff',
+            //         fontSize: '12px',
+            //         fontWeight: '900',
+            //         fontFamily: 'Overpass'
+            //     }
+            // });
+            // var apart3 = new google.maps.Marker({
+            //     position: {lat: -34.1954096, lng: 18.4472335},
+            //     map: map,
+            //     title: 'Rentorr',
+            //     icon: image,
+            //     labelAnchor: new google.maps.Point(100, 50),
+            //     label: {
+            //         text: 'R13.400',
+            //         color: '#fff',
+            //         fontSize: '12px',
+            //         fontWeight: '900',
+            //         fontFamily: 'Overpass'
+            //     }
+            // });
+            // var apart4 = new google.maps.Marker({
+            //     position: {lat: -34.1966497, lng: 18.4485186},
+            //     map: map,
+            //     title: 'Rentorr',
+            //     icon: image,
+            //     label: {
+            //         text: 'R15.400',
+            //         color: '#fff',
+            //         fontSize: '12px',
+            //         fontWeight: '900',
+            //         fontFamily: 'Overpass',
+            //     }
+            // });
             function CustomZoomControl(controlDiv, map) {
                 //grap the zoom elements from the DOM and insert them in the map
                 var controlUIzoomIn= document.getElementById('cd-zoom-in'),

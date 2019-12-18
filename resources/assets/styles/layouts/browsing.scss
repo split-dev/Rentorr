@@ -177,10 +177,41 @@
       display: flex;
       width: 100%;
       box-shadow: none;
-      border-bottom: 1px solid #eeeef2;
-      margin-right: 40px;
+      padding-right: 40px;
       margin-top: 25px;
-      padding-bottom: 25px;
+      margin-bottom: 25px;
+      &:before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: -25px;
+        border-bottom: 1px solid #eeeef2;
+      }
+      &:hover {
+        box-shadow: 0 2px 4px rgba(217, 219, 224, 0.65), 0 -2px 4px rgba(217, 219, 224, 0.5);
+      }
+      &__checkbox {
+        position: absolute;
+        opacity: 0;
+        & + label {
+          position: relative;
+          margin-left: 30px;
+          cursor: pointer;
+          padding: 0;
+          transition: 0.3s;
+        }
+        & + label:before {
+          content: url("images/global/heart-white.svg");
+          position: absolute;
+          display: inline-block;
+          top: 27px;
+          left: -30px;
+          z-index: 20;
+        }
+        &:checked + label:before {
+          content: url("images/global/heart-red.svg");
+        }
+      }
     }
     .apartment-tile__checkbox-position {
       left: auto;
@@ -411,9 +442,13 @@
     display: none !important;
   }
 }
+.poi-info-window {
+  display: none !important;
+}
 .gm-style-iw-d {
   overflow: hidden !important;
 }
+
 .gm-style,
 .gm-style-iw-t {
   &:after {

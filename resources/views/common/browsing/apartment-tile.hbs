@@ -1,5 +1,5 @@
 {{#each apartment-tile}}
-    <div class="apartment-tile">
+    <div class="apartment-tile" data-x="{{apartment-tile-x}}" data-y="{{apartment-tile-y}}" data-price="{{apartment-tile-price}}">
         <div class="apartment-tile__checkbox-position">
             <input class="apartment-tile__checkbox" id="apartment-tile__checkbox{{label-id}}" type="checkbox" value="value">
             <label class="apartment-tile__checkbox-label" for="apartment-tile__checkbox{{label-for}}"></label>
