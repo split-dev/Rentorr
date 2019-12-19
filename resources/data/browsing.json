@@ -489,24 +489,71 @@
   "sity-info-h2": "Cape Town",
   "sity-info": [
     {
-      "sity-info-img": "images/global/Key.svg",
+      "sity-info-img": "#",
       "sity-info-h3": "Search for Cape Town Long Term Property Rentals with Ease",
       "sity-info-p": "We make it easy to find affordable property rentals in Cape Town and even easier to apply. Find the best fully furnished rental properties Cape Town has to offer, or search for a pet friendly property to rent Cape Town – the choice is yours. Our goal is only to help you find the perfect property to rent in Cape Town."
     },
     {
-      "sity-info-img": "images/global/House-Blue.svg",
+      "sity-info-img": "#",
       "sity-info-h3": "Rentorr – So Much More Than a Property Website",
       "sity-info-p": "Rentorr is an all-in-one tenancy management app that will change the way you search for Cape Town private property rentals. Create a Renter Profile, and you will be able to apply for private property rentals Cape town northern suburbs with just one click. Like what you see, and you can sign the tenancy for your perfect property to rent in Cape Town area remotely, and even manage your property all from our app."
     },
     {
-      "sity-info-img": "images/global/Credit-Card.svg",
+      "sity-info-img": "#",
       "sity-info-h3": "Set Up Automated Rent Payments",
-      "sity-info-p": "We make it easy to find affordable property rentals in Cape Town and even easier to apply. Find the best fully furnished rental properties Cape Town has to offer, or search for a pet friendly property to rent Cape Town – the choice is yours. Our goal is only to help you find the perfect property to rent in Cape Town."
+      "sity-info-p": "Never miss a payment on your rental property Cape Town, South Africa again by setting up automated payments. Use your credit card to do this, and you can even build up your credit score while being a great tenant!"
     },
     {
-      "sity-info-img": "images/global/Credit-Card.svg",
-      "sity-info-h3": "Set Up Automated Rent Payments",
-      "sity-info-p": "We make it easy to find affordable property rentals in Cape Town and even easier to apply. Find the best fully furnished rental properties Cape Town has to offer, or search for a pet friendly property to rent Cape Town – the choice is yours. Our goal is only to help you find the perfect property to rent in Cape Town."
+      "sity-info-img": "#",
+      "sity-info-h3": "Start Your Search Today for your Residential property to rent in Cape Town",
+      "sity-info-p": "Are you coming up empty on Private Property Cape Town? No luck with Property24 affordable rental property Cape location either? Browse all the houses, apartments, duplexes and houses\nfor rent in Cape Town. If living in Cape Town is not a strict requirement, you can instead search for nearby <a class=\"second-link-global\" href=\"#\">Cape Town City Center</a>, <a class=\"second-link-global\" href=\"#\">Woodstock</a> or <a class=\"second-link-global\" href=\"#\">Sea Point</a>. You can swipe through beautiful\nphotos, filter for specific amenities, and contact landlords with a few clicks.<br><br>Find a fully furnished rental property Cape Town, apply to it with a click, and manage your tenancy with Rentorr."
+    }
+  ],
+  "cities-link": [
+    {
+      "link-desc": "Cape Town Center"
+    },
+    {
+      "link-desc": "Gardens"
+    },
+    {
+      "link-desc": "Airport Industria"
+    },
+    {
+      "link-desc": "Epping Industrial"
+    },
+    {
+      "link-desc": "Sea Point"
+    },
+    {
+      "link-desc": "Observatory"
+    },
+    {
+      "link-desc": "Rondebosch"
+    },
+    {
+      "link-desc": "Maitland"
+    },
+    {
+      "link-desc": "Constantia"
+    },
+    {
+      "link-desc": "Woodstock"
+    },
+    {
+      "link-desc": "Salt River"
+    },
+    {
+      "link-desc": "Green Point"
+    },
+    {
+      "link-desc": "Camps Bay"
+    },
+    {
+      "link-desc": "Claremont"
+    },
+    {
+      "link-desc": "De Waterkant"
     }
   ]
 }

@@ -39,6 +39,9 @@
           border-radius: 2px;
           background-color: #fbfcfe;
           @include flex-center;
+          @media (max-width: 1020px) {
+            padding: 0 15px;
+          }
           &:hover {
             background-color: #1a5dc6;
             color: #fff;
@@ -59,6 +62,7 @@
     width: auto;
     text-transform: none;
     padding: 0;
+    margin-right: 5px;
     &:after {
       display: none;
     }
@@ -153,6 +157,9 @@
   }
   &__features {
     min-width: 460px;
+    @media (max-width: 1120px) {
+      left: -100px !important;
+    }
     .global-checkbox-label {
       min-width: 44%;
     }

@@ -27,10 +27,25 @@
                             </div>
                             <div class="browsing__sity-info-text">
                                 <h3>{{sity-info-h3}}</h3>
-                                <p>{{sity-info-p}}</p>
+                                <p>{{{sity-info-p}}}</p>
                             </div>
                         </div>
                     {{/each}}
+                        <div class="browsing__sity-info-desc">
+                            <div class="browsing__sity-info-img">
+                                <img src="#" alt="">
+                            </div>
+                            <div class="browsing__sity-info-text">
+                                <h3>Cities Near Cape Town</h3>
+                                <ul>
+                                    {{#each cities-link}}
+                                        <li>
+                                            <a class="explore__link" href="#">{{link-desc}}</a>
+                                        </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
             </div>
             <div class="browsing__search-result">
                 <p>15 properties available for rent in Cape Town</p>
@@ -453,19 +468,6 @@
                 scaledSize: new google.maps.Size(62, 42),
                 labelOrigin: new google.maps.Point(32, 15)
             };
-            // var apart1 = new google.maps.Marker({
-            //     position: {lat: -34.1957846, lng: 18.4482404},
-            //     map: map,
-            //     title: 'Rentorr',
-            //     icon: image,
-            //     label: {
-            //         text: 'R19.470',
-            //         color: '#fff',
-            //         fontSize: '12px',
-            //         fontWeight: '900',
-            //         fontFamily: 'Overpass'
-            //     }
-            // });
             let apartList = document.querySelectorAll('.apartment-tile');
             for (let i = 0; i < apartList.length; i++) {
                 let x = parseFloat(apartList[i].getAttribute('data-x'));
@@ -500,6 +502,19 @@
                     infowindow.close();
                 });
             }
+            // var apart1 = new google.maps.Marker({
+            //     position: {lat: -34.1957846, lng: 18.4482404},
+            //     map: map,
+            //     title: 'Rentorr',
+            //     icon: image,
+            //     label: {
+            //         text: 'R19.470',
+            //         color: '#fff',
+            //         fontSize: '12px',
+            //         fontWeight: '900',
+            //         fontFamily: 'Overpass'
+            //     }
+            // });
             // document.querySelector('.apartment-tile').addEventListener('mouseover', function () {
             //     apart1.setIcon(imageOrange);
             // });
