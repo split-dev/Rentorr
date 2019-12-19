@@ -8,7 +8,15 @@
 <section class="apartment-details-header">
   {{#with background}}
     <nav class='navigation'>
-      <div class='navigation__title'><h1>Smart 1bedroomer in downtown R19,470/month</h1></div>
+      <div class='navigation__title'>
+        <div class="div_price">
+          <h1>4 Bed, 2 Bath Apartment for R19,470</h1><p>&nbsp/MONTH</p>
+        </div>
+        <div class="div">
+          <a href="#" class="button--blue">Ask a question</a>
+          <a href="#" class="button--white">Apply Now</a>
+        </div>
+      </div>
     </nav>
     <div class="apartment-details-header__position-in-header">
       <div class="apartment-details-header__slider">
@@ -110,14 +118,22 @@
         </div>
       </div>
       <div class="apartment-details-blocks__map">
-        {{#with map_pleace}}
-          <div class="map">
-            <a class="images" href="#"><img src="{{map}}" alt="cool features"></a>
-          </div>
-        {{/with}}
+        <div class="apartment-details-blocks__buttons-on-map">
+          <div class="map" id="map1"></div>
+        </div>
+<!--        {{#with map_pleace}}-->
+<!--          <div class="map">-->
+<!--            <a class="images" href="#"><img src="{{map}}" alt="cool features"></a>-->
+<!--          </div>-->
+<!--        {{/with}}-->
         <div class="apartment-details-blocks__undermap">
           <div class="apartment-details-blocks__block-top bottom-line-small">
-            <p class="h-font">R19,470</p><p class="map-font heard">/month</p>
+            <div class="apartment-details-blocks__checkbox-position">
+              <input class="apartment-details-blocks__checkbox" id="apartment-details-blocks__checkbox1" type="checkbox" value="value">
+              <label class="apartment-details-blocks__checkbox-label" for="apartment-details-blocks__checkbox1"></label>
+            </div>
+            <p class="h-font">R19,470</p><p class="map-font">/month</p>
+<!--            <p class="h-font">R19,470</p><p class="map-font heard">/month</p>-->
           </div>
           <div class="apartment-details-blocks__block-middle bottom-line-small">
             <p class="map-font">Availability</p>
@@ -149,9 +165,9 @@
 </section>
 <section class="apartment-details-map">
     <div class="apartment-details-map__bcground">
-        <div class="apartment-details-map__buttons-on-map">
-          <div class="map" id="map"></div>
-        </div>
+      <div class="apartment-details-map__buttons-on-map">
+        <div class="map" id="map"></div>
+      </div>
     </div>
     <div class="apartment-details-map__around">
       <div class="container container_mobile">
@@ -206,7 +222,7 @@
 {{> ../common/header-footer/footer }}
 <script type="text/javascript">
   // Определяем переменную map
-  var map;
+  var map, map1;
   // Функция initMap которая отрисует карту на странице
   function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -496,7 +512,306 @@
         }
       ]
     });
+    map1 = new google.maps.Map(document.getElementById('map1'), {
+      center: {lat: -33.9752704, lng: 18.5228585},
+      zoom: 16,
+      disableDefaultUI: true,
+      zoomControl: false,
+      styles: [
+        {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#444444"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative.locality",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#F7F7F7"
+            },
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            },
+            {
+              "saturation": "-65"
+            },
+            {
+              "lightness": "45"
+            },
+            {
+              "gamma": "1.78"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": -100
+            },
+            {
+              "lightness": 45
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#87878A"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway.controlled_access",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway.controlled_access",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway.controlled_access",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.line",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "saturation": "-33"
+            },
+            {
+              "lightness": "22"
+            },
+            {
+              "gamma": "2.08"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#C4D6E5"
+            },
+            {
+              "visibility": "simplified"
+            }
+          ]
+        }
+      ]
+    });
+    var image = {
+      url: 'images/global/pin-map_orange.svg',
+      scaledSize: new google.maps.Size(62, 42),
+      labelOrigin: new google.maps.Point(32, 15)
+    };
+    var apartDoor = new google.maps.Marker({
+      position: {lat: -33.9752704, lng: 18.5228585},
+      map: map1,
+      title: 'Rentorr',
+      icon: image,
+    });
   }
+
   window.initMap = initMap;
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-_AEib7vHKXFg7mgGbQPhrweik5bo9X0&callback=initMap"></script>
