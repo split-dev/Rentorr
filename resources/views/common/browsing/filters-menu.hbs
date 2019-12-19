@@ -1,6 +1,18 @@
 <div class="bg-white">
 <div class="container-box-full nav-position">
         <div class="filters-menu">
+            <div class="browsing__closest-filter">
+                <a class="browsing__triangle" href="#">Sort by</a>
+                <div class="filters-menu__dropdown browsing__closest">
+                    <div class="browsing__form-closest">
+                        {{#each browsing-closest}}
+                            <input class="browsing__input" id="browsing__input{{id}}" type="checkbox">
+                            <label class="browsing__input-label" for="browsing__input{{for}}">{{closest-item}}</label>
+                        {{/each}}
+                    </div >
+                </div>
+            </div>
+            <a class="filters-menu__filter-link" href="#">Filters</a>
             <div class="filters-menu__items">
                 <ul>
                     <li>

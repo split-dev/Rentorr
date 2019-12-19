@@ -37,6 +37,9 @@
   }
   &__closest-filter {
     position: relative;
+    @media (max-width: 991px) {
+      display: none;
+    }
     > a {
       color: #222634;
       font-family: $roboto;
@@ -397,14 +400,16 @@
     &:first-child {
       padding-top: 0;
     }
+    &:last-child {
+      .browsing__sity-info-text {
+        max-width: 500px;
+      }
+    }
   }
   &__sity-info-text {
     margin-left: 20px;
     padding-bottom: 20px;
     max-width: 430px;
-    &:last-child {
-      max-width: 500px;
-    }
     h3 {
       color: #222634;
       font-size: 20px;
