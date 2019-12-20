@@ -381,6 +381,18 @@ export default {
       $('.browsing__map-position').removeClass('browsing__map-position-off');
       $('#ascrail2001').removeClass('city-info-scroll');
     });
+
+    //MOBILE VERSION
+    //Closest filter mobile
+    $('.browsing__closest-filter-mobile').click(function () {
+      $('.browsing__closest-mobile').slideToggle();
+      if ($('.browsing__triangle').hasClass('triangle-blue')) {
+        $('.browsing__triangle').removeClass('triangle-blue');
+      }
+    });
+    $('.browsing__closest-mobile .browsing__form-closest').click(function () {
+      $('.browsing__closest-mobile').slideUp();
+    });
     const form = new Forms({
       wrap: '.field-wrap',
       forms: '.main-form__filters, filters-menu__input-position',

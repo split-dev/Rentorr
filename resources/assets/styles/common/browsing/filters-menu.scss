@@ -15,6 +15,10 @@
     height: 1px;
     background-color: #eeeef2;
   }
+  &__left-part {
+    display: flex;
+    align-items: center;
+  }
   &__filter-link {
     display: none !important;
     position: relative;
@@ -22,10 +26,11 @@
     text-decoration: none;
     font-family: $roboto;
     font-size: 14px;
-    border: none !important;
     width: 60px !important;
+    margin-left: 20px;
     @media (max-width: 991px) {
-      display: block !important;
+      display: flex !important;
+      align-items: center;
     }
     &:hover {
       color: #222634;
@@ -33,7 +38,7 @@
     &:after {
       content: url("images/global/filters.svg");
       position: absolute;
-      right: 2px;
+      right: -20px;
     }
   }
   &__items {
@@ -449,10 +454,26 @@
       }
     }
   }
-  .browsing__closest-filter {
+  .browsing__closest-filter-mobile {
     display: none;
     @media (max-width: 991px) {
       display: block;
+    }
+  }
+}
+.browsing__closest-mobile {
+  display: none;
+  .browsing__input-label {
+    display: inline-block;
+    color: #282830;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 12.5px 25px 12.5px 0 !important;
+    width: 100%;
+    &:hover {
+      background-color: #fff;
     }
   }
 }
