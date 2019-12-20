@@ -742,6 +742,7 @@
           font-size: 22px;
           font-weight: 500;
           line-height: 40px;
+          border: 2px solid red;
         }
       }
     }
@@ -753,6 +754,9 @@
     }
     &__buttons-on-map {
       height: 200px;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
     position: relative;
     &__checkbox-position {
@@ -1154,7 +1158,6 @@
         top: 20px;
       }
       @include media-breakpoint-down(md) {
-        //max-width: 385px;
         align-items: center;
         text-align: center;
         margin: auto;
@@ -1188,6 +1191,15 @@
       margin-left: 20px;
       @include media-breakpoint-up(lg) {
         display: none;
+      }
+      .slick-slider .slick-list {
+        @include media-breakpoint-down(sm) {
+          -webkit-transform: translate3d(50px, 0, 0);
+          -moz-transform: translate3d(50px, 0, 0);
+          -ms-transform: translate3d(50px, 0, 0);
+          -o-transform: translate3d(50px, 0, 0);
+          transform: translate3d(50px, 0, 0);
+        }
       }
     }
     &__position2 {
@@ -1647,12 +1659,18 @@
   }
 }
 @-moz-document url-prefix() {
-  .apartment-details-header__gallery .gallery-img a::after {
+  .apartment-details-header__gallery .gallery-img a:nth-child(2)::before {
+    top: -34px;
+  }
+  .apartment-details-header__gallery .gallery-img a:nth-child(3)::before {
     top: -34px;
   }
 }
 @supports (-ms-ime-align:auto) {
-  .apartment-details-header__gallery .gallery-img a::after {
+  .apartment-details-header__gallery .gallery-img a:nth-child(2)::before {
+    top: -32px;
+  }
+  .apartment-details-header__gallery .gallery-img a:nth-child(3)::before {
     top: -32px;
   }
 }

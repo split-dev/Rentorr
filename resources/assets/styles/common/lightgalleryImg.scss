@@ -97,8 +97,17 @@
   background-color: transparent !important;
 }
 .lg-outer.lg-thumb-open .lg-thumb-outer {
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(25px, -10%, 0);
+  transform: translate3d(25px, -10%, 0);
+  height: 150px;
+  //@include media-breakpoint-down(md) {
+  //  //display: none;
+  //  height: 130px;
+  //}
+  @media (max-height: 800px) {
+    display: none;
+    //height: 100px;
+  }
 }
 .lg-toogle-thumb {
   display: none;
