@@ -679,22 +679,18 @@
         a {
           margin-left: 5px;
           position: relative;
-          &:after {
-            content: url("../../images/apartment-details/Fade.png");
-            position: absolute;
-            left: 0;
-            top: -35px;
-            right: 0;
-            bottom: 0;
-            z-index: 99;
-            -webkit-transition: 0.3s;
-            transition: 0.3s;
-            //background: rgba(0, 0, 0, 0.5);
-          }
-          &:first-child {
+          &:nth-child(3) {
             &:after {
-              z-index: 0;
-              background: none;
+              content: attr(data-count);
+              position: absolute;
+              left: 0;
+              top: -35px;
+              right: 0;
+              bottom: 0;
+              z-index: 99;
+              -webkit-transition: 0.3s;
+              transition: 0.3s;
+              background: rgba(0, 0, 0, 0.5);
             }
           }
         }
@@ -1606,16 +1602,6 @@
   .map {
     width: 100%;
     height: 100%;
-  }
-  #aniimated-thumbnials {
-    a {
-      &:nth-child(4) {
-        display: none;
-      }
-      &:last-child {
-        display: none;
-      }
-    }
   }
 }
 @-moz-document url-prefix() {

@@ -52,6 +52,22 @@ export default {
       }
     }
     window.addEventListener('scroll', stickyElement);
+
+    let element = $('#aniimated-thumbnials').children('a');
+    let count = 0;
+    for (let i = 0; i <= element.length; i++) {
+      if (i > 2) {
+        $(element[i]).css('display', 'none');
+        count = count + 1;
+      }
+    }
+    let none = element.length - (count - 1);
+    none = element.length - none;
+    $(element[2]).attr('data-count', '+' + none);
+    if (element.length <= 3) {
+      let mass = element.length - 1;
+      $(element[mass]).addClass('hide');
+    }
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
