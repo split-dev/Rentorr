@@ -61,6 +61,18 @@
       {
         "apart": "images/apartment-details/01.png",
         "bgd_slide": "images/apartment-details/Img_bg_slide_5.png"
+      },
+      {
+        "apart": "images/apartment-details/03.png",
+        "bgd_slide": "images/apartment-details/Img_bg_slide_3.png"
+      },
+      {
+        "apart": "images/apartment-details/02.png",
+        "bgd_slide": "images/apartment-details/Img_bg_slide_2.png"
+      },
+      {
+        "apart": "images/apartment-details/01.png",
+        "bgd_slide": "images/apartment-details/Img_bg_slide.png"
       }
     ],
     "apartment-tile": [
@@ -291,6 +303,14 @@
   "img-apart":[
     {
       "apart": "images/apartment-details/01.png",
+      "bgd_slide": "images/apartment-details/Img_bg_slide.png"
+    },
+    {
+      "apart": "images/apartment-details/02.png",
+      "bgd_slide": "images/apartment-details/Img_bg_slide.png"
+    },
+    {
+      "apart": "images/apartment-details/03.png",
       "bgd_slide": "images/apartment-details/Img_bg_slide.png"
     },
     {

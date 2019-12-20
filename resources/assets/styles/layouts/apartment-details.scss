@@ -92,6 +92,9 @@
       align-items: center;
       p {
         margin-top: 3px;
+        @include media-breakpoint-down(md) {
+          margin: auto;
+        }
       }
     }
     h1 {
@@ -101,6 +104,9 @@
       font-size: 24px;
       font-weight: 900;
       margin: auto;
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+      }
     }
     &--relative {
       position: relative;
@@ -110,6 +116,14 @@
     .navigation__title {
       height: 70px;
       display: flex;
+      @include media-breakpoint-up(md) {
+        overflow: hidden;
+      }
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
     }
     &.is-fixed {
       position: fixed;
@@ -123,10 +137,6 @@
       text-align: center;
       align-content: center;
       transition: all 0.5s ease;
-      //.navigation__title {
-      //  height: 70px;
-      //  display: flex;
-      //}
     }
   }
   &-header {
@@ -682,15 +692,41 @@
           &:nth-child(3) {
             &:after {
               content: attr(data-count);
+              //content: url("image/apartment-details/Fade.png");
+              color: #fff;
+              font-size: 20px;
               position: absolute;
-              left: 0;
-              top: -35px;
-              right: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              top: 0;
+              //right: 50%;
               bottom: 0;
               z-index: 99;
               -webkit-transition: 0.3s;
               transition: 0.3s;
-              background: rgba(0, 0, 0, 0.5);
+              //background: rgba(0, 0, 0, 0.5);
+            }
+            &:before {
+              content: url("images/apartment-details/Fade.png");
+              position: absolute;
+              left: 0;
+              top: -35px;
+              bottom: 0;
+              z-index: 99;
+              -webkit-transition: 0.3s;
+              transition: 0.3s;
+            }
+          }
+          &:nth-child(2) {
+            &:before {
+              content: url("images/apartment-details/Fade.png");
+              position: absolute;
+              left: 0;
+              top: -35px;
+              bottom: 0;
+              z-index: 99;
+              -webkit-transition: 0.3s;
+              transition: 0.3s;
             }
           }
         }
@@ -1158,6 +1194,7 @@
       position: relative;
       display: flex;
       //align-content: flex-start;
+      width: auto !important;
       img {
         flex-direction: column;
         margin: auto;
@@ -1224,6 +1261,11 @@
         width: 25%;
         display: flex;
         justify-content: space-between;
+        a {
+          &.hide {
+            content: url("images/apartment-details/Fade.png");
+          }
+        }
         .gallery-column {
           display: flex;
           flex-direction: column;
