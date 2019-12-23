@@ -191,7 +191,14 @@ export default {
     //calendar
     // eslint-disable-next-line no-unused-vars
     var picker = new Lightpick ({
-      field: document.getElementById('datepicker'),
+      field: document.querySelector('.datepicker'),
+      singleDate: true,
+      autoclose: false,
+      footer: true,
+    });
+    // eslint-disable-next-line no-unused-vars
+    var picker2 = new Lightpick ({
+      field: document.querySelector('#datepicker-mob'),
       singleDate: true,
       autoclose: false,
       footer: true,
@@ -255,7 +262,7 @@ export default {
       }
       else {
         $(this).parent().children('.filters-menu__dropdown').toggleClass('filters-menu__dropdown-active');
-        $(this).parent().children('a').addClass('triangle-blue');
+        $(this).parent().children('a').toggleClass('triangle-blue');
       }
     });
     $('.browsing__input').on('click', function(){
@@ -352,6 +359,34 @@ export default {
       $(this).parent().parent().prev().text(date + ' | ' + fromRange + ' - ' + toRange + ' months');
       $(this).parent().parent().removeClass('filters-menu__dropdown-active');
     });
+
+
+    if (window.innerWidth < 992) {
+      //mobile-version
+      $('.filters-menu__calendar .field-wrap').on('click', function(e){
+        e.preventDefault();
+        let  date = $('#datepicker-mob').val();
+        let  fromRange = $('.irs-from').html();
+        let  toRange = $('.irs-to').html();
+        $(this).parent().parent().prev().text(date + ' | ' + fromRange + ' - ' + toRange + ' months');
+        $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+      });
+      $('.filters-menu__filter-link').on('click', function(e){
+        e.preventDefault();
+        $('.filters-menu-mobile').addClass('filters-menu-mobile-active');
+        $('body').addClass('body-hidden')
+      });
+      $('.browsing__close-filter-icon').on('click', function(e){
+        e.preventDefault();
+        $('.filters-menu-mobile').removeClass('filters-menu-mobile-active');
+        $('body').removeClass('body-hidden')
+      });
+    }
+    else  {
+      //all
+    }
+
+
     // Map filters
     $('.browsing__map-filter-btn').click(function () {
       $(this).toggleClass('browsing__map-filter-btn-active');
@@ -386,7 +421,7 @@ export default {
     //Closest filter mobile
     $('.browsing__closest-filter-mobile').click(function () {
       $('.browsing__closest-mobile').slideToggle();
-      if ($('.browsing__triangle').hasClass('triangle-blue')) {
+      if ($('.browsing__closest-mobile').is('display', 'block')) {
         $('.browsing__triangle').removeClass('triangle-blue');
       }
     });

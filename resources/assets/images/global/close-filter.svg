@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>6CE64C3C-A9AD-48D3-8903-31038E7851B7</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M-01-14" transform="translate(-48.000000, -60.000000)" fill-rule="nonzero">
+            <g id="Header" transform="translate(48.000000, 60.000000)">
+                <g id="ic_close_default">
+                    <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M12,10.4615385 L20.4615385,2 L22,3.53846154 L13.5384615,12 L22,20.4615385 L20.4615385,22 L12,13.5384615 L3.53846154,22 L2,20.4615385 L10.4615385,12 L2,3.53846154 L3.53846154,2 L12,10.4615385 Z" fill="#222634"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,4 +1,23 @@
 {
+  "mobile-menu": [
+    {
+      "active-mobile": [
+        {
+          "link": "landlord.html",
+          "name": "Landlord"
+        },
+        {
+          "link": "tenant.html",
+          "name": "Tenant"
+        },
+        {
+          "link": "collect-rent-online.html",
+          "name": "Browse",
+          "arr": "<i class=\"arr\"></i>"
+        }
+      ]
+    }
+  ],
   "nav-brows": [
     {
       "logo": "images/global/logo.svg",

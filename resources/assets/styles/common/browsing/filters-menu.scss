@@ -28,9 +28,15 @@
     font-size: 14px;
     width: 60px !important;
     margin-left: 20px;
+    padding-right: 25px;
     @media (max-width: 991px) {
       display: flex !important;
       align-items: center;
+    }
+    @media (max-width: 480px) {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
     }
     &:hover {
       color: #222634;
@@ -38,12 +44,15 @@
     &:after {
       content: url("images/global/filters.svg");
       position: absolute;
-      right: -20px;
+      right: 0;
     }
   }
   &__items {
     display: flex;
     align-items: center;
+    @media (max-width: 991px) {
+      display: none;
+    }
     ul {
       list-style: none;
       display: flex;
@@ -53,7 +62,7 @@
       li {
         margin-right: 15px;
         position: relative;
-        a {
+        > a {
           text-decoration: none;
           color: #666b7c;
           font-family: $roboto;
@@ -460,6 +469,12 @@
       display: block;
     }
   }
+}
+.bg-white-browsing {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 900;
 }
 .browsing__closest-mobile {
   display: none;

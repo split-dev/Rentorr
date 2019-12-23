@@ -3,6 +3,7 @@
   {{> ../common/head }}
 </head>
 <body class="browsing">
+    {{> ../common/mobile-menu}}
     {{> ../common/header-footer/nav-brows}}
     {{> ../common/modal/sign-in}}
     {{> ../common/modal/sign-up}}
@@ -12,6 +13,114 @@
     {{> ../common/modal/send-me}}
     {{> ../common/modal/keep-me}}
     {{> ../common/browsing/filters-menu}}
+
+    <div class="filters-menu-mobile">
+        <div class="filters-menu__items">
+            <div class="browsing__close-filter">
+                <a class="browsing__close-filter-icon" href="#">
+                    <img src="images/global/close-filter.svg" alt="">
+                </a>
+                <a class="browsing__close-btn" href="#">CLEAR</a>
+            </div>
+            <ul>
+                <li>
+                    <p>Price Range</p>
+                    <div class="filters-menu__dropdown filters-menu__price">
+                        <form class="main-form__filters">
+                            <div class="filters-menu__input-position">
+                                <div class="field-wrap">
+                                    <input class="form-control main-form__name-input" id="min-price" name="min-price" type="number">
+                                    <label class="control-label" for="min-price">Min price</label>
+                                    <span>R</span>
+                                </div>
+                                <div class="field-wrap">
+                                    <input class="form-control main-form__name-input" id="max-price" name="max-price" type="number">
+                                    <label class="control-label" for="max-price">Max price</label>
+                                    <span>R</span>
+                                </div>
+                            </div>
+                            <p>Average price in Cape Town R 19,000</p>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <p>Apartment</p>
+                    <div class="filters-menu__dropdown filters-menu__apartment">
+                        <div class="filters-menu__checkbox-position">
+                            {{#each global-checkbox-apart}}
+                                <input class="global-checkbox" id="global-checkbox{{id}}-mob" type="checkbox" value="value">
+                                <label class="global-checkbox-label" for="global-checkbox{{for}}-mob">{{label-name}}</label>
+                                <span>{{desc-apart}}</span>
+                            {{/each}}
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>Pets Policy</p>
+                    <div class="filters-menu__dropdown filters-menu__pet">
+                        <div class="filters-menu__checkbox-position">
+                            {{#each global-checkbox-pet}}
+                                <input class="global-checkbox" id="global-checkbox{{id}}-mob" type="checkbox" value="value">
+                                <label class="global-checkbox-label" for="global-checkbox{{for}}-mob">{{label-name}}</label>
+                                <span>{{desc-apart}}</span>
+                            {{/each}}
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>Rooms & Area</p>
+                    <div class="filters-menu__dropdown filters-menu__rooms">
+                        {{#each global-checkbox-rooms}}
+                            <div class="filters-menu__rooms-position">
+                                <p>{{rooms-desc}}</p>
+                                <div class="filters-menu__rooms-number">
+                                    <a class="filters-menu__rooms-minus {{rooms-minus-disabled}}" href="#"><img src="images/global/minus-active.svg" alt=""></a>
+                                    <input class="filters-menu__rooms-input" type="text" data-step="{{step}}" data-min="{{data-min}}" data-max="{{data-max}}" data-value="{{rooms-number-count}}" value="{{rooms-number}}" disabled>
+                                    <a class="filters-menu__rooms-plus" href="#"><img src="images/global/plus-active.svg" alt=""></a>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </li>
+                <li>
+                    <p>Availability & duration</p>
+                    <div class="filters-menu__dropdown filters-menu__calendar">
+                        <div class="filters-menu__calendar-data">
+                            <form class="main-form__filters">
+                                <div class="field-wrap">
+                                    <input class="form-control main-form__name-input datepicker" id="datepicker-mob" name="datepicker-mob" type="text">
+                                    <label class="control-label" for="datepicker-mob">Available</label>
+                                </div>
+                            </form>
+                        </div>
+                        <p>Duration</p>
+                        <span class="min-position">—</span>
+                        <span class="months-position">months</span>
+                        <div class="filters-menu__range-slider">
+                            <input type="text" class="js-range-slider" name="js-range-slider">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>Features</p>
+                    <div class="filters-menu__dropdown filters-menu__features">
+                        <div class="filters-menu__checkbox-position">
+                            {{#each global-checkbox-features}}
+                                <input class="global-checkbox" id="global-checkbox{{id}}-mob" type="checkbox" value="value">
+                                <label class="global-checkbox-label" for="global-checkbox{{for}}-mob">{{label-name}}</label>
+                            {{/each}}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <button class="filters-menu__button button--blue">APPLY</button>
+            </div>
+        </div>
+    </div>
+    <div class="browsing__search-result-mobile">
+        <p>15 properties available for rent in Cape Town</p>
+    </div>
     <div class="container-box-full">
         <div class="browsing__map-position">
             <a class="browsing__sity-info-btn nav__button--white button--white--border" href="#">VIEW City Information</a>
