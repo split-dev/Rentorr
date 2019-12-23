@@ -308,14 +308,25 @@
       &__desc-position {
         position: relative;
         padding: 20px 24px 22px;
+        @media (max-width: 1295px) {
+          padding: 10px 24px 10px;
+        }
         h3 {
           color: #222634;
           font-size: 17px;
           margin: 0 0 10px;
           @include over-extra;
+          @media (max-width: 1295px) {
+            line-height: 30px;
+          }
           @media (max-width: 1070px) {
             max-width: 190px;
           }
+        }
+      }
+      &__adress {
+        @media (max-width: 1295px) {
+          line-height: 22px;
         }
       }
     }
