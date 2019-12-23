@@ -398,6 +398,9 @@
     @media (max-width: 1200px) {
       left: 0;
     }
+    @media (max-width: 991px) {
+      left: -50px;
+    }
     &:hover {
       &:before {
         content: url("images/global/filterMap-active.svg");
@@ -579,6 +582,9 @@
   box-shadow: 0 2px 4px rgba(201, 202, 209, 0.5);
   @media (max-width: 1200px) {
     left: 70px !important;
+  }
+  @media (max-width: 991px) {
+    left: 20px !important;
   }
   #cd-zoom-out {
     width: 30px;
