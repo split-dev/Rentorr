@@ -1,10 +1,5 @@
 .browsing {
   overflow-x: visible;
-  //.nicescroll-rails,
-  //.nicescroll-rails-vr {
-  //  display: none !important;
-  //  pointer-events: none !important;
-  //}
   .nicescroll-rails {
     width: 13px !important;
   }
@@ -358,11 +353,6 @@
     .browsing__google-map {
       display: block;
     }
-    //.nicescroll-rails,
-    //.nicescroll-rails-vr {
-    //  display: block !important;
-    //  pointer-events: auto !important;
-    //}
   }
   .container-box-full {
     position: relative;

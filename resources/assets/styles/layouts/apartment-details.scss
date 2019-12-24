@@ -825,7 +825,7 @@
         color: #222634;
         @include over-extra;
         font-size: 16px;
-        font-weight: 900;
+        font-weight: 800;
       }
       &_mobile {
         @include media-breakpoint-down(md) {
@@ -1182,7 +1182,7 @@
         color: #222634;
         @include over-extra;
         font-size: 16px;
-        font-weight: 900;
+        font-weight: 800;
       }
     }
     &__gallery2 {
