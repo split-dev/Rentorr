@@ -1,0 +1,818 @@
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="apartment-details apartment">
+{{> ../common/mobile-menu}}
+{{> ../common/header-footer/nav}}
+<section class="apartment-details-header">
+  {{#with background}}
+    <nav class='navigation'>
+      <div class='navigation__title'>
+        <div class="div_price">
+          <h1>4 Bed, 2 Bath Apartment for R19,470</h1><p>&nbsp/MONTH</p>
+        </div>
+        <div class="div">
+          <a href="#" class="button--blue">Ask a question</a>
+          <a href="#" class="button--white">Apply Now</a>
+        </div>
+      </div>
+    </nav>
+    <div class="apartment-details-header__position-in-header">
+      <div class="apartment-details-header__slider">
+        {{> ../common/browsing/apartment-tile}}
+      </div>
+      <div class="container container_mobile">
+        <div class="apartment-details-header__title-mobile">
+          <a href="#" class="button--blue">Verified</a>
+          <h1>Smart 1bedroomer in downtown</h1>
+          <span class="target">6280 Northampton Boulevard, Cape Town</span>
+          <div class="row-statist">
+            <p class="bed">4</p>
+            <p class="bath">2</p>
+            <p class="size">187m<sup>2</sup></p>
+            <p class="bild">Apartment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="apartment-details-header__bcground" style="background-image: url('{{ bgd }}')">
+      <a href="#"><img class="images arrow-back" src="{{arrow-back}}" alt="back"></a>
+      <div class="container container_mobile">
+        <div class="apartment-details-header__title header header-content">
+          <a href="#" class="button--blue">Verified</a>
+          <h1>Smart 1bedroomer in downtown</h1>
+          <span class="target">6280 Northampton Boulevard, Cape Town</span>
+          <div class="row-statist">
+            <p class="bed">4</p>
+            <p class="bath">2</p>
+            <p class="size">187m<sup>2</sup></p>
+            <p class="bild">Apartment</p>
+          </div>
+          <div class="apartment-details-header__gallery">
+            <div class="gallery-img d-flex">
+              <div id="aniimated-thumbnials">
+                {{#each img-apart}}
+                  <a href="{{bgd_slide}}">
+                    <img class="galimg" src="{{apart}}" />
+                  </a>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/with}}
+</section>
+<section class="apartment-details-blocks">
+  <div class="container container_mobile">
+    <div class="apartment-details-blocks__features">
+      <div class="apartment-details-blocks__description">
+        <h3>Apartment Description</h3>
+        <p class="bottom-line">This is a beautiful, spacious 1 bedroom apartment located right on the East Riverside district! It is super
+          close to downtown and you get a beautiful view of the city skyline from the dog park! I have barely lived in
+          it
+          and the condition is like new. <br><br>It is on the first floor and parking is always available right in
+          front. It is newly renovated and comes with
+          top of the line amenities.</p>
+        <h3>Cool Features</h3>
+        <div class="features-img bottom-line">
+          {{#each img-symbol}}
+            <div class="features-img-text">
+              <a class="images" href="#"><img src="{{symbol}}" alt="cool features"></a>
+              <span class="symbol">{{text}}</span>
+            </div>
+          {{/each}}
+        </div>
+        <h3>Pet Policy</h3>
+        <div class="features-img bottom-line">
+          {{#with img-symbol-pets}}
+            <div class="features-img-text">
+              <a class="images" href="#"><img src="{{symbol}}" alt="cool features"></a>
+              <span class="symbol">{{text}}</span>
+            </div>
+          {{/with}}
+        </div>
+        <div class="message">
+          {{#with client-avatar}}
+            <div class="message-text">
+              <h3 class="text-h3">Meet <a href="#" class="link-name">{{first-name}} {{last-name}}</a> — your future Landlord</h3>
+              <div class="message-img-text__mobile">
+                <img class="images images_mass" src="{{avatar}}" alt="uncle Bob">
+                <img class="images images_check" src="{{avatar_check}}" alt="check">
+              </div>
+              <p class="date">Member since June, 2018</p>
+              <p class="date dot"></p>
+              <p class="date Estate">Real Estate Company</p>
+              <p>It is on the first floor and parking is always available right in front. It is newly renovated and comes
+                with top of the line… amenities.</p>
+            </div>
+            <div class="message-img-text">
+              <img class="images images_mass" src="{{avatar}}" alt="uncle Bob">
+              <img class="images images_check" src="{{avatar_check}}" alt="check">
+              <a href="#" class="link-bold">Message {{first-name}}</a>
+            </div>
+          {{/with}}
+        </div>
+      </div>
+      <div class="apartment-details-blocks__map">
+        <div class="apartment-details-blocks__buttons-on-map">
+          <div class="map" id="map1"></div>
+        </div>
+<!--        {{#with map_pleace}}-->
+<!--          <div class="map">-->
+<!--            <a class="images" href="#"><img src="{{map}}" alt="cool features"></a>-->
+<!--          </div>-->
+<!--        {{/with}}-->
+        <div class="apartment-details-blocks__undermap">
+          <div class="apartment-details-blocks__block-top bottom-line-small">
+            <div class="apartment-details-blocks__checkbox-position">
+              <input class="apartment-details-blocks__checkbox" id="apartment-details-blocks__checkbox1" type="checkbox" value="value">
+              <label class="apartment-details-blocks__checkbox-label" for="apartment-details-blocks__checkbox1"></label>
+            </div>
+            <p class="h-font">R19,470</p><p class="map-font">/month</p>
+<!--            <p class="h-font">R19,470</p><p class="map-font heard">/month</p>-->
+          </div>
+          <div class="apartment-details-blocks__block-middle bottom-line-small">
+            <p class="map-font">Availability</p>
+            <p class="big-font checker">Right Now</p>
+            <p class="map-font">Duration</p>
+            <p class="big-font calendar">12 months</p>
+          </div>
+          <div class="apartment-details-blocks__block-bottom bottom-line-small">
+            <div class="blocks-allow">
+              <p class="map-font">Monthly Rent</p><p class="big-font">R19,470</p>
+            </div>
+            <div class="blocks-allow">
+              <p class="map-font">Security Deposit</p><p class="big-font">R0.00</p>
+            </div>
+            <div class="blocks-allow">
+              <p class="map-font">What you’ll pay at move in</p><p class="big-font">R19,470</p>
+            </div>
+            <a href="#" class="button--blue">Apply Now</a>
+          </div>
+          <div class="apartment-details-blocks__block-text">
+            <p class="map-font-big">This home is on people’s minds.</p>
+            <p class="map-font-middle">It’s been viewed 500+ times in the past week.</p>
+          </div>
+        </div>
+        <a href="#" class="link-vulgatus">Report this listing</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="apartment-details-map">
+    <div class="apartment-details-map__bcground">
+      <div class="apartment-details-map__buttons-on-map">
+        <div class="map" id="map"></div>
+      </div>
+    </div>
+    <div class="apartment-details-map__around">
+      <div class="container container_mobile">
+        <div class="apartment-details-map__title">
+          <h3>Similar properties nearby</h3>
+          <div class="apartment-details-map__gallery">
+            <div class="apartment-details-map__position">
+              {{> ../common/browsing/apartment-tile}}
+            </div>
+          </div>
+          <div class="apartment-details-map__gallery2">
+            {{#each img-apart-slider}}
+              <div class="apartment-details-map__position2">
+<!--              <div class="apartment-tile__desc-position">-->
+                <img class="galimg" src="{{apart}}" />
+                <div class="zar-box">
+                  <span>ZAR</span>
+                  <span>{{zar}}</span>
+                </div>
+                <h3>{{title}}</h3>
+                <p class="apartment-tile__adress">{{apartment-tile__adress}}</p>
+              </div>
+            {{/each}}
+          </div>
+          <div class="apartment-details-map__button">
+            <a href="#" class="button--white">Show More</a>
+          </div>
+          <div class="apartment-details-map__other">
+            <div class="offset-text">
+              <h3>More places to rent in Cape Town:</h3>
+              <a href="#">Apartment</a>
+              <a href="#">Houses</a>
+              <a href="#">Rooms for Rent</a>
+            </div>
+            <div class="offset-text">
+              <h3>Renters are also looking for:</h3>
+              <a href="#">Durban</a>
+              <a href="#">Pretoria</a>
+              <a href="#">Bloemfontein</a>
+              <a href="#">Johannesburg</a>
+              <a href="#">Soweto</a>
+              <a href="#">Rustenburg</a>
+              <a href="#">Port Elizabeth</a>
+              <a href="#">East London</a>
+              <a href="#">Nelspruit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{{> ../common/header-footer/footer }}
+<script type="text/javascript">
+  // Определяем переменную map
+  var map, map1;
+  // Функция initMap которая отрисует карту на странице
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -33.9752704, lng: 18.5228585},
+      zoom: 16,
+      disableDefaultUI: true,
+      zoomControl: true,
+      styles: [
+        {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#444444"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative.locality",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#F7F7F7"
+            },
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            },
+            {
+              "saturation": "-65"
+            },
+            {
+              "lightness": "45"
+            },
+            {
+              "gamma": "1.78"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": -100
+            },
+            {
+              "lightness": 45
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#87878A"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway.controlled_access",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway.controlled_access",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway.controlled_access",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.line",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "saturation": "-33"
+            },
+            {
+              "lightness": "22"
+            },
+            {
+              "gamma": "2.08"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#C4D6E5"
+            },
+            {
+              "visibility": "simplified"
+            }
+          ]
+        }
+      ]
+    });
+    map1 = new google.maps.Map(document.getElementById('map1'), {
+      center: {lat: -33.9752704, lng: 18.5228585},
+      zoom: 16,
+      disableDefaultUI: true,
+      zoomControl: false,
+      styles: [
+        {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#444444"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative.locality",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#F7F7F7"
+            },
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            },
+            {
+              "saturation": "-65"
+            },
+            {
+              "lightness": "45"
+            },
+            {
+              "gamma": "1.78"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": -100
+            },
+            {
+              "lightness": 45
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#87878A"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway.controlled_access",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway.controlled_access",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway.controlled_access",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.line",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "saturation": "-33"
+            },
+            {
+              "lightness": "22"
+            },
+            {
+              "gamma": "2.08"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#C4D6E5"
+            },
+            {
+              "visibility": "simplified"
+            }
+          ]
+        }
+      ]
+    });
+    var image = {
+      url: 'images/global/pin-map_orange.svg',
+      scaledSize: new google.maps.Size(62, 42),
+      labelOrigin: new google.maps.Point(32, 15)
+    };
+    var apartDoor = new google.maps.Marker({
+      position: {lat: -33.9752704, lng: 18.5228585},
+      map: map1,
+      title: 'Rentorr',
+      icon: image,
+    });
+  }
+
+  window.initMap = initMap;
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-_AEib7vHKXFg7mgGbQPhrweik5bo9X0&callback=initMap"></script>
+</body>
+</html>

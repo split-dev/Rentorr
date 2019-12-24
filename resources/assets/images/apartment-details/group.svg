@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="351px" height="459px" viewBox="0 0 351 459" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 104 0 104 30 0 30"></polygon>
+        <filter x="-6.7%" y="-16.7%" width="113.5%" height="146.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.789611085   0 0 0 0 0.792248372   0 0 0 0 0.817947491  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="112 0 226 0 226 30 112 30"></polygon>
+        <filter x="-6.1%" y="-16.7%" width="112.3%" height="146.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.789611085   0 0 0 0 0.792248372   0 0 0 0 0.817947491  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="234 0 303 0 303 30 234 30"></polygon>
+        <filter x="-10.1%" y="-16.7%" width="120.3%" height="146.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.789611085   0 0 0 0 0.792248372   0 0 0 0 0.817947491  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="311 0 343 0 343 30 311 30"></polygon>
+        <filter x="-21.9%" y="-16.7%" width="143.7%" height="146.7%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.789611085   0 0 0 0 0.792248372   0 0 0 0 0.817947491  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="0" y="391" width="30" height="60"></rect>
+        <filter x="-23.3%" y="-8.3%" width="146.7%" height="123.3%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.789611085   0 0 0 0 0.792248372   0 0 0 0 0.817947491  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-11" x="0" y="345" width="30" height="30"></rect>
+        <filter x="-23.3%" y="-16.7%" width="146.7%" height="146.7%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.789611085   0 0 0 0 0.792248372   0 0 0 0 0.817947491  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="01-03-Apartment-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-03-02-01-Listing-Page" transform="translate(-236.000000, -1708.000000)">
+            <g id="Map" transform="translate(-22.000000, 1686.000000)">
+                <g id="Group" transform="translate(262.000000, 24.000000)">
+                    <g id="Group-2">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <polygon id="Shape" fill="#3B3F4E" fill-rule="nonzero" points="92 12.8057143 91.1942857 12 88 15.1942857 84.8057143 12 84 12.8057143 87.1942857 16 84 19.1942857 84.8057143 20 88 16.8057143 91.1942857 20 92 19.1942857 88.8057143 16"></polygon>
+                        <text id="Pharmacy" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="14" fill="#222634">
+                            <tspan x="12" y="21">Pharmacy</tspan>
+                        </text>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <polygon id="Shape" fill="#3B3F4E" fill-rule="nonzero" points="216 12.8057182 215.194286 12 212 15.1943011 208.805714 12 208 12.8057182 211.194286 16.0000192 208 19.1943203 208.805714 20.0000385 212 16.8057374 215.194286 20.0000385 216 19.1943203 212.805714 16.0000192"></polygon>
+                    <text id="Restaurants" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="14" fill="#222634">
+                        <tspan x="124" y="21">Restaurants</tspan>
+                    </text>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <polygon id="Shape" fill="#3B3F4E" fill-rule="nonzero" points="291 12.8057182 290.194286 12 287 15.1943011 283.805714 12 283 12.8057182 286.194286 16.0000192 283 19.1943203 283.805714 20.0000385 287 16.8057374 290.194286 20.0000385 291 19.1943203 287.805714 16.0000192"></polygon>
+                    <text id="Gym" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="14" fill="#222634">
+                        <tspan x="246" y="21">Gym</tspan>
+                    </text>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    </g>
+                    <g id="Icons/8/plus_default" transform="translate(323.000000, 11.000000)" fill="#3B3F4E" stroke="#3B3F4E" stroke-width="0.571428571">
+                        <path d="M4.28567856,0.285714286 L3.71423809,0.285714286 L3.71366667,3.71366667 L0.285714286,3.71423809 L0.285714286,4.28567856 L3.71366667,4.28525 L3.71423811,7.71428571 L4.28567857,7.71428571 L4.28525,4.28525 L7.71428571,4.28567857 L7.71428571,3.71423811 L4.28525,3.71366667 L4.28567856,0.285714286 Z" id="Combined-Shape"></path>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    </g>
+                    <g id="Rectangle-Copy-3">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                    </g>
+                    <g id="icons/map-layers" transform="translate(5.000000, 350.000000)" stroke-width="0.840000033">
+                        <polygon id="Path-4" stroke="#222634" fill="#FFFFFF" opacity="0.594824225" points="2 13.2163452 10.5227188 19 19 13.6803841 11.012252 8"></polygon>
+                        <polygon id="Path-4" stroke="#3C404E" fill="#FFFFFF" opacity="0.878199408" points="2 10.2163452 10.5227188 16 19 10.6803841 11.012252 5"></polygon>
+                        <polygon id="Path-4" stroke="#3C404E" fill="#3C404E" points="2 7.21634521 10.5227188 13 19 7.68038406 11.012252 2"></polygon>
+                    </g>
+                    <g id="Icons/16/plus_default" transform="translate(8.000000, 403.000000)" fill="#3C404E" stroke="#3C404E">
+                        <path d="M7.375,1.375 L6.625,1.375 L6.625,6.625 L1.375,6.625 L1.375,7.375 L6.625,7.375 L6.625,12.625 L7.375,12.625 L7.375,7.375 L12.625,7.375 L12.625,6.625 L7.375,6.625 L7.375,1.375 Z" id="Combined-Shape"></path>
+                    </g>
+                    <g id="Icons/16/minus_default" transform="translate(8.000000, 425.000000)" fill="#3C404E" stroke="#3C404E">
+                        <rect id="Rectangle" x="1.375" y="6.625" width="11.25" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
