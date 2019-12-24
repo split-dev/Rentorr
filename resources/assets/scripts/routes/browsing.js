@@ -2,7 +2,7 @@ import 'slick-carousel';
 import Forms from './forms';
 import 'ion-rangeslider';
 import Lightpick from 'lightpick/lightpick';
-/*import 'jquery.nicescroll/jquery.nicescroll'*/
+import 'jquery.nicescroll/jquery.nicescroll'
 
 export default {
   init() {
@@ -50,23 +50,30 @@ export default {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
+        $('.browsing__tile-position').getNiceScroll().remove();
+        $('.nicescroll-box').getNiceScroll().remove();
       }
-      /*//tile scroll
-      $('.browsing__tile-position').niceScroll({
-        cursorcolor: '#9ba0b5',
-        cursorwidth: '5px',
-        cursorfixedheight: 50,
-        cursoropacitymin: 1,
-        horizrailenabled: false,
-      });
-      $('.nicescroll-box').niceScroll({
-        cursorcolor: '#9ba0b5',
-        cursorwidth: '5px',
-        cursorfixedheight: 50,
-        cursoropacitymin: 1,
-        horizrailenabled: false,
-      });
-      $('.browsing__tile-position').getNiceScroll().resize();*/
+      if (window.innerWidth > 991) {
+        //tile scroll
+        $('.browsing__tile-position').niceScroll({
+          cursorcolor: '#9ba0b5',
+          cursorwidth: '5px',
+          cursorfixedheight: 50,
+          cursoropacitymin: 1,
+          horizrailenabled: false,
+        });
+        $('.nicescroll-box').niceScroll({
+          cursorcolor: '#9ba0b5',
+          cursorwidth: '5px',
+          cursorfixedheight: 50,
+          cursoropacitymin: 1,
+          horizrailenabled: false,
+        });
+      }
+      else  {
+        //all
+      }
+      /*$('.browsing__tile-position').getNiceScroll().resize();*/
     });
 
     $('.filters-menu__send-me').click(function (e) {
