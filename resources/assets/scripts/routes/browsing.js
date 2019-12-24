@@ -2,7 +2,7 @@ import 'slick-carousel';
 import Forms from './forms';
 import 'ion-rangeslider';
 import Lightpick from 'lightpick/lightpick';
-import 'jquery.nicescroll/jquery.nicescroll'
+/*import 'jquery.nicescroll/jquery.nicescroll'*/
 
 export default {
   init() {
@@ -51,7 +51,7 @@ export default {
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
       }
-      //tile scroll
+      /*//tile scroll
       $('.browsing__tile-position').niceScroll({
         cursorcolor: '#9ba0b5',
         cursorwidth: '5px',
@@ -66,7 +66,7 @@ export default {
         cursoropacitymin: 1,
         horizrailenabled: false,
       });
-      $('.browsing__tile-position').getNiceScroll().resize();
+      $('.browsing__tile-position').getNiceScroll().resize();*/
     });
 
     $('.filters-menu__send-me').click(function (e) {
