@@ -51,7 +51,7 @@ export default {
 
       if ($('.browsing').hasClass('click-open-map')) {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
-        $('.browsing__tile-position').getNiceScroll().resize();
+        $('.browsing').removeClass('nicescroll-rails');
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
         $('.apartment-tile__slider').slick('unslick');
