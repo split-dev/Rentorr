@@ -47,6 +47,21 @@
     background-color: #317fd8 !important;
   }
 }
+.button--orange {
+  width: 100px;
+  height: 32px;
+  color: $white !important;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  background-color: #ff8364;
+  text-transform: uppercase;
+  transition: 0.3s;
+  @include over-extra;
+  @include flex-center;
+  &:hover {
+    background-color: #ff7e42 !important;
+  }
+}
 .second-link {
   position: relative;
   font-size: 12px;

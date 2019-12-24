@@ -77,13 +77,13 @@
       justify-content: space-around;
       margin: auto;
       padding-left: 10%;
-      .button--blue {
-        width: 250px;
+      .button--orange {
+        width: 200px;
         height: 36px;
         margin-right: 20px;
       }
-      .button--white {
-        border: 2px solid rgba(183, 184, 199, 0.25);
+      .button--white--border {
+        height: 36px;
       }
     }
     .div_price {
@@ -102,7 +102,7 @@
       color: #222634;
       @include over-extra;
       font-size: 24px;
-      font-weight: 900;
+      font-weight: 800;
       margin: auto;
       @include media-breakpoint-down(md) {
         font-size: 16px;
@@ -504,7 +504,7 @@
         color: #fff;
         @include over-extra;
         font-size: 46px;
-        font-weight: 900;
+        font-weight: 800;
         line-height: 45px;
         margin-bottom: 21px;
       }
@@ -710,7 +710,7 @@
               content: url("images/apartment-details/Fade.png");
               position: absolute;
               left: 0;
-              top: -35px;
+              top: -33px;
               bottom: 0;
               z-index: 99;
               -webkit-transition: 0.3s;
@@ -722,7 +722,7 @@
               content: url("images/apartment-details/Fade.png");
               position: absolute;
               left: 0;
-              top: -35px;
+              top: -33px;
               bottom: 0;
               z-index: 99;
               -webkit-transition: 0.3s;
@@ -1657,13 +1657,17 @@
     width: 100%;
     height: 100%;
   }
+  .galimg {
+    width: 136px !important;
+    height: 92px !important;
+  }
 }
 @-moz-document url-prefix() {
   .apartment-details-header__gallery .gallery-img a:nth-child(2)::before {
-    top: -34px;
+    top: -32px;
   }
   .apartment-details-header__gallery .gallery-img a:nth-child(3)::before {
-    top: -34px;
+    top: -32px;
   }
 }
 @supports (-ms-ime-align:auto) {
