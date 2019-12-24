@@ -2,7 +2,7 @@ import 'slick-carousel';
 import Forms from './forms';
 import 'ion-rangeslider';
 import Lightpick from 'lightpick/lightpick';
-import 'jquery.nicescroll/jquery.nicescroll'
+/*import 'jquery.nicescroll/jquery.nicescroll'*/
 
 export default {
   init() {
@@ -46,7 +46,7 @@ export default {
       }
 
       //tile scroll
-      $('.browsing__tile-position').niceScroll({
+      /*$('.browsing__tile-position').niceScroll({
         cursorcolor: '#9ba0b5',
         cursorwidth: '5px',
         cursorfixedheight: 50,
@@ -59,7 +59,7 @@ export default {
         cursorfixedheight: 50,
         cursoropacitymin: 1,
         horizrailenabled: false,
-      });
+      });*/
     });
 
     $('.filters-menu__send-me').click(function (e) {
