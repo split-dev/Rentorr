@@ -60,13 +60,13 @@ export default {
         cursoropacitymin: 1,
         horizrailenabled: false,
       });
-      $('.nicescroll-box').niceScroll({
+      /*$('.nicescroll-box').niceScroll({
         cursorcolor: '#9ba0b5',
         cursorwidth: '5px',
         cursorfixedheight: 50,
         cursoropacitymin: 1,
         horizrailenabled: false,
-      });
+      });*/
     });
 
     $('.filters-menu__send-me').click(function (e) {
