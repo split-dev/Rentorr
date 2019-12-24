@@ -24,7 +24,7 @@ export default {
     });
     $('.open-map').click(function (e) {
       e.preventDefault();
-      $('html, body').toggleClass('body-hidden');
+      /*$('html, body').toggleClass('body-hidden');*/
       $('.browsing').toggleClass('click-open-map');
       $('.browsing__sity-info').removeClass('browsing__sity-info-active');
       $('.browsing__map-position').removeClass('browsing__map-position-off');
