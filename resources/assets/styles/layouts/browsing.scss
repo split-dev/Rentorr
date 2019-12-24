@@ -8,10 +8,6 @@
     display: none !important;
     pointer-events: none !important;
   }
-  #ascrail2001.city-info-scroll {
-    display: block !important;
-    pointer-events: auto !important;
-  }
   &__search-result-mobile {
     align-items: center;
     justify-content: space-between;
@@ -180,6 +176,10 @@
     justify-content: center;
   }
   &.click-open-map {
+    #ascrail2001.city-info-scroll {
+      display: block !important;
+      pointer-events: auto !important;
+    }
     .browsing__search-result-mobile {
       display: flex !important;
       align-items: center;
@@ -649,6 +649,9 @@
   justify-content: center;
   background-color: #fff;
   z-index: -1;
+  @media (min-width: 992px) {
+    display: none;
+  }
   &.filters-menu-mobile-active {
     overflow: auto !important;
     z-index: 9999;
