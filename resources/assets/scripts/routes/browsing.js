@@ -2,7 +2,7 @@ import 'slick-carousel';
 import Forms from './forms';
 import 'ion-rangeslider';
 import Lightpick from 'lightpick/lightpick';
-/*import 'jquery.nicescroll/jquery.nicescroll'*/
+import 'jquery.nicescroll/jquery.nicescroll'
 
 export default {
   init() {
@@ -24,7 +24,7 @@ export default {
     });
     $('.open-map').click(function (e) {
       e.preventDefault();
-      /*$('html, body').toggleClass('body-hidden');*/
+      $('html, body').toggleClass('body-hidden');
       $('.browsing').toggleClass('click-open-map');
       $('.browsing__sity-info').removeClass('browsing__sity-info-active');
       $('.browsing__map-position').removeClass('browsing__map-position-off');
@@ -38,6 +38,13 @@ export default {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
+        $('.apartment-tile__slider').slick('unslick');
+        $('.apartment-tile__slider').slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
       }
       if ($('.browsing').hasClass('click-open-map')) {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
@@ -46,7 +53,7 @@ export default {
       }
 
       //tile scroll
-      /*$('.browsing__tile-position').niceScroll({
+      $('.browsing__tile-position').niceScroll({
         cursorcolor: '#9ba0b5',
         cursorwidth: '5px',
         cursorfixedheight: 50,
@@ -59,7 +66,7 @@ export default {
         cursorfixedheight: 50,
         cursoropacitymin: 1,
         horizrailenabled: false,
-      });*/
+      });
     });
 
     $('.filters-menu__send-me').click(function (e) {

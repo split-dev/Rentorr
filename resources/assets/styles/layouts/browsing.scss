@@ -177,7 +177,6 @@
     flex-wrap: wrap;
     padding: 30px 0;
     margin: 0 -6px;
-    transition: 0.3s;
     justify-content: center;
   }
   &.click-open-map {
@@ -292,7 +291,6 @@
           margin-left: 30px;
           cursor: pointer;
           padding: 0;
-          transition: 0.3s;
         }
         & + label:before {
           content: url("images/global/heart-white.svg");
