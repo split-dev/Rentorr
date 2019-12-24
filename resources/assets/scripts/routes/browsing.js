@@ -48,30 +48,22 @@ export default {
       }
       if ($('.browsing').hasClass('click-open-map')) {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
+        if (window.innerWidth > 991) {
+          //tile scroll
+          $('.browsing__tile-position').niceScroll({
+            cursorcolor: '#9ba0b5',
+            cursorwidth: '5px',
+            cursorfixedheight: 50,
+            cursoropacitymin: 1,
+            horizrailenabled: false,
+          });
+        }
+        else  {
+          //all
+        }
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
         $('.browsing__tile-position').getNiceScroll().remove();
-        $('.nicescroll-box').getNiceScroll().remove();
-      }
-      if (window.innerWidth > 991) {
-        //tile scroll
-        $('.browsing__tile-position').niceScroll({
-          cursorcolor: '#9ba0b5',
-          cursorwidth: '5px',
-          cursorfixedheight: 50,
-          cursoropacitymin: 1,
-          horizrailenabled: false,
-        });
-        $('.nicescroll-box').niceScroll({
-          cursorcolor: '#9ba0b5',
-          cursorwidth: '5px',
-          cursorfixedheight: 50,
-          cursoropacitymin: 1,
-          horizrailenabled: false,
-        });
-      }
-      else  {
-        //all
       }
       /*$('.browsing__tile-position').getNiceScroll().resize();*/
     });
@@ -421,14 +413,22 @@ export default {
       $('.browsing__sity-info').addClass('browsing__sity-info-active');
       $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
       $('.browsing__map-position').addClass('browsing__map-position-off');
-      $('#ascrail2001').addClass('city-info-scroll');
+      $('.nicescroll-rails').addClass('d-none');
+      $('.nicescroll-box').niceScroll({
+        cursorcolor: '#9ba0b5',
+        cursorwidth: '5px',
+        cursorfixedheight: 50,
+        cursoropacitymin: 1,
+        horizrailenabled: false,
+      });
     });
     //close button
     $('.browsing__sity-info-close').click(function () {
       $('.browsing__sity-info').removeClass('browsing__sity-info-active');
       $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
       $('.browsing__map-position').removeClass('browsing__map-position-off');
-      $('#ascrail2001').removeClass('city-info-scroll');
+      $('.nicescroll-box').getNiceScroll().remove();
+      $('.nicescroll-rails').removeClass('d-none');
     });
 
     //MOBILE VERSION

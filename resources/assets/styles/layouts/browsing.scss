@@ -1,13 +1,12 @@
 .browsing {
   overflow-x: visible;
-  .nicescroll-rails,
-  .nicescroll-rails-vr {
-    display: none !important;
-    pointer-events: none !important;
-  }
-  #ascrail2001 {
-    display: none !important;
-    pointer-events: none !important;
+  //.nicescroll-rails,
+  //.nicescroll-rails-vr {
+  //  display: none !important;
+  //  pointer-events: none !important;
+  //}
+  .nicescroll-rails {
+    width: 7px !important;
   }
   &__search-result-mobile {
     align-items: center;
@@ -177,10 +176,6 @@
     justify-content: center;
   }
   &.click-open-map {
-    #ascrail2001.city-info-scroll {
-      display: block !important;
-      pointer-events: auto !important;
-    }
     .browsing__search-result-mobile {
       display: flex !important;
       align-items: center;
@@ -363,11 +358,11 @@
     .browsing__google-map {
       display: block;
     }
-    .nicescroll-rails,
-    .nicescroll-rails-vr {
-      display: block !important;
-      pointer-events: auto !important;
-    }
+    //.nicescroll-rails,
+    //.nicescroll-rails-vr {
+    //  display: block !important;
+    //  pointer-events: auto !important;
+    //}
   }
   .container-box-full {
     position: relative;
@@ -443,7 +438,7 @@
     right: 0;
     background: #fff;
     z-index: 21;
-    padding-right: 30px;
+    padding-right: 20px;
     visibility: hidden;
     height: calc(100vh - 120px);
   }
