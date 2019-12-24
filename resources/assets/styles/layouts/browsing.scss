@@ -6,7 +6,7 @@
   //  pointer-events: none !important;
   //}
   .nicescroll-rails {
-    width: 7px !important;
+    width: 13px !important;
   }
   &__search-result-mobile {
     align-items: center;
@@ -439,6 +439,7 @@
     background: #fff;
     z-index: 21;
     padding-right: 20px;
+    margin-right: 10px;
     visibility: hidden;
     height: calc(100vh - 120px);
   }

@@ -4844,7 +4844,7 @@ jquery.nicescroll@^3.7.6:
   dependencies:
     jquery ">=1.8.3"
 
-jquery@>=1.8, jquery@>=1.8.3, jquery@^3.3.1:
+jquery@>=1.7.0, jquery@>=1.8, jquery@>=1.8.3, jquery@^3.3.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
   integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
@@ -5047,19 +5047,19 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lightpick@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/lightpick/-/lightpick-1.5.2.tgz#0c0bfb0a9d8bb1c729025c2a20884ed7970a277c"
-  integrity sha512-ySxarv1UUaO2KNRljn1rMLDZ3pN6RyQazmTnudlxUMbhL/ob0ttrEgr7JJpqnB1dDNxQjFbA0piyovUZwgHxgw==
-  dependencies:
-    moment "^2.22.2"
-
 lightgallery@^1.6.12:
   version "1.6.12"
   resolved "https://registry.yarnpkg.com/lightgallery/-/lightgallery-1.6.12.tgz#c024428d1488969075dc551a85dddf905adb0e4b"
   integrity sha512-t8hIgZc3ZvGW9pG8Bd68bXcUj7FWGewaroT7ADYo2fvQTgkqcMMLtXw9yQclS7BF0soadA0B6BN3MWOEiS2pYA==
   dependencies:
     jquery ">=1.7.0"
+
+lightpick@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/lightpick/-/lightpick-1.5.2.tgz#0c0bfb0a9d8bb1c729025c2a20884ed7970a277c"
+  integrity sha512-ySxarv1UUaO2KNRljn1rMLDZ3pN6RyQazmTnudlxUMbhL/ob0ttrEgr7JJpqnB1dDNxQjFbA0piyovUZwgHxgw==
+  dependencies:
+    moment "^2.22.2"
 
 limiter@^1.0.5:
   version "1.1.4"
