@@ -25,13 +25,13 @@ export default {
     $('.open-map').click(function (e) {
       e.preventDefault();
       //tile scroll
-      $('.browsing__tile-position').niceScroll({
+      /*$('.browsing__tile-position').niceScroll({
         cursorcolor: '#9ba0b5',
         cursorwidth: '5px',
         cursorfixedheight: 50,
         cursoropacitymin: 1,
         horizrailenabled: false,
-      });
+      });*/
       /*$('.nicescroll-box').niceScroll({
         cursorcolor: '#9ba0b5',
         cursorwidth: '5px',
@@ -51,7 +51,7 @@ export default {
 
       if ($('.browsing').hasClass('click-open-map')) {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
-        $('.browsing').removeClass('nicescroll-rails');
+        $('.nicescroll-rails').remove();
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
         $('.apartment-tile__slider').slick('unslick');
@@ -60,6 +60,14 @@ export default {
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+        });
+        //tile scroll
+        $('.browsing__tile-position').niceScroll({
+          cursorcolor: '#9ba0b5',
+          cursorwidth: '5px',
+          cursorfixedheight: 50,
+          cursoropacitymin: 1,
+          horizrailenabled: false,
         });
       }
       if ($('.browsing').hasClass('click-open-map')) {
