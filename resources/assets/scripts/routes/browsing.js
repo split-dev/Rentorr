@@ -45,13 +45,13 @@ export default {
           slidesToShow: 1,
           slidesToScroll: 1,
         });
+        $('.browsing__tile-position').getNiceScroll().resize();
       }
       if ($('.browsing').hasClass('click-open-map')) {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
       }
-
       //tile scroll
       $('.browsing__tile-position').niceScroll({
         cursorcolor: '#9ba0b5',
@@ -60,13 +60,13 @@ export default {
         cursoropacitymin: 1,
         horizrailenabled: false,
       });
-      /*$('.nicescroll-box').niceScroll({
+      $('.nicescroll-box').niceScroll({
         cursorcolor: '#9ba0b5',
         cursorwidth: '5px',
         cursorfixedheight: 50,
         cursoropacitymin: 1,
         horizrailenabled: false,
-      });*/
+      });
     });
 
     $('.filters-menu__send-me').click(function (e) {
