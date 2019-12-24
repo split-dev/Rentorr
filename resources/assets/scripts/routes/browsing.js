@@ -24,6 +24,21 @@ export default {
     });
     $('.open-map').click(function (e) {
       e.preventDefault();
+      //tile scroll
+      $('.browsing__tile-position').niceScroll({
+        cursorcolor: '#9ba0b5',
+        cursorwidth: '5px',
+        cursorfixedheight: 50,
+        cursoropacitymin: 1,
+        horizrailenabled: false,
+      });
+      /*$('.nicescroll-box').niceScroll({
+        cursorcolor: '#9ba0b5',
+        cursorwidth: '5px',
+        cursorfixedheight: 50,
+        cursoropacitymin: 1,
+        horizrailenabled: false,
+      });*/
       $('html, body').toggleClass('body-hidden');
       $('.browsing').toggleClass('click-open-map');
       $('.browsing__sity-info').removeClass('browsing__sity-info-active');
@@ -36,6 +51,7 @@ export default {
 
       if ($('.browsing').hasClass('click-open-map')) {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
+        $('.browsing__tile-position').getNiceScroll().resize();
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
         $('.apartment-tile__slider').slick('unslick');
@@ -45,28 +61,12 @@ export default {
           slidesToShow: 1,
           slidesToScroll: 1,
         });
-        $('.browsing__tile-position').getNiceScroll().resize();
       }
       if ($('.browsing').hasClass('click-open-map')) {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
       }
-      //tile scroll
-      $('.browsing__tile-position').niceScroll({
-        cursorcolor: '#9ba0b5',
-        cursorwidth: '5px',
-        cursorfixedheight: 50,
-        cursoropacitymin: 1,
-        horizrailenabled: false,
-      });
-      $('.nicescroll-box').niceScroll({
-        cursorcolor: '#9ba0b5',
-        cursorwidth: '5px',
-        cursorfixedheight: 50,
-        cursoropacitymin: 1,
-        horizrailenabled: false,
-      });
     });
 
     $('.filters-menu__send-me').click(function (e) {
