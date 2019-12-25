@@ -102,6 +102,17 @@
         "apartment-tile__details-bath": "2",
         "apartment-tile__details-square": "187"
       }
+    ],
+    "slider-header-mob":[
+      {
+        "img": "images/apartment-details/Img_bg_slide.png"
+      },
+      {
+        "img": "images/apartment-details/Img_bg_slide_2.png"
+      },
+      {
+        "img": "images/apartment-details/Img_bg_slide_3.png"
+      }
     ]
   },
   "title":[

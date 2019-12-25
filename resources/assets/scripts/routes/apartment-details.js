@@ -11,7 +11,7 @@ export default {
     });
     $('.apartment-details-map__gallery2').slick({
       dots: true,
-      infinite: true,
+      infinite: false,
       slidesToShow: 3,
       slidesToScroll: 1,
       swipe: true,
@@ -19,13 +19,25 @@ export default {
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 2.1,
+            slidesToShow: 2.5,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 2,
           },
         },
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1.2,
+            slidesToShow: 1.5,
+          },
+        },
+        {
+          breakpoint: 370,
+          settings: {
+            slidesToShow: 1.3,
           },
         },
       ],
@@ -41,7 +53,13 @@ export default {
       thumbWidth: 120,
     });
     function stickyElement() {
-      var header = document.querySelector('.header');
+      if (window.innerWidth > 991) {
+        var header = document.querySelector('.apartment-details-header');
+      }
+      else  {
+        // eslint-disable-next-line no-redeclare
+        var header = document.querySelector('.apartment-details-header__slider');
+      }
       var headerHeight = getComputedStyle(header).height.split('px')[0];
       var navbar = document.querySelector('.navigation');
       var scrollValue = window.scrollY;
