@@ -360,5 +360,52 @@
       "title": "Downtown penthouse",
       "apartment-tile__adress": "72 Willay Road, 7903"
     }
+  ],
+  "apartment-details-checkbox-map-filter": [
+    {
+      "id": "map1",
+      "for": "map1",
+      "label-name": "All"
+    },
+    {
+      "id": "map2",
+      "for": "map2",
+      "label-name": "Schools"
+    },
+    {
+      "id": "map3",
+      "for": "map3",
+      "label-name": "Kindergartens"
+    },
+    {
+      "id": "map4",
+      "for": "map4",
+      "label-name": "Restaurans"
+    },
+    {
+      "id": "map5",
+      "for": "map5",
+      "label-name": "Bars"
+    },
+    {
+      "id": "map6",
+      "for": "map6",
+      "label-name": "Shoping malls"
+    },
+    {
+      "id": "map7",
+      "for": "map7",
+      "label-name": "Pharmacy"
+    },
+    {
+      "id": "map8",
+      "for": "map8",
+      "label-name": "Art spaces"
+    },
+    {
+      "id": "map9",
+      "for": "map9",
+      "label-name": "Gyms"
+    }
   ]
 }

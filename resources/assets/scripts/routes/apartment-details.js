@@ -86,6 +86,21 @@ export default {
       let mass = element.length - 1;
       $(element[mass]).addClass('hide');
     }
+    // Map filters
+    $('.browsing__map-filter-btn').click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass('browsing__map-filter-btn-active');
+      $(this).parent('.browsing__map-filter').toggleClass('browsing__map-filter-active');
+    });
+    $(document).mouseup(function (e){
+      if(jQuery('.browsing__map-filter').hasClass('browsing__map-filter-active')) {
+        var div = $('#browsing__map-filter-show');
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+          $('.browsing__map-filter').removeClass('browsing__map-filter-active');
+          $('.browsing__map-filter-btn').removeClass('browsing__map-filter-btn-active');
+        }
+      }
+    });
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

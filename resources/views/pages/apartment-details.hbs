@@ -5,6 +5,11 @@
 <body class="apartment-details apartment">
 {{> ../common/mobile-menu}}
 {{> ../common/header-footer/nav}}
+{{> ../common/modal/sign-in}}
+{{> ../common/modal/sign-up}}
+{{> ../common/modal/check-email}}
+{{> ../common/modal/forgot-pass}}
+{{> ../common/modal/select-role}}
 <section class="apartment-details-header">
   {{#with background}}
     <nav class='navigation'>
@@ -164,6 +169,15 @@
     <div class="apartment-details-map__bcground">
       <div class="apartment-details-map__buttons-on-map">
         <div class="map" id="map"></div>
+          <div id="cd-zoom-in"></div>
+          <div id="cd-zoom-out"></div>
+          <div class="browsing__map-filter" id="browsing__map-filter-show">
+              <a class="browsing__map-filter-btn" href="#"></a>
+              {{#each apartment-details-checkbox-map-filter}}
+                  <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value">
+                  <label class="global-checkbox-label" for="global-checkbox{{for}}">{{label-name}}</label>
+              {{/each}}
+          </div>
       </div>
     </div>
     <div class="apartment-details-map__around">
@@ -223,9 +237,9 @@
   function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -33.9752704, lng: 18.5228585},
-      zoom: 16,
+      zoom: 15,
       disableDefaultUI: true,
-      zoomControl: true,
+      zoomControl: false,
       styles: [
         {
           "featureType": "administrative",
@@ -505,7 +519,19 @@
               "visibility": "simplified"
             }
           ]
-        }
+        },
+      {
+          "featureType": "poi",
+          "stylers": [
+              {
+                  "visibility": "on"
+              },
+              {
+                  "hue": "#1a5dc6"
+              }
+
+          ]
+      }
       ]
     });
     map1 = new google.maps.Map(document.getElementById('map1'), {
@@ -806,6 +832,46 @@
       title: 'Rentorr',
       icon: image,
     });
+      var markerOval = {
+          url: 'images/global/pin-map_orange.svg',
+          scaledSize: new google.maps.Size(62, 42),
+          labelOrigin: new google.maps.Point(32, 15)
+      };
+      var markerRadius = new google.maps.Marker({
+          position: {lat: -33.9752704, lng: 18.5228585},
+          map: map,
+          title: 'Rentorr',
+          icon: markerOval,
+      });
+      // Add circle overlay and bind to marker
+      var circle = new google.maps.Circle({
+          map: map,
+          radius: 1000,
+          fillColor: '#1b5ec6',
+          strokeColor: '#1b5ec6',
+          strokeOpacity: 0.8,
+          strokeWeight: 1
+      });
+      circle.bindTo('center', markerRadius, 'position');
+      function CustomZoomControl(controlDiv, map) {
+          //grap the zoom elements from the DOM and insert them in the map
+          var controlUIzoomIn= document.getElementById('cd-zoom-in'),
+                  controlUIzoomOut= document.getElementById('cd-zoom-out');
+          controlDiv.appendChild(controlUIzoomIn);
+          controlDiv.appendChild(controlUIzoomOut);
+
+          // Setup the click event listeners and zoom-in or out according to the clicked element
+          google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
+              map.setZoom(map.getZoom()+1)
+          });
+          google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
+              map.setZoom(map.getZoom()-1)
+          });
+      }
+      var zoomControlDiv = document.createElement('div');
+      zoomControlDiv.setAttribute('class', 'zoom-map');
+      var zoomControl = new CustomZoomControl(zoomControlDiv, map);
+      map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(zoomControlDiv);
   }
 
   window.initMap = initMap;
