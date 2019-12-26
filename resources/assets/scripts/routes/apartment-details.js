@@ -129,6 +129,7 @@ export default {
     $('.reporting__next-btn').click(function (e) {
       e.preventDefault();
       $('.reporting').removeClass('reporting-active');
+      $('html, body').removeClass('body-hidden reporting-hidden');
       $('.reasons').addClass('reasons-active');
       $('html, body').addClass('reasons-hidden');
       $('.send-me').removeClass('send-me-active');
