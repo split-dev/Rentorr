@@ -803,9 +803,9 @@
       }
     }
     .container {
-      max-width: 910px;
+      /* max-width: 910px;
       padding: 0;
-      margin: auto;
+      margin: auto; */
       h3 {
         max-width: 340px;
         height: 24px;
@@ -1116,9 +1116,9 @@
   }
   &-map {
     .container {
-      max-width: 910px;
+      /* max-width: 910px;
       padding: 0 15px;
-      margin: auto;
+      margin: auto; */
     }
     &__buttons-on-map {
       position: relative;
@@ -1264,7 +1264,7 @@
     }
     &__position {
       display: flex;
-      .apartment-tile {
+      /* .apartment-tile {
         width: 204px;
         height: auto;
         box-shadow: none !important;
@@ -1334,7 +1334,7 @@
           font-weight: 400;
           letter-spacing: 0.08px;
         }
-      }
+      } */
     }
     &__other {
       h3 {
@@ -1394,5 +1394,8 @@
     margin-bottom: 8px;
     margin-top: 15px;
     display: inline-block;
+  }
+  .gallery-position {
+    @include flex-center;
   }
 }

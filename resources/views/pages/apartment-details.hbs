@@ -183,14 +183,17 @@
       </div>
     </div>
     <div class="apartment-details-map__around">
-      <div class="container container_mobile">
-        <div class="apartment-details-map__title">
+        <div class="container container_mobile">
           <h3>Similar properties nearby</h3>
-          <div class="apartment-details-map__gallery">
-            <div class="apartment-details-map__position">
-              {{> ../common/browsing/apartment-tile}}
+        </div>
+        <div class="container gallery-position">
+            <div class="apartment-details-map__gallery">
+                <div class="apartment-details-map__position">
+                    {{> ../common/browsing/apartment-tile}}
+                </div>
             </div>
-          </div>
+        </div>
+        <div class="container container_mobile">
           <div class="apartment-details-map__gallery2">
             {{#each img-apart-slider}}
               <div class="apartment-details-map__position2">
