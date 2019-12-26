@@ -261,7 +261,7 @@
       display: flex;
       width: 100%;
       box-shadow: none;
-      padding-right: 40px;
+      padding-right: 10px;
       margin-top: 25px;
       margin-bottom: 25px;
       &:before {
@@ -290,6 +290,9 @@
           top: 27px;
           left: -30px;
           z-index: 20;
+          @media (max-width: 1295px) {
+            top: 19px;
+          }
         }
         &:checked + label:before {
           content: url("images/global/heart-red.svg");
@@ -297,19 +300,21 @@
       }
       &__desc-position {
         position: relative;
-        padding: 20px 24px 22px;
+        padding: 20px 0 22px 24px;
+        max-width: 270px;
         @media (max-width: 1295px) {
-          padding: 10px 24px 10px;
+          padding: 10px 0 10px 24px;
+        }
+        @media (max-width: 1035px) {
+          padding: 10px 0 10px 10px;
         }
         h3 {
           color: #222634;
           font-size: 17px;
           margin: 0 0 10px;
+          line-height: 30px;
           @include over-extra;
-          @media (max-width: 1295px) {
-            line-height: 30px;
-          }
-          @media (max-width: 1070px) {
+          @media (max-width: 1230px) {
             max-width: 190px;
           }
         }

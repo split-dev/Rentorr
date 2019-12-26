@@ -38,6 +38,7 @@ export default {
         $('.browsing__sity-info-btn').addClass('browsing__sity-info-btn-active');
       } else {
         $('.browsing__sity-info-btn').removeClass('browsing__sity-info-btn-active');
+        $('.nicescroll-box').getNiceScroll().remove();
         $('.apartment-tile__slider').slick('unslick');
         $('.apartment-tile__slider').slick({
           dots: true,
@@ -59,6 +60,7 @@ export default {
           });
         }
         else  {
+          $('.nicescroll-box').getNiceScroll().remove();
           //all
         }
       } else {
