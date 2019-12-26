@@ -1,0 +1,35 @@
+{{#each reporting}}
+    <div class="reporting">
+    <div class="sign-in__block" id="reporting-show">
+        <div class="reporting__first-row">
+            <h3>{{{title-reporting}}}</h3>
+            <div class="reporting__close-position">
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="reporting__info">
+            <p>This won’t be sharing with the host</p>
+            <form class="select-role__form">
+                <input class="select-role__input" id="reporting-info-6" name="select-role" type="radio">
+                <label class="select-role__input-label" for="reporting-info-6">It is innacurate</label>
+
+                <input class="select-role__input" id="reporting-info-2" name="select-role" type="radio">
+                <label class="select-role__input-label" for="reporting-info-2">It is not a real place to stay</label>
+
+                <input class="select-role__input" id="reporting-info-3" name="select-role" type="radio">
+                <label class="select-role__input-label" for="reporting-info-3">It is a scam</label>
+
+                <input class="select-role__input" id="reporting-info-4" name="select-role" type="radio">
+                <label class="select-role__input-label" for="reporting-info-4">It is offensive</label>
+
+                <input class="select-role__input" id="reporting-info-5" name="select-role" type="radio">
+                <label class="select-role__input-label" for="reporting-info-5">It is something else</label>
+            </form>
+        </div>
+        <div class="reporting__button-position">
+            <button type="submit" class="button--blue reporting__next-btn">next</button>
+            <button type="submit" class="button--white--border close-reporting">cancel</button>
+        </div>
+    </div>
+</div>
+{{/each}}

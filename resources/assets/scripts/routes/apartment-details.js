@@ -1,5 +1,6 @@
 import 'slick-carousel';
 import 'lightgallery/dist/js/lightgallery-all.min';
+import Forms from './forms';
 
 export default {
   init() {
@@ -100,6 +101,58 @@ export default {
           $('.browsing__map-filter-btn').removeClass('browsing__map-filter-btn-active');
         }
       }
+    });
+    //reporting modal
+    $('.link-vulgatus').click(function (e) {
+      e.preventDefault();
+      $('.reporting').addClass('reporting-active');
+      $('html, body').addClass('reporting-hidden');
+      $('.send-me').removeClass('send-me-active');
+    });
+    $('.reporting .reporting__close-position a, .close-reporting').click(function (e) {
+      e.preventDefault();
+      $('.reporting').removeClass('reporting-active');
+      $('html, body').removeClass('body-hidden reporting-hidden');
+    });
+    jQuery(function($){
+      $(document).mouseup(function (e){
+        if(jQuery('.reporting').hasClass('reporting-active')) {
+          var div = $('#reporting-show');
+          if (!div.is(e.target) && div.has(e.target).length === 0) {
+            $('.reporting').removeClass('reporting-active');
+            $('html, body').removeClass('body-hidden reporting-hidden');
+          }
+        }
+      });
+    });
+    //reasons modal
+    $('.reporting__next-btn').click(function (e) {
+      e.preventDefault();
+      $('.reporting').removeClass('reporting-active');
+      $('.reasons').addClass('reasons-active');
+      $('html, body').addClass('reasons-hidden');
+      $('.send-me').removeClass('send-me-active');
+    });
+    $('.reasons .reasons__close-position a, .close-reasons, .reasons__submit-btn').click(function (e) {
+      e.preventDefault();
+      $('.reasons').removeClass('reasons-active');
+      $('html, body').removeClass('body-hidden reasons-hidden');
+    });
+    jQuery(function($){
+      $(document).mouseup(function (e){
+        if(jQuery('.reasons').hasClass('reasons-active')) {
+          var div = $('#reasons-show');
+          if (!div.is(e.target) && div.has(e.target).length === 0) {
+            $('.reasons').removeClass('reasons-active');
+            $('html, body').removeClass('body-hidden reasons-hidden');
+          }
+        }
+      });
+    });
+    // eslint-disable-next-line no-unused-vars
+    const form = new Forms({
+      wrap: '.field-wrap',
+      forms: 'form.main-form__regist, form.sign-in__login',
     });
   },
   // JavaScript to be fired on all pages, after page specific JS is fired

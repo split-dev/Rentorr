@@ -145,6 +145,22 @@
     &__slider {
       .apartment-tile__slider {
         width: 100%;
+        .slick-dots {
+          li.slick-active {
+            button {
+              &:before {
+                opacity: 1 !important;
+              }
+            }
+          }
+          li {
+            button {
+              &:before {
+                opacity: 1 !important;
+              }
+            }
+          }
+        }
         .slick-next,
         .slick-prev {
           display: none !important;

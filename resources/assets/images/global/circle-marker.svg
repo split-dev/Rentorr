@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#FFA400" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFA400" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="01-03-Apartment-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-03-02-01-Listing-Page" transform="translate(-428.000000, -1933.000000)">
+            <g id="Map" transform="translate(-22.000000, 1686.000000)">
+                <g id="Area" transform="translate(274.000000, 71.000000)">
+                    <g id="Shape_oval" transform="translate(176.000000, 176.000000)">
+                        <g id="Group-2">
+                            <circle id="Oval" fill="url(#radialGradient-1)" opacity="0.200000003" cx="18" cy="18" r="18"></circle>
+                            <circle id="Oval" fill="#FFA000" cx="18" cy="18" r="6"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

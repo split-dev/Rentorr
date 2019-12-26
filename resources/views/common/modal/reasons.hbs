@@ -1,0 +1,24 @@
+{{#each reasons}}
+    <div class="reasons">
+    <div class="sign-in__block" id="reasons-show">
+        <div class="reasons__first-row">
+            <h3>{{{title-reasons}}}</h3>
+            <div class="reasons__close-position">
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="reasons__info">
+            <form class="main-form__regist">
+                <div class="field-wrap">
+                    <input class="form-control main-form__name-input" id="reasons" name="name" type="text">
+                    <label class="control-label" for="reasons">Enter Reasons</label>
+                </div>
+            </form>
+        </div>
+        <div class="reasons__button-position">
+            <button type="submit" class="button--blue reasons__submit-btn">submit</button>
+            <button type="submit" class="button--white--border close-reasons">cancel</button>
+        </div>
+    </div>
+</div>
+{{/each}}

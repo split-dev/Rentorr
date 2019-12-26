@@ -114,6 +114,16 @@
       ]
     }
   ],
+  "reporting": [
+    {
+      "title-reporting": "Why are you reporting this listing?"
+    }
+  ],
+  "reasons": [
+    {
+      "title-reasons": "Describe how it’s inaccurate or incorrect"
+    }
+  ],
   "footer": [
     {
       "logo": "images/global/logo.svg",

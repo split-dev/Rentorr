@@ -10,6 +10,8 @@
 {{> ../common/modal/check-email}}
 {{> ../common/modal/forgot-pass}}
 {{> ../common/modal/select-role}}
+{{> ../common/modal/reporting}}
+{{> ../common/modal/reasons}}
 <section class="apartment-details-header">
   {{#with background}}
     <nav class='navigation'>
@@ -849,7 +851,7 @@
           radius: 1000,
           fillColor: '#1b5ec6',
           strokeColor: '#1b5ec6',
-          strokeOpacity: 0.8,
+          strokeOpacity: 0,
           strokeWeight: 1
       });
       circle.bindTo('center', markerRadius, 'position');
