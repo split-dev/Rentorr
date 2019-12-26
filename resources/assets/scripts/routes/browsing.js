@@ -393,8 +393,6 @@ export default {
     else  {
       //all
     }
-
-
     // Map filters
     $('.browsing__map-filter-btn').click(function () {
       $(this).toggleClass('browsing__map-filter-btn-active');

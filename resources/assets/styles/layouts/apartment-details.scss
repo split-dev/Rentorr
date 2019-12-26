@@ -143,9 +143,8 @@
   }
   &-header {
     &__slider {
-      display: flex;
-      justify-content: center;
       .apartment-tile__slider {
+        width: 100%;
         .slick-next,
         .slick-prev {
           display: none !important;
@@ -167,8 +166,6 @@
           height: 20px;
         }
       }
-      display: flex;
-      flex-direction: column;
       .apartment-tile {
         width: 344px;
         height: auto;
@@ -203,9 +200,6 @@
           }
         }
         &__slider {
-          display: flex;
-          justify-content: center;
-          width: 100%;
           height: 250px;
           margin: 0 !important;
           &:hover {
