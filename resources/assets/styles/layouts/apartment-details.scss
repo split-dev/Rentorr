@@ -683,12 +683,6 @@
       .apartment-tile {
         width: 310px !important;
       }
-      /* display: flex;
-      justify-content: center;
-      align-items: center; */
-      /* @include media-breakpoint-down(md) {
-        display: none;
-      } */
       .gallery-img {
         position: relative;
         #aniimated-thumbnials {
@@ -1230,117 +1224,8 @@
         }
       }
     }
-    /* &__gallery {
-      !* display: flex;
-      justify-content: space-between; *!
-      !* @include media-breakpoint-down(md) {
-        display: none;
-      } *!
-      .apartment-tile {
-        width: 310px !important;
-      }
-      .gallery-img {
-        width: 25%;
-        display: flex;
-        justify-content: space-between;
-        a {
-          &.hide {
-            content: url("images/apartment-details/Fade.png");
-          }
-        }
-        .gallery-column {
-          display: flex;
-          flex-direction: column;
-          img {
-            margin-top: 31px;
-            margin-bottom: 16px;
-          }
-          p {
-            padding-bottom: 4px;
-          }
-          .text_bold {
-            color: #222634;
-            @include over-extra;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 16px;
-          }
-        }
-      }
-    } */
     &__position {
       display: flex;
-      /* .apartment-tile {
-        width: 204px;
-        height: auto;
-        box-shadow: none !important;
-        margin: 7px;
-        position: relative;
-        &:hover {
-          .apartment-tile__zar-box {
-            opacity: 1 !important;
-          }
-        }
-        &__checkbox-position,
-        &__checkbox,
-        &__desc,
-        &__verification-position,
-        &__verification,
-        &__desc-apart,
-        &__rating-position,
-        &__rating,
-        &__review,
-        &__new-label,
-        &__details,
-        &__details-sofa,
-        &__details-bath,
-        &__details-square {
-          display: none;
-        }
-        &__slider {
-          width: 204px;
-          height: 256px;
-          margin: 0 !important;
-          img {
-            width: 204px;
-            height: 100%;
-          }
-        }
-        &__zar-box {
-          position: absolute;
-          width: 90px;
-          height: 48px;
-          background-color: #3b3f4e;
-          right: 0;
-          top: -245px;
-          padding: 10px 6px;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          opacity: 0;
-          transition: 0.2s;
-        }
-        &__desc-position {
-          position: relative;
-          padding: 20px 24px 0;
-          h3 {
-            color: #222634;
-            margin: 0;
-            @include over-extra;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 16px;
-          }
-        }
-        &__adress {
-          font-family: $roboto;
-          margin-top: 3px;
-          color: #9ba0b5;
-          font-size: 12px;
-          font-weight: 400;
-          letter-spacing: 0.08px;
-        }
-      } */
     }
     &__other {
       h3 {
@@ -1502,14 +1387,33 @@
       position: absolute;
     }
   }
-  &__slider-position {
-    /* @include flex-center; */
-  }
   &__slider-prop {
     @include flex-center;
     .apartment-tile {
       width: 310px !important;
       .apartment-tile__slider {
+        @media (max-width: 991px) {
+          .slick-dots {
+            li.slick-active {
+              button {
+                &:before {
+                  display: none !important;
+                }
+              }
+            }
+            li {
+              button {
+                &:before {
+                  display: none !important;
+                }
+              }
+            }
+          }
+          .slick-next,
+          .slick-prev {
+            display: none !important;
+          }
+        }
         img {
           height: 200px;
           @media (max-width: 991px) {
