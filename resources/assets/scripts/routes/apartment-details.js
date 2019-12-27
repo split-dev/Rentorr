@@ -10,7 +10,7 @@ export default {
       slidesToShow: 1,
       slidesToScroll: 1,
     });
-    $('.apartment-details-map__gallery2').slick({
+    $('.apartment-details-map__position').slick({
       dots: true,
       infinite: false,
       slidesToShow: 3,
@@ -88,14 +88,18 @@ export default {
       $(element[mass]).addClass('hide');
     }
     // Map filters
-    $('.browsing__map-filter-btn').click(function (e) {
+    $('.browsing__map-filter-btn, .apartment-details__filter-plus-btn').click(function (e) {
       e.preventDefault();
-      $(this).toggleClass('browsing__map-filter-btn-active');
-      $(this).parent('.browsing__map-filter').toggleClass('browsing__map-filter-active');
+      $('.browsing__map-filter-btn').toggleClass('browsing__map-filter-btn-active');
+      $('.browsing__map-filter').toggleClass('browsing__map-filter-active');
     });
     $(document).mouseup(function (e){
       if(jQuery('.browsing__map-filter').hasClass('browsing__map-filter-active')) {
         var div = $('#browsing__map-filter-show');
+        if ($('.apartment-details__filter-plus-btn').is(e.target) || $('.apartment-details__filter-plus-btn').has(e.target))
+          return;
+        if ($('.apartment-details__filter-label').is(e.target) || $('.apartment-details__filter-label').has(e.target))
+          return;
         if (!div.is(e.target) && div.has(e.target).length === 0) {
           $('.browsing__map-filter').removeClass('browsing__map-filter-active');
           $('.browsing__map-filter-btn').removeClass('browsing__map-filter-btn-active');
@@ -155,6 +159,51 @@ export default {
       wrap: '.field-wrap',
       forms: 'form.main-form__regist, form.sign-in__login',
     });
+    //filter label
+    $('.global-checkbox-label').click(function () {
+      let attrFilter = $(this).attr('data-filter');
+      let checkedInp = $(this).prev();
+      $('.allFilters').prev().prop('checked', false);
+      if($(checkedInp).is(':checked')) {
+        $('#' + attrFilter).removeClass('filter-label-active')
+      }
+      else {
+        $('#' + attrFilter).addClass('filter-label-active')
+      }
+
+    })
+    $('.allFilters').click(function (e) {
+      e.preventDefault();
+      // eslint-disable-next-line no-unused-vars
+      let labelMas = $('.global-checkbox-label');
+      if($(this).prev().is(':checked')) {
+        $(this).prev().prop('checked', false);
+        $(labelMas).prev().prop('checked', false);
+        $('.apartment-details__filter-label').removeClass('filter-label-active')
+      }
+      else {
+        $('.apartment-details__filter-label').addClass('filter-label-active')
+        $(labelMas).prev().prop('checked', true);
+        $(this).prev().prop('checked', true);
+        $(labelMas).prev().prop('checked', true);
+      }
+    })
+    $('.apartment-details__filter-label a').click (function (e) {
+      e.preventDefault();
+      $(this).parent().removeClass('filter-label-active');
+      let attr = $(this).parent().attr('id');
+      $('[data-filter~=' + attr + ']').prev().prop('checked', false);
+    })
+    //plus filter button
+    /*$('.apartment-details__filter-plus-btn').click(function (e) {
+      e.preventDefault();
+      if($('.browsing__map-filter-btn').hasClass('browsing__map-filter-btn-active')) {
+        $('.browsing__map-filter-btn').toggleClass('browsing__map-filter-btn-active')
+      }
+      else {
+        $('.browsing__map-filter').toggleClass('browsing__map-filter-active');
+      }
+    });*/
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

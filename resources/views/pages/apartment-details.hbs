@@ -176,9 +176,18 @@
           <div class="browsing__map-filter" id="browsing__map-filter-show">
               <a class="browsing__map-filter-btn" href="#"></a>
               {{#each apartment-details-checkbox-map-filter}}
-                  <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value">
-                  <label class="global-checkbox-label" for="global-checkbox{{for}}">{{label-name}}</label>
+                  <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value" >
+                  <label class="{{class}}" for="global-checkbox{{for}}" data-filter="{{data-filter}}">{{label-name}}</label>
               {{/each}}
+          </div>
+          <div class="container_mobile apartment-details__filter-label-position" id="show-filter">
+              {{#each apartment-details__filter-label}}
+                  <div class="apartment-details__filter-label" id="{{id}}">
+                      <span>{{desc}}</span>
+                      <a class="apartment-details__filter-label-close" href="#"></a>
+                  </div>
+              {{/each}}
+              <div class="apartment-details__filter-plus-btn"></div>
           </div>
       </div>
     </div>
@@ -194,19 +203,7 @@
             </div>
         </div>
         <div class="container container_mobile">
-          <div class="apartment-details-map__gallery2">
-            {{#each img-apart-slider}}
-              <div class="apartment-details-map__position2">
-                <img class="galimg" src="{{apart}}" />
-                <div class="zar-box">
-                  <span>ZAR</span>
-                  <span>{{zar}}</span>
-                </div>
-                <h3>{{title}}</h3>
-                <p class="apartment-tile__adress">{{apartment-tile__adress}}</p>
-              </div>
-            {{/each}}
-          </div>
+
           <div class="apartment-details-map__button">
             <a href="#" class="button--white--border">Show More</a>
           </div>

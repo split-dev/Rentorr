@@ -287,47 +287,99 @@
     {
       "id": "map1",
       "for": "map1",
-      "label-name": "All"
+      "label-name": "All",
+      "data-filter": "All",
+      "class": "allFilters"
     },
     {
       "id": "map2",
       "for": "map2",
-      "label-name": "Schools"
+      "label-name": "Schools",
+      "data-filter": "Schools",
+      "class": "global-checkbox-label"
     },
     {
       "id": "map3",
       "for": "map3",
-      "label-name": "Kindergartens"
+      "label-name": "Kindergartens",
+      "data-filter": "Kindergartens",
+      "class": "global-checkbox-label"
     },
     {
       "id": "map4",
       "for": "map4",
-      "label-name": "Restaurans"
+      "label-name": "Restaurans",
+      "data-filter": "Restaurans",
+      "class": "global-checkbox-label"
     },
     {
       "id": "map5",
       "for": "map5",
-      "label-name": "Bars"
+      "label-name": "Bars",
+      "data-filter": "Bars",
+      "class": "global-checkbox-label"
     },
     {
       "id": "map6",
       "for": "map6",
-      "label-name": "Shoping malls"
+      "label-name": "Shoping malls",
+      "data-filter": "Shoping-malls",
+      "class": "global-checkbox-label"
     },
     {
       "id": "map7",
       "for": "map7",
-      "label-name": "Pharmacy"
+      "label-name": "Pharmacy",
+      "data-filter": "Pharmacy",
+      "class": "global-checkbox-label"
     },
     {
       "id": "map8",
       "for": "map8",
-      "label-name": "Art spaces"
+      "label-name": "Art spaces",
+      "data-filter": "Art-spaces",
+      "class": "global-checkbox-label"
     },
     {
       "id": "map9",
       "for": "map9",
-      "label-name": "Gyms"
+      "label-name": "Gyms",
+      "data-filter": "Gyms",
+      "class": "global-checkbox-label"
+    }
+  ],
+  "apartment-details__filter-label": [
+    {
+      "id": "Schools",
+      "desc": "Schools"
+    },
+    {
+      "id": "Kindergartens",
+      "desc": "Kindergartens"
+    },
+    {
+      "id": "Restaurans",
+      "desc": "Restaurans"
+    },
+    {
+      "id": "Bars",
+      "desc": "Bars"
+    },
+    {
+      "id": "Shoping-malls",
+      "desc": "Shoping malls"
+    },
+    {
+      "id": "Pharmacy",
+      "desc": "Pharmacy"
+    },
+    {
+      "id": "Art-spaces",
+      "desc": "Art spaces"
+    },
+    {
+      "id": "Gyms",
+      "desc": "Gyms"
     }
   ]
 }
