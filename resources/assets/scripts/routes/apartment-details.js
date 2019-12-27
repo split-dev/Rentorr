@@ -203,7 +203,7 @@ export default {
 
     //unslcik
     //resize
-    reportWindowSize();
+    /*reportWindowSize();
     window.onresize = reportWindowSize;
     function reportWindowSize() {
       if (window.innerWidth < 992) {
@@ -212,7 +212,7 @@ export default {
       else  {
         //all
       }
-    }
+    }*/
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

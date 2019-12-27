@@ -1459,27 +1459,25 @@
   &__header-slider {
     height: 250px;
     margin: 0 !important;
-    &:hover {
-      .slick-next,
-      .slick-prev {
-        opacity: 1;
-      }
-      .slick-dots {
-        li.slick-active {
-          button {
-            &:before {
-              opacity: 1 !important;
-            }
-          }
-        }
-        li {
-          button {
-            &:before {
-              opacity: 1 !important;
-            }
+    .slick-dots {
+      li.slick-active {
+        button {
+          &:before {
+            opacity: 1 !important;
           }
         }
       }
+      li {
+        button {
+          &:before {
+            opacity: 1 !important;
+          }
+        }
+      }
+    }
+    .slick-next,
+    .slick-prev {
+      display: none !important;
     }
     img {
       max-width: 100%;
@@ -1513,6 +1511,7 @@
       width: 310px !important;
       .apartment-tile__slider {
         img {
+          height: 200px;
           @media (max-width: 991px) {
             display: none;
           }
