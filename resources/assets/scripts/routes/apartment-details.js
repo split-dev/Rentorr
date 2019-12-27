@@ -4,6 +4,12 @@ import Forms from './forms';
 
 export default {
   init() {
+    $('.apartment-details__header-slider').slick({
+      dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
       $('.apartment-tile__slider').slick({
         dots: true,
         infinite: true,
@@ -19,30 +25,21 @@ export default {
         swipe: true,
         responsive: [
           {
-            breakpoint: 991,
-            settings: {
-              unslick: true,
-            },
-          },
-          {
             breakpoint: 850,
             settings: {
               slidesToShow: 2,
-              unslick: true,
             },
           },
           {
             breakpoint: 680,
             settings: {
               slidesToShow: 1.5,
-              unslick: true,
             },
           },
           {
             breakpoint: 520,
             settings: {
               slidesToShow: 1,
-              unslick: true,
             },
           },
         ],

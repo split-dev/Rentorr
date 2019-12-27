@@ -142,7 +142,7 @@
     }
   }
   &-header {
-    &__slider {
+    /* &__slider {
       .apartment-tile__slider {
         width: 100%;
         .slick-dots {
@@ -166,7 +166,7 @@
           display: none !important;
         }
       }
-    }
+    } */
     &__position-in-header {
       @include media-breakpoint-up(lg) {
         display: none;
@@ -1454,6 +1454,36 @@
         position: absolute;
         @include flex-center;
       }
+    }
+  }
+  &__header-slider {
+    height: 250px;
+    margin: 0 !important;
+    &:hover {
+      .slick-next,
+      .slick-prev {
+        opacity: 1;
+      }
+      .slick-dots {
+        li.slick-active {
+          button {
+            &:before {
+              opacity: 1 !important;
+            }
+          }
+        }
+        li {
+          button {
+            &:before {
+              opacity: 1 !important;
+            }
+          }
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+      height: 100%;
     }
   }
   &__filter-plus-btn {
