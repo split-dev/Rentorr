@@ -4,45 +4,53 @@ import Forms from './forms';
 
 export default {
   init() {
-    $('.apartment-tile__slider').slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    });
-    $('.apartment-details-map__position').slick({
-      dots: true,
-      infinite: false,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      swipe: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2.5,
+      $('.apartment-tile__slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    if (window.innerWidth < 992) {
+      $('.apartment-details__slider-prop').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 2.5,
+        slidesToScroll: 1,
+        swipe: true,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              unslick: true,
+            },
           },
-        },
-        {
-          breakpoint: 575,
-          settings: {
-            slidesToShow: 2,
+          {
+            breakpoint: 850,
+            settings: {
+              slidesToShow: 2,
+              unslick: true,
+            },
           },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1.5,
+          {
+            breakpoint: 680,
+            settings: {
+              slidesToShow: 1.5,
+              unslick: true,
+            },
           },
-        },
-        {
-          breakpoint: 370,
-          settings: {
-            slidesToShow: 1.3,
+          {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 1,
+              unslick: true,
+            },
           },
-        },
-      ],
-    });
+        ],
+      });
+    }
+    else  {
+      //all
+    }
     $('#aniimated-thumbnials').lightGallery({
       thumbnail:true,
       animateThumb: false,
@@ -96,11 +104,12 @@ export default {
     $(document).mouseup(function (e){
       if(jQuery('.browsing__map-filter').hasClass('browsing__map-filter-active')) {
         var div = $('#browsing__map-filter-show');
-        if ($('.apartment-details__filter-plus-btn').is(e.target) || $('.apartment-details__filter-plus-btn').has(e.target))
+        var div1 = $('.apartment-details__filter-label-position, .apartment-details__filter-label span, .apartment-details__filter-label-close');
+        /*if ($('.apartment-details__filter-plus-btn').is(e.target) || $('.apartment-details__filter-plus-btn').has(e.target))
           return;
         if ($('.apartment-details__filter-label').is(e.target) || $('.apartment-details__filter-label').has(e.target))
-          return;
-        if (!div.is(e.target) && div.has(e.target).length === 0) {
+          return;*/
+        if ((!div.is(e.target) && div.has(e.target).length === 0) && (!div1.is(e.target) && div.has(e.target).length === 0)) {
           $('.browsing__map-filter').removeClass('browsing__map-filter-active');
           $('.browsing__map-filter-btn').removeClass('browsing__map-filter-btn-active');
         }
@@ -194,16 +203,19 @@ export default {
       let attr = $(this).parent().attr('id');
       $('[data-filter~=' + attr + ']').prev().prop('checked', false);
     })
-    //plus filter button
-    /*$('.apartment-details__filter-plus-btn').click(function (e) {
-      e.preventDefault();
-      if($('.browsing__map-filter-btn').hasClass('browsing__map-filter-btn-active')) {
-        $('.browsing__map-filter-btn').toggleClass('browsing__map-filter-btn-active')
+
+    //unslcik
+    //resize
+    reportWindowSize();
+    window.onresize = reportWindowSize;
+    function reportWindowSize() {
+      if (window.innerWidth < 992) {
+        $('.apartment-tile__slider').slick('unslick');
       }
-      else {
-        $('.browsing__map-filter').toggleClass('browsing__map-filter-active');
+      else  {
+        //all
       }
-    });*/
+    }
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

@@ -1230,12 +1230,12 @@
         }
       }
     }
-    &__gallery {
-      /* display: flex;
-      justify-content: space-between; */
-      /* @include media-breakpoint-down(md) {
+    /* &__gallery {
+      !* display: flex;
+      justify-content: space-between; *!
+      !* @include media-breakpoint-down(md) {
         display: none;
-      } */
+      } *!
       .apartment-tile {
         width: 310px !important;
       }
@@ -1267,7 +1267,7 @@
           }
         }
       }
-    }
+    } */
     &__position {
       display: flex;
       /* .apartment-tile {
@@ -1472,6 +1472,40 @@
     &:before {
       content: url("images/global/plus-default.svg");
       position: absolute;
+    }
+  }
+  &__slider-position {
+    /* @include flex-center; */
+  }
+  &__slider-prop {
+    @include flex-center;
+    .apartment-tile {
+      width: 310px !important;
+      .apartment-tile__slider {
+        img {
+          @media (max-width: 991px) {
+            display: none;
+          }
+          &:first-child {
+            @media (max-width: 991px) {
+              display: block !important;
+              max-width: 310px !important;
+            }
+          }
+        }
+      }
+      .apartment-tile__zar-box {
+        z-index: 9;
+      }
+    }
+    .slick-slide {
+      > div {
+        @media (max-width: 991px) {
+          display: flex;
+          justify-content: center;
+          margin: 0 7px !important;
+        }
+      }
     }
   }
 }
