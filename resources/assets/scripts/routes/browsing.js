@@ -6,18 +6,6 @@ import 'jquery.nicescroll/jquery.nicescroll'
 
 export default {
   init() {
-    // $('.map').click(function () {
-    //   if ($('.gm-style-iw-c').hasClass('gm-style-iw')) {
-    //     $('.apartment-tile-1__slider-1').slick({
-    //       dots: true,
-    //       infinite: true,
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     });
-    //   } else {
-    //     return;
-    //   }
-    // });\
     var clickHandler = ('ontouchstart' in window ? 'touchend' : 'click')
     $('.map').on(clickHandler, function () {
       if ($('.gm-style-iw-c').hasClass('gm-style-iw')) {

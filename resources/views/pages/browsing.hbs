@@ -181,8 +181,8 @@
         <div class="browsing__map-filter" id="browsing__map-filter-show">
             <a class="browsing__map-filter-btn" href="#"></a>
             {{#each global-checkbox-map-filter}}
-                <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value">
-                <label class="global-checkbox-label" for="global-checkbox{{for}}">{{label-name}}</label>
+                <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value" >
+                <label class="{{class}}" for="global-checkbox{{for}}" data-filter="{{data-filter}}">{{label-name}}</label>
             {{/each}}
         </div>
     </div>

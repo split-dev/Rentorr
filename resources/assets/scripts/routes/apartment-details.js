@@ -165,7 +165,7 @@ export default {
       wrap: '.field-wrap',
       forms: 'form.main-form__regist, form.sign-in__login',
     });
-    //filter label
+    /*//filter label
     $('.global-checkbox-label').click(function () {
       let attrFilter = $(this).attr('data-filter');
       let checkedInp = $(this).prev();
@@ -199,7 +199,7 @@ export default {
       $(this).parent().removeClass('filter-label-active');
       let attr = $(this).parent().attr('id');
       $('[data-filter~=' + attr + ']').prev().prop('checked', false);
-    })
+    })*/
 
     //unslcik
     //resize

@@ -163,6 +163,42 @@ export default {
       }
     });
 
+    //filter label
+    $('.global-checkbox-label').click(function () {
+      let attrFilter = $(this).attr('data-filter');
+      let checkedInp = $(this).prev();
+      $('.allFilters').prev().prop('checked', false);
+      if($(checkedInp).is(':checked')) {
+        $('#' + attrFilter).removeClass('filter-label-active')
+      }
+      else {
+        $('#' + attrFilter).addClass('filter-label-active')
+      }
+
+    })
+    $('.allFilters').click(function (e) {
+      e.preventDefault();
+      // eslint-disable-next-line no-unused-vars
+      let labelMas = $('.global-checkbox-label');
+      if($(this).prev().is(':checked')) {
+        $(this).prev().prop('checked', false);
+        $(labelMas).prev().prop('checked', false);
+        $('.apartment-details__filter-label').removeClass('filter-label-active')
+      }
+      else {
+        $('.apartment-details__filter-label').addClass('filter-label-active')
+        $(labelMas).prev().prop('checked', true);
+        $(this).prev().prop('checked', true);
+        $(labelMas).prev().prop('checked', true);
+      }
+    })
+    $('.apartment-details__filter-label a').click (function (e) {
+      e.preventDefault();
+      $(this).parent().removeClass('filter-label-active');
+      let attr = $(this).parent().attr('id');
+      $('[data-filter~=' + attr + ']').prev().prop('checked', false);
+    })
+
     const form = new Forms({
       wrap: '.field-wrap',
       forms: 'form.main-form__regist, form.sign-in__login',
