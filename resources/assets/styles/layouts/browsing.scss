@@ -606,6 +606,10 @@
 }
 .gm-style-iw,
 .gm-style-iw-c {
+  width: 314px !important;
+  height: 390px !important;
+  max-width: 314px !important;
+  max-height: 390px !important;
   padding: 0 !important;
   box-shadow: none !important;
   background-color: transparent !important;
@@ -618,6 +622,7 @@
   display: none !important;
 }
 .gm-style-iw-d {
+  max-width: 314px !important;
   overflow: hidden !important;
 }
 

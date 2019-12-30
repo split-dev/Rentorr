@@ -6,16 +6,43 @@ import 'jquery.nicescroll/jquery.nicescroll'
 
 export default {
   init() {
-    $('.browsing__google-map').on('click', function () {
-      if ($('.apartment-tile-1__slider-1').hasClass('slick-initialized'))
+    // $('.map').click(function () {
+    //   if ($('.gm-style-iw-c').hasClass('gm-style-iw')) {
+    //     $('.apartment-tile-1__slider-1').slick({
+    //       dots: true,
+    //       infinite: true,
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     });
+    //   } else {
+    //     return;
+    //   }
+    // });\
+    var clickHandler = ('ontouchstart' in window ? 'touchend' : 'click')
+    $('.map').on(clickHandler, function () {
+      if ($('.gm-style-iw-c').hasClass('gm-style-iw')) {
+        $('.apartment-tile-1__slider-1').slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      } else {
         return;
-      $('.apartment-tile-1__slider-1').slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      });
-    })
+      }
+    });
+    /*$('.browsing__google-map').click(function () {
+      if ($('.apartment-tile-1__slider-1').hasClass('slick-initialized')) {
+        return;
+      } else {
+        $('.apartment-tile-1__slider-1').slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      }
+    })*/
     $('.apartment-tile__slider').slick({
       dots: true,
       infinite: true,
