@@ -160,6 +160,29 @@ export default {
         }
       });
     });
+    //read-more modal
+    $('.apartment-details-blocks__read-more').click(function (e) {
+      e.preventDefault();
+      $('.read-more').addClass('read-more-active');
+      $('html, body').addClass('rread-more-hidden');
+      $('.send-me').removeClass('send-me-active');
+    });
+    $('.read-more .read-more__close-position a').click(function (e) {
+      e.preventDefault();
+      $('.read-more').removeClass('read-more-active');
+      $('html, body').removeClass('body-hidden read-more-hidden');
+    });
+    jQuery(function($){
+      $(document).mouseup(function (e){
+        if(jQuery('.read-more').hasClass('read-more-active')) {
+          var div = $('#read-more-show');
+          if (!div.is(e.target) && div.has(e.target).length === 0) {
+            $('.read-more').removeClass('read-more-active');
+            $('html, body').removeClass('body-hidden read-more-hidden');
+          }
+        }
+      });
+    });
     // eslint-disable-next-line no-unused-vars
     const form = new Forms({
       wrap: '.field-wrap',

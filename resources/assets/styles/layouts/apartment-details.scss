@@ -984,11 +984,29 @@
         padding-right: 15px;
       }
       .bottom-line {
-        border-bottom: 1px solid #eeeff3;
-        background-color: #fff;
-        padding-bottom: 40px;
-        @include media-breakpoint-down(md) {
-          padding-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    &__read-more-position {
+      border-bottom: 1px solid #eeeff3;
+      background-color: #fff;
+      padding-bottom: 40px;
+      @include media-breakpoint-down(md) {
+        padding-top: 20px;
+      }
+      > a {
+        display: inline-block;
+        color: #1a5dc6;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.35px;
+        line-height: 20px;
+        &:before {
+          background-color: #1a5dc6;
+        }
+        &:hover {
+          color: #1a5dc6;
         }
       }
     }

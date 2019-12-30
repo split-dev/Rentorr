@@ -124,6 +124,11 @@
       "title-reasons": "Describe how it’s inaccurate or incorrect"
     }
   ],
+  "read-more": [
+    {
+      "title-read-more": ""
+    }
+  ],
   "footer": [
     {
       "logo": "images/global/logo.svg",
