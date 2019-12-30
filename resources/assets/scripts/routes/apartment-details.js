@@ -56,7 +56,8 @@ export default {
       thumbMargin: 20,
       mode: 'lg-fade',
       thumbContHeight: 120,
-      thumbWidth: 120,
+      thumbHeight: '120px',
+      thumbWidth: 180,
     });
     function stickyElement() {
       if (window.innerWidth > 991) {

@@ -1,3 +1,6 @@
+.lg {
+  max-width: 700px !important;
+}
 .lg-backdrop {
   position: fixed;
   top: 0;
@@ -50,15 +53,17 @@
   color: #fff;
 }
 .lg-actions .lg-next {
-  right: 40px;
-  //height: 500px;
+  right: 6px;
+  height: 500px;
+  top: 25%;
 }
 .lg-actions .lg-next:before {
   content: url("../../images/apartment-details/next.svg");
 }
 .lg-actions .lg-prev {
-  left: 40px;
-  //height: 500px;
+  left: 6px;
+  height: 500px;
+  top: 25%;
 }
 .lg-actions .lg-prev:after {
   content: url("../../images/apartment-details/prev.svg");
@@ -99,15 +104,7 @@
 .lg-outer.lg-thumb-open .lg-thumb-outer {
   -webkit-transform: translate3d(25px, -10%, 0);
   transform: translate3d(25px, -10%, 0);
-  height: 150px;
-  //@include media-breakpoint-down(md) {
-  //  //display: none;
-  //  height: 130px;
-  //}
-  @media (max-height: 800px) {
-    display: none;
-    //height: 100px;
-  }
+  height: 120px;
 }
 .lg-toogle-thumb {
   display: none;
@@ -123,7 +120,9 @@
 .lg-thumb-item {
   position: relative;
   &:after {
-    content: url("../../images/apartment-details/Fade.png");
+    content: "";
+    background: black;
+    opacity: 0.6;
     position: absolute;
     left: 0;
     top: 0;
