@@ -1,5 +1,19 @@
-.lg {
+/* .lg {
   max-width: 700px !important;
+  overflow: visible !important;
+} */
+.lg-inner {
+  @media (max-height: 780px) {
+    top: -5% !important;
+  }
+}
+.lg-image {
+  @media (max-height: 780px) {
+    max-height: 500px !important;
+  }
+  @media (max-height: 680px) {
+    max-height: 420px !important;
+  }
 }
 .lg-backdrop {
   position: fixed;
@@ -54,33 +68,33 @@
 }
 .lg-actions .lg-next {
   right: 6px;
-  height: 500px;
-  top: 25%;
+  height: 32px;
+  top: 50%;
+  @media (max-height: 780px) {
+    top: 45% !important;
+  }
 }
 .lg-actions .lg-next:before {
   content: url("../../images/apartment-details/next.svg");
 }
 .lg-actions .lg-prev {
   left: 6px;
-  height: 500px;
-  top: 25%;
+  height: 32px;
+  top: 50%;
+  @media (max-height: 780px) {
+    top: 45% !important;
+  }
 }
 .lg-actions .lg-prev:after {
   content: url("../../images/apartment-details/prev.svg");
 }
 .lg-outer .lg-thumb-outer {
-  display: flex;
-  justify-content: center;
   bottom: 0;
   position: absolute;
   width: 100%;
   z-index: 1080;
   max-height: 350px;
-  -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
-  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
-  -moz-transition: -moz-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
-  -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
 .lg-toolbar {
@@ -142,3 +156,9 @@
     }
   }
 }
+/* .lg-thumb,
+.lg-group {
+  display: flex !important;
+  left: 0 !important;
+  position: absolute !important;
+} */

@@ -247,7 +247,7 @@ export default {
     //clear button
     $('.filters-menu__apartment .filters-menu__apply-clear .filters-menu__button--black').click(function () {
       $('.filters-menu__apartment .filters-menu__checkbox-position input').prop('checked', false);
-      $(this).parent().parent().prev().text('Apartment');
+      $(this).parent().parent().prev().text('Property Type');
     });
     $('.filters-menu__pet .filters-menu__apply-clear .filters-menu__button--black').click(function () {
       $('.filters-menu__pet .filters-menu__checkbox-position input').prop('checked', false)
@@ -255,6 +255,7 @@ export default {
     });
     $('.filters-menu__features .filters-menu__apply-clear .filters-menu__button--black').click(function () {
       $('.filters-menu__features .filters-menu__checkbox-position input').prop('checked', false)
+      $(this).parent().parent().prev().text('Features');
     });
     $('.filters-menu__rooms .filters-menu__apply-clear .filters-menu__button--black').click(function () {
       $('.filters-menu__rooms-minus').addClass('rooms-minus-disabled');
@@ -266,7 +267,7 @@ export default {
       }
     });
     $('.filters-menu__calendar .filters-menu__apply-clear .filters-menu__button--black').click(function () {
-      $(this).parent().parent().prev().text('Availability & duration');
+      $(this).parent().parent().prev().text('Availability & Duration');
       $('#datepicker').val('');
       $('.filters-menu__calendar .field-wrap').removeClass('has-val');
       var d0_instance = $('.js-range-slider').data('ionRangeSlider');
@@ -316,7 +317,7 @@ export default {
           $(this).parent().parent().prev().text(contentApart);
           $(this).parent().parent().removeClass('filters-menu__dropdown-active');
         } else if (countApart > 1) {
-          $(this).parent().parent().prev().text('Apartment');
+          $(this).parent().parent().prev().text('Property Type');
           $(this).parent().parent().removeClass('filters-menu__dropdown-active');
         }
       });
@@ -346,11 +347,30 @@ export default {
         }
       });
     });
-    //Apply button features
+    //Apply button pets
     $('.filters-menu__features .filters-menu__checkbox-position input').on('click', function(){
-      if($('.filters-menu__features .filters-menu__button').click(function () {
-        $(this).parent().parent().removeClass('filters-menu__dropdown-active');
-      }));
+      $('.filters-menu__features .filters-menu__button').click(function () {
+        let inpFeatures = $(this).parent().parent().children('.filters-menu__checkbox-position').children('input');
+        let countFeatures = 0;
+        let  contentFeatures = '';
+        for(let i = 0; i<inpFeatures.length; i++) {
+          if (inpFeatures[i].checked) {
+            countFeatures = countFeatures + 1;
+          }
+        }
+        if(countFeatures == 1) {
+          for(let i = 0; i<inpFeatures.length; i++) {
+            if (inpFeatures[i].checked) {
+              contentFeatures = $(inpFeatures[i]).next().html();
+            }
+          }
+          $(this).parent().parent().prev().text(contentFeatures);
+          $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+        } else if (countFeatures > 1) {
+          $(this).parent().parent().prev().text('Features');
+          $(this).parent().parent().removeClass('filters-menu__dropdown-active');
+        }
+      });
     });
     //Apply button rooms
     $('.filters-menu__rooms .filters-menu__button').click(function () {
@@ -363,10 +383,10 @@ export default {
       let  minPrice = $('#min-price').val();
       let  maxPrice = $('#max-price').val();
       if (minPrice == '') {
-        $(this).parent().parent().parent().prev().text('Price range');
+        $(this).parent().parent().parent().prev().text('Price Range');
       }
       if (maxPrice == '') {
-        $(this).parent().parent().parent().prev().text('Price range');
+        $(this).parent().parent().parent().prev().text('Price Range');
       }
       else {
         $(this).parent().parent().parent().prev().text('R' + minPrice + ' - ' + 'R' + maxPrice);

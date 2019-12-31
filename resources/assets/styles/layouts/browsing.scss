@@ -1,5 +1,8 @@
 .browsing {
   overflow-x: visible;
+  @media (max-width: 991px) {
+    overflow-x: hidden;
+  }
   .nicescroll-rails {
     width: 13px !important;
   }
@@ -20,6 +23,7 @@
       bottom: 0;
       height: 1px;
       background-color: rgba(183, 184, 199, 0.16);
+      overflow-x: hidden;
     }
     p {
       max-width: 70%;
@@ -46,6 +50,7 @@
       bottom: 0;
       height: 1px;
       background-color: rgba(183, 184, 199, 0.16);
+      overflow-x: hidden;
     }
     p {
       max-width: 70%;
@@ -190,6 +195,7 @@
         bottom: 0;
         height: 1px;
         background-color: rgba(183, 184, 199, 0.16);
+        overflow-x: hidden;
       }
       p {
         max-width: 100%;
@@ -239,6 +245,7 @@
         height: 1px;
         background-color: rgba(183, 184, 199, 0.16);
         z-index: 2;
+        overflow-x: hidden;
       }
     }
     .browsing__map-position-off {
