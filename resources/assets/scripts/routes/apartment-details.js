@@ -50,7 +50,7 @@ export default {
     }
     $('#aniimated-thumbnials').lightGallery({
       thumbnail:true,
-      animateThumb: false,
+      animateThumb: true,
       showThumbByDefault: true,
       width: '100%',
       thumbMargin: 20,
