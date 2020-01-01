@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="landlord-profile landlordprofilejs">
+    {{> ../common/modal/company-details}}
+    {{> ../common/modal/landlord-rating}}
+    {{> ../common/header-footer/nav-brows}}
+    <div class="landlord-profile__info-bcg">
+        <div class="landlord-profile__info-position container-landlord-profile">
+            <div class="landlord-profile__about-landlord">
+                <h3>{{name}}</h3>
+                <div class="landlord-profile__agency">
+                    <a class="landlord-profile-agency" href="#">{{agency}}</a>
+                    <span>{{years}}</span>
+                </div>
+                <p>{{about}}</p>
+                <ul>
+                    {{#each protect}}
+                        <li>
+                            <img src="{{protect-img}}" alt="">
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="landlord-profile__avatar">
+                <h3>{{name}}</h3>
+                <img src="images/landlord-profile/avatar.png" alt="">
+                <div class="landlord-profile__reviews">
+                    <ul>
+                        {{#each stars}}
+                            <li>
+                                <img src="{{stars-img}}" alt="">
+                            </li>
+                        {{/each}}
+                    </ul>
+                    <a class="landlord-profile-rating second-link-global" href="#">{{reviews}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="landlord-profile__property-bcg">
+        <div class="landlord-profile__property-position container-landlord-profile">
+            <div class="landlord-profile__property-title">
+                <h4>{{property-name}}</h4>
+                <span>{{property-number}}</span>
+            </div>
+            <div class="landlord-profile__tile-position">
+                {{> ../common/browsing/apartment-tile}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

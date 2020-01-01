@@ -124,6 +124,35 @@
       "title-reasons": "Describe how it’s inaccurate or incorrect"
     }
   ],
+  "company-details": [
+    {
+      "title-company-details": "Company details",
+      "info-company-details": "SA Real Estate agency was established in the mid 70s with the simple goal of finding people the perfect homes to live in. Forty years later, Vered have established themselves as leaders in the Johannesburg residential property market."
+    }
+  ],
+  "landlord-rating": [
+    {
+      "title-landlord-rating": "landlord's rating",
+      "rating-stars": [
+        {
+          "stars-img": "images/landlord-profile/star-gold.svg"
+        },
+        {
+          "stars-img": "images/landlord-profile/star-gold.svg"
+        },
+        {
+          "stars-img": "images/landlord-profile/star-gold.svg"
+        },
+        {
+          "stars-img": "images/landlord-profile/star-gold.svg"
+        },
+        {
+          "stars-img": "images/landlord-profile/star-grey.svg"
+        }
+      ],
+      "reviews": "11 reviews"
+    }
+  ],
   "read-more": [
     {
       "title-read-more": ""

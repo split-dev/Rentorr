@@ -1,0 +1,117 @@
+{
+  "nav-brows": [
+    {
+      "logo": "images/global/logo.svg",
+      "search-input": "Cape Town, Western Cape, South Africa",
+      "search-input-mobile": "Try Cape Town",
+      "message-img": "images/global/letter.svg",
+      "bell-img": "images/global/bell.svg",
+      "foto-img": "images/browsing/face.png",
+      "arrow-img": "images/global/arrow-down-gray.svg"
+    }
+  ],
+  "name": "Alex Brown",
+  "agency": "SA Real Estate agency",
+  "years": "2 years with Rentorr",
+  "about": "Work in venture capital and a big Boston sports fan where I'm from originally. Played football at Brown and graduated in 2015.",
+  "protect": [
+    {
+      "protect-img": "images/landlord-profile/shield.svg"
+    },
+    {
+      "protect-img": "images/landlord-profile/message.svg"
+    },
+    {
+      "protect-img": "images/landlord-profile/phone.svg"
+    }
+  ],
+  "stars": [
+    {
+      "stars-img": "images/landlord-profile/star-gold.svg"
+    },
+    {
+      "stars-img": "images/landlord-profile/star-gold.svg"
+    },
+    {
+      "stars-img": "images/landlord-profile/star-gold.svg"
+    },
+    {
+      "stars-img": "images/landlord-profile/star-gold.svg"
+    },
+    {
+      "stars-img": "images/landlord-profile/star-grey.svg"
+    }
+  ],
+  "reviews": "11 reviews",
+  "property-name": "Property from Alex",
+  "property-number": "3 properties available",
+  "apartment-tile": [
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom1.png"
+        },
+        {
+          "img": "images/browsing/bedroom2.png"
+        }
+      ],
+      "label-id" : "1",
+      "label-for" : "1",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__blue",
+      "apartment-tile__verification": "Verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__star": "<img src=\"images/global/star.svg\" alt=\"star\">",
+      "apartment-tile__rating": "4,78",
+      "apartment-tile__review": "(32)",
+      "apartment-tile__adress": "72 Willay Road, 7903",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom2.png"
+        },
+        {
+          "img": "images/browsing/bedroom1.png"
+        }
+      ],
+      "label-id" : "2",
+      "label-for" : "2",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__gray",
+      "apartment-tile__verification": "Verification PENDING",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "72 Willay Road, 7903",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    },
+    {
+      "apartment-tile-img": [
+        {
+          "img": "images/browsing/bedroom3.png"
+        },
+        {
+          "img": "images/browsing/bedroom2.png"
+        }
+      ],
+      "label-id" : "3",
+      "label-for" : "3",
+      "zar": "19,470",
+      "title": "Downtown penthouse",
+      "color-desc": "apartment-tile__blue",
+      "apartment-tile__verification": "Verified",
+      "apartment-tile__desc-apart": "Apartment",
+      "apartment-tile__adress": "72 Willay Road, 7903",
+      "apartment-tile__new-label": "new!",
+      "apartment-tile__details-sofa": "4",
+      "apartment-tile__details-bath": "2",
+      "apartment-tile__details-square": "187"
+    }
+  ]
+}

@@ -76,6 +76,8 @@
 @import "common/modal/read-more";
 @import "common/modal/select-role";
 @import "common/modal/application";
+@import "common/modal/company-details";
+@import "common/modal/landlorg-rating";
 @import "common/browsing/filters-menu";
 @import "common/lightgalleryImg";
 /**
@@ -101,3 +103,5 @@
 @import "layouts/keep-in-touch";
 @import "layouts/browsing";
 @import "layouts/apartment-details";
+@import "layouts/landlord-profile";
+
