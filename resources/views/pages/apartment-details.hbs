@@ -178,11 +178,13 @@
           <div id="cd-zoom-in"></div>
           <div id="cd-zoom-out"></div>
           <div class="browsing__map-filter" id="browsing__map-filter-show">
-              <a class="browsing__map-filter-btn" href="#"></a>
-              {{#each apartment-details-checkbox-map-filter}}
-                  <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value" >
-                  <label class="{{class}}" for="global-checkbox{{for}}" data-filter="{{data-filter}}">{{label-name}}</label>
-              {{/each}}
+              <div class="browsing__map-container">
+                  <a class="browsing__map-filter-btn" href="#"></a>
+                  {{#each apartment-details-checkbox-map-filter}}
+                      <input class="global-checkbox" id="global-checkbox{{id}}" type="checkbox" value="value" >
+                      <label class="{{class}}" for="global-checkbox{{for}}" data-filter="{{data-filter}}">{{label-name}}</label>
+                  {{/each}}
+              </div>
           </div>
           <div class="container_mobile apartment-details__filter-label-position">
               {{#each apartment-details__filter-label}}
