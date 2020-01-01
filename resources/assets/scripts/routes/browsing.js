@@ -483,14 +483,6 @@ export default {
     });
     form.init();
 
-    $('.browsing__map-filter input[type=checkbox]').change(function(){
-      var checkbox = $('.browsing__map-filter input[type=checkbox]');
-      var nChecked = $('.browsing__map-filter input:checked');
-      if (checkbox.length === nChecked.length+1) {
-        $('.allFilters').prev().prop('checked', true);
-      }
-    });
-
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
