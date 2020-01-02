@@ -827,7 +827,7 @@
       ]
     });
     var image = {
-      url: 'images/apartment-details/map-location-dot.svg',
+      url: 'images/global/pin-map_orange.svg',
       scaledSize: new google.maps.Size(62, 42),
       labelOrigin: new google.maps.Point(32, 15)
     };
@@ -838,9 +838,10 @@
       icon: image,
     });
       var markerOval = {
-          url: 'images/global/pin-map_orange.svg',
+          url: 'images/apartment-details/map-location-dot.svg',
           scaledSize: new google.maps.Size(62, 42),
-          labelOrigin: new google.maps.Point(32, 15)
+          labelOrigin: new google.maps.Point(32, 15),
+          anchor: new google.maps.Point(31, 20)
       };
       var markerRadius = new google.maps.Marker({
           position: {lat: -33.9752704, lng: 18.5228585},
@@ -881,6 +882,12 @@
 
   window.initMap = initMap;
 </script>
+<style>
+    .class_name_here {
+        background-color: black;
+        margin-bottom: -50px;
+    }
+</style>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-_AEib7vHKXFg7mgGbQPhrweik5bo9X0&callback=initMap"></script>
 </body>
 </html>
