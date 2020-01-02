@@ -18,6 +18,9 @@
     overflow: auto !important;
     z-index: 9999;
     opacity: 1;
+    @media (max-width: 991px) {
+      overflow: hidden !important;
+    }
   }
   .sign-in__block {
     width: 500px;
@@ -79,12 +82,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
     > span {
       color: #9ba0b5;
       font-family: $roboto;
       font-size: 12px;
       font-weight: 400;
       letter-spacing: 0.06px;
+      @media (max-width: 991px) {
+        margin-left: 20px;
+      }
     }
   }
   &__mark {
@@ -110,6 +120,115 @@
         img {
           width: 21px;
           height: 21px;
+        }
+      }
+    }
+  }
+  &__percents-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+    img {
+      width: 11px;
+      height: 11px;
+    }
+    > span {
+      height: 14px;
+      color: #222634;
+      font-family: $roboto;
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 6px;
+    }
+  }
+  &__line {
+    width: 330px;
+    height: 4px;
+    background-color: #eeeef2;
+    position: relative;
+    margin-left: 16px;
+    margin-right: 13px;
+    margin-top: 3px;
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background-color: #1a5dc6;
+    }
+  }
+  &__reviews {
+    margin-top: 60px;
+    max-height: 240px;
+    @media (max-width: 575px) {
+      max-height: none;
+      position: absolute;
+      left: 15px;
+      touch-action: none;
+      top: 315px;
+      right: 15px;
+      bottom: 20px;
+      overflow: auto;
+    }
+  }
+  &__reviews-item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__image-border {
+    margin-right: 15px;
+    min-width: 56px;
+    min-height: 56px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #e8e9ef;
+    background-color: #fff;
+    border-radius: 50%;
+    @include flex-center;
+    img {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+    }
+  }
+  &__reviews-desc-position {
+    p {
+      color: #222634;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.35px;
+      line-height: 24px;
+    }
+  }
+  &__stars-position {
+    display: flex;
+    span {
+      color: #9ba0b5;
+      font-family: $roboto;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.06px;
+    }
+    ul {
+      display: flex;
+      padding: 0;
+      list-style: none;
+      margin: 0 18px 5px 0;
+      li {
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          width: 11px;
+          height: 11px;
         }
       }
     }

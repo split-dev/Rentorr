@@ -21,6 +21,40 @@
                 </div>
                 <span>{{reviews}}</span>
             </div>
+            <div class="landlord-rating__percents">
+                {{#each rating-procents}}
+                    <div class="landlord-rating__percents-item">
+                        <img src="{{percents-img}}" alt="">
+                        <span>{{percents-mark}}</span>
+                        <div class="landlord-rating__line" data-result="{{data-result}}">
+                            <span class="landlord-rating__blue-line"></span>
+                        </div>
+                        <span>{{percents}}</span>
+                    </div>
+                {{/each}}
+            </div>
+            <div class="landlord-rating__reviews">
+                {{#each reviews-item}}
+                    <div class="landlord-rating__reviews-item">
+                        <div class="landlord-rating__image-border">
+                            <img src="{{reviews-img}}" alt="">
+                        </div>
+                        <div class="landlord-rating__reviews-desc-position">
+                            <div class="landlord-rating__stars-position">
+                                <ul>
+                                    {{#each reviews-stars}}
+                                        <li>
+                                            <img src="{{reviews-stars-img}}" alt="">
+                                        </li>
+                                    {{/each}}
+                                </ul>
+                                <span>{{reviews-data}}</span>
+                            </div>
+                            <p>{{reviews-text}}</p>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
         </div>
     </div>
 </div>

@@ -1,4 +1,5 @@
 import 'slick-carousel';
+import 'jquery.nicescroll/jquery.nicescroll'
 
 export default {
   init() {
@@ -37,6 +38,24 @@ export default {
       $('.landlord-rating').addClass('landlord-rating-active');
       $('html, body').addClass('landlord-rating-hidden');
       $('.send-me').removeClass('send-me-active');
+      //scroll reviews
+      if ($('.landlord-rating').hasClass('landlord-rating-active')) {
+        if (window.innerWidth > 575) {
+          /*let scrollHeight = $('.landlord-rating__reviews').height();
+          $('.landlord-rating__reviews').css('max-height', scrollHeight);*/
+          $('.landlord-rating__reviews').niceScroll({
+            cursorcolor: '#9ba0b5',
+            cursorwidth: '8px',
+            cursorfixedheight: 50,
+            cursoropacitymin: 1,
+            horizrailenabled: false,
+          });
+        }
+      }
+      else  {
+        $('.landlord-rating__reviews').getNiceScroll().remove();
+        //all
+      }
     });
     $('.landlord-rating .landlord-rating__close-position a, .close-landlord-rating').click(function (e) {
       e.preventDefault();
@@ -54,6 +73,16 @@ export default {
         }
       });
     });
+    //rating percents
+    function percent() {
+      let element = $('.landlord-rating__line');
+      for (let i = 0; i < element.length; i++) {
+        let attr = $(element[i]).attr('data-result');
+        let percent = 100 - Number(attr);
+        $(element[i]).children('.landlord-rating__blue-line').css('right', percent + '%');
+      }
+    }
+    percent();
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

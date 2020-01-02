@@ -150,7 +150,283 @@
           "stars-img": "images/landlord-profile/star-grey.svg"
         }
       ],
-      "reviews": "11 reviews"
+      "reviews": "11 reviews",
+      "rating-procents": [
+        {
+          "percents-img": "images/landlord-profile/star-grey.svg",
+          "percents-mark": "5",
+          "percents": "80%",
+          "data-result": "80"
+        },
+        {
+          "percents-img": "images/landlord-profile/star-grey.svg",
+          "percents-mark": "4",
+          "percents": "10%",
+          "data-result": "10"
+        },
+        {
+          "percents-img": "images/landlord-profile/star-grey.svg",
+          "percents-mark": "3",
+          "percents": "10%",
+          "data-result": "10"
+        },
+        {
+          "percents-img": "images/landlord-profile/star-grey.svg",
+          "percents-mark": "2",
+          "percents": "0%",
+          "data-result": "0"
+        },
+        {
+          "percents-img": "images/landlord-profile/star-grey.svg",
+          "percents-mark": "1",
+          "percents": "0%",
+          "data-result": "0"
+        }
+      ],
+      "reviews-item": [
+        {
+          "reviews-img": "images/landlord-profile/fase-1.png",
+          "reviews-data": "2 week ago",
+          "reviews-text": "It was a great location and a warm, comfortable space. I would highly recommend this apartment",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-2.png",
+          "reviews-data": "April 12, 2019",
+          "reviews-text": "Nice location, clean place, everything was excellent",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-1.png",
+          "reviews-data": "April 15, 2019",
+          "reviews-text": "Great place to stay!",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-2.png",
+          "reviews-data": "March 15, 2019",
+          "reviews-text": "It was a great location and a warm, comfortable space. I would highly recommend this apartment",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-1.png",
+          "reviews-data": "March 18, 2019",
+          "reviews-text": "Cool",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-2.png",
+          "reviews-data": "December 15, 2019",
+          "reviews-text": "Not bed",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-1.png",
+          "reviews-data": "December 14, 2019",
+          "reviews-text": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta facilis fuga possimus quidem saepe tempore, temporibus! Assumenda aut consequatur, error fuga obcaecati odit quod recusandae sapiente sint temporibus ut.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta facilis fuga possimus quidem saepe tempore, temporibus! Assumenda aut consequatur, error fuga obcaecati odit quod recusandae sapiente sint temporibus ut.",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-2.png",
+          "reviews-data": "December 13, 2019",
+          "reviews-text": "It was a great location and a warm, comfortable space. I would highly recommend this apartment",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-1.png",
+          "reviews-data": "December 12, 2019",
+          "reviews-text": "It was a great location and a warm, comfortable space. I would highly recommend this apartment",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-2.png",
+          "reviews-data": "December 11, 2019",
+          "reviews-text": "It was a great location and a warm, comfortable space. I would highly recommend this apartment",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        },
+        {
+          "reviews-img": "images/landlord-profile/fase-1.png",
+          "reviews-data": "December 9, 2019",
+          "reviews-text": "It was a great location and a warm, comfortable space. I would highly recommend this apartment",
+          "reviews-stars": [
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-gold.svg"
+            },
+            {
+              "reviews-stars-img": "images/landlord-profile/star-grey.svg"
+            }
+          ]
+        }
+      ]
     }
   ],
   "read-more": [
