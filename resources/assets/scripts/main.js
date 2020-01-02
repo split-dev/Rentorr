@@ -12,6 +12,7 @@ import Detection from './util/Detection';
 import browsing from './routes/browsing';
 import home from './routes/home';
 import apartment from './routes/apartment-details';
+import landlordProfile from './routes/landlord-profile';
 
 window._detector = new Detection({
   detect: ['ie11'],
@@ -25,6 +26,7 @@ const routes = new Router({
   'browsing': browsing,
   'home': home,
   'apartment': apartment,
+  'landlordprofilejs': landlordProfile,
 });
 
 // // Load Events

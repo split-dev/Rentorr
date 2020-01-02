@@ -1,0 +1,27 @@
+{{#each landlord-rating}}
+    <div class="landlord-rating">
+    <div class="sign-in__block" id="landlord-rating-show">
+        <div class="landlord-rating__first-row">
+            <h3>{{{title-landlord-rating}}}</h3>
+            <div class="landlord-rating__close-position">
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="landlord-rating__info">
+            <div class="landlord-rating__mark-position">
+                <div class="landlord-rating__mark">
+                    <span>4.5</span>
+                    <ul>
+                        {{#each rating-stars}}
+                        <li>
+                            <img src="{{stars-img}}" alt="">
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <span>{{reviews}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
