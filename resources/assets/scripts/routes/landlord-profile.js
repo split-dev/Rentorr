@@ -33,7 +33,8 @@ export default {
       });
     });
     //landlord-rating modal
-    $('.landlord-profile-rating').click(function (e) {
+      var clickScroll = ('ontouchstart' in window ? 'touchend' : 'click')
+      $('.landlord-profile-rating').on(clickScroll, function (e) {
       e.preventDefault();
       $('.landlord-rating').addClass('landlord-rating-active');
       $('html, body').addClass('landlord-rating-hidden');
