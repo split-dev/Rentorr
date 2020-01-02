@@ -396,7 +396,7 @@
       left: 15px;
     }
     @media (max-width: 1200px) {
-      left: 0;
+      left: -40px;
     }
     @media (max-width: 991px) {
       left: -50px;
@@ -431,6 +431,12 @@
     bottom: 25px;
     left: 70px;
     visibility: hidden;
+    @media (max-width: 1200px) {
+      left: 110px;
+    }
+    @media (max-width: 991px) {
+      left: 70px;
+    }
   }
   &__map-filter-active {
     visibility: visible !important;
