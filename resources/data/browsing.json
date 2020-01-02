@@ -249,9 +249,11 @@
     {
       "apartment-tile-img": [
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom1.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom2.png"
         }
       ],
@@ -271,14 +273,17 @@
       "apartment-tile__details-square": "187",
       "apartment-tile-x": "-34.1957846",
       "apartment-tile-y": "18.4482404",
-      "apartment-tile-price": "R19,470"
+      "apartment-tile-price": "R19,470",
+      "apartment-tile-link": "#"
     },
     {
       "apartment-tile-img": [
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom2.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom1.png"
         }
       ],
@@ -295,14 +300,17 @@
       "apartment-tile__details-square": "187",
       "apartment-tile-x": "-34.1960906",
       "apartment-tile-y": "18.4475311",
-      "apartment-tile-price": "R10,000"
+      "apartment-tile-price": "R10,000",
+      "apartment-tile-link": "#"
     },
     {
       "apartment-tile-img": [
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom3.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom2.png"
         }
       ],
@@ -320,17 +328,21 @@
       "apartment-tile__details-square": "187",
       "apartment-tile-x": "-34.1954096",
       "apartment-tile-y": "18.4472335",
-      "apartment-tile-price": "R11,400"
+      "apartment-tile-price": "R11,400",
+      "apartment-tile-link": "#"
     },
     {
       "apartment-tile-img": [
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom4.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom3.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom7.png"
         }
       ],
@@ -347,20 +359,25 @@
       "apartment-tile__details-square": "187",
       "apartment-tile-x": "-34.1966497",
       "apartment-tile-y": "18.4485186",
-      "apartment-tile-price": "R17,600"
+      "apartment-tile-price": "R17,600",
+      "apartment-tile-link": "#"
     },
     {
       "apartment-tile-img": [
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom5.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom4.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom6.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom2.png"
         }
       ],
@@ -380,14 +397,17 @@
       "apartment-tile__details-square": "187",
       "apartment-tile-x": "-34.143345",
       "apartment-tile-y": "18.4454234",
-      "apartment-tile-price": "R10,800"
+      "apartment-tile-price": "R10,800",
+      "apartment-tile-link": "#"
     },
     {
       "apartment-tile-img": [
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom5.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom4.png"
         }
       ],
@@ -404,14 +424,17 @@
       "apartment-tile__details-square": "187",
       "apartment-tile-x": "-34.1954123",
       "apartment-tile-y": "18.4487123",
-      "apartment-tile-price": "R12,460"
+      "apartment-tile-price": "R12,460",
+      "apartment-tile-link": "#"
     },
     {
       "apartment-tile-img": [
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom7.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom6.png"
         }
       ],
@@ -431,14 +454,17 @@
       "apartment-tile__details-square": "187",
       "apartment-tile-x": "-34.125567",
       "apartment-tile-y": "18.4474567",
-      "apartment-tile-price": "R11,460"
+      "apartment-tile-price": "R11,460",
+      "apartment-tile-link": "#"
     },
     {
       "apartment-tile-img": [
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom8.png"
         },
         {
+          "apartment-tile-link": "#",
           "img": "images/browsing/bedroom7.png"
         }
       ],
@@ -455,7 +481,8 @@
       "apartment-tile__details-square": "187",
       "apartment-tile-x": "-34.171789",
       "apartment-tile-y": "18.4420789",
-      "apartment-tile-price": "R12,500"
+      "apartment-tile-price": "R12,500",
+      "apartment-tile-link": "#"
     }
   ],
   "global-checkbox-map-filter": [

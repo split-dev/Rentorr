@@ -597,8 +597,13 @@
                 let infowindow = new google.maps.InfoWindow({
                     content: contentApart[i]
                 });
+                var activeInfoWindow;
                 marker.addListener('click', function() {
-                    infowindow.open(map, marker)
+                    if (activeInfoWindow) {
+                        activeInfoWindow.close();
+                    }
+                    infowindow.open(map, marker);
+                    activeInfoWindow = infowindow;
                 });
                 apartList[i].addEventListener('mouseover', function () {
                     marker.setIcon(imageOrange);

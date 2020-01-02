@@ -7,33 +7,37 @@
         </div>
         <div class="apartment-tile__slider">
             {{#each apartment-tile-img}}
-                <img src="{{img}}" alt="apartments">
+                <a href="{{apartment-tile-link}}" class="apartment-tile__slider-link">
+                    <img src="{{img}}" alt="apartments">
+                </a>
             {{/each}}
         </div>
         <div class="apartment-tile__desc-position">
-            <div class="apartment-tile__zar-box">
-                <span>ZAR</span>
-                <span>{{zar}}</span>
-            </div>
-            <h3>{{title}}</h3>
-            <div class="apartment-tile__desc">
-                <div class="apartment-tile__verification-position">
-                    <span class="apartment-tile__verification {{color-desc}}">{{apartment-tile__verification}}</span>
-                    <span class="apartment-tile__desc-apart">{{apartment-tile__desc-apart}}</span>
+            <a href="{{apartment-tile-link}}" class="apartment-tile__desc-position-link">
+                <div class="apartment-tile__zar-box">
+                    <span>ZAR</span>
+                    <span>{{zar}}</span>
                 </div>
-                <div class="apartment-tile__rating-position">
-                    {{{apartment-tile__star}}}
-                    <span class="apartment-tile__rating">{{apartment-tile__rating}}</span>
-                    <span class="apartment-tile__review">{{apartment-tile__review}}</span>
-                    <span class="apartment-tile__new-label">{{apartment-tile__new-label}}</span>
+                <h3>{{title}}</h3>
+                <div class="apartment-tile__desc">
+                    <div class="apartment-tile__verification-position">
+                        <span class="apartment-tile__verification {{color-desc}}">{{apartment-tile__verification}}</span>
+                        <span class="apartment-tile__desc-apart">{{apartment-tile__desc-apart}}</span>
+                    </div>
+                    <div class="apartment-tile__rating-position">
+                      {{{apartment-tile__star}}}
+                        <span class="apartment-tile__rating">{{apartment-tile__rating}}</span>
+                        <span class="apartment-tile__review">{{apartment-tile__review}}</span>
+                        <span class="apartment-tile__new-label">{{apartment-tile__new-label}}</span>
+                    </div>
                 </div>
-            </div>
-            <p class="apartment-tile__adress">{{apartment-tile__adress}}</p>
-            <div class="apartment-tile__details">
-                <span class="apartment-tile__details-sofa">{{apartment-tile__details-sofa}}</span>
-                <span class="apartment-tile__details-bath">{{apartment-tile__details-bath}}</span>
-                <span class="apartment-tile__details-square">{{apartment-tile__details-square}} m<sup>2</sup></span>
-            </div>
+                <p class="apartment-tile__adress">{{apartment-tile__adress}}</p>
+                <div class="apartment-tile__details">
+                    <span class="apartment-tile__details-sofa">{{apartment-tile__details-sofa}}</span>
+                    <span class="apartment-tile__details-bath">{{apartment-tile__details-bath}}</span>
+                    <span class="apartment-tile__details-square">{{apartment-tile__details-square}} m<sup>2</sup></span>
+                </div>
+            </a>
         </div>
     </div>
 {{/each}}

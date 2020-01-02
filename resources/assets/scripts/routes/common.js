@@ -197,7 +197,15 @@ export default {
       $(this).parent().removeClass('filter-label-active');
       let attr = $(this).parent().attr('id');
       $('[data-filter~=' + attr + ']').prev().prop('checked', false);
-    })
+    });
+
+    $('.browsing__map-filter input[type=checkbox]').change(function(){
+      var checkbox = $('.browsing__map-filter input[type=checkbox]');
+      var nChecked = $('.browsing__map-filter input:checked');
+      if (checkbox.length === nChecked.length+1) {
+        $('.allFilters').prev().prop('checked', true);
+      }
+    });
 
     const form = new Forms({
       wrap: '.field-wrap',

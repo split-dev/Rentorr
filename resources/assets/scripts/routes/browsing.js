@@ -482,6 +482,7 @@ export default {
       forms: '.main-form__filters, filters-menu__input-position',
     });
     form.init();
+
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
