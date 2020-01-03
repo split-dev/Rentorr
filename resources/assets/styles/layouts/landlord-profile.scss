@@ -7,9 +7,6 @@
   .nicescroll-rails {
     width: 13px !important;
   }
-  .nav-brows__search-position {
-    display: none !important;
-  }
   &__info-bcg {
     background-color: #fff;
   }
@@ -18,7 +15,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 70px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
     @media (max-width: 575px) {
       padding-top: 30px;
       padding-bottom: 30px;
@@ -58,8 +55,39 @@
       margin: 0;
       li {
         margin-right: 30px;
+        position: relative;
+        &:hover {
+          &:before {
+            opacity: 1;
+          }
+        }
+        &:before {
+          content: attr(data-content);
+          transition: 0.2s;
+          position: absolute;
+          top: 32px;
+          left: 0;
+          color: #4caf50;
+          font-size: 14px;
+          letter-spacing: 0.35px;
+          text-align: center;
+          line-height: 24px;
+          padding: 2px 7px 2px 7px;
+          background: #dbefdc;
+          border-radius: 20px;
+          font-family: $roboto;
+          opacity: 0;
+        }
         &:last-child {
           margin-right: 0;
+          &:before {
+            min-width: 130px;
+          }
+        }
+        &:nth-child(2) {
+          &:before {
+            content: none;
+          }
         }
       }
     }
@@ -194,6 +222,14 @@
     .apartment-tile {
       margin: 10px;
       background-color: #fff;
+    }
+  }
+  &__btn-position {
+    @include flex-center;
+    .button--white--border {
+      margin-top: 30px;
+      background: #fff;
+      width: 250px;
     }
   }
 }

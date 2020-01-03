@@ -5,7 +5,13 @@
 <body class="landlord-profile landlordprofilejs">
     {{> ../common/modal/company-details}}
     {{> ../common/modal/landlord-rating}}
+    {{> ../common/mobile-menu}}
     {{> ../common/header-footer/nav-brows}}
+    {{> ../common/modal/sign-in}}
+    {{> ../common/modal/sign-up}}
+    {{> ../common/modal/check-email}}
+    {{> ../common/modal/forgot-pass}}
+    {{> ../common/modal/select-role}}
     <div class="landlord-profile__info-bcg">
         <div class="landlord-profile__info-position container-landlord-profile">
             <div class="landlord-profile__about-landlord">
@@ -17,7 +23,7 @@
                 <p>{{about}}</p>
                 <ul>
                     {{#each protect}}
-                        <li>
+                        <li data-content="{{data-content}}">
                             <img src="{{protect-img}}" alt="">
                         </li>
                     {{/each}}
@@ -47,6 +53,9 @@
             </div>
             <div class="landlord-profile__tile-position">
                 {{> ../common/browsing/apartment-tile}}
+            </div>
+            <div class="landlord-profile__btn-position">
+                <a class="button--white--border" href="#">show more</a>
             </div>
         </div>
     </div>
