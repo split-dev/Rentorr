@@ -831,23 +831,27 @@
       scaledSize: new google.maps.Size(62, 42),
       labelOrigin: new google.maps.Point(32, 15)
     };
-    var apartDoor = new google.maps.Marker({
-      position: {lat: -33.9752704, lng: 18.5228585},
-      map: map1,
-      title: 'Rentorr',
-      icon: image,
-    });
       var markerOval = {
           url: 'images/apartment-details/map-location-dot.svg',
           scaledSize: new google.maps.Size(62, 42),
           labelOrigin: new google.maps.Point(32, 15),
-          anchor: new google.maps.Point(31, 20)
+          anchor: new google.maps.Point(31, 20),
+          size: new google.maps.Size(70, 60),
+          origin: new google.maps.Point(0,0)
       };
+      var apartDoor = new google.maps.Marker({
+          position: {lat: -33.9752704, lng: 18.5228585},
+          map: map1,
+          title: 'Rentorr',
+          icon: markerOval,
+          optimized: false
+      });
       var markerRadius = new google.maps.Marker({
           position: {lat: -33.9752704, lng: 18.5228585},
           map: map,
           title: 'Rentorr',
           icon: markerOval,
+          optimized: false
       });
       // Add circle overlay and bind to marker
       var circle = new google.maps.Circle({
@@ -858,6 +862,18 @@
           strokeOpacity: 0,
           strokeWeight: 1
       });
+
+      var myoverlay = new google.maps.OverlayView();
+      myoverlay.draw = function () {
+          this.getPanes().markerLayer.id='bigMap';
+      };
+      myoverlay.setMap(map);
+      var myoverlay = new google.maps.OverlayView();
+      myoverlay.draw = function () {
+          this.getPanes().markerLayer.id='miniMap';
+      };
+      myoverlay.setMap(map1);
+
       circle.bindTo('center', markerRadius, 'position');
       function CustomZoomControl(controlDiv, map) {
           //grap the zoom elements from the DOM and insert them in the map
