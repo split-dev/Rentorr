@@ -836,6 +836,10 @@
           text-align: center;
           align-items: center;
         }
+        h3 {
+          margin-top: 30px;
+          margin-bottom: 3px;
+        }
         p {
           font-family: $roboto;
           font-size: 14px;
@@ -922,7 +926,8 @@
           }
           .images_check {
             position: absolute;
-            transform: translate(70px, -50px);
+            bottom: 12px;
+            right: -4px;
           }
           .link-bold {
             transition: 0.3s;
@@ -960,12 +965,16 @@
       }
       .bottom-line {
         margin-bottom: 20px;
+        border-bottom: 1px solid #eeeff3;
+        background-color: #fff;
+        padding-bottom: 40px;
       }
     }
     &__read-more-position {
       border-bottom: 1px solid #eeeff3;
       background-color: #fff;
       padding-bottom: 40px;
+      margin-top: 20px;
       @include media-breakpoint-down(md) {
         padding-top: 20px;
       }
@@ -1503,34 +1512,6 @@
 @keyframes pulse {
   to {
     transform: scale(0.7);
-  }
-}
-@-webkit-keyframes pulse {
-  to {
-    transform: scale(0.7);
-  }
-}
-@-webkit-keyframes wobble {
-  from {
-    transform: none;
-  }
-  15% {
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-  }
-  30% {
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-  }
-  45% {
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-  }
-  60% {
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-  }
-  75% {
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-  }
-  to {
-    transform: none;
   }
 }
 @keyframes wobble {
